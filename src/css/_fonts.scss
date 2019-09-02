@@ -1,15 +1,71 @@
-// @font-face {
-//   font-family: "Neuzeit-Book";
-//   src: url("/assets/fonts/subset-NeuzeitSLTStd-Book.woff2") format("woff2"),
-//     url("/assets/fonts/subset-NeuzeitSLTStd-Book.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-//
-// @font-face {
-//   font-family: "Neuzeit-Heavy";
-//   src: url("/assets/fonts/subset-NeuzeitSLTStd-BookHeavy.woff2") format("woff2"),
-//     url("/assets/fonts/subset-NeuzeitSLTStd-BookHeavy.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: "Lato-Light";
+  src: local("Lato-Light"),
+    url("/assets/fonts/subset-Lato-Light.woff2") format("woff2"),
+    url("/assets/fonts/subset-Lato-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("/assets/fonts/subset-Lato-Regular.woff2") format("woff2"),
+    url("/assets/fonts/subset-Lato-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("/assets/fonts/subset-Lato-Bold.woff2") format("woff2"),
+    url("/assets/fonts/subset-Lato-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: local("Lato Black"), local("Lato-Black"),
+    url("/assets/fonts/subset-Lato-Black.woff2") format("woff2"),
+    url("/assets/fonts/subset-Lato-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MavenProRegular";
+  src: local("Maven Pro Regular"), local("MavenProRegular"),
+    url("/assets/fonts/subset-MavenProRegular.woff2") format("woff2"),
+    url("/assets/fonts/subset-MavenProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MavenProMedium";
+  src: local("Maven Pro Medium"), local("MavenProMedium"),
+    url("/assets/fonts/subset-MavenProMedium.woff2") format("woff2"),
+    url("/assets/fonts/subset-MavenProMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MavenProBold";
+  src: local("Maven Pro Bold"), local("MavenProBold"),
+    url("/assets/fonts/subset-MavenProBold.woff2") format("woff2"),
+    url("/assets/fonts/subset-MavenProBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MavenProBlack";
+  src: local("Maven Pro Black"), local("MavenProBlack"),
+    url("/assets/fonts/subset-MavenProBlack.woff2") format("woff2"),
+    url("/assets/fonts/subset-MavenProBlack.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

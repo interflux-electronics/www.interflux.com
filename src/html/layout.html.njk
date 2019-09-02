@@ -10,19 +10,135 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="{{themeColour}}">
     <meta name="google-site-verification" content="{{googleSiteVerification}}"/>
+
     {% block meta %}{% endblock %}
+
     <script src="/assets/js/vendor.min.js"></script>
     <script src="/assets/js/app.min.js"></script>
     <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css">
     {# {% include "partials/favicons.njk" %} #}
+
+    <link rel="shortcut icon" href="http://www.interflux.com/sites/default/files/favicon-interflux.ico" type="image/vnd.microsoft.icon">
+
+    <style>
+      @import url("http://www.interflux.com/modules/system/system.base.css?pa0273");
+      @import url("http://www.interflux.com/modules/system/system.messages.css?pa0273");
+      @import url("http://www.interflux.com/modules/system/system.theme.css?pa0273");
+    </style>
+    <style>
+      @import url("http://www.interflux.com/modules/field/theme/field.css?pa0273");
+      @import url("http://www.interflux.com/modules/node/node.css?pa0273");
+      @import url("http://www.interflux.com/modules/user/user.css?pa0273");
+      @import url("http://www.interflux.com/sites/all/modules/views/css/views.css?pa0273");
+    </style>
+    <style>
+      @import url("http://www.interflux.com/sites/all/modules/ctools/css/ctools.css?pa0273");
+      @import url("http://www.interflux.com/sites/all/modules/panels/css/panels.css?pa0273");
+      @import url("http://www.interflux.com/sites/all/modules/panels/plugins/layouts/onecol/onecol.css?pa0273");
+      @import url("http://www.interflux.com/modules/locale/locale.css?pa0273");
+    </style>
+    <style>
+      @import url("http://www.interflux.com/sites/all/themes/zen_interflux/css/nabu.normalize.css?pa0273");
+      @import url("http://www.interflux.com/sites/all/themes/zen_interflux/css/nabu.style.css?pa0273");
+    </style>
+    <style>
+      @import url("http://www.interflux.com/sites/default/files/fontyourface/local_fonts/Maven1-normal-normal/stylesheet.css?pa0273");
+      @import url("http://www.interflux.com/sites/default/files/fontyourface/local_fonts/Maven2-normal-normal/stylesheet.css?pa0273");
+      @import url("http://www.interflux.com/sites/default/files/fontyourface/local_fonts/Maven3-normal-normal/stylesheet.css?pa0273");
+    </style>
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+    <script src="http://www.interflux.com/sites/all/modules/jquery_update/replace/jquery/1.5/jquery.min.js?v=1.5.2"></script>
+    <script src="http://www.interflux.com/misc/jquery.once.js?v=1.2"></script>
+    <script src="http://www.interflux.com/misc/drupal.js?pa0273"></script>
+    <script src="http://www.interflux.com/sites/all/modules/panels/js/panels.js?pa0273"></script>
+    <script src="http://www.interflux.com/sites/all/modules/google_analytics/googleanalytics.js?pa0273"></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-34474019-4"]);
+      _gaq.push(["_trackPageview"]);
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src = (
+          "https:" == document.location.protocol
+          ? "https://ssl"
+          : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script src="http://www.interflux.com/sites/all/themes/zen_interflux/js/jquery.js?pa0273"></script>
+    <script src="http://www.interflux.com/sites/all/themes/zen_interflux/js/jquery.easing.js?pa0273"></script>
+    <script src="http://www.interflux.com/sites/all/themes/zen_interflux/js/jquery.transform2d.js?pa0273"></script>
+    <script src="http://www.interflux.com/sites/all/themes/zen_interflux/js/jquery.imagesloaded.js?pa0273"></script>
+    <script src="http://www.interflux.com/sites/all/themes/zen_interflux/js/nabu.functions.js?pa0273"></script>
+    <script src="http://www.interflux.com/sites/all/themes/zen_interflux/js/nabu.init.js?pa0273"></script>
+    <script>
+      jQuery.extend(Drupal.settings, {
+        "basePath": "\/",
+        "pathPrefix": "en\/",
+        "ajaxPageState": {
+          "theme": "zen_interflux",
+          "theme_token": "rG3e0Ch1SJgtj4YeSGfI8EB_X2qODTzjLuinNo-_spw",
+          "css": {
+            "modules\/system\/system.base.css": 1,
+            "modules\/system\/system.menus.css": 1,
+            "modules\/system\/system.messages.css": 1,
+            "modules\/system\/system.theme.css": 1,
+            "modules\/field\/theme\/field.css": 1,
+            "modules\/node\/node.css": 1,
+            "modules\/user\/user.css": 1,
+            "sites\/all\/modules\/views\/css\/views.css": 1,
+            "sites\/all\/modules\/ctools\/css\/ctools.css": 1,
+            "sites\/all\/modules\/panels\/css\/panels.css": 1,
+            "sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css": 1,
+            "modules\/locale\/locale.css": 1,
+            "sites\/all\/themes\/zen\/system.menus.css": 1,
+            "sites\/all\/themes\/zen_interflux\/css\/nabu.normalize.css": 1,
+            "sites\/all\/themes\/zen_interflux\/css\/nabu.style.css": 1,
+            "public:\/\/fontyourface\/local_fonts\/Maven1-normal-normal\/stylesheet.css": 1,
+            "public:\/\/fontyourface\/local_fonts\/Maven2-normal-normal\/stylesheet.css": 1,
+            "public:\/\/fontyourface\/local_fonts\/Maven3-normal-normal\/stylesheet.css": 1
+          },
+          "js": {
+            "sites\/all\/modules\/jquery_update\/replace\/jquery\/1.5\/jquery.min.js": 1,
+            "misc\/jquery.once.js": 1,
+            "misc\/drupal.js": 1,
+            "sites\/all\/modules\/panels\/js\/panels.js": 1,
+            "sites\/all\/modules\/google_analytics\/googleanalytics.js": 1,
+            "0": 1,
+            "sites\/all\/themes\/zen_interflux\/js\/jquery.js": 1,
+            "sites\/all\/themes\/zen_interflux\/js\/jquery.easing.js": 1,
+            "sites\/all\/themes\/zen_interflux\/js\/jquery.transform2d.js": 1,
+            "sites\/all\/themes\/zen_interflux\/js\/jquery.imagesloaded.js": 1,
+            "sites\/all\/themes\/zen_interflux\/js\/nabu.functions.js": 1,
+            "sites\/all\/themes\/zen_interflux\/js\/nabu.init.js": 1
+          }
+        },
+        "googleanalytics": {
+          "trackOutbound": 1,
+          "trackMailto": 1,
+          "trackDownload": 1,
+          "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"
+        }
+      });
+    </script>
+
   </head>
 
-  <body id="{% block id %}{% endblock %}">
-    {# {% include "partials/menu.njk" %} #}
-    <main>
-      {% block main %}{% endblock %}
-    </main>
-    {# {% include "partials/footer.njk" %} #}
-    {% include "partials/outdated-browsers.njk" %}
+  <body id="{% block bodyId %}{% endblock %}" class="{% block bodyClass %}{% endblock %}">
+    <div id="page">
+      {% include "partials/languages.njk" %}
+      {% include "partials/header.njk" %}
+      {% include "partials/highlight.njk" %}
+      <div class="region region-corpus">
+        <div class="inner-region">
+          {% block main %}{% endblock %}
+        </div>
+      </div>
+      {% include "partials/footer.njk" %}
+      {% include "partials/outdated-browsers.njk" %}
+    </div>
   </body>
 </html>
