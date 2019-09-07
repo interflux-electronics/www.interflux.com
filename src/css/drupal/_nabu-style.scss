@@ -284,7 +284,7 @@ em {
 
 .region-language {
   height: 19px;
-  background-image: url("../images/bg-header-top.jpg");
+  background-image: url("/assets/images/legacy/bg-header-top.jpg");
   background-position: top center;
   background-repeat: repeat-x;
 }
@@ -307,7 +307,7 @@ em {
   padding: 0;
   margin: 0;
   list-style: none;
-  background-image: url("../images/bg-language-2.jpg");
+  background-image: url("/assets/images/legacy/bg-language-2.jpg");
   background-position: 0 0;
   background-repeat: repeat-x;
 }
@@ -348,7 +348,7 @@ em {
   top: 0;
   width: 27px;
   height: 19px;
-  background-image: url("../images/bg-language-2.jpg");
+  background-image: url("/assets/images/legacy/bg-language-2.jpg");
   background-position: 0 0;
   background-repeat: repeat-x;
 }
@@ -526,7 +526,7 @@ em {
 }
 .header-nav > div > ul > li > ul > li > a {
   padding: 7px 10px 6px;
-  background-image: url("../images/dot-23578C-90.png");
+  background-image: url("/assets/images/legacy/dot-23578C-90.png");
 }
 .header-nav > div > ul > li:hover ul {
   left: 0;
@@ -840,7 +840,7 @@ em {
 
 .page-home .region-header {
   background-color: #fff;
-  background-image: url("../images/homepage-header.png");
+  background-image: url("/assets/images/legacy/homepage-header.png");
   background-position: bottom left;
   background-repeat: repeat-x;
 }
@@ -850,15 +850,15 @@ em {
   padding-bottom: 0;
   color: #fff;
   background-color: $dark-blue;
-  background-image: url("../images/bg-contacts.png");
+  background-image: url("/assets/images/legacy/bg-contacts.png");
   background-position: 50% 50%;
 }
 .bg-home-top {
-  background-image: url("../images/footer-bg-top.png");
+  background-image: url("/assets/images/legacy/footer-bg-top.png");
   background-repeat: repeat-x;
 }
 .bg-home-bottom {
-  background-image: url("../images/homepage-footer.png");
+  background-image: url("/assets/images/legacy/homepage-footer.png");
   background-position: bottom left;
   background-repeat: repeat-x;
 }
@@ -925,7 +925,7 @@ em {
 #homepage-nav .pane-content > ul > li {
   padding: 0;
   margin: 0;
-  background-image: url("../images/dot-FFF-05.png");
+  background-image: url("/assets/images/legacy/dot-FFF-05.png");
 }
 #homepage-nav .pane-content > ul > li#home1 {
   margin-right: 30px;
@@ -962,7 +962,7 @@ em {
   padding: 0;
   margin: 0;
   margin-top: 30px;
-  background-image: url("../images/dot-FFF-05.png");
+  background-image: url("/assets/images/legacy/dot-FFF-05.png");
 }
 #homepage-nav .pane-content > ul > li.leaf a {
   padding: 18px 0 19px 0;
@@ -1111,7 +1111,7 @@ em {
   position: absolute;
   left: 180px;
   width: 95px;
-  background-image: url("../images/product-row-group-background.png");
+  background-image: url("/assets/images/legacy/product-row-group-background.png");
 }
 .product-row-group .bg-left {
   top: 0;
@@ -1270,7 +1270,7 @@ em {
   padding-left: 27px;
   margin-bottom: 30px;
   line-height: 20px;
-  background-image: url("../images/document-email-icon.png");
+  background-image: url("/assets/images/legacy/document-email-icon.png");
   background-position: 3px 7px;
   background-repeat: no-repeat;
 }
@@ -1371,7 +1371,7 @@ em {
 .icon37 {
   width: 31px;
   height: 31px;
-  background-image: url("../images/icons6.png");
+  background-image: url("/assets/images/legacy/icons6.png");
   background-repeat: no-repeat;
 }
 .icon00 {
@@ -1592,7 +1592,7 @@ em {
   z-index: -1;
   width: 1130px;
   height: 221px;
-  background-image: url("../images/bg-highlight.jpg");
+  background-image: url("/assets/images/legacy/bg-highlight.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
 }
@@ -1604,7 +1604,7 @@ em {
   margin-top: 22px;
   margin-bottom: 76px;
   background-color: $dark-blue;
-  background-image: url("../images/bg-contacts.png");
+  background-image: url("/assets/images/legacy/bg-contacts.png");
   background-position: 50% 50%;
 }
 #article-interflux .sub-title,
@@ -1620,7 +1620,7 @@ em {
   width: 180px;
   height: 226px;
   background-color: #fff;
-  background-image: url("../images/daniel-werkhoven.jpg");
+  background-image: url("/assets/images/legacy/daniel-werkhoven.jpg");
   background-repeat: no-repeat;
   border: 3px solid #fff;
   box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
@@ -1637,7 +1637,7 @@ em {
   right: 222px;
   width: 156px;
   height: 285px;
-  background-image: url("../images/iso-label.jpg");
+  background-image: url("/assets/images/legacy/iso-label.jpg");
   background-repeat: no-repeat;
 }
 #article-interflux .img-triangle {
@@ -1660,7 +1660,7 @@ em {
   left: 0;
   width: 345px;
   height: 177px;
-  background-image: url("../images/img-support.jpg");
+  background-image: url("/assets/images/legacy/img-support.jpg");
   background-repeat: no-repeat;
 }
 #article-pioneer {
@@ -1674,7 +1674,7 @@ em {
   left: 0;
   width: 406px;
   height: 278px;
-  background-image: url("../images/img-pioneer.jpg");
+  background-image: url("/assets/images/legacy/img-pioneer.jpg");
   background-repeat: no-repeat;
 }
 #article-durable {
@@ -1688,7 +1688,7 @@ em {
   right: 0;
   width: 226px;
   height: 292px;
-  background-image: url("../images/img-durable.jpg");
+  background-image: url("/assets/images/legacy/img-durable.jpg");
   background-repeat: no-repeat;
 }
 .panels-flexible-region-18-center {
@@ -1933,7 +1933,7 @@ em {
   left: 23px;
   width: 22px;
   height: 22px;
-  background: url("../images/search-icon-white.png") no-repeat;
+  background: url("/assets/images/legacy/search-icon-white.png") no-repeat;
 }
 #contact-search .country-list {
   position: absolute;
@@ -1979,7 +1979,7 @@ em {
   width: 958px;
   height: 498px;
   margin-bottom: 70px;
-  background: url("../images/contact-map.jpg") no-repeat;
+  background: url("/assets/images/legacy/contact-map.jpg") no-repeat;
   border: 1px solid #a6a6a6;
   border-radius: 3px;
 }
@@ -2229,15 +2229,15 @@ em {
   height: 430px;
   color: #fff;
   background-color: $dark-blue;
-  background-image: url("../images/bg-contacts.png");
+  background-image: url("/assets/images/legacy/bg-contacts.png");
   background-position: 50% 50%;
 }
 .region-footer2 .bg-footer-top {
-  background-image: url("../images/footer-bg-top.png");
+  background-image: url("/assets/images/legacy/footer-bg-top.png");
   background-repeat: repeat-x;
 }
 .region-footer2 .bg-footer-bottom {
-  background-image: url("../images/bg-footer-bottom.png");
+  background-image: url("/assets/images/legacy/bg-footer-bottom.png");
   background-position: bottom center;
   background-repeat: repeat-x;
 }
@@ -2250,7 +2250,7 @@ em {
   width: 490px;
   height: 315px;
   margin-top: 41px;
-  background-image: url("../images/dot-FFF-05.png");
+  background-image: url("/assets/images/legacy/dot-FFF-05.png");
   background-position: top left;
 }
 .region-footer2 #F1 .inner-block {
@@ -2402,7 +2402,7 @@ em {
   width: 343px;
   height: 87px;
   margin: 40px;
-  background-image: url("../images/interflux-electronics-logo.png");
+  background-image: url("/assets/images/legacy/interflux-electronics-logo.png");
 }
 .maintenance-message {
   margin: 8px 40px;
@@ -2445,7 +2445,7 @@ em {
   margin-left: -135px;
   color: white;
   background-color: $dark-blue;
-  background-image: url("../images/bg-contacts.png");
+  background-image: url("/assets/images/legacy/bg-contacts.png");
   background-position: 50% 50%;
 }
 #user-login input {
