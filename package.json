@@ -26,9 +26,17 @@
     "gulp-jsbeautifier": "^3.0.1",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-rename": "^1.4.0",
+    "gulp-run-command": "^0.0.9",
     "gulp-size": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "node-normalize-scss": "^8.0.1"
+    "mkdirp": "^0.5.1",
+    "node-html-parser": "^1.1.16",
+    "node-normalize-scss": "^8.0.1",
+    "prettier": "^1.18.2",
+    "prettydiff": "^101.2.5",
+    "puppeteer": "^1.19.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
   },
   "dependencies": {
     "@bower_components/outdated-browser": "burocratik/outdated-browser#^1.1.3"
