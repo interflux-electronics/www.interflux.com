@@ -26,13 +26,7 @@
     <div id="page">
       {% include "partials/languages.njk" %}
       {% include "partials/header.njk" %}
-      {% include "partials/highlight.njk" %}
-      <div class="region region-corpus">
-        <div class="inner-region">
-          {% block main %}{% endblock %}
-        </div>
-      </div>
-      {% include "partials/footer.njk" %}
+      {% block page %}{% endblock %}
       {% include "partials/outdated-browsers.njk" %}
     </div>
   </body>
