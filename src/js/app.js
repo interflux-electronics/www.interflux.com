@@ -1,3 +1,14 @@
+import { translateReadMore } from "./functions.js";
+
+function init() {
+  translateReadMore();
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM READY");
+  init();
+});
+
 // const isProduction = location.host === 'floatplane.io' ? true : false;
 // const environment = isProduction ? 'production' : 'development';
 

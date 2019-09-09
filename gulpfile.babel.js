@@ -5,7 +5,6 @@ const { src, dest, series, parallel, watch } = require("gulp");
 // Import plugins
 // https://gulpjs.com/docs/en/getting-started/using-plugins
 const autoprefixer = require("gulp-autoprefixer");
-const babel = require("gulp-babel");
 const concat = require("gulp-concat");
 const connect = require("gulp-connect");
 const del = require("del");
@@ -16,7 +15,7 @@ const prettify = require("gulp-jsbeautifier");
 const rename = require("gulp-rename");
 const sass = require("gulp-dart-sass");
 const size = require("gulp-size");
-const uglify = require("gulp-uglify");
+const webpack = require("webpack-stream");
 
 // Removes the dist folder
 function clean() {
@@ -81,15 +80,15 @@ function lintJs() {
     .pipe(eslint.failAfterError());
 }
 
-// Convert your JS with Babel and minify it
+// Build the main JS file
+// https://webpack.js.org/guides/integrations/#gulp
 function buildJs() {
   return src("src/js/app.js")
     .pipe(
-      babel({
-        presets: ["@babel/env"]
+      webpack({
+        mode: "development"
       })
     )
-    .pipe(uglify())
     .pipe(rename("app.min.js"))
     .pipe(dest("dist/assets/js"));
 }
@@ -97,11 +96,11 @@ function buildJs() {
 // Concatenate all vendor JS
 function concatVendorJs() {
   return src([
-    "src/js/vendor/google-analytics.js",
-    "src/js/vendor/jquery.js",
-    "src/js/vendor/jquery.easing.js",
-    "src/js/vendor/jquery.imagesloaded.js",
-    "src/js/vendor/jquery.once.js"
+    "src/js/vendor/google-analytics.js"
+    // "src/js/vendor/jquery.js",
+    // "src/js/vendor/jquery.easing.js",
+    // "src/js/vendor/jquery.imagesloaded.js",
+    // "src/js/vendor/jquery.once.js"
   ])
     .pipe(concat("vendor.min.js"))
     .pipe(dest("dist/assets/js"));
