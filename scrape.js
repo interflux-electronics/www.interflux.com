@@ -29,17 +29,17 @@ const prepare = arr => {
   const paths = [
     "",
     "/soldering-fluxes",
-    // "/solder-pastes",
-    // "/solder-wires",
-    // "/flux-sprayer",
-    // "/auxiliaries",
-    // "/wave-soldering",
-    // "/selective-soldering",
-    // "/reflow-soldering",
-    // "/rework-and-repair",
-    // "/pre-tinning",
-    // "/company",
-    // "/documents",
+    "/solder-pastes",
+    "/solder-wires",
+    "/spray-fluxers",
+    "/auxiliaries",
+    "/wave-soldering",
+    "/selective-soldering",
+    "/reflow-soldering",
+    "/rework-and-repair",
+    "/pre-tinning",
+    "/company",
+    "/documents",
     "/contact"
   ];
 
@@ -82,8 +82,8 @@ async function fetch(page) {
       : false;
   };
 
-  const fail = err => {
-    console.error("FAILED", page.url, err);
+  const fail = () => {
+    console.error("FAILED", page.url);
   };
 
   return request(page.url)

@@ -107,8 +107,7 @@ body {
 
   #productronica-2017 {
     line-height: 100%;
-    background: url(http://www.interflux.com/sites/all/themes/zen_interflux/images/productronica-banner-2017.jpg)
-      100%/100%;
+    background: url("/assets/images/legacy/productronica-banner-2017.jpg") 100%/100%;
   }
 
   #productronica-2017 a {
@@ -405,7 +404,7 @@ em {
   width: 16px;
   height: 11px;
   margin-right: 7px;
-  background-image: url(../images/flags.png);
+  background-image: url(/assets/images/legacy/flags.png);
   background-repeat: no-repeat;
 }
 .language-menu li.en .flag {
@@ -1021,41 +1020,41 @@ em {
   left: 495px;
 }
 .home-1 {
-  background: url(../images/homepage-images-1.jpg) 0 0;
+  background: url(/assets/images/legacy/homepage-images-1.jpg) 0 0;
 }
 .home-8 {
-  background: url(../images/homepage-images-1.jpg) -465px 0;
+  background: url(/assets/images/legacy/homepage-images-1.jpg) -465px 0;
 }
 .home-2 {
-  background: url(../images/homepage-images-1.jpg) 0 0;
+  background: url(/assets/images/legacy/homepage-images-1.jpg) 0 0;
   opacity: 0;
 }
 .home-3 {
-  background: url(../images/homepage-images-1.jpg) 0 -300px;
+  background: url(/assets/images/legacy/homepage-images-1.jpg) 0 -300px;
   opacity: 0;
 }
 .home-4 {
-  background: url(../images/homepage-images-1.jpg) 0 -600px;
+  background: url(/assets/images/legacy/homepage-images-1.jpg) 0 -600px;
   opacity: 0;
 }
 .home-5 {
-  background: url(../images/homepage-images-1.jpg) 0 -900px;
+  background: url(/assets/images/legacy/homepage-images-1.jpg) 0 -900px;
   opacity: 0;
 }
 .home-6 {
-  background: url(../images/homepage-images-1.jpg) -465px -300px;
+  background: url(/assets/images/legacy/homepage-images-1.jpg) -465px -300px;
   opacity: 0;
 }
 .home-7 {
-  background: url(../images/homepage-images-1.jpg) -465px 0;
+  background: url(/assets/images/legacy/homepage-images-1.jpg) -465px 0;
   opacity: 0;
 }
 .home-9 {
-  background: url(../images/homepage-images-1.jpg) -465px -600px;
+  background: url(/assets/images/legacy/homepage-images-1.jpg) -465px -600px;
   opacity: 0;
 }
 .home-10 {
-  background: url(../images/homepage-images-1.jpg) -465px -900px;
+  background: url(/assets/images/legacy/homepage-images-1.jpg) -465px -900px;
   opacity: 0;
 }
 .page-home .pane-title {
@@ -1592,9 +1591,9 @@ em {
   z-index: -1;
   width: 1130px;
   height: 221px;
-  background-image: url("/assets/images/legacy/bg-highlight.jpg");
-  background-position: 50% 0;
-  background-repeat: no-repeat;
+  // background-image: url("/assets/images/legacy/bg-highlight.jpg");
+  // background-position: 50% 0;
+  // background-repeat: no-repeat;
 }
 .company-img {
   position: absolute;
@@ -1781,7 +1780,7 @@ em {
   left: 23px;
   width: 22px;
   height: 22px;
-  background: url(../images/search-icon-white.png) no-repeat;
+  background: url("/assets/images/legacy/search-icon-white.png") no-repeat;
 }
 #document-list {
   margin-bottom: 30px;
@@ -1824,7 +1823,8 @@ em {
 
 #document-list .document-pdf .field a.email {
   padding-left: 21px;
-  background: url(../images/document-email-icon.png) no-repeat 0 4px;
+  background: url(/assets/images/legacy//document-email-icon.png) no-repeat 0
+    4px;
 }
 #document-list .no-results {
   font-style: oblique;
@@ -2002,7 +2002,7 @@ em {
   position: absolute;
   z-index: 1;
   cursor: pointer;
-  background: url(../images/contact-map-markers.png) no-repeat;
+  background: url(/assets/images/legacy/contact-map-markers.png) no-repeat;
   opacity: 1;
   transform: translateX(0px) translateY(0px);
   transition: all 300ms ease;
@@ -2010,7 +2010,7 @@ em {
 #contact-map .marker .shadow {
   position: absolute;
   z-index: 0;
-  background: url(../images/contact-map-markers.png) no-repeat;
+  background: url(/assets/images/legacy/contact-map-markers.png) no-repeat;
   opacity: 1;
   transform: translateX(0px) translateY(0px);
   transition: all 300ms ease;
@@ -2181,7 +2181,7 @@ em {
   bottom: 0;
   width: 270px;
   height: 161px;
-  background: url(../images/contact-if-logo.png) no-repeat;
+  background: url(/assets/images/legacy/contact-if-logo.png) no-repeat;
 }
 #contact-list .contact-type .headquarters.border,
 #contact-list .contact-type .member.border {

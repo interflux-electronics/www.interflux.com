@@ -16,7 +16,7 @@
       // temporary -------------
 
       var lang = $('html').attr('lang');
-      // $('#banners .stage').html('<a href="/en/solder-pastes"><article id="productronica-2015" class="bg-9 image-done"><img src="/sites/all/themes/zen_interflux/images/banner-DP5600.jpg" width:"958" height="220" style="opacity: 1;"></article></a>');
+      // $('#banners .stage').html('<a href="/en/solder-pastes"><article id="productronica-2015" class="bg-9 image-done"><img src="/assets/images/legacy/banner-DP5600.jpg" width:"958" height="220" style="opacity: 1;"></article></a>');
 
       //<a href="/' + lang + '/solder-pastes"></a>
 
@@ -36,7 +36,7 @@
         th: "อ่านเพิ่มเติม ...",
         id: "Baca lebih lanjut ...",
         zhhans: "更多…",
-        tr: "Daha fazla bilgi�"
+        tr: "Daha fazla bilgi�"
       };
 
       $('#banners article').append(' <a href="/' + lang + '/solder-pastes" class"read-more"> ' + translation[language] + '</a>');
