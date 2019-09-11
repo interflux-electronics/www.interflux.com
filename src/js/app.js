@@ -1,11 +1,11 @@
-import { translateReadMore } from "./functions.js";
+import { translateReadMore, bindLanguageMenu } from "./functions.js";
 
 function init() {
   translateReadMore();
+  bindLanguageMenu();
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  console.log("DOM READY");
   init();
 });
 
