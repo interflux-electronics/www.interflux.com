@@ -1,0 +1,148 @@
+{% extends "layout.html.njk" %}
+{% block meta %}
+  <title>Interflux Electronics | Produits de brasage pour l’industrie électronique</title>
+  {# <meta name="description" content=""> #}
+{% endblock %}
+{% block bodyId %}fr
+{% endblock %}
+{% block bodyClass %}html front not-logged-in no-sidebars page-home i18n-fr page-panels
+{% endblock %}
+{% block page %}
+  <div class="region region-corpus">
+    <div class="inner-region">
+      <div class="inner-region">
+        <div class="panel-display panel-1col clearfix" id="panel-home">
+          <div class="panel-panel panel-col">
+            <div>
+              <div class="panel-pane pane-block pane-menu-menu-interflux-menu" id="homepage-nav">
+                <h2 class="pane-title">Interflux menu</h2>
+                <div class="pane-content">
+                  <ul class="menu">
+                    <li class="first expanded">
+                      <a href="/fr" title="Trouver un produit par type" class="active">Produits</a>
+                      <ul class="menu">
+                        <li class="first leaf">
+                          <a href="/fr/soldering-fluxes" title="">Flux de brasage</a>
+                        </li>
+                        <li class="leaf">
+                          <a href="/fr/solder-pastes" title="">Crèmes à braser</a>
+                        </li>
+                        <li class="leaf">
+                          <a href="/fr/solder-wires" title="">Fils à braser</a>
+                        </li>
+                        <li class="leaf">
+                          <a href="/fr/spray-fluxers" title="">Fluxeur spray</a>
+                        </li>
+                        <li class="last leaf">
+                          <a href="/fr/auxiliaries" title="">Auxiliaires</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="expanded">
+                      <a href="/fr" title="Trouver un produit par process" class="active">Process</a>
+                      <ul class="menu">
+                        <li class="first leaf">
+                          <a href="/fr/wave-soldering" title="">Brasage à la vague</a>
+                        </li>
+                        <li class="leaf">
+                          <a href="/fr/selective-soldering" title="">Brasage sélectif</a>
+                        </li>
+                        <li class="leaf">
+                          <a href="/fr/reflow-soldering" title="">Brasage en refusion</a>
+                        </li>
+                        <li class="leaf">
+                          <a href="/fr/rework-and-repair" title="">Retouche et réparation</a>
+                        </li>
+                        <li class="last leaf">
+                          <a href="/fr/pre-tinning" title="">Étamage</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="leaf">
+                      <a href="/fr/company" title="Au sujet d&#039;Interflux">Entreprise</a>
+                    </li>
+                    <li class="leaf">
+                      <a href="/fr/documents" title="Trouver une fiche technique">Documents</a>
+                    </li>
+                    <li class="last leaf">
+                      <a href="/fr/contact" title="Entrer en contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="panel-separator"></div>
+              <div class="panel-pane pane-block pane-locale-language language-menu">
+                <h2 class="pane-title">Langues</h2>
+                <div class="pane-content">
+                  <ul class="language-switcher-locale-url">
+                    <li class="en first">
+                      <a href="/en" class="language-link" lang="en">
+                        <div class="flag en"></div>English</a>
+                    </li>
+                    <li class="zh-hans">
+                      <a href="/zh-hans" class="language-link" lang="zh-hans">
+                        <div class="flag zh-hans"></div>简体中文</a>
+                    </li>
+                    <li class="cs">
+                      <a href="/cs" class="language-link" lang="cs">
+                        <div class="flag cs"></div>Čeština</a>
+                    </li>
+                    <li class="de">
+                      <a href="/de" class="language-link" lang="de">
+                        <div class="flag de"></div>Deutsch</a>
+                    </li>
+                    <li class="fr active">
+                      <a href="/fr" class="language-link active" lang="fr">
+                        <div class="flag fr"></div>Français</a>
+                    </li>
+                    <li class="it">
+                      <a href="/it" class="language-link" lang="it">
+                        <div class="flag it"></div>Italiano</a>
+                    </li>
+                    <li class="id">
+                      <a href="/id" class="language-link" lang="id">
+                        <div class="flag id"></div>Bahasa Indonesia</a>
+                    </li>
+                    <li class="pt-pt">
+                      <a href="/pt-pt" class="language-link" lang="pt-pt">
+                        <div class="flag pt-pt"></div>Português</a>
+                    </li>
+                    <li class="ro">
+                      <a href="/ro" class="language-link" lang="ro">
+                        <div class="flag ro"></div>Română</a>
+                    </li>
+                    <li class="ru">
+                      <a href="/ru" class="language-link" lang="ru">
+                        <div class="flag ru"></div>Русский</a>
+                    </li>
+                    <li class="th">
+                      <a href="/th" class="language-link" lang="th">
+                        <div class="flag th"></div>ภาษาไทย</a>
+                    </li>
+                    <li class="tr">
+                      <a href="/tr" class="language-link" lang="tr">
+                        <div class="flag tr"></div>Türkçe</a>
+                    </li>
+                    <li class="pl">
+                      <a href="/pl" class="language-link" lang="pl">
+                        <div class="flag pl"></div>Polski</a>
+                    </li>
+                    <li class="es">
+                      <a href="/es" class="language-link" lang="es">
+                        <div class="flag es"></div>Español</a>
+                    </li>
+                    <li class="sv last">
+                      <a href="/sv" class="language-link" lang="sv">
+                        <div class="flag sv"></div>Svenska</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
