@@ -25,7 +25,22 @@ const init = async () => {
 
 const prepare = arr => {
   const host = "http://www.interflux.com";
-  const locales = ["/en", "/de"];
+  const locales = [
+    "/en"
+    // "/de"
+    // "/fr"
+    // "/zh-hans"
+    // "/cs"
+    // "/it"
+    // "/id"
+    // "/pt-pt"
+    // "/ro"
+    // "/ru"
+    // "/th"
+    // "/tr",
+    // "/pl",
+    // "/es"
+  ];
   const paths = [
     "",
     "/soldering-fluxes",
