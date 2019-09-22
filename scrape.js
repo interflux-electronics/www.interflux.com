@@ -8,38 +8,63 @@ const init = async () => {
   console.log(`------`);
   console.log(`Scraping interflux.com`);
 
-  const arr = [];
+  const pages = listPages();
 
-  prepare(arr);
+  await fetchPages(pages);
 
-  await scrape(arr);
+  let success = 0;
+  pages.forEach(page => {
+    if (page.fetched) {
+      success++;
+    }
+  });
 
-  build(arr);
-  clean(arr);
-  write(arr);
+  console.log(`------`);
+  console.log(`Pages fetched: ${success} / ${pages.length}`);
+  console.log(`------`);
 
+  build(pages);
+  prettify(pages);
+  write(pages);
+
+  console.log(`------`);
+
+  const images = listImages(pages);
+
+  await scrapeImages(images);
+
+  let success2 = 0;
+  images.forEach(image => {
+    if (image.fetched) {
+      success2++;
+    }
+  });
+
+  console.log(`------`);
+  console.log(`Images fetched: ${success2} / ${images.length}`);
   console.log(`------`);
   console.log(`Done!`);
   console.log(`------`);
 };
 
-const prepare = arr => {
+const listPages = () => {
+  const arr = [];
   const host = "http://www.interflux.com";
   const locales = [
-    "/en"
-    // "/de"
-    // "/fr"
-    // "/zh-hans"
-    // "/cs"
-    // "/it"
-    // "/id"
-    // "/pt-pt"
-    // "/ro"
-    // "/ru"
-    // "/th"
-    // "/tr",
-    // "/pl",
-    // "/es"
+    "/en",
+    "/de",
+    "/fr",
+    "/zh-hans",
+    "/cs",
+    "/it",
+    "/id",
+    "/pt-pt",
+    "/ro",
+    "/ru",
+    "/th",
+    "/tr",
+    "/pl",
+    "/es"
   ];
   const paths = [
     "",
@@ -62,33 +87,72 @@ const prepare = arr => {
     paths.forEach(path => {
       const url = `${host}${locale}${path}`;
       const uri = `${locale}${path}`;
-      arr.push({ url, uri });
+      const fetched = false;
+      arr.push({ url, uri, fetched });
     });
   });
 
   console.log(`------`);
   console.log(`URLs to scrape: ${arr.length}`);
   console.log(`------`);
+
+  return arr;
 };
 
-async function scrape(arr) {
+async function fetchPages(pages) {
   const promises = [];
-  arr.forEach(page => {
-    promises.push(fetch(page));
-  });
+  const concurrency = 10;
+  for (let i = 1; i <= concurrency; i++) {
+    console.log(`Starting task runner ${i}`);
+    const promise = fetchRemainingPage(pages, i);
+    promises.push(promise);
+  }
+  console.log(`------`);
   return Promise.all(promises);
 }
 
-async function fetch(page) {
-  console.log(`Scraping ${page.url}`);
+async function fetchRemainingPage(pages, i) {
+  await setTimeout(() => {}, 1);
+  const remainingPage = pages.find(page => {
+    return !page.fetched && !page.fetching;
+  });
+  if (remainingPage) {
+    await fetchPage(remainingPage, i);
+    return fetchRemainingPage(pages, i);
+  } else {
+    // console.log(`Runner ${i} - DONE`);
+  }
+}
 
+async function fetchPage(page, i) {
+  page.fetching = true;
+  console.log(`Runner ${i} - Fetching ${page.url}`);
+  // await setTimeout(() => {}, 2000);
   const success = html => {
-    console.log("COMPLETED", page.url);
+    // console.log(`Runner ${i} - FETCHED`);
+    page.fetched = true;
+    page.fetching = false;
     page.dom = HTMLParser.parse(html);
     page.id = page.uri.replace(/^\//g, "").replace("/", "-");
     page.class = page.dom.querySelector("body").classNames.join(" ");
     page.title = page.dom.querySelector("head title").rawText;
-    page.corpus = page.dom.querySelector(".region.region-corpus").innerHTML;
+    page.corpus = page.dom
+      .querySelector(".region.region-corpus")
+      .innerHTML.replace(
+        /src="http:\/\/www.interflux.com\/sites\/default\/files\//g,
+        'src="/assets/images/'
+      )
+      .replace(
+        /href="http:\/\/www.interflux.com\/sites\/default\/files\/documents\//g,
+        'href="/assets/documents/'
+      )
+      .replace(/src="\/modules\/file\/icons\//g, 'src="/assets/images/')
+      .replace(/%20/g, "-")
+      .replace(/%C2%B5/g, "micro")
+      .replace(/%E2%84%A2-/g, "")
+      .replace(/%40/g, "@")
+      .replace(/%28/g, "")
+      .replace(/%29/g, "");
     page.hasHighlight = page.dom.querySelector(".region.region-highlight")
       ? true
       : false;
@@ -98,6 +162,7 @@ async function fetch(page) {
   };
 
   const fail = () => {
+    page.fetching = false;
     console.error("FAILED", page.url);
   };
 
@@ -135,7 +200,7 @@ const build = arr => {
   });
 };
 
-const clean = arr => {
+const prettify = arr => {
   console.log(`------`);
   console.log(`Cleaning up the HTML`);
 
@@ -168,6 +233,97 @@ const write = arr => {
         console.log(`Created file: ${dest}`);
       });
     });
+  });
+};
+
+const listImages = pages => {
+  const arr = [];
+
+  pages.forEach(page => {
+    const images = page.dom.querySelectorAll(".region.region-corpus img");
+    Array.from(images).forEach(img => {
+      const src = img.attributes.src;
+      const url = src.replace(/^\//, "http://www.interflux.com/");
+      arr.push(url);
+    });
+  });
+
+  const set = new Set(arr);
+
+  console.log(`------`);
+  console.log(`Image URLs found: ${arr.length}`);
+  console.log(`Unique image URLs: ${set.size}`);
+  console.log(`------`);
+
+  const list = [];
+  set.forEach(url => {
+    list.push({ url });
+  });
+
+  return list;
+};
+
+const scrapeImages = async images => {
+  const promises = [];
+  const concurrency = 5;
+  for (let i = 1; i <= concurrency; i++) {
+    console.log(`Starting task runner ${i}`);
+    const promise = fetchRemainingImage(images, i);
+    promises.push(promise);
+  }
+  console.log(`------`);
+  return Promise.all(promises);
+};
+
+const fetchRemainingImage = async (images, i) => {
+  await setTimeout(() => {}, 1);
+  const remainingImage = images.find(image => {
+    return !image.fetched && !image.fetching;
+  });
+  if (remainingImage) {
+    await fetchImage(remainingImage, i);
+    return fetchRemainingImage(images, i);
+  }
+};
+
+const fetchImage = async image => {
+  console.log(`Fetching ${image.url}`);
+
+  const filename = image.url
+    .split(/\//g)
+    .pop()
+    .replace(/%20/g, "-")
+    .replace(/%C2%B5/g, "micro")
+    .replace(/%E2%84%A2-/g, "")
+    .replace(/%40/g, "@")
+    .replace(/%28/g, "")
+    .replace(/%29/g, "");
+  const path = `src/public/assets/images/${filename}`;
+
+  image.fetching = true;
+
+  return new Promise((resolve, reject) => {
+    const error = () => {
+      console.log("ERROR");
+      image.fetched = false;
+      reject();
+    };
+
+    const finish = () => {
+      console.log("FINISH");
+      image.fetched = true;
+      resolve();
+    };
+
+    const close = () => {
+      image.fetching = false;
+    };
+
+    return request(image.url)
+      .pipe(fs.createWriteStream(path))
+      .on("error", error)
+      .on("finish", finish)
+      .on("close", close);
   });
 };
 
