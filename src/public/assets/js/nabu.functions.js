@@ -56,7 +56,7 @@ nabu = {
         for (var j = 0; j < 10; j++) {
           if ($(this).hasClass("bg-" + j)) {
             img =
-              '<img src="/assets/images/legacy/banner-"' +
+              '<img src="/assets/images/banner-"' +
               j +
               '.jpg" width:"958" height="220" />';
             break;
@@ -543,7 +543,7 @@ nabu = {
       ".home-2, .home-3, .home-4, .home-5, .home-6, .home-7, .home-9, .home-10"
     ).css(
       "background-image",
-      "url(/assets/images/legacy/homepage-images-2.jpg)"
+      "url(/assets/images/homepage-images-2.jpg)"
     );
   },
   documentsPage: function() {

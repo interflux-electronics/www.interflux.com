@@ -5,7 +5,7 @@
   //   // temporary -------------
   //
   //   var lang = $("html").attr("lang");
-  //   // $('#banners .stage').html('<a href="/en/solder-pastes"><article id="productronica-2015" class="bg-9 image-done"><img src="/assets/images/legacy/banner-DP5600.jpg" width:"958" height="220" style="opacity: 1;"></article></a>');
+  //   // $('#banners .stage').html('<a href="/en/solder-pastes"><article id="productronica-2015" class="bg-9 image-done"><img src="/assets/images/banner-DP5600.jpg" width:"958" height="220" style="opacity: 1;"></article></a>');
   //
   //   //<a href="/' + lang + '/solder-pastes"></a>
   //
