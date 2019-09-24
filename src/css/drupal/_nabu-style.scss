@@ -22,6 +22,7 @@ body {
   }
 
   #lmpa {
+    display: block !important; // TEMP
     background: $dark-blue;
     background: rgb(35, 87, 140);
     background: linear-gradient(
@@ -1823,8 +1824,7 @@ em {
 
 #document-list .document-pdf .field a.email {
   padding-left: 21px;
-  background: url(/assets/images//document-email-icon.png) no-repeat 0
-    4px;
+  background: url(/assets/images/document-email-icon.png) no-repeat 0 4px;
 }
 #document-list .no-results {
   font-style: oblique;
