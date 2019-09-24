@@ -1,13 +1,12 @@
 {
-  "name": "floatplane.dev",
+  "name": "interflux.com",
   "version": "1.0.0",
-  "homepage": "https://floatplane.dev/",
+  "homepage": "https://interflux.com/",
   "description": "Website of a team of programmers / engineers in Melbourne, Australia",
-  "repository": "git@github.com:janwerkhoven/floatplane.dev.git",
-  "bugs": "https://github.com/janwerkhoven/floatplane.dev/issues",
+  "repository": "git@github.com:janwerkhoven/interflux.com.git",
+  "bugs": "https://github.com/janwerkhoven/interflux.com/issues",
   "contributors": [
-    "Jan Werkhoven <jw@floatplane.dev> (https://github.com/janwerkhoven)",
-    "Richard Verheyen <rv@floatplane.dev> (https://github.com/richardverheyen)"
+    "Jan Werkhoven <j.werkhoven@interflux.com> (https://github.com/janwerkhoven)"
   ],
   "license": "UNLICENSED",
   "private": true,

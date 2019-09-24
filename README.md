@@ -2,7 +2,7 @@
 
 #### What
 
-The [website](https://floatplane.dev/) of a team of programmers and engineers in Melbourne, Australia.
+The [website](https://interflux.com/) of a team of programmers and engineers in Melbourne, Australia.
 
 #### Highlights
 
@@ -13,14 +13,14 @@ The [website](https://floatplane.dev/) of a team of programmers and engineers in
 
 #### Get in touch
 
-Jan - <a href="mailto:jw@floatplane.dev">jw@floatplane.dev</a>  
-Richard - <a href="mailto:rv@floatplane.dev">rv@floatplane.dev</a>
+Jan - <a href="mailto:j.werkhoven@interflux.com">j.werkhoven@interflux.com</a>  
+Richard - <a href="mailto:rv@interflux.com">rv@interflux.com</a>
 
 #### Usage
 
 ```
-git clone git@github.com:janwerkhoven/floatplane.dev.git
-cd floatplane.dev
+git clone git@github.com:janwerkhoven/interflux.com.git
+cd interflux.com
 yarn install
 gulp serve
 open http://localhost:9000

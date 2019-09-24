@@ -35,7 +35,7 @@ function html() {
         path: ["src/html"],
         data: {
           name: "Floatplane",
-          url: "https://floatplane.dev/",
+          url: "https://interflux.com/",
           language: "en",
           themeColour: "#ffff00",
           googleSiteVerification: "XXX"

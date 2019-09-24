@@ -18,8 +18,8 @@ echo "Path: $PWD"
 echo "Branch: $BRANCH"
 echo "Revision: $REVISION"
 echo "----------"
-echo "cd /var/www/floatplane.dev"
-cd /var/www/floatplane.dev
+echo "cd /var/www/interflux.com"
+cd /var/www/interflux.com
 echo "----------"
 echo "git checkout $BRANCH -f"
 git checkout $BRANCH -f
