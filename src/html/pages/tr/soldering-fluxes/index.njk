@@ -8,1252 +8,1442 @@
 {% block bodyClass %}html not-front not-logged-in no-sidebars page-soldering-fluxes page-products i18n-tr section-soldering-fluxes page-panels
 {% endblock %}
 {% block page %}
-  {% include "partials/highlight.njk" %}
+  <div class="region region-language">
+    <div class="inner-region">
+      <div id="block-locale-language" class="block block-locale language-menu block grid-24 first last odd" role="complementary">
+        <div class="inner-block">
+          <ul class="language-switcher-locale-url">
+            <li class="en first">
+              <a href="/en/soldering-fluxes" class="language-link" lang="en">
+                <div class="flag en"></div>English</a>
+            </li>
+            <li class="zh-hans">
+              <a href="/zh-hans/soldering-fluxes" class="language-link" lang="zh-hans">
+                <div class="flag zh-hans"></div>简体中文</a>
+            </li>
+            <li class="cs">
+              <a href="/cs/soldering-fluxes" class="language-link" lang="cs">
+                <div class="flag cs"></div>Čeština</a>
+            </li>
+            <li class="de">
+              <a href="/de/soldering-fluxes" class="language-link" lang="de">
+                <div class="flag de"></div>Deutsch</a>
+            </li>
+            <li class="fr">
+              <a href="/fr/soldering-fluxes" class="language-link" lang="fr">
+                <div class="flag fr"></div>Français</a>
+            </li>
+            <li class="it">
+              <a href="/it/soldering-fluxes" class="language-link" lang="it">
+                <div class="flag it"></div>Italiano</a>
+            </li>
+            <li class="id">
+              <a href="/id/soldering-fluxes" class="language-link" lang="id">
+                <div class="flag id"></div>Bahasa Indonesia</a>
+            </li>
+            <li class="pt-pt">
+              <a href="/pt-pt/soldering-fluxes" class="language-link" lang="pt-pt">
+                <div class="flag pt-pt"></div>Português</a>
+            </li>
+            <li class="ro">
+              <a href="/ro/soldering-fluxes" class="language-link" lang="ro">
+                <div class="flag ro"></div>Română</a>
+            </li>
+            <li class="ru">
+              <a href="/ru/soldering-fluxes" class="language-link" lang="ru">
+                <div class="flag ru"></div>Русский</a>
+            </li>
+            <li class="th">
+              <a href="/th/soldering-fluxes" class="language-link" lang="th">
+                <div class="flag th"></div>ภาษาไทย</a>
+            </li>
+            <li class="tr active">
+              <a href="/tr/soldering-fluxes" class="language-link active" lang="tr">
+                <div class="flag tr"></div>Türkçe</a>
+            </li>
+            <li class="pl">
+              <a href="/pl/soldering-fluxes" class="language-link" lang="pl">
+                <div class="flag pl"></div>Polski</a>
+            </li>
+            <li class="es">
+              <a href="/es/soldering-fluxes" class="language-link" lang="es">
+                <div class="flag es"></div>Español</a>
+            </li>
+            <li class="sv last">
+              <a href="/sv/soldering-fluxes" class="language-link" lang="sv">
+                <div class="flag sv"></div>Svenska</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-header">
+    <div class="inner-region">
+      <div id="block-block-11" class="block block-block grid-9 first odd">
+        <div class="inner-block">
+          <p>
+            <a href="/" title="Interflux Electronics" target="_self"><img src="/assets/images/interflux-electronics-logo.png" width="343" height="87" alt="Interflux Electronics logo"/></a>
+          </p>
+        </div>
+      </div>
+      <div id="block-menu-menu-interflux-menu" class="block block-menu grid-15 header-nav last even" role="navigation">
+        <div class="inner-block">
+          <ul class="menu">
+            <li class="first expanded active-trail">
+              <a href="/tr" title="Tipe göre ürün arama" class="active-trail">Ürünler</a>
+              <ul class="menu">
+                <li class="first leaf active-trail">
+                  <a href="/tr/soldering-fluxes" title="" class="active-trail active">Lehimleme Fluksları</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/solder-pastes" title="">Krem lehimler</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/solder-wires" title="">Lehim Telleri</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/spray-fluxers" title="">Fluks Sprey Üniteleri</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/tr/auxiliaries" title="">Yardımcı Ürünler</a>
+                </li>
+              </ul>
+            </li>
+            <li class="expanded">
+              <a href="/tr" title="Sürece göre ürün arama">Süreçler</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/tr/selective-soldering" title="">Bölgesel Lehimleme</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/wave-soldering" title="">Dalga Lehimleme</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/rework-and-repair" title="">Düzeltme ve Tamir</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/reflow-soldering" title="">Reflov Lehimleme</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/tr/pre-tinning" title="">Ön Lehim Kaplama</a>
+                </li>
+              </ul>
+            </li>
+            <li class="leaf">
+              <a href="/tr/company" title="Interflux hakkında">Hakkımızda</a>
+            </li>
+            <li class="leaf">
+              <a href="/tr/documents" title="Teknik bilgi arama">Dokümanlar</a>
+            </li>
+            <li class="last leaf">
+              <a href="/tr/contact" title="İletişimde kalın">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-highlight">
+    <div class="inner-region">
+      <div id="banners">
+        <div class="preload"></div>
+        <div class="stage">
+          <article id="ipc-apex-2017">
+            <a href="http://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
+              <picture>
+                <source srcset="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg 2x, http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018.jpg 1x"></source>
+                <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg" alt="Visit use at IPC APEX 2018 in San Diego"/>
+              </picture>
+            </a>
+          </article>
+          <article id="productronica-2017">
+            <a href="http://www.productronica.com/" target="_blank" title="Visit us at Productronica 2017">
+              <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/productronica-banner-2017.jpg"/>
+            </a>
+          </article>
+          <article id="lmpa">
+            <a href="https://lmpa.interflux.com" target="_blank">
+              <h1>Solder
+                <strong>5 times</strong>
+                faster whilst maintaining
+                <strong>zero defects</strong>
+              </h1>
+              <h1>Discover
+                <mark>LMPA<span>™</span>
+                </mark>
+              </h1>
+              <div id="video">
+                <video id="movie" width="276" height="220" autoplay loop>
+                  <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
+                  Your browser doesn't support HTML5 video tag.
+                </video>
+                <script></script>
+                <p>Speed: 30 mm/s</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <nav>
+          <div id="prev">
+            <div></div>
+          </div>
+          <div id="next">
+            <div></div>
+          </div>
+          <div id="timer">
+            <div></div>
+          </div>
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
   <div class="region region-corpus">
     <div class="inner-region">
-      <div class="inner-region">
-        <div class="panel-display panel-1col clearfix">
-          <div class="panel-panel panel-col">
-            <div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">Alkol bazlı</div>
-                  <div class="fs18">lehimleme fluksları</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_5 product-row-group view-dom-id-3c2559b41ec88a5b8302baf3437950f7">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_OSPI-3311M_1.jpg" width="200" height="200" alt="OSPI 3311M soldering flux"/></div>
-                        <div class="product-name">
-                          <h3>OSPI 3311M</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>YENI</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Alkol bazlı fluks</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Dalga lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Yüksek oksit temizleme gücü</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>OSP lehimleme için</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® OSPI 3311M bir veya daha fazla reflov lehimlemeden geçen OSP kaplamalı kartların lehimlenmesinde kullanılan ve temizleme gerektirmeyen alkol bazlı flukstır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® OSPI 3311M bir veya daha fazla reflov lehimlemeden geçen OSP kaplamalı kartların lehimlenmesinde kullanılan ve temizleme gerektirmeyen alkol bazlı flukstır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için uygun<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=OSPI 3311M" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1339" title="OSPI 3311M" class="nid">1339</a>
+      <div class="panel-display panel-1col clearfix">
+        <div class="panel-panel panel-col">
+          <div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">Alkol bazlı</div>
+                <div class="fs18">lehimleme fluksları</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_5 product-row-group view-dom-id-4146df8a0510eb71a850f9a0b6c1f99a">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_OSPI-3311M_1.jpg" width="200" height="200" alt="OSPI 3311M soldering flux"/></div>
+                      <div class="product-name">
+                        <h3>OSPI 3311M</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-2005M_3.jpg" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>IF 2005M</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Alkol bazlı</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Dalga lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Konformal kaplama ile yüksek uyumluluk</p>
-                            </li>
-                            <li>
-                              <div class="icon19"></div>
-                              <p>Artıksız (No-residue™)</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 2005M uluslararası üne sahip, reçine ya da sentetik reçine içermeyen, artık bırakmayan ve temizleme gerektirmeyen flukstır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 2005M uluslararası üne sahip, reçine ya da sentetik reçine içermeyen, artık bırakmayan ve temizleme gerektirmeyen flukstır.<br/>
-                            Interflux® IF 2005M QPL listesindedir (MIL-F-14256F onaylıdır).<br/>
-                            Kurşunlu ve kurşunsuz süreçler için uygun<br/>
-                            Sprey ve köpük flukslama için uygun<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Katı içeriği: %1.85 ±0.15<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-2005M-DE.pdf" type="application/pdf; length=466453" title="TD IF 2005M-DE.pdf">Technisches Datenblatt IF 2005M</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/IF-2005--series-application-doc-DE_0.pdf" type="application/pdf; length=234680" title="IF 2005- series application doc-DE.pdf">IF 2005-Serie Anwendung</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-2005M-FR.pdf" type="application/pdf; length=467989" title="TD IF 2005M-FR.pdf">Fiche technique IF 2005M</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/IF-2005--series-application-doc-FR.pdf" type="application/pdf; length=233410" title="IF 2005- series application doc-FR.pdf">Document d'application de la série IF 2005</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-2005M_0.pdf" type="application/pdf; length=462008" title="TD IF 2005M.pdf">Technical Data Sheet IF 2005M</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/IF-2005--series-application-doc.pdf" type="application/pdf; length=229382" title="IF 2005- series application doc.pdf">IF 2005 series application document</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 2005M" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1336" title="IF 2005M" class="nid">1336</a>
+                      <div class="product-highlight">
+                        <h3>YENI</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-2005K_7.jpg" width="200" height="200" alt="IF 2005K"/></div>
-                        <div class="product-name">
-                          <h3>IF 2005K</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Alkol bazlı</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Dalga lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Konformal kaplama ile yüksek uyumluluk</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Düşük artıklı</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 2005K %2.5 katı içerikli, reçine veya sentetik reçine içermeyen ve temizleme gerektirmeyen flukstır. Lehimleme sürecinin 2005M flukstan daha fazla aktiflik gerektirdiği durumlarda kullanılır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 2005K %2.5 katı içerikli, reçine veya sentetik reçine içermeyen ve temizleme gerektirmeyen flukstır. Lehimleme sürecinin 2005M flukstan daha fazla aktiflik gerektirdiği durumlarda kullanılır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için uygun<br/>
-                            Sprey ve köpük flukslama için uygun<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Katı içeriği: %2.5 ±0.3<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-2005K-DE.pdf" type="application/pdf; length=480696" title="TD IF 2005K-DE.pdf">Technisches Datenblatt IF 2005K</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/IF-2005--series-application-doc-DE_0.pdf" type="application/pdf; length=234680" title="IF 2005- series application doc-DE.pdf">IF 2005-Serie Anwendung</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-2005K-FR_0.pdf" type="application/pdf; length=586896" title="TD IF 2005K-FR.pdf">Fiche technique IF 2005K</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/IF-2005--series-application-doc-FR.pdf" type="application/pdf; length=233410" title="IF 2005- series application doc-FR.pdf">Document d'application de la série IF 2005</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-2005K_0.pdf" type="application/pdf; length=463692" title="TD IF 2005K.pdf">Technical Data Sheet IF 2005K</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/IF-2005--series-application-doc.pdf" type="application/pdf; length=229382" title="IF 2005- series application doc.pdf">IF 2005 series application document</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 2005K" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1338" title="IF 2005K" class="nid">1338</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Alkol bazlı fluks</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Dalga lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Yüksek oksit temizleme gücü</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>OSP lehimleme için</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-2005C_7.jpg" width="200" height="200" alt="IF 2005C"/></div>
-                        <div class="product-name">
-                          <h3>IF 2005C</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Alkol bazlı</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Bölgesel lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Ön lehim kaplama için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Yüksek oksit temizleme gücü</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>Uzun ön ısıtmaya dayanıklı</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Konformal kaplama ile yüksek uyumluluk</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 2005C %3.3 katı içerikli, reçine veya sentetik reçine içermeyen ve temizleme gerektirmeyen flukstır. Lehimleme sürecinin 2005M veya 2005K flukslardan daha fazla aktiflik gerektirdiği durumlarda kullanılır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 2005C %3.3 katı içerikli, reçine veya sentetik reçine içermeyen ve temizleme gerektirmeyen flukstır. Lehimleme sürecinin 2005M veya 2005K flukslardan daha fazla aktiflik gerektirdiği durumlarda kullanılır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için uygun<br/>
-                            Sprey ve köpük flukslama için uygun<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Katı içeriği: %3.3 ± 0.3<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-2005C-DE_0.pdf" type="application/pdf; length=484180" title="TD IF 2005C-DE.pdf">Technisches Datenblatt IF 2005C</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/IF-2005--series-application-doc-DE_0.pdf" type="application/pdf; length=234680" title="IF 2005- series application doc-DE.pdf">IF 2005-Serie Anwendung</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-2005C-FR.pdf" type="application/pdf; length=556116" title="TD IF 2005C-FR.pdf">Fiche technique IF 2005C</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/IF-2005--series-application-doc-FR.pdf" type="application/pdf; length=233410" title="IF 2005- series application doc-FR.pdf">Document d'application de la série IF 2005</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-2005C.pdf" type="application/pdf; length=467663" title="TD IF 2005C.pdf">Technical Data Sheet IF 2005C</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/IF-2005--series-application-doc.pdf" type="application/pdf; length=229382" title="IF 2005- series application doc.pdf">IF 2005 series application document</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 2005C" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1337" title="IF 2005C" class="nid">1337</a>
+                      <div class="product-summary">
+                        <p>Interflux® OSPI 3311M bir veya daha fazla reflov lehimlemeden geçen OSP kaplamalı kartların lehimlenmesinde kullanılan ve temizleme gerektirmeyen alkol bazlı flukstır.
+                        </p>
                       </div>
+                      <div class="product-details">
+                        <p>Interflux® OSPI 3311M bir veya daha fazla reflov lehimlemeden geçen OSP kaplamalı kartların lehimlenmesinde kullanılan ve temizleme gerektirmeyen alkol bazlı flukstır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için uygun<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Halojen içeriği: %0.00</p>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=OSPI 3311M" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1339" title="OSPI 3311M" class="nid">1339</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-2005M_3.jpg" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>IF 2005M</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Alkol bazlı</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Dalga lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Konformal kaplama ile yüksek uyumluluk</p>
+                          </li>
+                          <li>
+                            <div class="icon19"></div>
+                            <p>Artıksız (No-residue™)</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 2005M uluslararası üne sahip, reçine ya da sentetik reçine içermeyen, artık bırakmayan ve temizleme gerektirmeyen flukstır.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 2005M uluslararası üne sahip, reçine ya da sentetik reçine içermeyen, artık bırakmayan ve temizleme gerektirmeyen flukstır.<br/>
+                          Interflux® IF 2005M QPL listesindedir (MIL-F-14256F onaylıdır).<br/>
+                          Kurşunlu ve kurşunsuz süreçler için uygun<br/>
+                          Sprey ve köpük flukslama için uygun<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Katı içeriği: %1.85 ±0.15<br/>
+                          Halojen içeriği: %0.00</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-2005M-DE.pdf" type="application/pdf; length=466453" title="TD IF 2005M-DE.pdf">Technisches Datenblatt IF 2005M</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/IF-2005--series-application-doc-DE_0.pdf" type="application/pdf; length=234680" title="IF 2005- series application doc-DE.pdf">IF 2005-Serie Anwendung</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-2005M-FR.pdf" type="application/pdf; length=467989" title="TD IF 2005M-FR.pdf">Fiche technique IF 2005M</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/IF-2005--series-application-doc-FR.pdf" type="application/pdf; length=233410" title="IF 2005- series application doc-FR.pdf">Document d'application de la série IF 2005</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-2005M_0.pdf" type="application/pdf; length=462008" title="TD IF 2005M.pdf">Technical Data Sheet IF 2005M</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/IF-2005--series-application-doc.pdf" type="application/pdf; length=229382" title="IF 2005- series application doc.pdf">IF 2005 series application document</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 2005M" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1336" title="IF 2005M" class="nid">1336</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-2005K_7.jpg" width="200" height="200" alt="IF 2005K"/></div>
+                      <div class="product-name">
+                        <h3>IF 2005K</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Alkol bazlı</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Dalga lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Konformal kaplama ile yüksek uyumluluk</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Düşük artıklı</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 2005K %2.5 katı içerikli, reçine veya sentetik reçine içermeyen ve temizleme gerektirmeyen flukstır. Lehimleme sürecinin 2005M flukstan daha fazla aktiflik gerektirdiği durumlarda kullanılır.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 2005K %2.5 katı içerikli, reçine veya sentetik reçine içermeyen ve temizleme gerektirmeyen flukstır. Lehimleme sürecinin 2005M flukstan daha fazla aktiflik gerektirdiği durumlarda kullanılır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için uygun<br/>
+                          Sprey ve köpük flukslama için uygun<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Katı içeriği: %2.5 ±0.3<br/>
+                          Halojen içeriği: %0.00</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-2005K-DE.pdf" type="application/pdf; length=480696" title="TD IF 2005K-DE.pdf">Technisches Datenblatt IF 2005K</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/IF-2005--series-application-doc-DE_0.pdf" type="application/pdf; length=234680" title="IF 2005- series application doc-DE.pdf">IF 2005-Serie Anwendung</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-2005K-FR_0.pdf" type="application/pdf; length=586896" title="TD IF 2005K-FR.pdf">Fiche technique IF 2005K</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/IF-2005--series-application-doc-FR.pdf" type="application/pdf; length=233410" title="IF 2005- series application doc-FR.pdf">Document d'application de la série IF 2005</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-2005K_0.pdf" type="application/pdf; length=463692" title="TD IF 2005K.pdf">Technical Data Sheet IF 2005K</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/IF-2005--series-application-doc.pdf" type="application/pdf; length=229382" title="IF 2005- series application doc.pdf">IF 2005 series application document</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 2005K" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1338" title="IF 2005K" class="nid">1338</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-2005C_7.jpg" width="200" height="200" alt="IF 2005C"/></div>
+                      <div class="product-name">
+                        <h3>IF 2005C</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Alkol bazlı</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Bölgesel lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Ön lehim kaplama için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Yüksek oksit temizleme gücü</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>Uzun ön ısıtmaya dayanıklı</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Konformal kaplama ile yüksek uyumluluk</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 2005C %3.3 katı içerikli, reçine veya sentetik reçine içermeyen ve temizleme gerektirmeyen flukstır. Lehimleme sürecinin 2005M veya 2005K flukslardan daha fazla aktiflik gerektirdiği durumlarda kullanılır.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 2005C %3.3 katı içerikli, reçine veya sentetik reçine içermeyen ve temizleme gerektirmeyen flukstır. Lehimleme sürecinin 2005M veya 2005K flukslardan daha fazla aktiflik gerektirdiği durumlarda kullanılır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için uygun<br/>
+                          Sprey ve köpük flukslama için uygun<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Katı içeriği: %3.3 ± 0.3<br/>
+                          Halojen içeriği: %0.00</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-2005C-DE_0.pdf" type="application/pdf; length=484180" title="TD IF 2005C-DE.pdf">Technisches Datenblatt IF 2005C</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/IF-2005--series-application-doc-DE_0.pdf" type="application/pdf; length=234680" title="IF 2005- series application doc-DE.pdf">IF 2005-Serie Anwendung</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-2005C-FR.pdf" type="application/pdf; length=556116" title="TD IF 2005C-FR.pdf">Fiche technique IF 2005C</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/IF-2005--series-application-doc-FR.pdf" type="application/pdf; length=233410" title="IF 2005- series application doc-FR.pdf">Document d'application de la série IF 2005</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-2005C.pdf" type="application/pdf; length=467663" title="TD IF 2005C.pdf">Technical Data Sheet IF 2005C</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/IF-2005--series-application-doc.pdf" type="application/pdf; length=229382" title="IF 2005- series application doc.pdf">IF 2005 series application document</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 2005C" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1337" title="IF 2005C" class="nid">1337</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">Düşük VOC</div>
-                  <div class="fs18">lehimleme fluksları</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_7 product-row-group view-dom-id-7a909b7a1b3ead37318598464ff50384">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/SelectIF2040-2.png" width="200" height="200" alt="SelectIF 2040"/></div>
-                        <div class="product-name">
-                          <h3>SELECTIF 2040</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>YENI</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Su bazlı fluks</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Bölgesel lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Yüksek oksit temizleme gücü</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>Uzun ön ısıtmaya dayanıklı</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Konformal kaplama ile yüksek uyumluluk</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Düşük artıklı</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® SelectIF 2040 su bazlı, temizleme gerektirmeyen, geniş süreç penceresine ve düşük kalıntı formülüne sahip bölgesel lehimleme fluksıdır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® SelectIF 2040 su bazlı, temizleme gerektirmeyen, geniş süreç penceresine ve düşük kalıntı formülüne sahip bölgesel lehimleme fluksıdır.<br/>
-                            Yüksek süreç sıcaklıklarına ve uzun süreçlere dayanıklıdır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için uygun<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Katı içeriği: %6.5 ±0.2<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SelectIF-2040-DE_0.pdf" type="application/pdf; length=429820" title="TD SelectIF 2040-DE.pdf">Technisches Datenblatt SelectIF 2040</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SelectIF-2040-FR_0.pdf" type="application/pdf; length=458922" title="TD SelectIF 2040-FR.pdf">Fiche technique SelectIF 2040</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SelectIF-2040.pdf" type="application/pdf; length=408961" title="TD SelectIF 2040.pdf">Technical Data Sheet SelectIF 2040</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SELECTIF 2040" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1294" title="SELECTIF 2040" class="nid">1294</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">Düşük VOC</div>
+                <div class="fs18">lehimleme fluksları</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_7 product-row-group view-dom-id-5d57010652b76b7c7a75dea9e5ce6e2d">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/SelectIF2040-2.png" width="200" height="200" alt="SelectIF 2040"/></div>
+                      <div class="product-name">
+                        <h3>SELECTIF 2040</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009M_7.jpg" width="200" height="200" alt="PACIFIC 2009M"/></div>
-                        <div class="product-name">
-                          <h3>PACIFIC 2009M</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Su bazlı fluks</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Dalga lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Bölgesel lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Ön lehim kaplama için</p>
-                            </li>
-                            <li>
-                              <div class="icon06"></div>
-                              <p>Sprey flukslama için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Konformal kaplama ile yüksek uyumluluk</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Düşük artıklı</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® PacIFic 2009M su bazlı, temizleme gerektirmeyen, ağırlıklı olarak dalga ve bölgesel lehimleme için kullanılan fluks çeşididir.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® PacIFic 2009M su bazlı, temizleme gerektirmeyen, ağırlıklı olarak dalga ve bölgesel lehimleme için kullanılan fluks çeşididir.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için uygun<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Katı içeriği: %3.7 ±0.2<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-PacIFic-2009M-DE_0.pdf" type="application/pdf; length=439464">TD PacIFic 2009M-DE.pdf</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-PacIFic-2009M-FR.pdf" type="application/pdf; length=401502" title="TD PacIFic 2009M-FR.pdf">Fiche technique PacIFic 2009M</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-PacIFic-2009M_0.pdf" type="application/pdf; length=433215" title="TD PacIFic 2009M.pdf">Technical Data Sheet PacIFic 2009M</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/Kyzen_P2009M.pdf" type="application/pdf; length=62971" title="Kyzen_P2009M.pdf">Cleaning PACIFIC 2009M by KYZEN</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009M" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1295" title="PACIFIC 2009M" class="nid">1295</a>
+                      <div class="product-highlight">
+                        <h3>YENI</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009MLF_8.jpg" width="200" height="200" alt="PACIFIC 2009MLF"/></div>
-                        <div class="product-name">
-                          <h3>PACIFIC 2009MLF</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Su bazlı fluks</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Dalga lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Bölgesel lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon06"></div>
-                              <p>Sprey flukslama için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>
-                                <strong>Lehim topu oluşturmayan formasyon</strong>
-                              </p>
-                            </li>
-                          </ul>
-                          <p>Lehim topu oluşturmayan formasyon</p>
-                        </div>
-                        <div class="product-summary">
-                          <p>PacIFic
-                            <strong></strong>2009MLF su bazlı, temizleme gerektirmeyen, mikro lehim topu oluşmasını en aza indirmek için geliştirilen lehimleme fluksıdır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>PacIFic 2009MLF 2009MLF su bazlı, temizleme gerektirmeyen, mikro lehim topu oluşmasını en aza indirmek için geliştirilen lehimleme fluksıdır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için uygun<br/>
-                            Ana kullanım alanı: dalga lehimleme ve bölgesel lehimleme<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Katı içeriği: %3.7 ±0.2<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-PacIFic-2009MLF-DE_0.pdf" type="application/pdf; length=539026" title="TD PacIFic 2009MLF-DE.pdf">Technisches Datenblatt PacIFic 2009MLF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-PacIFic-2009MLF-FR_0.pdf" type="application/pdf; length=501536" title="TD PacIFic 2009MLF-FR.pdf">Fiche technique PacIFic 2009MLF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-PacIFic-2009MLF.pdf" type="application/pdf; length=532571" title="TD PacIFic 2009MLF.pdf">Technical Data Sheet PacIFic 2009MLF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009MLF" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1296" title="PACIFIC 2009MLF" class="nid">1296</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Su bazlı fluks</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Bölgesel lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Yüksek oksit temizleme gücü</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>Uzun ön ısıtmaya dayanıklı</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Konformal kaplama ile yüksek uyumluluk</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Düşük artıklı</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009MLF-E_6.jpg" width="200" height="200" alt="PACIFIC 2009MLF-E"/></div>
-                        <div class="product-name">
-                          <h3>PACIFIC 2009MLF-E</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Su bazlı fluks</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Dalga lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon06"></div>
-                              <p>Sprey flukslama için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermeyen</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Azaltılmış kalıntı</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>
-                                <strong>Azaltılmış lehim topu oluşumu</strong>
-                              </p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>PacIFic
-                            <strong></strong>2009MLF-E su bazlı, temizleme gerektirmeyen, düşük kalıntı ve azaltılmış mikro lehim topu oluşumuna sahip flukstır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>PacIFic 2009MLF-E su bazlı, temizleme gerektirmeyen, düşük kalıntı ve azaltılmış mikro lehim topu oluşumuna sahip flukstır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için uygun<br/>
-                            Ana kullanım alanı: dalga lehimleme<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Katı içeriği: %3.7 ±0.2<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-PacIFic-2009MLF-E-DE.pdf" type="application/pdf; length=452230" title="TD PacIFic 2009MLF-E-DE.pdf">Technisches Datenblatt PacIFic 2009MLF-E</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-PacIFic-2009MLF-E-DE.pdf" type="application/pdf; length=452230" title="TD PacIFic 2009MLF-E-DE.pdf">Fiche technique PacIFic 2009MLF-E</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-PacIFic-2009MLF-E.pdf" type="application/pdf; length=446221" title="TD PacIFic 2009MLF-E.pdf">Technical Data Sheet PacIFic 2009MLF-E</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009MLF-E" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1297" title="PACIFIC 2009MLF-E" class="nid">1297</a>
+                      <div class="product-summary">
+                        <p>Interflux® SelectIF 2040 su bazlı, temizleme gerektirmeyen, geniş süreç penceresine ve düşük kalıntı formülüne sahip bölgesel lehimleme fluksıdır.
+                        </p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2010F_7.jpg" width="200" height="200" alt="PACIFIC 2010F"/></div>
-                        <div class="product-name">
-                          <h3>PACIFIC 2010F</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Su bazlı fluks</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Dalga lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon06"></div>
-                              <p>Sprey flukslama için</p>
-                            </li>
-                            <li>
-                              <div class="icon07"></div>
-                              <p>
-                                <strong>Köpük flukslama için</strong>
-                              </p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Konformal kaplama ile yüksek uyumluluk</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Düşük artıklı</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>PacIFic 2010F su bazlı, temizleme gerektirmeyen, köpük fluks uygulamaları için flukstır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>PacIFic 2010F su bazlı, temizleme gerektirmeyen, köpük fluks uygulamaları için flukstır.<br/>
-                            Kurşunlu ve kurşunsuz dalga lehimleme için<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Katı içeriği: %2.5 ±0.15<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-PacIFic-2010F-DE_0.pdf" type="application/pdf; length=504163" title="TD PacIFic 2010F-DE.pdf">Technisches Datenblatt PacIFic 2010F</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-PacIFic-2010F-FR.pdf" type="application/pdf; length=536531" title="TD PacIFic 2010F-FR.pdf">Fiche technique PacIFic 2010F</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-PacIFic-2010F_0.pdf" type="application/pdf; length=448654" title="TD PacIFic 2010F.pdf">Technical Data Sheet PacIFic 2010F</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2010F" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1298" title="PACIFIC 2010F" class="nid">1298</a>
+                      <div class="product-details">
+                        <p>Interflux® SelectIF 2040 su bazlı, temizleme gerektirmeyen, geniş süreç penceresine ve düşük kalıntı formülüne sahip bölgesel lehimleme fluksıdır.<br/>
+                          Yüksek süreç sıcaklıklarına ve uzun süreçlere dayanıklıdır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için uygun<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Katı içeriği: %6.5 ±0.2<br/>
+                          Halojen içeriği: %0.00</p>
                       </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SelectIF-2040-DE_0.pdf" type="application/pdf; length=429820" title="TD SelectIF 2040-DE.pdf">Technisches Datenblatt SelectIF 2040</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SelectIF-2040-FR_0.pdf" type="application/pdf; length=458922" title="TD SelectIF 2040-FR.pdf">Fiche technique SelectIF 2040</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SelectIF-2040.pdf" type="application/pdf; length=408961" title="TD SelectIF 2040.pdf">Technical Data Sheet SelectIF 2040</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SELECTIF 2040" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1294" title="SELECTIF 2040" class="nid">1294</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009M_7.jpg" width="200" height="200" alt="PACIFIC 2009M"/></div>
+                      <div class="product-name">
+                        <h3>PACIFIC 2009M</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Su bazlı fluks</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Dalga lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Bölgesel lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Ön lehim kaplama için</p>
+                          </li>
+                          <li>
+                            <div class="icon06"></div>
+                            <p>Sprey flukslama için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Konformal kaplama ile yüksek uyumluluk</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Düşük artıklı</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® PacIFic 2009M su bazlı, temizleme gerektirmeyen, ağırlıklı olarak dalga ve bölgesel lehimleme için kullanılan fluks çeşididir.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® PacIFic 2009M su bazlı, temizleme gerektirmeyen, ağırlıklı olarak dalga ve bölgesel lehimleme için kullanılan fluks çeşididir.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için uygun<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Katı içeriği: %3.7 ±0.2<br/>
+                          Halojen içeriği: %0.00</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-PacIFic-2009M-DE_0.pdf" type="application/pdf; length=439464">TD PacIFic 2009M-DE.pdf</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-PacIFic-2009M-FR.pdf" type="application/pdf; length=401502" title="TD PacIFic 2009M-FR.pdf">Fiche technique PacIFic 2009M</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-PacIFic-2009M_0.pdf" type="application/pdf; length=433215" title="TD PacIFic 2009M.pdf">Technical Data Sheet PacIFic 2009M</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/Kyzen_P2009M.pdf" type="application/pdf; length=62971" title="Kyzen_P2009M.pdf">Cleaning PACIFIC 2009M by KYZEN</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009M" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1295" title="PACIFIC 2009M" class="nid">1295</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009MLF_8.jpg" width="200" height="200" alt="PACIFIC 2009MLF"/></div>
+                      <div class="product-name">
+                        <h3>PACIFIC 2009MLF</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Su bazlı fluks</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Dalga lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Bölgesel lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon06"></div>
+                            <p>Sprey flukslama için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>
+                              <strong>Lehim topu oluşturmayan formasyon</strong>
+                            </p>
+                          </li>
+                        </ul>
+                        <p>Lehim topu oluşturmayan formasyon</p>
+                      </div>
+                      <div class="product-summary">
+                        <p>PacIFic
+                          <strong></strong>2009MLF su bazlı, temizleme gerektirmeyen, mikro lehim topu oluşmasını en aza indirmek için geliştirilen lehimleme fluksıdır.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>PacIFic 2009MLF 2009MLF su bazlı, temizleme gerektirmeyen, mikro lehim topu oluşmasını en aza indirmek için geliştirilen lehimleme fluksıdır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için uygun<br/>
+                          Ana kullanım alanı: dalga lehimleme ve bölgesel lehimleme<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Katı içeriği: %3.7 ±0.2<br/>
+                          Halojen içeriği: %0.00</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-PacIFic-2009MLF-DE_0.pdf" type="application/pdf; length=539026" title="TD PacIFic 2009MLF-DE.pdf">Technisches Datenblatt PacIFic 2009MLF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-PacIFic-2009MLF-FR_0.pdf" type="application/pdf; length=501536" title="TD PacIFic 2009MLF-FR.pdf">Fiche technique PacIFic 2009MLF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-PacIFic-2009MLF.pdf" type="application/pdf; length=532571" title="TD PacIFic 2009MLF.pdf">Technical Data Sheet PacIFic 2009MLF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009MLF" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1296" title="PACIFIC 2009MLF" class="nid">1296</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009MLF-E_6.jpg" width="200" height="200" alt="PACIFIC 2009MLF-E"/></div>
+                      <div class="product-name">
+                        <h3>PACIFIC 2009MLF-E</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Su bazlı fluks</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Dalga lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon06"></div>
+                            <p>Sprey flukslama için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermeyen</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Azaltılmış kalıntı</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>
+                              <strong>Azaltılmış lehim topu oluşumu</strong>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>PacIFic
+                          <strong></strong>2009MLF-E su bazlı, temizleme gerektirmeyen, düşük kalıntı ve azaltılmış mikro lehim topu oluşumuna sahip flukstır.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>PacIFic 2009MLF-E su bazlı, temizleme gerektirmeyen, düşük kalıntı ve azaltılmış mikro lehim topu oluşumuna sahip flukstır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için uygun<br/>
+                          Ana kullanım alanı: dalga lehimleme<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Katı içeriği: %3.7 ±0.2<br/>
+                          Halojen içeriği: %0.00</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-PacIFic-2009MLF-E-DE.pdf" type="application/pdf; length=452230" title="TD PacIFic 2009MLF-E-DE.pdf">Technisches Datenblatt PacIFic 2009MLF-E</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-PacIFic-2009MLF-E-DE.pdf" type="application/pdf; length=452230" title="TD PacIFic 2009MLF-E-DE.pdf">Fiche technique PacIFic 2009MLF-E</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-PacIFic-2009MLF-E.pdf" type="application/pdf; length=446221" title="TD PacIFic 2009MLF-E.pdf">Technical Data Sheet PacIFic 2009MLF-E</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009MLF-E" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1297" title="PACIFIC 2009MLF-E" class="nid">1297</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2010F_7.jpg" width="200" height="200" alt="PACIFIC 2010F"/></div>
+                      <div class="product-name">
+                        <h3>PACIFIC 2010F</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Su bazlı fluks</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Dalga lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon06"></div>
+                            <p>Sprey flukslama için</p>
+                          </li>
+                          <li>
+                            <div class="icon07"></div>
+                            <p>
+                              <strong>Köpük flukslama için</strong>
+                            </p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Konformal kaplama ile yüksek uyumluluk</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Düşük artıklı</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>PacIFic 2010F su bazlı, temizleme gerektirmeyen, köpük fluks uygulamaları için flukstır.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>PacIFic 2010F su bazlı, temizleme gerektirmeyen, köpük fluks uygulamaları için flukstır.<br/>
+                          Kurşunlu ve kurşunsuz dalga lehimleme için<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Katı içeriği: %2.5 ±0.15<br/>
+                          Halojen içeriği: %0.00</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-PacIFic-2010F-DE_0.pdf" type="application/pdf; length=504163" title="TD PacIFic 2010F-DE.pdf">Technisches Datenblatt PacIFic 2010F</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-PacIFic-2010F-FR.pdf" type="application/pdf; length=536531" title="TD PacIFic 2010F-FR.pdf">Fiche technique PacIFic 2010F</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-PacIFic-2010F_0.pdf" type="application/pdf; length=448654" title="TD PacIFic 2010F.pdf">Technical Data Sheet PacIFic 2010F</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2010F" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1298" title="PACIFIC 2010F" class="nid">1298</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">VOC içermeyen</div>
-                  <div class="fs18">lehimleme fluksları</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_8 product-row-group view-dom-id-055782aaa80dcd8c9e4a4101cee685e1">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-3006_7.jpg" width="200" height="200" alt="IF 3006"/></div>
-                        <div class="product-name">
-                          <h3>IF 3006</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon13"></div>
-                              <p>Düşük VOC</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Dalga lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Bölgesel lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Ön lehim kaplama için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Konformal kaplama ile yüksek uyumluluk</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong></strong>IF 3006 reçine ve sentetik reçine içermeyen, temizleme gerektirmeyen azaltılmış VOC içeriğine sahip flukstır.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 3006 reçine ve sentetik reçine içermeyen, temizleme gerektirmeyen azaltılmış VOC içeriğine sahip flukstır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için uygun<br/>
-                            Ön lehim kaplama için<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Katı içeriği: %3.2 ±0.2<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-3006-DE_0.pdf" type="application/pdf; length=441073" title="TD IF 3006-DE.pdf">Technisches Datenblatt IF 3006</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-3006-FR.pdf" type="application/pdf; length=442827" title="TD IF 3006-FR.pdf">Fiche technique IF 3006</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-3006.pdf" type="application/pdf; length=435445" title="TD IF 3006.pdf">Technical Data Sheet IF 3006</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 3006" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1299" title="IF 3006" class="nid">1299</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">VOC içermeyen</div>
+                <div class="fs18">lehimleme fluksları</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_8 product-row-group view-dom-id-8cfbea3957b0506d44474539fd89784f">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-3006_7.jpg" width="200" height="200" alt="IF 3006"/></div>
+                      <div class="product-name">
+                        <h3>IF 3006</h3>
                       </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon13"></div>
+                            <p>Düşük VOC</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Dalga lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Bölgesel lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Ön lehim kaplama için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Konformal kaplama ile yüksek uyumluluk</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong></strong>IF 3006 reçine ve sentetik reçine içermeyen, temizleme gerektirmeyen azaltılmış VOC içeriğine sahip flukstır.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 3006 reçine ve sentetik reçine içermeyen, temizleme gerektirmeyen azaltılmış VOC içeriğine sahip flukstır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için uygun<br/>
+                          Ön lehim kaplama için<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Katı içeriği: %3.2 ±0.2<br/>
+                          Halojen içeriği: %0.00</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-3006-DE_0.pdf" type="application/pdf; length=441073" title="TD IF 3006-DE.pdf">Technisches Datenblatt IF 3006</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-3006-FR.pdf" type="application/pdf; length=442827" title="TD IF 3006-FR.pdf">Fiche technique IF 3006</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-3006.pdf" type="application/pdf; length=435445" title="TD IF 3006.pdf">Technical Data Sheet IF 3006</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 3006" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1299" title="IF 3006" class="nid">1299</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">Reçine bazlı</div>
-                  <div class="fs18">Soldering fluxes</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_6 product-row-group view-dom-id-acaa8e827e65fa611183aaf35dcf663d">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AF-4818PbF_rechtsom.jpg" width="200" height="200" alt="AF 4818PbF"/></div>
-                        <div class="product-name">
-                          <h3>AF 4818 PBF</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon14"></div>
-                              <p>Reçine içerir</p>
-                            </li>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Alkol bazlı</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Dalga lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon06"></div>
-                              <p>Sprey flukslama için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Yüksek oksit temizleme gücü</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>Uzun ön ısıtmaya dayanıklı</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®<strong></strong>AF 4818 PbF solvent bazlı, reçine içerikli, temizleme gerektirmeyen, yüksek katı içerikli ve geniş süreç penceresine sahip flukstır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® AF 4818 PbF solvent bazlı, reçine içerikli, temizleme gerektirmeyen, yüksek katı içerikli ve geniş süreç penceresine sahip flukstır.<br/>
-                            Kurşunlu ve kurşunsuz dalga lehimleme uygulamaları için<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: RO L0<br/>
-                            Katı içeriği: %5<br/>
-                            Halojen içeriği: %0.00</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-AF-4818-PbF-DE_1.pdf" type="application/pdf; length=537990" title="TD AF 4818 PbF-DE.pdf">Technisches Datenblatt AF 4818PbF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-AF-4818-PbF_1.pdf" type="application/pdf; length=535028" title="TD AF 4818 PbF.pdf">Technical Data Sheet AF 4818PbF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/Manual-soldering-guide.pdf" type="application/pdf; length=484793" title="Manual soldering guide.pdf">A guide to manual soldering</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=AF 4818 PBF" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1300" title="AF 4818 PBF" class="nid">1300</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">Reçine bazlı</div>
+                <div class="fs18">Soldering fluxes</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_6 product-row-group view-dom-id-ea63741197756d38b49b16b9af12ab47">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AF-4818PbF_rechtsom.jpg" width="200" height="200" alt="AF 4818PbF"/></div>
+                      <div class="product-name">
+                        <h3>AF 4818 PBF</h3>
                       </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon14"></div>
+                            <p>Reçine içerir</p>
+                          </li>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Alkol bazlı</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Dalga lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon06"></div>
+                            <p>Sprey flukslama için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Yüksek oksit temizleme gücü</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>Uzun ön ısıtmaya dayanıklı</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®<strong></strong>AF 4818 PbF solvent bazlı, reçine içerikli, temizleme gerektirmeyen, yüksek katı içerikli ve geniş süreç penceresine sahip flukstır.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® AF 4818 PbF solvent bazlı, reçine içerikli, temizleme gerektirmeyen, yüksek katı içerikli ve geniş süreç penceresine sahip flukstır.<br/>
+                          Kurşunlu ve kurşunsuz dalga lehimleme uygulamaları için<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: RO L0<br/>
+                          Katı içeriği: %5<br/>
+                          Halojen içeriği: %0.00</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-AF-4818-PbF-DE_1.pdf" type="application/pdf; length=537990" title="TD AF 4818 PbF-DE.pdf">Technisches Datenblatt AF 4818PbF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-AF-4818-PbF_1.pdf" type="application/pdf; length=535028" title="TD AF 4818 PbF.pdf">Technical Data Sheet AF 4818PbF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/Manual-soldering-guide.pdf" type="application/pdf; length=484793" title="Manual soldering guide.pdf">A guide to manual soldering</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=AF 4818 PBF" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1300" title="AF 4818 PBF" class="nid">1300</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs18">Düzeltme ve Tamir</div>
-                  <div class="fs30">lehimleme fluksları</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_10 product-row-group view-dom-id-fc1b85194cee32b36102e9700c97e2f6">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-8300.jpg" width="200" height="200" alt="IF 8300"/></div>
-                        <div class="product-name">
-                          <h3>IF 8300 SERIES</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Düzeltme ve tamir için</p>
-                            </li>
-                            <li>
-                              <div class="icon03"></div>
-                              <p>Reflov Lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon08"></div>
-                              <p>Dispens için</p>
-                            </li>
-                            <li>
-                              <div class="icon09"></div>
-                              <p>Elek baskısı için</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Daldırma için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Düşük artıklı</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 8300 temizleme gerektirmeyen, halojen içermeyen yapışkan jel flukstır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 8300 temizleme gerektirmeyen, halojen içermeyen yapışkan jel flukstır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için<br/>
-                            BGA tamiri ve top oluşturma için uygun<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: RE L0<br/>
-                            Halojen içeriği: %0.00<br/>
-                            3 farklı viskozite:<br/>
-                            IF 8300: 210 kcps<br/>
-                            IF 8300-4: 70 kcps<br/>
-                            IF 8300-6: 25 kcps</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-8300-DE_0.pdf" type="application/pdf; length=886358" title="TD IF 8300-DE.pdf">Technisches Datenblatt IF 8300</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-8300-FR_0.pdf" type="application/pdf; length=1056853" title="TD IF 8300-FR.pdf">Fiche technique IF 8300</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-8300.pdf" type="application/pdf; length=877318" title="TD IF 8300.pdf">Technical Data Sheet IF 8300</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 8300 SERIES" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1301" title="IF 8300 SERIES" class="nid">1301</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs18">Düzeltme ve Tamir</div>
+                <div class="fs30">lehimleme fluksları</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_10 product-row-group view-dom-id-6a02a07160842a385cbc55dd788c9e19">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-8300.jpg" width="200" height="200" alt="IF 8300"/></div>
+                      <div class="product-name">
+                        <h3>IF 8300 SERIES</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF7500HAB_0.jpg" width="200" height="200" alt="Interflux IF7500HAB solder flux"/><img typeof="foaf:Image" src="/assets/images/Interflux-IF7500HAB-tube.jpg" width="200" height="200" alt="Interflux IF7500HAB solder flux"/></div>
-                        <div class="product-name">
-                          <h3>IF 7500HAB</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Düzeltme ve tamir için</p>
-                            </li>
-                            <li>
-                              <div class="icon03"></div>
-                              <p>Reflov Lehimleme için</p>
-                            </li>
-                            <li>
-                              <div class="icon08"></div>
-                              <p>Dispens için</p>
-                            </li>
-                            <li>
-                              <div class="icon09"></div>
-                              <p>Elek baskısı için</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Daldırma için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>Uzun süreçlere dayanıklı</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Yüksek oksit temizleme gücü</p>
-                            </li>
-                            <li>
-                              <div class="icon14"></div>
-                              <p>Reçine içerir</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 7500HAB temizleme gerektirmeyen, halojen içermeyen geniş süreç penceresine sahip yapışkan jel flukstır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 7500HAB temizleme gerektirmeyen, halojen içermeyen geniş süreç penceresine sahip yapışkan jel flukstır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için<br/>
-                            BGA tamiri ve top oluşturma için uygun<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: RO M0<br/>
-                            Halojen içeriği: %0.00<br/>
-                            Viskozite: 200 kcps</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-7500HAB-DE_0.pdf" type="application/pdf; length=494085" title="TD IF 7500HAB-DE.pdf">Technisches Datenblatt IF 7500HAB</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-7500HAB_0.pdf" type="application/pdf; length=491460" title="TD IF 7500HAB.pdf">Technical Data Sheet IF 7500HAB</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 7500HAB" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1302" title="IF 7500HAB" class="nid">1302</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Düzeltme ve tamir için</p>
+                          </li>
+                          <li>
+                            <div class="icon03"></div>
+                            <p>Reflov Lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon08"></div>
+                            <p>Dispens için</p>
+                          </li>
+                          <li>
+                            <div class="icon09"></div>
+                            <p>Elek baskısı için</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Daldırma için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Düşük artıklı</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-8001.jpg" width="200" height="200" alt="IF 8001"/></div>
-                        <div class="product-name">
-                          <h3>IF 8001</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Alkol bazlı fluks</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Düzeltme ve tamir için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Düşük artıklı</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 8001 solvent bazlı, temizleme gerektirmeyen, düşük artıklı formasyona sahip, bölgesel flukslama uygulamaları için flukstır.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 8001 solvent bazlı, temizleme gerektirmeyen, düşük artıklı formasyona sahip, bölgesel flukslama uygulamaları için flukstır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için<br/>
-                            Ana kullanım alanı: El ile lehimleme. Diğer kullanım alanları: otomatik lehimleme, baskı lehimleme, vs...<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: RE L0<br/>
-                            Halojen içeriği: %0.00<br/>
-                            IF 8001 doldurulabilen ve doldurulamayan fluks kalemleri şeklinde mevcuttur.
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-8001-DE_0.pdf" type="application/pdf; length=442493" title="TD IF 8001-DE.pdf">Technisches Datenblatt IF 8001</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-8001-FR_0.pdf" type="application/pdf; length=370992" title="TD IF 8001-FR.pdf">Fiche technique IF 8001</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-8001_0.pdf" type="application/pdf; length=404562" title="TD IF 8001.pdf">Technical Data Sheet IF 8001</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 8001" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1303" title="IF 8001" class="nid">1303</a>
+                      <div class="product-summary">
+                        <p>Interflux® IF 8300 temizleme gerektirmeyen, halojen içermeyen yapışkan jel flukstır.
+                        </p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-6000-1liter.jpg" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>IF 6000</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Alkol bazlı</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Düzeltme ve tamir için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon14"></div>
-                              <p>Reçine içerir</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Yüksek oksit temizleme gücü</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>Uzun ön ısıtmaya dayanıklı</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 6000 reçine içeren, temizleme gerektirmeyen, bölgesel flukslama uygulamaları için geniş süreç penceresine sahip lehimleme fluksıdır.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 6000 reçine içeren, temizleme gerektirmeyen, bölgesel flukslama uygulamaları için geniş süreç penceresine sahip lehimleme fluksıdır.<br/>
-                            Kurşunlu ve kurşunsuz süreç için<br/>
-                            Ana kullanım alanı: El ile lehimleme. Diğer kullanım alanları: otomatik lehimleme, baskı lehimleme, BGA tamiri, top ekleme, vs...<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: RO L0<br/>
-                            Halojen içeriği: %0.00<br/>
-                            IF 6000 doldurulabilen ve doldurulamayan fluks kalemleri şeklinde mevcuttur.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-6000-DE_0.pdf" type="application/pdf; length=418115" title="TD IF 6000-DE.pdf">Technisches Datenblatt IF 6000</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-6000-FR.pdf" type="application/pdf; length=381276" title="TD IF 6000-FR.pdf">Fiche technique IF 6000</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-6000.pdf" type="application/pdf; length=411656" title="TD IF 6000.pdf">Technical Data Sheet IF 6000</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 6000" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1304" title="IF 6000" class="nid">1304</a>
+                      <div class="product-details">
+                        <p>Interflux® IF 8300 temizleme gerektirmeyen, halojen içermeyen yapışkan jel flukstır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için<br/>
+                          BGA tamiri ve top oluşturma için uygun<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: RE L0<br/>
+                          Halojen içeriği: %0.00<br/>
+                          3 farklı viskozite:<br/>
+                          IF 8300: 210 kcps<br/>
+                          IF 8300-4: 70 kcps<br/>
+                          IF 8300-6: 25 kcps</p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Terrific-RP65-1liter.jpg" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>TERRIFIC RP65</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Su bazlı fluks</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Düzeltme ve tamir için</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>Uzun ön ısıtmaya dayanıklı</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>TerrIFic RP65 su bazlı, temizleme gerektirmeyen, bölgesel flukslama uygulamaları fluksıdır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>TerrIFic RP65 su bazlı, temizleme gerektirmeyen, bölgesel flukslama uygulamaları fluksıdır.<br/>
-                            Kurşunlu ve kurşunsuz süreçler için<br/>
-                            Ana kullanım alanı: El ile lehimleme. Diğer kullanım alanları: otomatik lehimleme, baskı lehimleme, vs...<br/>
-                            EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
-                            Halojen içeriği: %0.00<br/>
-                            TerrIFic RP 65 doldurulabilen ve doldurulamayan fluks kalemleri şeklinde mevcuttur.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Terrific-RP65-DE_0.pdf" type="application/pdf; length=396763" title="TD Terrific RP65-DE.pdf">Technisches Datenblatt TerrIFic RP65</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Terrific-RP65-FR_0.pdf" type="application/pdf; length=412192" title="TD Terrific RP65-FR.pdf">Fiche technique TerrIFic RP65</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Terrific-RP65_0.pdf" type="application/pdf; length=393579" title="TD Terrific RP65.pdf">Technical Data Sheet TerrIFic RP65</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=TERRIFIC RP65" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1305" title="TERRIFIC RP65" class="nid">1305</a>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-8300-DE_0.pdf" type="application/pdf; length=886358" title="TD IF 8300-DE.pdf">Technisches Datenblatt IF 8300</a>
+                        </span>
                       </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-8300-FR_0.pdf" type="application/pdf; length=1056853" title="TD IF 8300-FR.pdf">Fiche technique IF 8300</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-8300.pdf" type="application/pdf; length=877318" title="TD IF 8300.pdf">Technical Data Sheet IF 8300</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 8300 SERIES" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1301" title="IF 8300 SERIES" class="nid">1301</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF7500HAB_0.jpg" width="200" height="200" alt="Interflux IF7500HAB solder flux"/><img typeof="foaf:Image" src="/assets/images/Interflux-IF7500HAB-tube.jpg" width="200" height="200" alt="Interflux IF7500HAB solder flux"/></div>
+                      <div class="product-name">
+                        <h3>IF 7500HAB</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Düzeltme ve tamir için</p>
+                          </li>
+                          <li>
+                            <div class="icon03"></div>
+                            <p>Reflov Lehimleme için</p>
+                          </li>
+                          <li>
+                            <div class="icon08"></div>
+                            <p>Dispens için</p>
+                          </li>
+                          <li>
+                            <div class="icon09"></div>
+                            <p>Elek baskısı için</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Daldırma için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>Uzun süreçlere dayanıklı</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Yüksek oksit temizleme gücü</p>
+                          </li>
+                          <li>
+                            <div class="icon14"></div>
+                            <p>Reçine içerir</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 7500HAB temizleme gerektirmeyen, halojen içermeyen geniş süreç penceresine sahip yapışkan jel flukstır.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 7500HAB temizleme gerektirmeyen, halojen içermeyen geniş süreç penceresine sahip yapışkan jel flukstır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için<br/>
+                          BGA tamiri ve top oluşturma için uygun<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: RO M0<br/>
+                          Halojen içeriği: %0.00<br/>
+                          Viskozite: 200 kcps</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-7500HAB-DE_0.pdf" type="application/pdf; length=494085" title="TD IF 7500HAB-DE.pdf">Technisches Datenblatt IF 7500HAB</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-7500HAB_0.pdf" type="application/pdf; length=491460" title="TD IF 7500HAB.pdf">Technical Data Sheet IF 7500HAB</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 7500HAB" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1302" title="IF 7500HAB" class="nid">1302</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-8001.jpg" width="200" height="200" alt="IF 8001"/></div>
+                      <div class="product-name">
+                        <h3>IF 8001</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Alkol bazlı fluks</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Düzeltme ve tamir için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Düşük artıklı</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 8001 solvent bazlı, temizleme gerektirmeyen, düşük artıklı formasyona sahip, bölgesel flukslama uygulamaları için flukstır.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 8001 solvent bazlı, temizleme gerektirmeyen, düşük artıklı formasyona sahip, bölgesel flukslama uygulamaları için flukstır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için<br/>
+                          Ana kullanım alanı: El ile lehimleme. Diğer kullanım alanları: otomatik lehimleme, baskı lehimleme, vs...<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: RE L0<br/>
+                          Halojen içeriği: %0.00<br/>
+                          IF 8001 doldurulabilen ve doldurulamayan fluks kalemleri şeklinde mevcuttur.
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-8001-DE_0.pdf" type="application/pdf; length=442493" title="TD IF 8001-DE.pdf">Technisches Datenblatt IF 8001</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-8001-FR_0.pdf" type="application/pdf; length=370992" title="TD IF 8001-FR.pdf">Fiche technique IF 8001</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-8001_0.pdf" type="application/pdf; length=404562" title="TD IF 8001.pdf">Technical Data Sheet IF 8001</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 8001" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1303" title="IF 8001" class="nid">1303</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-6000-1liter.jpg" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>IF 6000</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Alkol bazlı</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Düzeltme ve tamir için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon14"></div>
+                            <p>Reçine içerir</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Yüksek oksit temizleme gücü</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>Uzun ön ısıtmaya dayanıklı</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 6000 reçine içeren, temizleme gerektirmeyen, bölgesel flukslama uygulamaları için geniş süreç penceresine sahip lehimleme fluksıdır.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 6000 reçine içeren, temizleme gerektirmeyen, bölgesel flukslama uygulamaları için geniş süreç penceresine sahip lehimleme fluksıdır.<br/>
+                          Kurşunlu ve kurşunsuz süreç için<br/>
+                          Ana kullanım alanı: El ile lehimleme. Diğer kullanım alanları: otomatik lehimleme, baskı lehimleme, BGA tamiri, top ekleme, vs...<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: RO L0<br/>
+                          Halojen içeriği: %0.00<br/>
+                          IF 6000 doldurulabilen ve doldurulamayan fluks kalemleri şeklinde mevcuttur.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-6000-DE_0.pdf" type="application/pdf; length=418115" title="TD IF 6000-DE.pdf">Technisches Datenblatt IF 6000</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-6000-FR.pdf" type="application/pdf; length=381276" title="TD IF 6000-FR.pdf">Fiche technique IF 6000</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-6000.pdf" type="application/pdf; length=411656" title="TD IF 6000.pdf">Technical Data Sheet IF 6000</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 6000" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1304" title="IF 6000" class="nid">1304</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Terrific-RP65-1liter.jpg" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>TERRIFIC RP65</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Su bazlı fluks</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Düzeltme ve tamir için</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>Uzun ön ısıtmaya dayanıklı</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>TerrIFic RP65 su bazlı, temizleme gerektirmeyen, bölgesel flukslama uygulamaları fluksıdır.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>TerrIFic RP65 su bazlı, temizleme gerektirmeyen, bölgesel flukslama uygulamaları fluksıdır.<br/>
+                          Kurşunlu ve kurşunsuz süreçler için<br/>
+                          Ana kullanım alanı: El ile lehimleme. Diğer kullanım alanları: otomatik lehimleme, baskı lehimleme, vs...<br/>
+                          EN ve IPC standartlarına göre fluks sınıfı: OR L0<br/>
+                          Halojen içeriği: %0.00<br/>
+                          TerrIFic RP 65 doldurulabilen ve doldurulamayan fluks kalemleri şeklinde mevcuttur.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Terrific-RP65-DE_0.pdf" type="application/pdf; length=396763" title="TD Terrific RP65-DE.pdf">Technisches Datenblatt TerrIFic RP65</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Terrific-RP65-FR_0.pdf" type="application/pdf; length=412192" title="TD Terrific RP65-FR.pdf">Fiche technique TerrIFic RP65</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Terrific-RP65_0.pdf" type="application/pdf; length=393579" title="TD Terrific RP65.pdf">Technical Data Sheet TerrIFic RP65</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=TERRIFIC RP65" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1305" title="TERRIFIC RP65" class="nid">1305</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs24">Fluks incelticileri</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_9 product-row-group view-dom-id-704e4bffc36371c1ddf0df30135c5787">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_T-2005M_0.jpg" width="200" height="200" alt="Interflux T2005M thinner"/><img typeof="foaf:Image" src="/assets/images/Interflux-T2005M.jpg" width="200" height="200" alt="Interflux T2005M thinner"/></div>
-                        <div class="product-name">
-                          <h3>T 2005M</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Alkol bazlı</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Kesinlikle halojen içermez</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>IF 2005 serisi flukslar için</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® T 2005M, IF 2005 serisi flukslar için önerilen inceltici ve şartlandırıcıdır.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® T 2005M, IF 2005 serisi flukslar için önerilen inceltici ve şartlandırıcıdır.<br/>
-                            Köpük flukslama veya diğer açık fluks uygulamalarında kullanıldığında.</p>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=T 2005M" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/tr/1306" title="T 2005M" class="nid">1306</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs24">Fluks incelticileri</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_9 product-row-group view-dom-id-a49758198f8174942e505efe75e0ec12">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_T-2005M_0.jpg" width="200" height="200" alt="Interflux T2005M thinner"/><img typeof="foaf:Image" src="/assets/images/Interflux-T2005M.jpg" width="200" height="200" alt="Interflux T2005M thinner"/></div>
+                      <div class="product-name">
+                        <h3>T 2005M</h3>
                       </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Alkol bazlı</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Kesinlikle halojen içermez</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>IF 2005 serisi flukslar için</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® T 2005M, IF 2005 serisi flukslar için önerilen inceltici ve şartlandırıcıdır.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® T 2005M, IF 2005 serisi flukslar için önerilen inceltici ve şartlandırıcıdır.<br/>
+                          Köpük flukslama veya diğer açık fluks uygulamalarında kullanıldığında.</p>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=T 2005M" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/tr/1306" title="T 2005M" class="nid">1306</a>
                     </div>
                   </div>
                 </div>
@@ -1261,16 +1451,62 @@
             </div>
           </div>
         </div>
-        <div id="block-block-17" class="block block-block library-reference last even">
-          <div class="inner-block">
-            <p>Ürünü bulamadınız mı? Ürünlerin tam listesi için,
-              <a href="/tr/documents">kütüphanemizi</a>
-              tıklayın</p>
-          </div>
-        </div>
-        <div class="clear"></div>
       </div>
+      <div id="block-block-17" class="block block-block library-reference last even">
+        <div class="inner-block">
+          <p>Ürünü bulamadınız mı? Ürünlerin tam listesi için,
+            <a href="/tr/documents">kütüphanemizi</a>
+            tıklayın</p>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
-  {% include "partials/footer.njk" %}
+  <div class="region region-footer2">
+    <div class="inner-region">
+      <div id="block-block-18" class="block block-block first last odd">
+        <div class="inner-block">
+          <div class="block grid-12" id="F1">
+            <div class="inner-block">
+              <div class="inner-content">
+                <a href="/tr/contact" target="_self" title="Go to the contact page for more information"><img src="/assets/images/Interflux-Electronics-headquarters-belgium.jpg" width="171" height="271" alt="Interflux Electronics Belgium office building"/></a>
+                <div class="contact-title">Interflux Merkez Ofisi İletişim</div>
+                <div class="contact-adress">
+                  <p>
+                    Interflux Electronics NV<br/>
+                    Gent zeehaven 3170A<br/>
+                    Eddastraat 51<br/>
+                    9042 Gent<br/>
+                    BELGIUM</p>
+                  <p>Tel.: +32 9251 4959<br/>
+                    Fax: +32 9251 4970<br/>
+                    <a href="mailto:info@interflux.com" target="_blank">info@interflux.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-12" id="F2">
+            <div class="inner-block">
+              <div class="inner-content">
+                <div class="contact-title">
+                  <span>Dünya çapında Interflux ile İletişim</span>
+                </div>
+                <p>
+                  <a href="/tr/contact" target="_self" title="Go to the contact page for more information"><img src="/assets/images/interflux-worldwide-map.jpg" width="446" height="196" alt="Geographical map of the Interflux group"/></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-24" id="F3">
+            <div class="copyright">©2012 Interflux® Electronics N.V.  tarafından tüm hakları saklıdır</div>
+            <div class="louder-than-words">Web Sitesi
+              <a href="http://nabu.io" target="_new" title="NABU websites">NABU websites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
 {% endblock %}

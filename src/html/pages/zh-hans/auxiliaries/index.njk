@@ -8,765 +8,955 @@
 {% block bodyClass %}html not-front not-logged-in no-sidebars page-auxiliaries page-products i18n-zh-hans section-auxiliaries page-panels
 {% endblock %}
 {% block page %}
-  {% include "partials/highlight.njk" %}
+  <div class="region region-language">
+    <div class="inner-region">
+      <div id="block-locale-language" class="block block-locale language-menu block grid-24 first last odd" role="complementary">
+        <div class="inner-block">
+          <ul class="language-switcher-locale-url">
+            <li class="en first">
+              <a href="/en/auxiliaries" class="language-link" lang="en" title="Auxiliaries">
+                <div class="flag en"></div>English</a>
+            </li>
+            <li class="zh-hans active">
+              <a href="/zh-hans/auxiliaries" class="language-link active" lang="zh-hans" title="其他">
+                <div class="flag zh-hans"></div>简体中文</a>
+            </li>
+            <li class="cs">
+              <a href="/cs/auxiliaries" class="language-link" lang="cs" title="Doplňky">
+                <div class="flag cs"></div>Čeština</a>
+            </li>
+            <li class="de">
+              <a href="/de/auxiliaries" class="language-link" lang="de" title="Hilfsmittel">
+                <div class="flag de"></div>Deutsch</a>
+            </li>
+            <li class="fr">
+              <a href="/fr/auxiliaries" class="language-link" lang="fr" title="Auxiliaires">
+                <div class="flag fr"></div>Français</a>
+            </li>
+            <li class="it">
+              <a href="/it/auxiliaries" class="language-link" lang="it" title="Prodotti ausiliari">
+                <div class="flag it"></div>Italiano</a>
+            </li>
+            <li class="id">
+              <a href="/id/auxiliaries" class="language-link" lang="id" title="Alat pembantu">
+                <div class="flag id"></div>Bahasa Indonesia</a>
+            </li>
+            <li class="pt-pt">
+              <a href="/pt-pt/auxiliaries" class="language-link" lang="pt-pt" title="Acessórios">
+                <div class="flag pt-pt"></div>Português</a>
+            </li>
+            <li class="ro">
+              <a href="/ro/auxiliaries" class="language-link" lang="ro" title="Auxiliare pentru">
+                <div class="flag ro"></div>Română</a>
+            </li>
+            <li class="ru">
+              <a href="/ru/auxiliaries" class="language-link" lang="ru" title="Вспомогательные материалы">
+                <div class="flag ru"></div>Русский</a>
+            </li>
+            <li class="th">
+              <a href="/th/auxiliaries" class="language-link" lang="th" title="อุปกรณ์เสริม">
+                <div class="flag th"></div>ภาษาไทย</a>
+            </li>
+            <li class="tr">
+              <a href="/tr/auxiliaries" class="language-link" lang="tr">
+                <div class="flag tr"></div>Türkçe</a>
+            </li>
+            <li class="pl">
+              <a href="/pl/auxiliaries" class="language-link" lang="pl" title="Produkty wspomagające">
+                <div class="flag pl"></div>Polski</a>
+            </li>
+            <li class="es">
+              <a href="/es/auxiliaries" class="language-link" lang="es" title="Accesorios">
+                <div class="flag es"></div>Español</a>
+            </li>
+            <li class="sv last">
+              <a href="/sv/auxiliaries" class="language-link" lang="sv" title="Ytterligare produkter">
+                <div class="flag sv"></div>Svenska</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-header">
+    <div class="inner-region">
+      <div id="block-block-11" class="block block-block grid-9 first odd">
+        <div class="inner-block">
+          <p>
+            <a href="/" title="Interflux Electronics" target="_self"><img src="/assets/images/interflux-electronics-logo.png" width="343" height="87" alt="Interflux Electronics logo"/></a>
+          </p>
+        </div>
+      </div>
+      <div id="block-menu-menu-interflux-menu" class="block block-menu grid-15 header-nav last even" role="navigation">
+        <div class="inner-block">
+          <ul class="menu">
+            <li class="first expanded active-trail">
+              <a href="/zh-hans" title="按类型搜索" class="active-trail">产品</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/zh-hans/soldering-fluxes" title="">助焊剂</a>
+                </li>
+                <li class="leaf">
+                  <a href="/zh-hans/solder-pastes" title="">锡膏</a>
+                </li>
+                <li class="leaf">
+                  <a href="/zh-hans/solder-wires" title="">锡线</a>
+                </li>
+                <li class="leaf">
+                  <a href="/zh-hans/spray-fluxers" title="">助焊剂喷雾装置</a>
+                </li>
+                <li class="last leaf active-trail">
+                  <a href="/zh-hans/auxiliaries" title="" class="active-trail active">其他</a>
+                </li>
+              </ul>
+            </li>
+            <li class="expanded">
+              <a href="/zh-hans" title="按工艺搜索">工艺</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/zh-hans/wave-soldering" title="">波峰焊</a>
+                </li>
+                <li class="leaf">
+                  <a href="/zh-hans/selective-soldering" title="">选择焊</a>
+                </li>
+                <li class="leaf">
+                  <a href="/zh-hans/reflow-soldering" title="">回流焊</a>
+                </li>
+                <li class="leaf">
+                  <a href="/zh-hans/rework-and-repair" title="">返修</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/zh-hans/pre-tinning" title="">预镀锡</a>
+                </li>
+              </ul>
+            </li>
+            <li class="leaf">
+              <a href="/zh-hans/company" title="了解Interflux">公司</a>
+            </li>
+            <li class="leaf">
+              <a href="/zh-hans/documents" title="搜索技术资料">资料</a>
+            </li>
+            <li class="last leaf">
+              <a href="/zh-hans/contact" title="联系">联系方式</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-highlight">
+    <div class="inner-region">
+      <div id="banners">
+        <div class="preload"></div>
+        <div class="stage">
+          <article id="ipc-apex-2017">
+            <a href="http://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
+              <picture>
+                <source srcset="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg 2x, http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018.jpg 1x"></source>
+                <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg" alt="Visit use at IPC APEX 2018 in San Diego"/>
+              </picture>
+            </a>
+          </article>
+          <article id="productronica-2017">
+            <a href="http://www.productronica.com/" target="_blank" title="Visit us at Productronica 2017">
+              <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/productronica-banner-2017.jpg"/>
+            </a>
+          </article>
+          <article id="lmpa">
+            <a href="https://lmpa.interflux.com" target="_blank">
+              <h1>Solder
+                <strong>5 times</strong>
+                faster whilst maintaining
+                <strong>zero defects</strong>
+              </h1>
+              <h1>Discover
+                <mark>LMPA<span>™</span>
+                </mark>
+              </h1>
+              <div id="video">
+                <video id="movie" width="276" height="220" autoplay loop>
+                  <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
+                  Your browser doesn't support HTML5 video tag.
+                </video>
+                <script></script>
+                <p>Speed: 30 mm/s</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <nav>
+          <div id="prev">
+            <div></div>
+          </div>
+          <div id="next">
+            <div></div>
+          </div>
+          <div id="timer">
+            <div></div>
+          </div>
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
   <div class="region region-corpus">
     <div class="inner-region">
-      <div class="inner-region">
-        <div class="panel-display panel-1col clearfix">
-          <div class="panel-panel panel-col">
-            <div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">生产工具</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_18 product-row-group view-dom-id-a0d53cb50abadf0dbf403f045cfaded6">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-710-PSM_0.jpg" width="200" height="200" alt="IF 710PSM"/></div>
-                        <div class="product-name">
-                          <h3>IF 710 PSM 阻焊膏</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>peelable solder mask</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>可用于波峰焊</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>可用于有铅工艺</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>可用于无铅工艺</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>速干，易剥离</p>
-                            </li>
-                            <li>
-                              <div class="icon28"></div>
-                              <p>符合Rohs标准</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong></strong>IF 710 PSM 是一款由天然橡胶制成，快速固化可剥离焊膏</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 710 PSM 是一款由天然橡胶制成，快速固化可剥离焊膏。<br/>
-                            保护PCB板上某些区域免于助焊剂和波峰接触。<br/>
-                            易于去除，剥离时不会轻易破裂<br/>
-                            耐热<br/>
-                            当应用于铜和铜-OSP时可能导致铜变色</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-710-DE_0.pdf" type="application/pdf; length=292541" title="TD IF 710-DE.pdf">Technisches Datenblatt IF 710 PSM</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-710-FR_0.pdf" type="application/pdf; length=416162" title="TD IF 710-FR.pdf">Fiche technique IF 710 PSM</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-710_0.pdf" type="application/pdf; length=369316" title="TD IF 710.pdf">Technical Data Sheet IF 710 PSM</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 710 PSM 阻焊膏" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1240" title="IF 710 PSM 阻焊膏" class="nid">1240</a>
+      <div class="panel-display panel-1col clearfix">
+        <div class="panel-panel panel-col">
+          <div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">生产工具</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_18 product-row-group view-dom-id-22c7e3af7b536045d8866b4b9441b733">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-710-PSM_0.jpg" width="200" height="200" alt="IF 710PSM"/></div>
+                      <div class="product-name">
+                        <h3>IF 710 PSM 阻焊膏</h3>
                       </div>
+                      <div class="product-name-extra">
+                        <h3>peelable solder mask</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>可用于波峰焊</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>可用于有铅工艺</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>可用于无铅工艺</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>速干，易剥离</p>
+                          </li>
+                          <li>
+                            <div class="icon28"></div>
+                            <p>符合Rohs标准</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong></strong>IF 710 PSM 是一款由天然橡胶制成，快速固化可剥离焊膏</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 710 PSM 是一款由天然橡胶制成，快速固化可剥离焊膏。<br/>
+                          保护PCB板上某些区域免于助焊剂和波峰接触。<br/>
+                          易于去除，剥离时不会轻易破裂<br/>
+                          耐热<br/>
+                          当应用于铜和铜-OSP时可能导致铜变色</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-710-DE_0.pdf" type="application/pdf; length=292541" title="TD IF 710-DE.pdf">Technisches Datenblatt IF 710 PSM</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-710-FR_0.pdf" type="application/pdf; length=416162" title="TD IF 710-FR.pdf">Fiche technique IF 710 PSM</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-710_0.pdf" type="application/pdf; length=369316" title="TD IF 710.pdf">Technical Data Sheet IF 710 PSM</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 710 PSM 阻焊膏" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1240" title="IF 710 PSM 阻焊膏" class="nid">1240</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">清洁剂</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_16 product-row-group view-dom-id-fbf141301e67caaa44e901075f77fee1">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-930-All-in-One_4.jpg" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/><img typeof="foaf:Image" src="/assets/images/IF-930kader.png" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/></div>
-                        <div class="product-name">
-                          <h3>IF 930</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>nozzle cleaner 喷嘴清洁剂</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>可用于选择性焊接</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>可用于有铅工艺</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>可用于无铅工艺</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>完全无卤</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 930cleans and
-                            <strong>可以有效地清洁选择焊设备的喷嘴，去除氧化物</strong>
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 930 可以有效地清洁选择焊设备的喷嘴，去除氧化物<br/>
-                            安全，简单的一步式清洗<br/>
-                            替换IF920<br/>
-                            工艺控制</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-930-DE.pdf" type="application/pdf; length=522376" title="TD IF 930-DE.pdf">Technisches Datenblatt IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-930-FR.pdf" type="application/pdf; length=435025" title="TD IF 930-FR.pdf">Fiche technique IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-930_0.pdf" type="application/pdf; length=387275" title="TD IF 930.pdf">Technical Data Sheet IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 930" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1246" title="IF 930" class="nid">1246</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">清洁剂</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_16 product-row-group view-dom-id-50dda25190d4cd2350c130280c259ccc">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-930-All-in-One_4.jpg" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/><img typeof="foaf:Image" src="/assets/images/IF-930kader.png" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/></div>
+                      <div class="product-name">
+                        <h3>IF 930</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Tip-Tinner.jpg" width="200" height="200" alt="Tip Tinner"/></div>
-                        <div class="product-name">
-                          <h3>TIP TINNER 烙铁头清洁剂</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>可用于返修</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>可用于有铅工艺</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>可用于无铅工艺</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>完全无卤</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>不含松香</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Tip Tinner 可以清洁及保护焊接器材，有效的延长烙铁头适用寿命</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® 可以清洁及保护焊接器材，有效的延长烙铁头适用寿命<br/>
-                            完全无卤<br/>
-                            无腐蚀</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Tip-Tinner-DE_0.pdf" type="application/pdf; length=381222" title="TD Tip Tinner-DE.pdf">Technisches Datenblatt Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Tip-Tinner-FR_0.pdf" type="application/pdf; length=425441" title="TD Tip Tinner-FR.pdf">Fiche technique Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Tip-Tinner_0.pdf" type="application/pdf; length=418029" title="TD Tip Tinner.pdf">Technical Data Sheet Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=TIP TINNER 烙铁头清洁剂" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1267" title="TIP TINNER 烙铁头清洁剂" class="nid">1267</a>
+                      <div class="product-name-extra">
+                        <h3>nozzle cleaner 喷嘴清洁剂</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Purgel.jpg" width="200" height="200" alt="IF Purgel"/></div>
-                        <div class="product-name">
-                          <h3>PURGEL</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>适用于返修</p>
-                            </li>
-                            <li>
-                              <div class="icon08"></div>
-                              <p>适用于滴涂方式</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>在MYDATA的MY500及MY600喷印机上效果良好</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong></strong>
-                            Purgel 是一种中性清洁剂，适用于清洁点胶机的泵和盖子</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Purgel 是一种中性清洁剂，适用于清洁点胶机的泵和盖子。<br/>
-                            能起到良好的保护作用<br/>
-                            在MYDATA的MY500及MY600喷印机上效果良好</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Purgel-DE_0.pdf" type="application/pdf; length=371237" title="TD Purgel-DE.pdf">Technisches Datenblatt Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Purgel-FR_0.pdf" type="application/pdf; length=370051" title="TD Purgel-FR.pdf">Fiche technique Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Purgel_0.pdf" type="application/pdf; length=363113" title="TD Purgel.pdf">Technical Data Sheet Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PURGEL" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1260" title="PURGEL" class="nid">1260</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>可用于选择性焊接</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>可用于有铅工艺</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>可用于无铅工艺</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>完全无卤</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes-jar.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/></div>
-                        <div class="product-name">
-                          <h3>IPA/DI 擦拭布</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon30"></div>
-                              <p>静电安全</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® pre-saturated IPA/DI 擦拭布可满足大部分清洁的需要</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® pre-saturated IPA/DI 擦拭布可满足大部分清洁的需要<br/>
-                            不起毛，无纺布<br/>
-                            尺寸：15 x 21cm<br/>
-                            100PCS/卷</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IPA-DI-wipes-DE.pdf" type="application/pdf; length=430094" title="TD IPA-DI wipes-DE.pdf">Technisches Datenblatt IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IPA-DI-wipes-FR.pdf" type="application/pdf; length=433271" title="TD IPA-DI wipes-FR.pdf">Fiche technique IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IPA-DI-wipes_0.pdf" type="application/pdf; length=425179" title="TD IPA-DI wipes.pdf">Technical Data Sheet IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IPA/DI 擦拭布" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1249" title="IPA/DI 擦拭布" class="nid">1249</a>
+                      <div class="product-summary">
+                        <p>Interflux® IF 930cleans and
+                          <strong>可以有效地清洁选择焊设备的喷嘴，去除氧化物</strong>
+                        </p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Tub.jpg" width="200" height="200" alt="IF Stencil Clean Wipes"/><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Bag.jpg" width="200" height="200" alt="IF Stencil Clean Refil bag"/></div>
-                        <div class="product-name">
-                          <h3>钢网擦拭纸</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon09"></div>
-                              <p>可用于钢网清洗</p>
-                            </li>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>醇基型</p>
-                            </li>
-                            <li>
-                              <div class="icon30"></div>
-                              <p>静电安全</p>
-                            </li>
-                            <ul></ul>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® 钢网擦拭纸可用于清洁锡膏残留及SMT其他配件</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® 钢网擦拭纸可用于清洁锡膏残留及SMT其他配件。<br/>
-                            不起毛的，无纺织布<br/>
-                            尺寸：15 x 21cm<br/>
-                            100PCS/卷</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Stencil-clean-wipes-DE.pdf" type="application/pdf; length=421028" title="TD Stencil clean wipes-DE.pdf">Technisches Datenblatt Stencil Clean Wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Stencil-clean-wipes-FR_0.pdf" type="application/pdf; length=427631" title="TD Stencil clean wipes-FR.pdf">Fiche technique Stencil Clean Wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Stencil-clean-wipes.pdf" type="application/pdf; length=417010" title="TD Stencil clean wipes.pdf">Technical Data Sheet Stencil Clean Wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=钢网擦拭纸" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1263" title="钢网擦拭纸" class="nid">1263</a>
+                      <div class="product-details">
+                        <p>Interflux® IF 930 可以有效地清洁选择焊设备的喷嘴，去除氧化物<br/>
+                          安全，简单的一步式清洗<br/>
+                          替换IF920<br/>
+                          工艺控制</p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_ISC-8020_0.jpg" width="200" height="200" alt="ISC 8020"/></div>
-                        <div class="product-name">
-                          <h3>ISC 8020</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>钢网清洗液</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon09"></div>
-                              <p>可用于钢网印刷</p>
-                            </li>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>醇基</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® ISC 8020 是一款钢网清洗液</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® ISC 8020 是一款钢网清洗液<br/>
-                            用来去除焊锡膏和SMT其他配件</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-ISC-8020-DE.pdf" type="application/pdf; length=346604" title="TD ISC 8020-DE.pdf">Technisches Datenblatt ISC 8020</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-ISC-8020.pdf" type="application/pdf; length=344448" title="TD ISC 8020.pdf">Technical Data Sheet ISC 8020</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=ISC 8020" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1250" title="ISC 8020" class="nid">1250</a>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-930-DE.pdf" type="application/pdf; length=522376" title="TD IF 930-DE.pdf">Technisches Datenblatt IF 930</a>
+                        </span>
                       </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-930-FR.pdf" type="application/pdf; length=435025" title="TD IF 930-FR.pdf">Fiche technique IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-930_0.pdf" type="application/pdf; length=387275" title="TD IF 930.pdf">Technical Data Sheet IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 930" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1246" title="IF 930" class="nid">1246</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Tip-Tinner.jpg" width="200" height="200" alt="Tip Tinner"/></div>
+                      <div class="product-name">
+                        <h3>TIP TINNER 烙铁头清洁剂</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>可用于返修</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>可用于有铅工艺</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>可用于无铅工艺</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>完全无卤</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>不含松香</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Tip Tinner 可以清洁及保护焊接器材，有效的延长烙铁头适用寿命</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® 可以清洁及保护焊接器材，有效的延长烙铁头适用寿命<br/>
+                          完全无卤<br/>
+                          无腐蚀</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Tip-Tinner-DE_0.pdf" type="application/pdf; length=381222" title="TD Tip Tinner-DE.pdf">Technisches Datenblatt Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Tip-Tinner-FR_0.pdf" type="application/pdf; length=425441" title="TD Tip Tinner-FR.pdf">Fiche technique Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Tip-Tinner_0.pdf" type="application/pdf; length=418029" title="TD Tip Tinner.pdf">Technical Data Sheet Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=TIP TINNER 烙铁头清洁剂" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1267" title="TIP TINNER 烙铁头清洁剂" class="nid">1267</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Purgel.jpg" width="200" height="200" alt="IF Purgel"/></div>
+                      <div class="product-name">
+                        <h3>PURGEL</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>适用于返修</p>
+                          </li>
+                          <li>
+                            <div class="icon08"></div>
+                            <p>适用于滴涂方式</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>在MYDATA的MY500及MY600喷印机上效果良好</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong></strong>
+                          Purgel 是一种中性清洁剂，适用于清洁点胶机的泵和盖子</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Purgel 是一种中性清洁剂，适用于清洁点胶机的泵和盖子。<br/>
+                          能起到良好的保护作用<br/>
+                          在MYDATA的MY500及MY600喷印机上效果良好</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Purgel-DE_0.pdf" type="application/pdf; length=371237" title="TD Purgel-DE.pdf">Technisches Datenblatt Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Purgel-FR_0.pdf" type="application/pdf; length=370051" title="TD Purgel-FR.pdf">Fiche technique Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Purgel_0.pdf" type="application/pdf; length=363113" title="TD Purgel.pdf">Technical Data Sheet Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PURGEL" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1260" title="PURGEL" class="nid">1260</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes-jar.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/></div>
+                      <div class="product-name">
+                        <h3>IPA/DI 擦拭布</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon30"></div>
+                            <p>静电安全</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® pre-saturated IPA/DI 擦拭布可满足大部分清洁的需要</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® pre-saturated IPA/DI 擦拭布可满足大部分清洁的需要<br/>
+                          不起毛，无纺布<br/>
+                          尺寸：15 x 21cm<br/>
+                          100PCS/卷</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IPA-DI-wipes-DE.pdf" type="application/pdf; length=430094" title="TD IPA-DI wipes-DE.pdf">Technisches Datenblatt IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IPA-DI-wipes-FR.pdf" type="application/pdf; length=433271" title="TD IPA-DI wipes-FR.pdf">Fiche technique IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IPA-DI-wipes_0.pdf" type="application/pdf; length=425179" title="TD IPA-DI wipes.pdf">Technical Data Sheet IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IPA/DI 擦拭布" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1249" title="IPA/DI 擦拭布" class="nid">1249</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Tub.jpg" width="200" height="200" alt="IF Stencil Clean Wipes"/><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Bag.jpg" width="200" height="200" alt="IF Stencil Clean Refil bag"/></div>
+                      <div class="product-name">
+                        <h3>钢网擦拭纸</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon09"></div>
+                            <p>可用于钢网清洗</p>
+                          </li>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>醇基型</p>
+                          </li>
+                          <li>
+                            <div class="icon30"></div>
+                            <p>静电安全</p>
+                          </li>
+                          <ul></ul>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® 钢网擦拭纸可用于清洁锡膏残留及SMT其他配件</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® 钢网擦拭纸可用于清洁锡膏残留及SMT其他配件。<br/>
+                          不起毛的，无纺织布<br/>
+                          尺寸：15 x 21cm<br/>
+                          100PCS/卷</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Stencil-clean-wipes-DE.pdf" type="application/pdf; length=421028" title="TD Stencil clean wipes-DE.pdf">Technisches Datenblatt Stencil Clean Wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Stencil-clean-wipes-FR_0.pdf" type="application/pdf; length=427631" title="TD Stencil clean wipes-FR.pdf">Fiche technique Stencil Clean Wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Stencil-clean-wipes.pdf" type="application/pdf; length=417010" title="TD Stencil clean wipes.pdf">Technical Data Sheet Stencil Clean Wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=钢网擦拭纸" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1263" title="钢网擦拭纸" class="nid">1263</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_ISC-8020_0.jpg" width="200" height="200" alt="ISC 8020"/></div>
+                      <div class="product-name">
+                        <h3>ISC 8020</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>钢网清洗液</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon09"></div>
+                            <p>可用于钢网印刷</p>
+                          </li>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>醇基</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® ISC 8020 是一款钢网清洗液</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® ISC 8020 是一款钢网清洗液<br/>
+                          用来去除焊锡膏和SMT其他配件</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-ISC-8020-DE.pdf" type="application/pdf; length=346604" title="TD ISC 8020-DE.pdf">Technisches Datenblatt ISC 8020</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-ISC-8020.pdf" type="application/pdf; length=344448" title="TD ISC 8020.pdf">Technical Data Sheet ISC 8020</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=ISC 8020" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1250" title="ISC 8020" class="nid">1250</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">焊浴处理</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_15 product-row-group view-dom-id-868838e162bd27f57cfa262755aab8b0">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-910_final2.png" width="200" height="200" alt="IF 910 de-oxidation oil"/></div>
-                        <div class="product-name">
-                          <h3>IF 910</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>抗氧化油</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>可用于选择性焊接</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>可用于预先沾锡</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>可用于浸焊</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>可用于有铅焊接</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>可用于无铅焊接</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 910 可在锡槽中将氧化物从焊锡中分离出来</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 910 910 可在锡槽中将氧化物从焊锡中分离出来。<br/>
-                            减少焊锡消耗量</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-910-DE.pdf" type="application/pdf; length=526614" title="TD IF 910-DE.pdf">Technisches Datenblatt IF 910</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-910-FR_0.pdf" type="application/pdf; length=495807" title="TD IF 910-FR.pdf">Fiche technique IF 910</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-910.pdf" type="application/pdf; length=484684" title="TD IF 910.pdf">Technical Data Sheet IF 910</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 910" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1245" title="IF 910" class="nid">1245</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">焊浴处理</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_15 product-row-group view-dom-id-996def9c2b77faed367ceafbf372e7aa">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-910_final2.png" width="200" height="200" alt="IF 910 de-oxidation oil"/></div>
+                      <div class="product-name">
+                        <h3>IF 910</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AOP-lead-free.jpg" width="200" height="200" alt="Anti-oxidant pellets"/><img typeof="foaf:Image" src="/assets/images/CLP_AOP-SnPb.jpg" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>抗氧化合金</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>可用于波峰焊</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>可用于选择性焊接</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>可用于预先沾锡</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>可用于有铅焊接</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>可用于无铅焊接</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® 抗氧化合金可最小化锡槽（锡铅、无铅）中氧化物的形成。</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux®抗氧化合金可最小化锡槽（锡铅、无铅）中氧化物的形成。<br/>
-                            对于锡铅（蓝色标签）或无铅（绿色标签）合金，抗氧化合金不推荐用于封闭的惰性气体环境以及使用含镍的焊料时。</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Anti-oxidant-pellets-DE.pdf" type="application/pdf; length=366742" title="TD Anti-oxidant pellets-DE.pdf">Technisches Datenblatt Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Anti-oxidant-pellets-FR_0.pdf" type="application/pdf; length=371501" title="TD Anti-oxidant pellets-FR.pdf">Fiche technique Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Anti-oxidant-pellets.pdf" type="application/pdf; length=364659" title="TD Anti-oxidant pellets.pdf">Technical Data Sheet Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=抗氧化合金" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1223" title="抗氧化合金" class="nid">1223</a>
+                      <div class="product-name-extra">
+                        <h3>抗氧化油</h3>
                       </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>可用于选择性焊接</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>可用于预先沾锡</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>可用于浸焊</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>可用于有铅焊接</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>可用于无铅焊接</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 910 可在锡槽中将氧化物从焊锡中分离出来</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 910 910 可在锡槽中将氧化物从焊锡中分离出来。<br/>
+                          减少焊锡消耗量</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-910-DE.pdf" type="application/pdf; length=526614" title="TD IF 910-DE.pdf">Technisches Datenblatt IF 910</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-910-FR_0.pdf" type="application/pdf; length=495807" title="TD IF 910-FR.pdf">Fiche technique IF 910</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-910.pdf" type="application/pdf; length=484684" title="TD IF 910.pdf">Technical Data Sheet IF 910</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 910" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1245" title="IF 910" class="nid">1245</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AOP-lead-free.jpg" width="200" height="200" alt="Anti-oxidant pellets"/><img typeof="foaf:Image" src="/assets/images/CLP_AOP-SnPb.jpg" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>抗氧化合金</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>可用于波峰焊</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>可用于选择性焊接</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>可用于预先沾锡</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>可用于有铅焊接</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>可用于无铅焊接</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® 抗氧化合金可最小化锡槽（锡铅、无铅）中氧化物的形成。</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux®抗氧化合金可最小化锡槽（锡铅、无铅）中氧化物的形成。<br/>
+                          对于锡铅（蓝色标签）或无铅（绿色标签）合金，抗氧化合金不推荐用于封闭的惰性气体环境以及使用含镍的焊料时。</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Anti-oxidant-pellets-DE.pdf" type="application/pdf; length=366742" title="TD Anti-oxidant pellets-DE.pdf">Technisches Datenblatt Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Anti-oxidant-pellets-FR_0.pdf" type="application/pdf; length=371501" title="TD Anti-oxidant pellets-FR.pdf">Fiche technique Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Anti-oxidant-pellets.pdf" type="application/pdf; length=364659" title="TD Anti-oxidant pellets.pdf">Technical Data Sheet Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=抗氧化合金" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1223" title="抗氧化合金" class="nid">1223</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">焊料合金</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_14 product-row-group view-dom-id-dd695bbaa7a2b184d19926a5fd2cb0f3">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/solder-bars_0.jpg" width="200" height="200" alt="solder bars"/></div>
-                        <div class="product-name">
-                          <h3>锡条</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>可用于波峰焊</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>可用于选择性焊接</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>可用于预镀锡</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>可用于浸焊</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® 锡条是由高纯度，低氧化金属制成，包括锡铅（银）合金和无铅合金</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® 锡条是由高纯度，低氧化金属制成，包括锡铅（银）合金和无铅合金</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=锡条" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1262" title="锡条" class="nid">1262</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">焊料合金</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_14 product-row-group view-dom-id-085de9a740a9c461d6eedb02fc11bbd5">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/solder-bars_0.jpg" width="200" height="200" alt="solder bars"/></div>
+                      <div class="product-name">
+                        <h3>锡条</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/plain-wire-2mm-4kg-5.png" width="200" height="200" alt="Plain Solder Wire"/></div>
-                        <div class="product-name">
-                          <h3>纯锡线</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>适用于选择焊</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>适用于预镀锡</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>适用于浸焊</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® 纯锡线适用于选择焊接系统中的自动焊接</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® 纯锡线适用于选择焊接系统中的自动焊接。<br/>
-                            锡线直径：2mm<br/>
-                            4kg卷装<br/>
-                            规格：125mmx125mm（直径x长度）</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=纯锡线" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1259" title="纯锡线" class="nid">1259</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>可用于波峰焊</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>可用于选择性焊接</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>可用于预镀锡</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>可用于浸焊</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles.png" width="200" height="200" alt="Solder Grenailles"/></div>
-                        <div class="product-name">
-                          <h3>锡团</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>可用于波峰焊</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>可用于选择性焊接</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>可用于返修</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>可用于预镀锡</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>可用于浸焊</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® 锡团是小粒的焊锡，为了便于填充锡槽，有无铅合金和锡铅（银）合金</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® 锡团是小粒的焊锡，为了便于填充锡槽，有无铅合金和锡铅（银）合金<br/>
-                            尺寸：（大约）1CM*1CM</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=锡团" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/zh-hans/1264" title="锡团" class="nid">1264</a>
+                      <div class="product-summary">
+                        <p>Interflux® 锡条是由高纯度，低氧化金属制成，包括锡铅（银）合金和无铅合金</p>
                       </div>
+                      <div class="product-details">
+                        <p>Interflux® 锡条是由高纯度，低氧化金属制成，包括锡铅（银）合金和无铅合金</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=锡条" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1262" title="锡条" class="nid">1262</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/plain-wire-2mm-4kg-5.png" width="200" height="200" alt="Plain Solder Wire"/></div>
+                      <div class="product-name">
+                        <h3>纯锡线</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>适用于选择焊</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>适用于预镀锡</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>适用于浸焊</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® 纯锡线适用于选择焊接系统中的自动焊接</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® 纯锡线适用于选择焊接系统中的自动焊接。<br/>
+                          锡线直径：2mm<br/>
+                          4kg卷装<br/>
+                          规格：125mmx125mm（直径x长度）</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=纯锡线" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1259" title="纯锡线" class="nid">1259</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles.png" width="200" height="200" alt="Solder Grenailles"/></div>
+                      <div class="product-name">
+                        <h3>锡团</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>可用于波峰焊</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>可用于选择性焊接</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>可用于返修</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>可用于预镀锡</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>可用于浸焊</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® 锡团是小粒的焊锡，为了便于填充锡槽，有无铅合金和锡铅（银）合金</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® 锡团是小粒的焊锡，为了便于填充锡槽，有无铅合金和锡铅（银）合金<br/>
+                          尺寸：（大约）1CM*1CM</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=锡团" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/zh-hans/1264" title="锡团" class="nid">1264</a>
                     </div>
                   </div>
                 </div>
@@ -774,16 +964,62 @@
             </div>
           </div>
         </div>
-        <div id="block-block-17" class="block block-block library-reference last even">
-          <div class="inner-block">
-            <p>找不到所需的产品？请所搜文库中的详细产品列表 -
-              <a href="/zh-hans/documents">资料</a>
-            </p>
-          </div>
-        </div>
-        <div class="clear"></div>
       </div>
+      <div id="block-block-17" class="block block-block library-reference last even">
+        <div class="inner-block">
+          <p>找不到所需的产品？请所搜文库中的详细产品列表 -
+            <a href="/zh-hans/documents">资料</a>
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
-  {% include "partials/footer.njk" %}
+  <div class="region region-footer2">
+    <div class="inner-region">
+      <div id="block-block-18" class="block block-block first last odd">
+        <div class="inner-block">
+          <div class="block grid-12" id="F1">
+            <div class="inner-block">
+              <div class="inner-content">
+                <a href="/en/contact" target="_self" title="Go to the contact page for more information"><img src="/assets/images/Interflux-Electronics-headquarters-belgium.jpg" width="171" height="271" alt="Interflux Electronics Belgium office building"/></a>
+                <div class="contact-title">
+                  <span>联系</span><br/>INTERFLUX<br/>总部</div>
+                <div class="contact-adress">
+                  <p>
+                    Interflux Electronics NV<br/>
+                    Gent zeehaven 3170A<br/>
+                    Eddastraat 51<br/>
+                    9042 Gent<br/>
+                    BELGIUM</p>
+                  <p>Tel.: +32 9251 4959<br/>
+                    Fax: +32 9251 4970<br/>
+                    <a href="mailto:info@interflux.com" target="_blank">info@interflux.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-12" id="F2">
+            <div class="inner-block">
+              <div class="inner-content">
+                <div class="contact-title">
+                  <span>联系</span><br/>INTERFLUX分部</div>
+                <p>
+                  <a href="/en/contact" target="_self" title="Go to the contact page for more information"><img src="/assets/images/interflux-worldwide-map.jpg" width="446" height="196" alt="Geographical map of the Interflux group"/></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-24" id="F3">
+            <div class="copyright">©2012 Interflux版权所有</div>
+            <div class="louder-than-words">Website by
+              <a href="http://nabu.io" target="_new" title="NABU websites">NABU websites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
 {% endblock %}

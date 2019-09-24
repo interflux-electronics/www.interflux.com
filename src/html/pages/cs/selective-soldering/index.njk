@@ -8,735 +8,925 @@
 {% block bodyClass %}html not-front not-logged-in no-sidebars page-selective-soldering page-products i18n-cs section-selective-soldering page-panels
 {% endblock %}
 {% block page %}
-  {% include "partials/highlight.njk" %}
+  <div class="region region-language">
+    <div class="inner-region">
+      <div id="block-locale-language" class="block block-locale language-menu block grid-24 first last odd" role="complementary">
+        <div class="inner-block">
+          <ul class="language-switcher-locale-url">
+            <li class="en first">
+              <a href="/en/selective-soldering" class="language-link" lang="en" title="Selective Soldering">
+                <div class="flag en"></div>English</a>
+            </li>
+            <li class="zh-hans">
+              <a href="/zh-hans/selective-soldering" class="language-link" lang="zh-hans" title="选择焊">
+                <div class="flag zh-hans"></div>简体中文</a>
+            </li>
+            <li class="cs active">
+              <a href="/cs/selective-soldering" class="language-link active" lang="cs" title="Selektivní pájení">
+                <div class="flag cs"></div>Čeština</a>
+            </li>
+            <li class="de">
+              <a href="/de/selective-soldering" class="language-link" lang="de" title="Selektivlöten">
+                <div class="flag de"></div>Deutsch</a>
+            </li>
+            <li class="fr">
+              <a href="/fr/selective-soldering" class="language-link" lang="fr" title="Brasage sélectif">
+                <div class="flag fr"></div>Français</a>
+            </li>
+            <li class="it">
+              <a href="/it/selective-soldering" class="language-link" lang="it" title="Saldatura selettiva">
+                <div class="flag it"></div>Italiano</a>
+            </li>
+            <li class="id">
+              <a href="/id/selective-soldering" class="language-link" lang="id" title="Penyolderan selektif">
+                <div class="flag id"></div>Bahasa Indonesia</a>
+            </li>
+            <li class="pt-pt">
+              <a href="/pt-pt/selective-soldering" class="language-link" lang="pt-pt" title="Soldagem selectiva">
+                <div class="flag pt-pt"></div>Português</a>
+            </li>
+            <li class="ro">
+              <a href="/ro/selective-soldering" class="language-link" lang="ro" title="Lipire selectiva">
+                <div class="flag ro"></div>Română</a>
+            </li>
+            <li class="ru">
+              <a href="/ru/selective-soldering" class="language-link" lang="ru" title="Селективная пайка">
+                <div class="flag ru"></div>Русский</a>
+            </li>
+            <li class="th">
+              <a href="/th/selective-soldering" class="language-link" lang="th" title="การบัดกรีเฉพาะส่วน">
+                <div class="flag th"></div>ภาษาไทย</a>
+            </li>
+            <li class="tr">
+              <a href="/tr/selective-soldering" class="language-link" lang="tr">
+                <div class="flag tr"></div>Türkçe</a>
+            </li>
+            <li class="pl">
+              <a href="/pl/selective-soldering" class="language-link" lang="pl" title="Lutowanie selektywne">
+                <div class="flag pl"></div>Polski</a>
+            </li>
+            <li class="es">
+              <a href="/es/selective-soldering" class="language-link" lang="es" title="Soldadura selectiva">
+                <div class="flag es"></div>Español</a>
+            </li>
+            <li class="sv last">
+              <a href="/sv/selective-soldering" class="language-link" lang="sv" title="Selektiv lödning">
+                <div class="flag sv"></div>Svenska</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-header">
+    <div class="inner-region">
+      <div id="block-block-11" class="block block-block grid-9 first odd">
+        <div class="inner-block">
+          <p>
+            <a href="/cs/" title="Interflux Electronics" target="_self"><img src="/assets/images/interflux-electronics-logo.png" width="343" height="87" alt="Interflux Electronics logo"/></a>
+          </p>
+        </div>
+      </div>
+      <div id="block-menu-menu-interflux-menu" class="block block-menu grid-15 header-nav last even" role="navigation">
+        <div class="inner-block">
+          <ul class="menu">
+            <li class="first expanded">
+              <a href="/cs" title="Vyhledat produkty podle typu">Produkty</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/cs/soldering-fluxes" title="">Pájecí tavidla</a>
+                </li>
+                <li class="leaf">
+                  <a href="/cs/solder-pastes" title="">Pájecí pasty</a>
+                </li>
+                <li class="leaf">
+                  <a href="/cs/solder-wires" title="">Pájecí dráty</a>
+                </li>
+                <li class="leaf">
+                  <a href="/cs/spray-fluxers" title="">Sprejová tavidla</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/cs/auxiliaries" title="">Doplňky</a>
+                </li>
+              </ul>
+            </li>
+            <li class="expanded active-trail">
+              <a href="/cs" title="Vyhledat produkty podle procesu" class="active-trail">Procesy</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/cs/wave-soldering" title="">Pájení vlnou</a>
+                </li>
+                <li class="leaf active-trail">
+                  <a href="/cs/selective-soldering" title="" class="active-trail active">Selektivní pájení</a>
+                </li>
+                <li class="leaf">
+                  <a href="/cs/reflow-soldering" title="">Reflow pájení</a>
+                </li>
+                <li class="leaf">
+                  <a href="/cs/rework-and-repair" title="">Přepracování & Opravy</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/cs/pre-tinning" title="">Cínování</a>
+                </li>
+              </ul>
+            </li>
+            <li class="leaf">
+              <a href="/cs/company" title="Dozvědět se o Interflux">Společnost</a>
+            </li>
+            <li class="leaf">
+              <a href="/cs/documents" title="Vyhledat technická data">Dokumenty</a>
+            </li>
+            <li class="last leaf">
+              <a href="/cs/contact" title="Buďte v kontaktu">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-highlight">
+    <div class="inner-region">
+      <div id="banners">
+        <div class="preload"></div>
+        <div class="stage">
+          <article id="ipc-apex-2017">
+            <a href="http://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
+              <picture>
+                <source srcset="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg 2x, http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018.jpg 1x"></source>
+                <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg" alt="Visit use at IPC APEX 2018 in San Diego"/>
+              </picture>
+            </a>
+          </article>
+          <article id="productronica-2017">
+            <a href="http://www.productronica.com/" target="_blank" title="Visit us at Productronica 2017">
+              <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/productronica-banner-2017.jpg"/>
+            </a>
+          </article>
+          <article id="lmpa">
+            <a href="https://lmpa.interflux.com" target="_blank">
+              <h1>Solder
+                <strong>5 times</strong>
+                faster whilst maintaining
+                <strong>zero defects</strong>
+              </h1>
+              <h1>Discover
+                <mark>LMPA<span>™</span>
+                </mark>
+              </h1>
+              <div id="video">
+                <video id="movie" width="276" height="220" autoplay loop>
+                  <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
+                  Your browser doesn't support HTML5 video tag.
+                </video>
+                <script></script>
+                <p>Speed: 30 mm/s</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <nav>
+          <div id="prev">
+            <div></div>
+          </div>
+          <div id="next">
+            <div></div>
+          </div>
+          <div id="timer">
+            <div></div>
+          </div>
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
   <div class="region region-corpus">
     <div class="inner-region">
-      <div class="inner-region">
-        <div class="panel-display panel-1col clearfix">
-          <div class="panel-panel panel-col">
-            <div>
-              <div class="panel-pane pane-views pane-process-views-interflux">
-                <h2 class="pane-title">
-                  <div class="fs30">Pájecí tavidla</div>
-                  <div class="fs18">pro selektivní pájení</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_6 product-row-group view-dom-id-4a6a9e0aabb502d2b12ee9f044a4d940">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="views-row views-row-1 views-row-odd views-row-first product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/SelectIF2040-2.png" width="200" height="200" alt="SelectIF 2040"/></div>
-                        <div class="product-name">
-                          <h3>SELECTIF 2040</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NOVÝ</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Tavidlo na vodní bázi</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Pro selektivní pájení</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Zcela bez halogenidů</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Vysoká míra dezoxidace</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>Odolné na předehřevu</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Vysoká kompatibilita k pouzdření máčením</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Nízkozbytkové</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® SelectIF 2040 je selektivní bezoplachové tavidlo na vodní bázi se širokým procesním záběrem a nízkou tvorbou zbytků.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® SelectIF 2040je selektivní bezoplachové tavidlo na vodní bázi se širokým procesním záběrem a nízkou tvorbou zbytků. Odolává vysokým procesním teplotám a dlouhým procesním časům.<br/>
-                            Pro olovnaté a bezolovnaté pájení<br/>
-                            OR L0 podle EN a IPC norem<br/>
-                            Obsah pevných látek: 6,5% ±0,2<br/>
-                            Obsah halogenidů: 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SelectIF-2040-DE_0.pdf" type="application/pdf; length=429820" title="TD SelectIF 2040-DE.pdf">Technisches Datenblatt SelectIF 2040</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SelectIF-2040-FR_0.pdf" type="application/pdf; length=458922" title="TD SelectIF 2040-FR.pdf">Fiche technique SelectIF 2040</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SelectIF-2040.pdf" type="application/pdf; length=408961" title="TD SelectIF 2040.pdf">Technical Data Sheet SelectIF 2040</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SELECTIF 2040" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+      <div class="panel-display panel-1col clearfix">
+        <div class="panel-panel panel-col">
+          <div>
+            <div class="panel-pane pane-views pane-process-views-interflux">
+              <h2 class="pane-title">
+                <div class="fs30">Pájecí tavidla</div>
+                <div class="fs18">pro selektivní pájení</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_6 product-row-group view-dom-id-982c31cd97570cb1ae19face7f95edaa">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="views-row views-row-1 views-row-odd views-row-first product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/SelectIF2040-2.png" width="200" height="200" alt="SelectIF 2040"/></div>
+                      <div class="product-name">
+                        <h3>SELECTIF 2040</h3>
                       </div>
-                      <div class="views-row views-row-2 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-2005C_7.jpg" width="200" height="200" alt="IF 2005C"/></div>
-                        <div class="product-name">
-                          <h3>IF 2005C</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Alkoholová báze</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Pro selektivní pájení</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Pro cínování</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Zcela bez halogenidů</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Vysoká míra dezoxidace</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>Odolné na předehřevu</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Vysoká kompatibilita s konformním povlakem</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 2005C s 3,3% pevných látek je pryskyřicové, bezkalafunová a bezoplachové tavidlo. Tavidlo lze použít tam, kde pájecí procesy vyžadují větší aktivace, které nelze dosáhnout s IF 2005M nebo IF 2005K.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 2005C s 3,3% pevných látek je pryskyřicové, bezkalafunová a bezoplachové tavidlo. Tavidlo lze použít tam, kde pájecí procesy vyžadují větší aktivace, které nelze dosáhnout s IF 2005M nebo IF 2005K.<br/>
-                            Pro olovnaté i bezolovnaté pájení<br/>
-                            Vhodné pro nanášení postřikem nebo pěnou<br/>
-                            OR L0 podle EN a IPC norem<br/>
-                            Obsah pevných látek: 3,3% ± 0,3<br/>
-                            Obsah halogenidů: 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-2005C-DE_0.pdf" type="application/pdf; length=484180" title="TD IF 2005C-DE.pdf">Technisches Datenblatt IF 2005C</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/IF-2005--series-application-doc-DE_0.pdf" type="application/pdf; length=234680" title="IF 2005- series application doc-DE.pdf">IF 2005-Serie Anwendung</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-2005C-FR.pdf" type="application/pdf; length=556116" title="TD IF 2005C-FR.pdf">Fiche technique IF 2005C</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/IF-2005--series-application-doc-FR.pdf" type="application/pdf; length=233410" title="IF 2005- series application doc-FR.pdf">Document d'application de la série IF 2005</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-2005C.pdf" type="application/pdf; length=467663" title="TD IF 2005C.pdf">Technical Data Sheet IF 2005C</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/IF-2005--series-application-doc.pdf" type="application/pdf; length=229382" title="IF 2005- series application doc.pdf">IF 2005 series application document</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 2005C" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-highlight">
+                        <h3>NOVÝ</h3>
                       </div>
-                      <div class="views-row views-row-3 views-row-odd product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009M_7.jpg" width="200" height="200" alt="PACIFIC 2009M"/></div>
-                        <div class="product-name">
-                          <h3>PACIFIC 2009M</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Tavidlo na vodní bázi</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Pro pájení vlnou</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Pro selektivní pájení</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Pro cínování</p>
-                            </li>
-                            <li>
-                              <div class="icon06"></div>
-                              <p>Pro nanášení sprejem</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Zcela bez halogenidů</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Vysoká kompatibilita k pouzdření máčením</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Nízkozbytkové</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® PacIFic
-                            <strong></strong>2009M je bezoplachové tavidlo na vodní bázi používané hlavně pro pájení vlnou a selektivní pájení.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® PacIFic
-                            <strong></strong>2009M je bezoplachové tavidlo na vodní bázi používané hlavně pro pájení vlnou a selektivní pájení.<br/>
-                            Pro olovnaté a bezolovnaté pájení<br/>
-                            OR L0 podle EN a IPC norem<br/>
-                            Obsah pevných látek: 3,7% ±0,15<br/>
-                            Obsah halogenidů: 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-PacIFic-2009M-DE_0.pdf" type="application/pdf; length=439464">TD PacIFic 2009M-DE.pdf</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-PacIFic-2009M-FR.pdf" type="application/pdf; length=401502" title="TD PacIFic 2009M-FR.pdf">Fiche technique PacIFic 2009M</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-PacIFic-2009M_0.pdf" type="application/pdf; length=433215" title="TD PacIFic 2009M.pdf">Technical Data Sheet PacIFic 2009M</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/Kyzen_P2009M.pdf" type="application/pdf; length=62971" title="Kyzen_P2009M.pdf">Cleaning PACIFIC 2009M by KYZEN</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009M" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Tavidlo na vodní bázi</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Pro selektivní pájení</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Zcela bez halogenidů</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Vysoká míra dezoxidace</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>Odolné na předehřevu</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Vysoká kompatibilita k pouzdření máčením</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Nízkozbytkové</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="views-row views-row-4 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009MLF_8.jpg" width="200" height="200" alt="PACIFIC 2009MLF"/></div>
-                        <div class="product-name">
-                          <h3>PACIFIC 2009MLF</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Tavidlo na vodní bázi</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Pro pájení vlnou</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Pro selektivní pájení</p>
-                            </li>
-                            <li>
-                              <div class="icon06"></div>
-                              <p>Pro nanášení sprejem</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Zcela bez halogenidů</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>
-                                <strong>Omezení vzniku kuliček pájky</strong>
-                              </p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>PacIFic
-                            <strong></strong>2009MLF je bezoplachové tavidlo na vodní bázi, které je vyvinuto, aby omezovalo tvorbu mikrokuliček pájky.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>PacIFic 2009MLF je bezoplachové tavidlo na vodní bázi, které je vyvinuto, aby omezovalo tvorbu mikrokuliček pájky.<br/>
-                            Pro olovnaté a bezolovnaté pájení<br/>
-                            Hlavní oblast použití: pájení vlnou a selektivní pájení<br/>
-                            OR L0 podle EN a IPC norem<br/>
-                            Obsah pevných látek: 3,6% ±0,2<br/>
-                            Obsah halogenidů: 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-PacIFic-2009MLF-DE_0.pdf" type="application/pdf; length=539026" title="TD PacIFic 2009MLF-DE.pdf">Technisches Datenblatt PacIFic 2009MLF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-PacIFic-2009MLF-FR_0.pdf" type="application/pdf; length=501536" title="TD PacIFic 2009MLF-FR.pdf">Fiche technique PacIFic 2009MLF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-PacIFic-2009MLF.pdf" type="application/pdf; length=532571" title="TD PacIFic 2009MLF.pdf">Technical Data Sheet PacIFic 2009MLF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009MLF" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-summary">
+                        <p>Interflux® SelectIF 2040 je selektivní bezoplachové tavidlo na vodní bázi se širokým procesním záběrem a nízkou tvorbou zbytků.
+                        </p>
                       </div>
-                      <div class="views-row views-row-5 views-row-odd views-row-last product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-3006_7.jpg" width="200" height="200" alt="IF 3006"/></div>
-                        <div class="product-name">
-                          <h3>IF 3006</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon13"></div>
-                              <p>Low VOC (snížený obsah těkavých organických sloučenin)</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Pro pájení vlnou</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Pro selektivní pájení</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Pro cínování</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Zcela bez halogenidů</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Vysoká kompatibilita s konformním povlakem</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 3006 je pryskyřicové, bez kalafunové a bezoplachové pájecí tavidlo se sníženým obsahem VOC (těkavé organické sloučeniny).</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 3006 je pryskyřicové, bez kalafunové a bezoplachové pájecí tavidlo se sníženým obsahem VOC (těkavé organické sloučeniny).<br/>
-                            Pro olovnaté a bezolovnaté pájení<br/>
-                            Také pro cínování<br/>
-                            OR L0 podle EN a IPC norem<br/>
-                            Obsah pevných látek: 3,2% ±0,2<br/>
-                            Obsah halogenidů: 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-3006-DE_0.pdf" type="application/pdf; length=441073" title="TD IF 3006-DE.pdf">Technisches Datenblatt IF 3006</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-3006-FR.pdf" type="application/pdf; length=442827" title="TD IF 3006-FR.pdf">Fiche technique IF 3006</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-3006.pdf" type="application/pdf; length=435445" title="TD IF 3006.pdf">Technical Data Sheet IF 3006</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 3006" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-details">
+                        <p>Interflux® SelectIF 2040je selektivní bezoplachové tavidlo na vodní bázi se širokým procesním záběrem a nízkou tvorbou zbytků. Odolává vysokým procesním teplotám a dlouhým procesním časům.<br/>
+                          Pro olovnaté a bezolovnaté pájení<br/>
+                          OR L0 podle EN a IPC norem<br/>
+                          Obsah pevných látek: 6,5% ±0,2<br/>
+                          Obsah halogenidů: 0,00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SelectIF-2040-DE_0.pdf" type="application/pdf; length=429820" title="TD SelectIF 2040-DE.pdf">Technisches Datenblatt SelectIF 2040</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SelectIF-2040-FR_0.pdf" type="application/pdf; length=458922" title="TD SelectIF 2040-FR.pdf">Fiche technique SelectIF 2040</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SelectIF-2040.pdf" type="application/pdf; length=408961" title="TD SelectIF 2040.pdf">Technical Data Sheet SelectIF 2040</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SELECTIF 2040" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-2 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-2005C_7.jpg" width="200" height="200" alt="IF 2005C"/></div>
+                      <div class="product-name">
+                        <h3>IF 2005C</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Alkoholová báze</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Pro selektivní pájení</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Pro cínování</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Zcela bez halogenidů</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Vysoká míra dezoxidace</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>Odolné na předehřevu</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Vysoká kompatibilita s konformním povlakem</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 2005C s 3,3% pevných látek je pryskyřicové, bezkalafunová a bezoplachové tavidlo. Tavidlo lze použít tam, kde pájecí procesy vyžadují větší aktivace, které nelze dosáhnout s IF 2005M nebo IF 2005K.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 2005C s 3,3% pevných látek je pryskyřicové, bezkalafunová a bezoplachové tavidlo. Tavidlo lze použít tam, kde pájecí procesy vyžadují větší aktivace, které nelze dosáhnout s IF 2005M nebo IF 2005K.<br/>
+                          Pro olovnaté i bezolovnaté pájení<br/>
+                          Vhodné pro nanášení postřikem nebo pěnou<br/>
+                          OR L0 podle EN a IPC norem<br/>
+                          Obsah pevných látek: 3,3% ± 0,3<br/>
+                          Obsah halogenidů: 0,00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-2005C-DE_0.pdf" type="application/pdf; length=484180" title="TD IF 2005C-DE.pdf">Technisches Datenblatt IF 2005C</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/IF-2005--series-application-doc-DE_0.pdf" type="application/pdf; length=234680" title="IF 2005- series application doc-DE.pdf">IF 2005-Serie Anwendung</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-2005C-FR.pdf" type="application/pdf; length=556116" title="TD IF 2005C-FR.pdf">Fiche technique IF 2005C</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/IF-2005--series-application-doc-FR.pdf" type="application/pdf; length=233410" title="IF 2005- series application doc-FR.pdf">Document d'application de la série IF 2005</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-2005C.pdf" type="application/pdf; length=467663" title="TD IF 2005C.pdf">Technical Data Sheet IF 2005C</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/IF-2005--series-application-doc.pdf" type="application/pdf; length=229382" title="IF 2005- series application doc.pdf">IF 2005 series application document</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 2005C" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-3 views-row-odd product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009M_7.jpg" width="200" height="200" alt="PACIFIC 2009M"/></div>
+                      <div class="product-name">
+                        <h3>PACIFIC 2009M</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Tavidlo na vodní bázi</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Pro pájení vlnou</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Pro selektivní pájení</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Pro cínování</p>
+                          </li>
+                          <li>
+                            <div class="icon06"></div>
+                            <p>Pro nanášení sprejem</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Zcela bez halogenidů</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Vysoká kompatibilita k pouzdření máčením</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Nízkozbytkové</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® PacIFic
+                          <strong></strong>2009M je bezoplachové tavidlo na vodní bázi používané hlavně pro pájení vlnou a selektivní pájení.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® PacIFic
+                          <strong></strong>2009M je bezoplachové tavidlo na vodní bázi používané hlavně pro pájení vlnou a selektivní pájení.<br/>
+                          Pro olovnaté a bezolovnaté pájení<br/>
+                          OR L0 podle EN a IPC norem<br/>
+                          Obsah pevných látek: 3,7% ±0,15<br/>
+                          Obsah halogenidů: 0,00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-PacIFic-2009M-DE_0.pdf" type="application/pdf; length=439464">TD PacIFic 2009M-DE.pdf</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-PacIFic-2009M-FR.pdf" type="application/pdf; length=401502" title="TD PacIFic 2009M-FR.pdf">Fiche technique PacIFic 2009M</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-PacIFic-2009M_0.pdf" type="application/pdf; length=433215" title="TD PacIFic 2009M.pdf">Technical Data Sheet PacIFic 2009M</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/Kyzen_P2009M.pdf" type="application/pdf; length=62971" title="Kyzen_P2009M.pdf">Cleaning PACIFIC 2009M by KYZEN</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009M" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-4 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009MLF_8.jpg" width="200" height="200" alt="PACIFIC 2009MLF"/></div>
+                      <div class="product-name">
+                        <h3>PACIFIC 2009MLF</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Tavidlo na vodní bázi</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Pro pájení vlnou</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Pro selektivní pájení</p>
+                          </li>
+                          <li>
+                            <div class="icon06"></div>
+                            <p>Pro nanášení sprejem</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Zcela bez halogenidů</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>
+                              <strong>Omezení vzniku kuliček pájky</strong>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>PacIFic
+                          <strong></strong>2009MLF je bezoplachové tavidlo na vodní bázi, které je vyvinuto, aby omezovalo tvorbu mikrokuliček pájky.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>PacIFic 2009MLF je bezoplachové tavidlo na vodní bázi, které je vyvinuto, aby omezovalo tvorbu mikrokuliček pájky.<br/>
+                          Pro olovnaté a bezolovnaté pájení<br/>
+                          Hlavní oblast použití: pájení vlnou a selektivní pájení<br/>
+                          OR L0 podle EN a IPC norem<br/>
+                          Obsah pevných látek: 3,6% ±0,2<br/>
+                          Obsah halogenidů: 0,00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-PacIFic-2009MLF-DE_0.pdf" type="application/pdf; length=539026" title="TD PacIFic 2009MLF-DE.pdf">Technisches Datenblatt PacIFic 2009MLF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-PacIFic-2009MLF-FR_0.pdf" type="application/pdf; length=501536" title="TD PacIFic 2009MLF-FR.pdf">Fiche technique PacIFic 2009MLF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-PacIFic-2009MLF.pdf" type="application/pdf; length=532571" title="TD PacIFic 2009MLF.pdf">Technical Data Sheet PacIFic 2009MLF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009MLF" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-5 views-row-odd views-row-last product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-3006_7.jpg" width="200" height="200" alt="IF 3006"/></div>
+                      <div class="product-name">
+                        <h3>IF 3006</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon13"></div>
+                            <p>Low VOC (snížený obsah těkavých organických sloučenin)</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Pro pájení vlnou</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Pro selektivní pájení</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Pro cínování</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Zcela bez halogenidů</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Vysoká kompatibilita s konformním povlakem</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 3006 je pryskyřicové, bez kalafunové a bezoplachové pájecí tavidlo se sníženým obsahem VOC (těkavé organické sloučeniny).</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 3006 je pryskyřicové, bez kalafunové a bezoplachové pájecí tavidlo se sníženým obsahem VOC (těkavé organické sloučeniny).<br/>
+                          Pro olovnaté a bezolovnaté pájení<br/>
+                          Také pro cínování<br/>
+                          OR L0 podle EN a IPC norem<br/>
+                          Obsah pevných látek: 3,2% ±0,2<br/>
+                          Obsah halogenidů: 0,00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-3006-DE_0.pdf" type="application/pdf; length=441073" title="TD IF 3006-DE.pdf">Technisches Datenblatt IF 3006</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-3006-FR.pdf" type="application/pdf; length=442827" title="TD IF 3006-FR.pdf">Fiche technique IF 3006</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-3006.pdf" type="application/pdf; length=435445" title="TD IF 3006.pdf">Technical Data Sheet IF 3006</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 3006" target="_blank">Contact us for more info / demo / samples</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-process-views-interflux">
-                <h2 class="pane-title">
-                  <div class="fs30">Doplňky</div>
-                  <div class="fs18">pro selektivní pájení</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_10 product-row-group view-dom-id-197b4d7cd8c5c2febcf0da73db80f410">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="views-row views-row-1 views-row-odd views-row-first product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-930-All-in-One_4.jpg" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/><img typeof="foaf:Image" src="/assets/images/IF-930kader.png" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/></div>
-                        <div class="product-name">
-                          <h3>IF 930</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>nozzle cleaner</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Pro selektivní pájení</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Pro SnPb(Ag) procesy</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Pro bezolovnaté procesy</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Zcela bez halogenidů</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 930 čistí a dezoxiduje trysky v zařízeních selektivního pájení.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 930 čistí a dezoxiduje trysky v zařízeních selektivního pájení.<br/>
-                            Bezpečné a snadné vyčištění v jednom kroku<br/>
-                            Nahrazuje IF 920</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-930-DE.pdf" type="application/pdf; length=522376" title="TD IF 930-DE.pdf">Technisches Datenblatt IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-930-FR.pdf" type="application/pdf; length=435025" title="TD IF 930-FR.pdf">Fiche technique IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-930_0.pdf" type="application/pdf; length=387275" title="TD IF 930.pdf">Technical Data Sheet IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 930" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-process-views-interflux">
+              <h2 class="pane-title">
+                <div class="fs30">Doplňky</div>
+                <div class="fs18">pro selektivní pájení</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_10 product-row-group view-dom-id-3cb415dbfb6779891e15236c2549339a">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="views-row views-row-1 views-row-odd views-row-first product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-930-All-in-One_4.jpg" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/><img typeof="foaf:Image" src="/assets/images/IF-930kader.png" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/></div>
+                      <div class="product-name">
+                        <h3>IF 930</h3>
                       </div>
-                      <div class="views-row views-row-2 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AOP-lead-free.jpg" width="200" height="200" alt="Anti-oxidant pellets"/><img typeof="foaf:Image" src="/assets/images/CLP_AOP-SnPb.jpg" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>Anti-oxidační tablety</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Pro pájení ve vlně</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Pro selektivní pájení</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Pro cínování</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Pro SnPb(Ag) procesy)</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Pro bezolovnaté procesy</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Anti-oxidační tablety minimalizují tvorbu strusky v bezolovnatých a SnPb(Ag) pájecích lázních.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Anti-oxidační tablety minimalizují tvorbu strusky v bezolovnatých a SnPb(Ag) pájecích lázních.<br/>
-                            Používá se jako doplněk do pájecí lázně<br/>
-                            Pro SnPb(Ag) (modré značení) nebo bezolovnaté (zelené značení) slitiny<br/>
-                            Anti-oxidační tablety se nedoporučuje použít v uzavřené atmosféře a dusíkem obohacených slitinách.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Anti-oxidant-pellets-DE.pdf" type="application/pdf; length=366742" title="TD Anti-oxidant pellets-DE.pdf">Technisches Datenblatt Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Anti-oxidant-pellets-FR_0.pdf" type="application/pdf; length=371501" title="TD Anti-oxidant pellets-FR.pdf">Fiche technique Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Anti-oxidant-pellets.pdf" type="application/pdf; length=364659" title="TD Anti-oxidant pellets.pdf">Technical Data Sheet Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=Anti-oxidační tablety" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-name-extra">
+                        <h3>nozzle cleaner</h3>
                       </div>
-                      <div class="views-row views-row-3 views-row-odd product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/solder-bars_0.jpg" width="200" height="200" alt="solder bars"/></div>
-                        <div class="product-name">
-                          <h3>TYČOVÝ CÍN</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Pro pájení ve vlně</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Pro selektivní pájení</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Pro cínování</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Pro namáčení</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Solder Bars tyčový cín je vyroben z vysoce čistých a nízko-oxidačních kovů SnPb(Ag) a bezolovnatých slitin.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Solder Bars tyčový cín je vyroben z vysoce čistých a nízko-oxidačních kovů SnPb(Ag) a bezolovnatých slitin.<br/>
-                            Dostupné slitiny: Sn63 Pb37 - Sn62 Pb36 Ag2 - Sn96,5 Ag3,0 Cu0,5 - Sn95,5 Ag3,8 Cu0,7 - Sn99,3 Cu0,7 - Sn100 - Sn97 Ag3</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=TYČOVÝ CÍN" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Pro selektivní pájení</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Pro SnPb(Ag) procesy</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Pro bezolovnaté procesy</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Zcela bez halogenidů</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="views-row views-row-4 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/plain-wire-2mm-4kg-5.png" width="200" height="200" alt="Plain Solder Wire"/></div>
-                        <div class="product-name">
-                          <h3>ČISTÝ PÁJECÍ DRÁT (BEZ TAVIDLA)</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Pro selektivní pájení</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Pro cínování</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Pro ponořování pájení</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Čistý pájecí drát (bez tavidla) pro automatické dávkování pájky v selektivních pájecích systémech v bezolovnatých a SnPb(Ag) slitinách.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Čistý pájecí drát (bez tavidla) pro automatické dávkování pájky v selektivních pájecích systémech v bezolovnatých a SnPb(Ag) slitinách.<br/>
-                            Průměr drátu: 2mm<br/>
-                            Na 4kg špulkách<br/>
-                            Velikost špulky: 125mm x 125mm (prům. x délka)</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=ČISTÝ PÁJECÍ DRÁT (BEZ TAVIDLA)" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 930 čistí a dezoxiduje trysky v zařízeních selektivního pájení.</p>
                       </div>
-                      <div class="views-row views-row-5 views-row-odd views-row-last product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles.png" width="200" height="200" alt="Solder Grenailles"/></div>
-                        <div class="product-name">
-                          <h3>PÁJECÍ TABLETY</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Pro pájení ve vlně</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Pro selektivní pájení</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Pro opravy</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Pro cínování</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Pro ponořování pájení</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Pájecí Tablety jsou malé kousky pájky pro snadné plnění pájecí lázně v bezolovnatých i SnPb(Ag) slitinách.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux®  Pájecí Tablety jsou malé kousky pájky pro snadné plnění pájecí lázně v bezolovnatých i SnPb(Ag) slitinách.<br/>
-                            Velikost: přibližně 1 x 1cm</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PÁJECÍ TABLETY" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 930 čistí a dezoxiduje trysky v zařízeních selektivního pájení.<br/>
+                          Bezpečné a snadné vyčištění v jednom kroku<br/>
+                          Nahrazuje IF 920</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-930-DE.pdf" type="application/pdf; length=522376" title="TD IF 930-DE.pdf">Technisches Datenblatt IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-930-FR.pdf" type="application/pdf; length=435025" title="TD IF 930-FR.pdf">Fiche technique IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-930_0.pdf" type="application/pdf; length=387275" title="TD IF 930.pdf">Technical Data Sheet IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 930" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-2 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AOP-lead-free.jpg" width="200" height="200" alt="Anti-oxidant pellets"/><img typeof="foaf:Image" src="/assets/images/CLP_AOP-SnPb.jpg" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>Anti-oxidační tablety</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Pro pájení ve vlně</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Pro selektivní pájení</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Pro cínování</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Pro SnPb(Ag) procesy)</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Pro bezolovnaté procesy</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Anti-oxidační tablety minimalizují tvorbu strusky v bezolovnatých a SnPb(Ag) pájecích lázních.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Anti-oxidační tablety minimalizují tvorbu strusky v bezolovnatých a SnPb(Ag) pájecích lázních.<br/>
+                          Používá se jako doplněk do pájecí lázně<br/>
+                          Pro SnPb(Ag) (modré značení) nebo bezolovnaté (zelené značení) slitiny<br/>
+                          Anti-oxidační tablety se nedoporučuje použít v uzavřené atmosféře a dusíkem obohacených slitinách.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Anti-oxidant-pellets-DE.pdf" type="application/pdf; length=366742" title="TD Anti-oxidant pellets-DE.pdf">Technisches Datenblatt Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Anti-oxidant-pellets-FR_0.pdf" type="application/pdf; length=371501" title="TD Anti-oxidant pellets-FR.pdf">Fiche technique Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Anti-oxidant-pellets.pdf" type="application/pdf; length=364659" title="TD Anti-oxidant pellets.pdf">Technical Data Sheet Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=Anti-oxidační tablety" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-3 views-row-odd product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/solder-bars_0.jpg" width="200" height="200" alt="solder bars"/></div>
+                      <div class="product-name">
+                        <h3>TYČOVÝ CÍN</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Pro pájení ve vlně</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Pro selektivní pájení</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Pro cínování</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Pro namáčení</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Solder Bars tyčový cín je vyroben z vysoce čistých a nízko-oxidačních kovů SnPb(Ag) a bezolovnatých slitin.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Solder Bars tyčový cín je vyroben z vysoce čistých a nízko-oxidačních kovů SnPb(Ag) a bezolovnatých slitin.<br/>
+                          Dostupné slitiny: Sn63 Pb37 - Sn62 Pb36 Ag2 - Sn96,5 Ag3,0 Cu0,5 - Sn95,5 Ag3,8 Cu0,7 - Sn99,3 Cu0,7 - Sn100 - Sn97 Ag3</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=TYČOVÝ CÍN" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-4 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/plain-wire-2mm-4kg-5.png" width="200" height="200" alt="Plain Solder Wire"/></div>
+                      <div class="product-name">
+                        <h3>ČISTÝ PÁJECÍ DRÁT (BEZ TAVIDLA)</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Pro selektivní pájení</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Pro cínování</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Pro ponořování pájení</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Čistý pájecí drát (bez tavidla) pro automatické dávkování pájky v selektivních pájecích systémech v bezolovnatých a SnPb(Ag) slitinách.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Čistý pájecí drát (bez tavidla) pro automatické dávkování pájky v selektivních pájecích systémech v bezolovnatých a SnPb(Ag) slitinách.<br/>
+                          Průměr drátu: 2mm<br/>
+                          Na 4kg špulkách<br/>
+                          Velikost špulky: 125mm x 125mm (prům. x délka)</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=ČISTÝ PÁJECÍ DRÁT (BEZ TAVIDLA)" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-5 views-row-odd views-row-last product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles.png" width="200" height="200" alt="Solder Grenailles"/></div>
+                      <div class="product-name">
+                        <h3>PÁJECÍ TABLETY</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Pro pájení ve vlně</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Pro selektivní pájení</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Pro opravy</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Pro cínování</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Pro ponořování pájení</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Pájecí Tablety jsou malé kousky pájky pro snadné plnění pájecí lázně v bezolovnatých i SnPb(Ag) slitinách.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux®  Pájecí Tablety jsou malé kousky pájky pro snadné plnění pájecí lázně v bezolovnatých i SnPb(Ag) slitinách.<br/>
+                          Velikost: přibližně 1 x 1cm</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PÁJECÍ TABLETY" target="_blank">Contact us for more info / demo / samples</a>
                       </div>
                     </div>
                   </div>
@@ -745,16 +935,62 @@
             </div>
           </div>
         </div>
-        <div id="block-block-17" class="block block-block library-reference last even">
-          <div class="inner-block">
-            <p>Nemůžete najít konkrétní produkt? Pro úplný seznam produktů zkuste použít naši
-              <a href="/cs/documents">knihovnu</a>
-            </p>
-          </div>
-        </div>
-        <div class="clear"></div>
       </div>
+      <div id="block-block-17" class="block block-block library-reference last even">
+        <div class="inner-block">
+          <p>Nemůžete najít konkrétní produkt? Pro úplný seznam produktů zkuste použít naši
+            <a href="/cs/documents">knihovnu</a>
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
-  {% include "partials/footer.njk" %}
+  <div class="region region-footer2">
+    <div class="inner-region">
+      <div id="block-block-18" class="block block-block first last odd">
+        <div class="inner-block">
+          <div class="block grid-12" id="F1">
+            <div class="inner-block">
+              <div class="inner-content">
+                <a href="/cs/contact"><img src="/assets/images/Interflux-Electronics-headquarters-belgium.jpg" width="171" height="271" alt="kancelářská budova společnosti Interflux Electronics Belgium"/></a>
+                <div class="contact-title">
+                  <span>KONTAKT NA</span><br/>HLAVNÍ SÍDLO<br/>INTERFLUX</div>
+                <div class="contact-adress">
+                  <p>
+                    Interflux Electronics NV<br/>
+                    Gent zeehaven 3170A<br/>
+                    Eddastraat 51<br/>
+                    9042 Gent<br/>
+                    BELGIE</p>
+                  <p>Tel.: +32 9251 4959<br/>
+                    Fax: +32 9251 4970<br/>
+                    <a href="mailto:info@interflux.com" target="_blank">info@interflux.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-12" id="F2">
+            <div class="inner-block">
+              <div class="inner-content">
+                <div class="contact-title">
+                  <span>KONTAKT NA</span><br/>INTERFLUX VE SVĚTĚ</div>
+                <p>
+                  <a href="/cs/contact"><img src="/assets/images/interflux-worldwide-map.jpg" width="446" height="196" alt="Geografická mapa skupiny Interflux"/></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-24" id="F3">
+            <div class="copyright">©2012 Interflux® Electronics N.V., všechna práva vyhrazena</div>
+            <div class="louder-than-words">Webové stránky vytvořila
+              <a href="http://nabu.io" target="_new" title="NABU websites">NABU websites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
 {% endblock %}

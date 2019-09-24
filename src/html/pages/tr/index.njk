@@ -8,141 +8,277 @@
 {% block bodyClass %}html front not-logged-in no-sidebars page-home i18n-tr page-panels
 {% endblock %}
 {% block page %}
+  <div class="region region-language">
+    <div class="inner-region">
+      <div id="block-locale-language" class="block block-locale language-menu block grid-24 first last odd" role="complementary">
+        <div class="inner-block">
+          <ul class="language-switcher-locale-url">
+            <li class="en first">
+              <a href="/en" class="language-link" lang="en">
+                <div class="flag en"></div>English</a>
+            </li>
+            <li class="zh-hans">
+              <a href="/zh-hans" class="language-link" lang="zh-hans">
+                <div class="flag zh-hans"></div>简体中文</a>
+            </li>
+            <li class="cs">
+              <a href="/cs" class="language-link" lang="cs">
+                <div class="flag cs"></div>Čeština</a>
+            </li>
+            <li class="de">
+              <a href="/de" class="language-link" lang="de">
+                <div class="flag de"></div>Deutsch</a>
+            </li>
+            <li class="fr">
+              <a href="/fr" class="language-link" lang="fr">
+                <div class="flag fr"></div>Français</a>
+            </li>
+            <li class="it">
+              <a href="/it" class="language-link" lang="it">
+                <div class="flag it"></div>Italiano</a>
+            </li>
+            <li class="id">
+              <a href="/id" class="language-link" lang="id">
+                <div class="flag id"></div>Bahasa Indonesia</a>
+            </li>
+            <li class="pt-pt">
+              <a href="/pt-pt" class="language-link" lang="pt-pt">
+                <div class="flag pt-pt"></div>Português</a>
+            </li>
+            <li class="ro">
+              <a href="/ro" class="language-link" lang="ro">
+                <div class="flag ro"></div>Română</a>
+            </li>
+            <li class="ru">
+              <a href="/ru" class="language-link" lang="ru">
+                <div class="flag ru"></div>Русский</a>
+            </li>
+            <li class="th">
+              <a href="/th" class="language-link" lang="th">
+                <div class="flag th"></div>ภาษาไทย</a>
+            </li>
+            <li class="tr active">
+              <a href="/tr" class="language-link active" lang="tr">
+                <div class="flag tr"></div>Türkçe</a>
+            </li>
+            <li class="pl">
+              <a href="/pl" class="language-link" lang="pl">
+                <div class="flag pl"></div>Polski</a>
+            </li>
+            <li class="es">
+              <a href="/es" class="language-link" lang="es">
+                <div class="flag es"></div>Español</a>
+            </li>
+            <li class="sv last">
+              <a href="/sv" class="language-link" lang="sv">
+                <div class="flag sv"></div>Svenska</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-header">
+    <div class="inner-region">
+      <div id="block-block-11" class="block block-block grid-9 first odd">
+        <div class="inner-block">
+          <p>
+            <a href="/" title="Interflux Electronics" target="_self"><img src="/assets/images/interflux-electronics-logo.png" width="343" height="87" alt="Interflux Electronics logo"/></a>
+          </p>
+        </div>
+      </div>
+      <div id="block-menu-menu-interflux-menu" class="block block-menu grid-15 header-nav last even" role="navigation">
+        <div class="inner-block">
+          <ul class="menu">
+            <li class="first expanded">
+              <a href="/tr" title="Tipe göre ürün arama" class="active">Ürünler</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/tr/soldering-fluxes" title="">Lehimleme Fluksları</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/solder-pastes" title="">Krem lehimler</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/solder-wires" title="">Lehim Telleri</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/spray-fluxers" title="">Fluks Sprey Üniteleri</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/tr/auxiliaries" title="">Yardımcı Ürünler</a>
+                </li>
+              </ul>
+            </li>
+            <li class="expanded">
+              <a href="/tr" title="Sürece göre ürün arama" class="active">Süreçler</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/tr/selective-soldering" title="">Bölgesel Lehimleme</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/wave-soldering" title="">Dalga Lehimleme</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/rework-and-repair" title="">Düzeltme ve Tamir</a>
+                </li>
+                <li class="leaf">
+                  <a href="/tr/reflow-soldering" title="">Reflov Lehimleme</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/tr/pre-tinning" title="">Ön Lehim Kaplama</a>
+                </li>
+              </ul>
+            </li>
+            <li class="leaf">
+              <a href="/tr/company" title="Interflux hakkında">Hakkımızda</a>
+            </li>
+            <li class="leaf">
+              <a href="/tr/documents" title="Teknik bilgi arama">Dokümanlar</a>
+            </li>
+            <li class="last leaf">
+              <a href="/tr/contact" title="İletişimde kalın">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
   <div class="region region-corpus">
     <div class="inner-region">
-      <div class="inner-region">
-        <div class="panel-display panel-1col clearfix" id="panel-home">
-          <div class="panel-panel panel-col">
-            <div>
-              <div class="panel-pane pane-block pane-menu-menu-interflux-menu" id="homepage-nav">
-                <h2 class="pane-title">Interflux menu</h2>
-                <div class="pane-content">
-                  <ul class="menu">
-                    <li class="first expanded">
-                      <a href="/tr" title="Tipe göre ürün arama" class="active">Ürünler</a>
-                      <ul class="menu">
-                        <li class="first leaf">
-                          <a href="/tr/soldering-fluxes" title="">Lehimleme Fluksları</a>
-                        </li>
-                        <li class="leaf">
-                          <a href="/tr/solder-pastes" title="">Krem lehimler</a>
-                        </li>
-                        <li class="leaf">
-                          <a href="/tr/solder-wires" title="">Lehim Telleri</a>
-                        </li>
-                        <li class="leaf">
-                          <a href="/tr/spray-fluxers" title="">Fluks Sprey Üniteleri</a>
-                        </li>
-                        <li class="last leaf">
-                          <a href="/tr/auxiliaries" title="">Yardımcı Ürünler</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="expanded">
-                      <a href="/tr" title="Sürece göre ürün arama" class="active">Süreçler</a>
-                      <ul class="menu">
-                        <li class="first leaf">
-                          <a href="/tr/selective-soldering" title="">Bölgesel Lehimleme</a>
-                        </li>
-                        <li class="leaf">
-                          <a href="/tr/wave-soldering" title="">Dalga Lehimleme</a>
-                        </li>
-                        <li class="leaf">
-                          <a href="/tr/rework-and-repair" title="">Düzeltme ve Tamir</a>
-                        </li>
-                        <li class="leaf">
-                          <a href="/tr/reflow-soldering" title="">Reflov Lehimleme</a>
-                        </li>
-                        <li class="last leaf">
-                          <a href="/tr/pre-tinning" title="">Ön Lehim Kaplama</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="leaf">
-                      <a href="/tr/company" title="Interflux hakkında">Hakkımızda</a>
-                    </li>
-                    <li class="leaf">
-                      <a href="/tr/documents" title="Teknik bilgi arama">Dokümanlar</a>
-                    </li>
-                    <li class="last leaf">
-                      <a href="/tr/contact" title="İletişimde kalın">İletişim</a>
-                    </li>
-                  </ul>
-                </div>
+      <div class="panel-display panel-1col clearfix" id="panel-home">
+        <div class="panel-panel panel-col">
+          <div>
+            <div class="panel-pane pane-block pane-menu-menu-interflux-menu" id="homepage-nav">
+              <h2 class="pane-title">Interflux menu</h2>
+              <div class="pane-content">
+                <ul class="menu">
+                  <li class="first expanded">
+                    <a href="/tr" title="Tipe göre ürün arama" class="active">Ürünler</a>
+                    <ul class="menu">
+                      <li class="first leaf">
+                        <a href="/tr/soldering-fluxes" title="">Lehimleme Fluksları</a>
+                      </li>
+                      <li class="leaf">
+                        <a href="/tr/solder-pastes" title="">Krem lehimler</a>
+                      </li>
+                      <li class="leaf">
+                        <a href="/tr/solder-wires" title="">Lehim Telleri</a>
+                      </li>
+                      <li class="leaf">
+                        <a href="/tr/spray-fluxers" title="">Fluks Sprey Üniteleri</a>
+                      </li>
+                      <li class="last leaf">
+                        <a href="/tr/auxiliaries" title="">Yardımcı Ürünler</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="expanded">
+                    <a href="/tr" title="Sürece göre ürün arama" class="active">Süreçler</a>
+                    <ul class="menu">
+                      <li class="first leaf">
+                        <a href="/tr/selective-soldering" title="">Bölgesel Lehimleme</a>
+                      </li>
+                      <li class="leaf">
+                        <a href="/tr/wave-soldering" title="">Dalga Lehimleme</a>
+                      </li>
+                      <li class="leaf">
+                        <a href="/tr/rework-and-repair" title="">Düzeltme ve Tamir</a>
+                      </li>
+                      <li class="leaf">
+                        <a href="/tr/reflow-soldering" title="">Reflov Lehimleme</a>
+                      </li>
+                      <li class="last leaf">
+                        <a href="/tr/pre-tinning" title="">Ön Lehim Kaplama</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="leaf">
+                    <a href="/tr/company" title="Interflux hakkında">Hakkımızda</a>
+                  </li>
+                  <li class="leaf">
+                    <a href="/tr/documents" title="Teknik bilgi arama">Dokümanlar</a>
+                  </li>
+                  <li class="last leaf">
+                    <a href="/tr/contact" title="İletişimde kalın">İletişim</a>
+                  </li>
+                </ul>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-block pane-locale-language language-menu">
-                <h2 class="pane-title">Languages</h2>
-                <div class="pane-content">
-                  <ul class="language-switcher-locale-url">
-                    <li class="en first">
-                      <a href="/en" class="language-link" lang="en">
-                        <div class="flag en"></div>English</a>
-                    </li>
-                    <li class="zh-hans">
-                      <a href="/zh-hans" class="language-link" lang="zh-hans">
-                        <div class="flag zh-hans"></div>简体中文</a>
-                    </li>
-                    <li class="cs">
-                      <a href="/cs" class="language-link" lang="cs">
-                        <div class="flag cs"></div>Čeština</a>
-                    </li>
-                    <li class="de">
-                      <a href="/de" class="language-link" lang="de">
-                        <div class="flag de"></div>Deutsch</a>
-                    </li>
-                    <li class="fr">
-                      <a href="/fr" class="language-link" lang="fr">
-                        <div class="flag fr"></div>Français</a>
-                    </li>
-                    <li class="it">
-                      <a href="/it" class="language-link" lang="it">
-                        <div class="flag it"></div>Italiano</a>
-                    </li>
-                    <li class="id">
-                      <a href="/id" class="language-link" lang="id">
-                        <div class="flag id"></div>Bahasa Indonesia</a>
-                    </li>
-                    <li class="pt-pt">
-                      <a href="/pt-pt" class="language-link" lang="pt-pt">
-                        <div class="flag pt-pt"></div>Português</a>
-                    </li>
-                    <li class="ro">
-                      <a href="/ro" class="language-link" lang="ro">
-                        <div class="flag ro"></div>Română</a>
-                    </li>
-                    <li class="ru">
-                      <a href="/ru" class="language-link" lang="ru">
-                        <div class="flag ru"></div>Русский</a>
-                    </li>
-                    <li class="th">
-                      <a href="/th" class="language-link" lang="th">
-                        <div class="flag th"></div>ภาษาไทย</a>
-                    </li>
-                    <li class="tr active">
-                      <a href="/tr" class="language-link active" lang="tr">
-                        <div class="flag tr"></div>Türkçe</a>
-                    </li>
-                    <li class="pl">
-                      <a href="/pl" class="language-link" lang="pl">
-                        <div class="flag pl"></div>Polski</a>
-                    </li>
-                    <li class="es">
-                      <a href="/es" class="language-link" lang="es">
-                        <div class="flag es"></div>Español</a>
-                    </li>
-                    <li class="sv last">
-                      <a href="/sv" class="language-link" lang="sv">
-                        <div class="flag sv"></div>Svenska</a>
-                    </li>
-                  </ul>
-                </div>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-block pane-locale-language language-menu">
+              <h2 class="pane-title">Languages</h2>
+              <div class="pane-content">
+                <ul class="language-switcher-locale-url">
+                  <li class="en first">
+                    <a href="/en" class="language-link" lang="en">
+                      <div class="flag en"></div>English</a>
+                  </li>
+                  <li class="zh-hans">
+                    <a href="/zh-hans" class="language-link" lang="zh-hans">
+                      <div class="flag zh-hans"></div>简体中文</a>
+                  </li>
+                  <li class="cs">
+                    <a href="/cs" class="language-link" lang="cs">
+                      <div class="flag cs"></div>Čeština</a>
+                  </li>
+                  <li class="de">
+                    <a href="/de" class="language-link" lang="de">
+                      <div class="flag de"></div>Deutsch</a>
+                  </li>
+                  <li class="fr">
+                    <a href="/fr" class="language-link" lang="fr">
+                      <div class="flag fr"></div>Français</a>
+                  </li>
+                  <li class="it">
+                    <a href="/it" class="language-link" lang="it">
+                      <div class="flag it"></div>Italiano</a>
+                  </li>
+                  <li class="id">
+                    <a href="/id" class="language-link" lang="id">
+                      <div class="flag id"></div>Bahasa Indonesia</a>
+                  </li>
+                  <li class="pt-pt">
+                    <a href="/pt-pt" class="language-link" lang="pt-pt">
+                      <div class="flag pt-pt"></div>Português</a>
+                  </li>
+                  <li class="ro">
+                    <a href="/ro" class="language-link" lang="ro">
+                      <div class="flag ro"></div>Română</a>
+                  </li>
+                  <li class="ru">
+                    <a href="/ru" class="language-link" lang="ru">
+                      <div class="flag ru"></div>Русский</a>
+                  </li>
+                  <li class="th">
+                    <a href="/th" class="language-link" lang="th">
+                      <div class="flag th"></div>ภาษาไทย</a>
+                  </li>
+                  <li class="tr active">
+                    <a href="/tr" class="language-link active" lang="tr">
+                      <div class="flag tr"></div>Türkçe</a>
+                  </li>
+                  <li class="pl">
+                    <a href="/pl" class="language-link" lang="pl">
+                      <div class="flag pl"></div>Polski</a>
+                  </li>
+                  <li class="es">
+                    <a href="/es" class="language-link" lang="es">
+                      <div class="flag es"></div>Español</a>
+                  </li>
+                  <li class="sv last">
+                    <a href="/sv" class="language-link" lang="sv">
+                      <div class="flag sv"></div>Svenska</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="clear"></div>
       </div>
+      <div class="clear"></div>
     </div>
   </div>
 {% endblock %}

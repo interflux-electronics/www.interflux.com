@@ -8,742 +8,932 @@
 {% block bodyClass %}html not-front not-logged-in no-sidebars page-selective-soldering page-products i18n-de section-selective-soldering page-panels
 {% endblock %}
 {% block page %}
-  {% include "partials/highlight.njk" %}
+  <div class="region region-language">
+    <div class="inner-region">
+      <div id="block-locale-language" class="block block-locale language-menu block grid-24 first last odd" role="complementary">
+        <div class="inner-block">
+          <ul class="language-switcher-locale-url">
+            <li class="en first">
+              <a href="/en/selective-soldering" class="language-link" lang="en" title="Selective Soldering">
+                <div class="flag en"></div>English</a>
+            </li>
+            <li class="zh-hans">
+              <a href="/zh-hans/selective-soldering" class="language-link" lang="zh-hans" title="选择焊">
+                <div class="flag zh-hans"></div>简体中文</a>
+            </li>
+            <li class="cs">
+              <a href="/cs/selective-soldering" class="language-link" lang="cs" title="Selektivní pájení">
+                <div class="flag cs"></div>Čeština</a>
+            </li>
+            <li class="de active">
+              <a href="/de/selective-soldering" class="language-link active" lang="de" title="Selektivlöten">
+                <div class="flag de"></div>Deutsch</a>
+            </li>
+            <li class="fr">
+              <a href="/fr/selective-soldering" class="language-link" lang="fr" title="Brasage sélectif">
+                <div class="flag fr"></div>Français</a>
+            </li>
+            <li class="it">
+              <a href="/it/selective-soldering" class="language-link" lang="it" title="Saldatura selettiva">
+                <div class="flag it"></div>Italiano</a>
+            </li>
+            <li class="id">
+              <a href="/id/selective-soldering" class="language-link" lang="id" title="Penyolderan selektif">
+                <div class="flag id"></div>Bahasa Indonesia</a>
+            </li>
+            <li class="pt-pt">
+              <a href="/pt-pt/selective-soldering" class="language-link" lang="pt-pt" title="Soldagem selectiva">
+                <div class="flag pt-pt"></div>Português</a>
+            </li>
+            <li class="ro">
+              <a href="/ro/selective-soldering" class="language-link" lang="ro" title="Lipire selectiva">
+                <div class="flag ro"></div>Română</a>
+            </li>
+            <li class="ru">
+              <a href="/ru/selective-soldering" class="language-link" lang="ru" title="Селективная пайка">
+                <div class="flag ru"></div>Русский</a>
+            </li>
+            <li class="th">
+              <a href="/th/selective-soldering" class="language-link" lang="th" title="การบัดกรีเฉพาะส่วน">
+                <div class="flag th"></div>ภาษาไทย</a>
+            </li>
+            <li class="tr">
+              <a href="/tr/selective-soldering" class="language-link" lang="tr">
+                <div class="flag tr"></div>Türkçe</a>
+            </li>
+            <li class="pl">
+              <a href="/pl/selective-soldering" class="language-link" lang="pl" title="Lutowanie selektywne">
+                <div class="flag pl"></div>Polski</a>
+            </li>
+            <li class="es">
+              <a href="/es/selective-soldering" class="language-link" lang="es" title="Soldadura selectiva">
+                <div class="flag es"></div>Español</a>
+            </li>
+            <li class="sv last">
+              <a href="/sv/selective-soldering" class="language-link" lang="sv" title="Selektiv lödning">
+                <div class="flag sv"></div>Svenska</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-header">
+    <div class="inner-region">
+      <div id="block-block-11" class="block block-block grid-9 first odd">
+        <div class="inner-block">
+          <p>
+            <a href="/de/" title="Interflux Electronics" target="_self"><img src="/assets/images/interflux-electronics-logo.png" width="343" height="87" alt="Interflux Electronics logo"/></a>
+          </p>
+        </div>
+      </div>
+      <div id="block-menu-menu-interflux-menu" class="block block-menu grid-15 header-nav last even" role="navigation">
+        <div class="inner-block">
+          <ul class="menu">
+            <li class="first expanded">
+              <a href="/de" title="Produktsuche über Typ">Produkte</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/de/soldering-fluxes" title="">Flussmittel</a>
+                </li>
+                <li class="leaf">
+                  <a href="/de/solder-pastes" title="">Lotpaste</a>
+                </li>
+                <li class="leaf">
+                  <a href="/de/solder-wires" title="">Lötdraht</a>
+                </li>
+                <li class="leaf">
+                  <a href="/de/spray-fluxers" title="">Sprühfluxer</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/de/auxiliaries" title="">Hilfsmittel</a>
+                </li>
+              </ul>
+            </li>
+            <li class="expanded active-trail">
+              <a href="/de" title="Produktsuche über Prozess" class="active-trail">Prozesse</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/de/wave-soldering" title="">Wellenlöten</a>
+                </li>
+                <li class="leaf active-trail">
+                  <a href="/de/selective-soldering" title="" class="active-trail active">Selektivlöten</a>
+                </li>
+                <li class="leaf">
+                  <a href="/de/reflow-soldering" title="">Reflowlöten</a>
+                </li>
+                <li class="leaf">
+                  <a href="/de/rework-and-repair" title="">Nacharbeit und Reparatur</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/de/pre-tinning" title="">Vorverzinnen</a>
+                </li>
+              </ul>
+            </li>
+            <li class="leaf">
+              <a href="/de/company" title="Mehr über Interflux">Unternehmen</a>
+            </li>
+            <li class="leaf">
+              <a href="/de/documents" title="Technische Daten">Dokumente</a>
+            </li>
+            <li class="last leaf">
+              <a href="/de/contact" title="Kontaktsuche">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-highlight">
+    <div class="inner-region">
+      <div id="banners">
+        <div class="preload"></div>
+        <div class="stage">
+          <article id="ipc-apex-2017">
+            <a href="http://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
+              <picture>
+                <source srcset="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg 2x, http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018.jpg 1x"></source>
+                <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg" alt="Visit use at IPC APEX 2018 in San Diego"/>
+              </picture>
+            </a>
+          </article>
+          <article id="productronica-2017">
+            <a href="http://www.productronica.com/" target="_blank" title="Visit us at Productronica 2017">
+              <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/productronica-banner-2017.jpg"/>
+            </a>
+          </article>
+          <article id="lmpa">
+            <a href="https://lmpa.interflux.com" target="_blank">
+              <h1>Solder
+                <strong>5 times</strong>
+                faster whilst maintaining
+                <strong>zero defects</strong>
+              </h1>
+              <h1>Discover
+                <mark>LMPA<span>™</span>
+                </mark>
+              </h1>
+              <div id="video">
+                <video id="movie" width="276" height="220" autoplay loop>
+                  <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
+                  Your browser doesn't support HTML5 video tag.
+                </video>
+                <script></script>
+                <p>Speed: 30 mm/s</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <nav>
+          <div id="prev">
+            <div></div>
+          </div>
+          <div id="next">
+            <div></div>
+          </div>
+          <div id="timer">
+            <div></div>
+          </div>
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
   <div class="region region-corpus">
     <div class="inner-region">
-      <div class="inner-region">
-        <div class="panel-display panel-1col clearfix">
-          <div class="panel-panel panel-col">
-            <div>
-              <div class="panel-pane pane-views pane-process-views-interflux">
-                <h2 class="pane-title">
-                  <div class="fs27">Flussmittel</div>
-                  <div class="fs18 nc">fürs Selektivlöten</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_6 product-row-group view-dom-id-1058f2228d12a453d78b4aebbc75efe7">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="views-row views-row-1 views-row-odd views-row-first product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/SelectIF2040-2.png" width="200" height="200" alt="SelectIF 2040"/></div>
-                        <div class="product-name">
-                          <h3>SELECTIF 2040</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NEU</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Wasserbasiertes Flussmittel</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Für das Selektivlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolut halogenfrei</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Hohe Desoxydationsfähigkeit</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>Besteht hohe Temperaturen</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Hohe Kompatibilität mit Schutzlack</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Wenig Rückstände</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® SelectIF 2040 ist ein wasserbasiertes no-clean
-                            <strong>Selektivlötflussmittel</strong>
-                            mit einem großen Prozessfenster und wenig Rückständen.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® SelectIF 2040 ist ein wasserbasiertes no-clean Selektivlötflussmittel mit einem großen Prozessfenster und wenig Rückständen.<br/>
-                            Besteht hohe Prozesstemperaturen und lange Prozesszeiten.<br/>
-                            SnPb und bleifrei kompatibel<br/>
-                            OR L0 gemäß EN und  IPC Standards<br/>
-                            Feststoffgehalt: 6,5% ±0,2<br/>
-                            Halogengehalt: 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SelectIF-2040-DE_0.pdf" type="application/pdf; length=429820" title="TD SelectIF 2040-DE.pdf">Technisches Datenblatt SelectIF 2040</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SelectIF-2040-FR_0.pdf" type="application/pdf; length=458922" title="TD SelectIF 2040-FR.pdf">Fiche technique SelectIF 2040</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SelectIF-2040.pdf" type="application/pdf; length=408961" title="TD SelectIF 2040.pdf">Technical Data Sheet SelectIF 2040</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SELECTIF 2040" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+      <div class="panel-display panel-1col clearfix">
+        <div class="panel-panel panel-col">
+          <div>
+            <div class="panel-pane pane-views pane-process-views-interflux">
+              <h2 class="pane-title">
+                <div class="fs27">Flussmittel</div>
+                <div class="fs18 nc">fürs Selektivlöten</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_6 product-row-group view-dom-id-b189f8651891918893fa23a3d2b0182e">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="views-row views-row-1 views-row-odd views-row-first product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/SelectIF2040-2.png" width="200" height="200" alt="SelectIF 2040"/></div>
+                      <div class="product-name">
+                        <h3>SELECTIF 2040</h3>
                       </div>
-                      <div class="views-row views-row-2 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-2005C_7.jpg" width="200" height="200" alt="IF 2005C"/></div>
-                        <div class="product-name">
-                          <h3>IF 2005C</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Alkoholbasiert</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Für das Selektivlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Für die Vorverzinnung</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolut halogenfrei</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Hohe Desoxydationsfähigkeit</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>Besteht eine lange Vorheizung</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Hohe Kompatibilität mit Schutzlack</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 2005C (3,3% FG) ist ein kolophonium- und kunstharzfreies no-clean Flussmittel. Es kann eingesetzt werden wenn der Lötprozess
-                            <strong>mehr Aktivierung</strong>
-                            braucht als
-                            <strong>IF 2005M/IF 2005K</strong>.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 2005C mit 3,3% Feststoff ist ein kolophonium- und kunstharzfreies no-clean Flussmittel. Es kann eingesetzt werden wenn der Lötprozess mehr Aktivierung braucht als IF 2005M und IF 2005K bieten.<br/>
-                            SnPb und bleifrei kompatibel<br/>
-                            Geeignet für Sprüh- und Schaumfluxen<br/>
-                            OR L0 gemäß EN und IPC-Standards<br/>
-                            Feststoffgehalt: 3,3% ±0,3<br/>
-                            Halogengehalt: 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-2005C-DE_0.pdf" type="application/pdf; length=484180" title="TD IF 2005C-DE.pdf">Technisches Datenblatt IF 2005C</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/IF-2005--series-application-doc-DE_0.pdf" type="application/pdf; length=234680" title="IF 2005- series application doc-DE.pdf">IF 2005-Serie Anwendung</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-2005C-FR.pdf" type="application/pdf; length=556116" title="TD IF 2005C-FR.pdf">Fiche technique IF 2005C</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/IF-2005--series-application-doc-FR.pdf" type="application/pdf; length=233410" title="IF 2005- series application doc-FR.pdf">Document d'application de la série IF 2005</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-2005C.pdf" type="application/pdf; length=467663" title="TD IF 2005C.pdf">Technical Data Sheet IF 2005C</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/IF-2005--series-application-doc.pdf" type="application/pdf; length=229382" title="IF 2005- series application doc.pdf">IF 2005 series application document</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 2005C" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-highlight">
+                        <h3>NEU</h3>
                       </div>
-                      <div class="views-row views-row-3 views-row-odd product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009M_7.jpg" width="200" height="200" alt="PACIFIC 2009M"/></div>
-                        <div class="product-name">
-                          <h3>PACIFIC 2009M</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Wasserbasiertes Flussmittel</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Für das Wellenlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Für das Selektivlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Für die Vorverzinnung</p>
-                            </li>
-                            <li>
-                              <div class="icon06"></div>
-                              <p>Für Sprühfluxen</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolut halogenfrei</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Hohe Kompatibilität mit Schutzlack</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Wenig Rückstände</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® PacIFic2009M ist ein wasserbasiertes Flussmittel das hauptsächlich verwendet wird für das
-                            <strong>Wellen- und Selektivlöten</strong>.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® PacIFic2009M ist ein wasserbasiertes Flussmittel das hauptsächlich verwendet wird für das Wellen- und Selektivlöten.<br/>
-                            SnPb und bleifrei kompatibel<br/>
-                            OR L0 gemäß EN und IPC-Standards<br/>
-                            Feststoffgehalt: 3,7% ±0,15<br/>
-                            Halogengehalt: 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-PacIFic-2009M-DE_0.pdf" type="application/pdf; length=439464">TD PacIFic 2009M-DE.pdf</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-PacIFic-2009M-FR.pdf" type="application/pdf; length=401502" title="TD PacIFic 2009M-FR.pdf">Fiche technique PacIFic 2009M</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-PacIFic-2009M_0.pdf" type="application/pdf; length=433215" title="TD PacIFic 2009M.pdf">Technical Data Sheet PacIFic 2009M</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/Kyzen_P2009M.pdf" type="application/pdf; length=62971" title="Kyzen_P2009M.pdf">Cleaning PACIFIC 2009M by KYZEN</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009M" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Wasserbasiertes Flussmittel</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Für das Selektivlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolut halogenfrei</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Hohe Desoxydationsfähigkeit</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>Besteht hohe Temperaturen</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Hohe Kompatibilität mit Schutzlack</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Wenig Rückstände</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="views-row views-row-4 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009MLF_8.jpg" width="200" height="200" alt="PACIFIC 2009MLF"/></div>
-                        <div class="product-name">
-                          <h3>PACIFIC 2009MLF</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>Wasserbasiertes Flussmittel</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Für das Wellenlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Für das Selektivlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon06"></div>
-                              <p>Für Sprühfluxen</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolut halogenfrei</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>
-                                <strong>Anti-Lötperlenbildung</strong>
-                              </p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>PacIFic 2009MLF ist ein wasserbasiertes no-clean Flussmittel das entwickelt worden ist um die
-                            <strong>Lötperlenbildung zu minimieren</strong>.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>PacIFic 2009MLF ist ein wasserbasiertes no-clean Flussmittel das entwickelt worden ist um die Lötperlenbildung zu minimieren.<br/>
-                            SnPb und bleifrei kompatibel<br/>
-                            Haupteinsatzgebiet: Wellenlöten und Selektivlöten<br/>
-                            OR L0 gemäß EN und IPC-Standards<br/>
-                            Feststoffgehalt: 3,6% ±0,2<br/>
-                            Halogengehalt: 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-PacIFic-2009MLF-DE_0.pdf" type="application/pdf; length=539026" title="TD PacIFic 2009MLF-DE.pdf">Technisches Datenblatt PacIFic 2009MLF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-PacIFic-2009MLF-FR_0.pdf" type="application/pdf; length=501536" title="TD PacIFic 2009MLF-FR.pdf">Fiche technique PacIFic 2009MLF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-PacIFic-2009MLF.pdf" type="application/pdf; length=532571" title="TD PacIFic 2009MLF.pdf">Technical Data Sheet PacIFic 2009MLF</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009MLF" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-summary">
+                        <p>Interflux® SelectIF 2040 ist ein wasserbasiertes no-clean
+                          <strong>Selektivlötflussmittel</strong>
+                          mit einem großen Prozessfenster und wenig Rückständen.</p>
                       </div>
-                      <div class="views-row views-row-5 views-row-odd views-row-last product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-3006_7.jpg" width="200" height="200" alt="IF 3006"/></div>
-                        <div class="product-name">
-                          <h3>IF 3006</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon13"></div>
-                              <p>Reduzierter VOC-Gehalt</p>
-                            </li>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Für das Wellenlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Für das Selektivlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Für die Vorverzinnung</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolut halogenfrei</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Hohe Kompatibilität mit Schutzlack</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 3006 ist ein kolophonium- und kunstharzfreies no-clean Flussmittel mit
-                            <strong>reduziertem VOC-Gehalt</strong>.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 3006 ist ein kolophonium- und kunstharzfreies no-clean Flussmittel mit reduziertem VOC-Gehalt.<br/>
-                            SnPb und bleifrei kompatibel<br/>
-                            Auch geeignet für die Vorverzinnung<br/>
-                            OR L0 gemäß EN und IPC-Standards<br/>
-                            Feststoffgehalt: 3,2% ±0,4<br/>
-                            Halogengehalt: 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-3006-DE_0.pdf" type="application/pdf; length=441073" title="TD IF 3006-DE.pdf">Technisches Datenblatt IF 3006</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-3006-FR.pdf" type="application/pdf; length=442827" title="TD IF 3006-FR.pdf">Fiche technique IF 3006</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-3006.pdf" type="application/pdf; length=435445" title="TD IF 3006.pdf">Technical Data Sheet IF 3006</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 3006" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-details">
+                        <p>Interflux® SelectIF 2040 ist ein wasserbasiertes no-clean Selektivlötflussmittel mit einem großen Prozessfenster und wenig Rückständen.<br/>
+                          Besteht hohe Prozesstemperaturen und lange Prozesszeiten.<br/>
+                          SnPb und bleifrei kompatibel<br/>
+                          OR L0 gemäß EN und  IPC Standards<br/>
+                          Feststoffgehalt: 6,5% ±0,2<br/>
+                          Halogengehalt: 0,00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SelectIF-2040-DE_0.pdf" type="application/pdf; length=429820" title="TD SelectIF 2040-DE.pdf">Technisches Datenblatt SelectIF 2040</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SelectIF-2040-FR_0.pdf" type="application/pdf; length=458922" title="TD SelectIF 2040-FR.pdf">Fiche technique SelectIF 2040</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SelectIF-2040.pdf" type="application/pdf; length=408961" title="TD SelectIF 2040.pdf">Technical Data Sheet SelectIF 2040</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SELECTIF 2040" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-2 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-2005C_7.jpg" width="200" height="200" alt="IF 2005C"/></div>
+                      <div class="product-name">
+                        <h3>IF 2005C</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Alkoholbasiert</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Für das Selektivlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Für die Vorverzinnung</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolut halogenfrei</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Hohe Desoxydationsfähigkeit</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>Besteht eine lange Vorheizung</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Hohe Kompatibilität mit Schutzlack</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 2005C (3,3% FG) ist ein kolophonium- und kunstharzfreies no-clean Flussmittel. Es kann eingesetzt werden wenn der Lötprozess
+                          <strong>mehr Aktivierung</strong>
+                          braucht als
+                          <strong>IF 2005M/IF 2005K</strong>.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 2005C mit 3,3% Feststoff ist ein kolophonium- und kunstharzfreies no-clean Flussmittel. Es kann eingesetzt werden wenn der Lötprozess mehr Aktivierung braucht als IF 2005M und IF 2005K bieten.<br/>
+                          SnPb und bleifrei kompatibel<br/>
+                          Geeignet für Sprüh- und Schaumfluxen<br/>
+                          OR L0 gemäß EN und IPC-Standards<br/>
+                          Feststoffgehalt: 3,3% ±0,3<br/>
+                          Halogengehalt: 0,00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-2005C-DE_0.pdf" type="application/pdf; length=484180" title="TD IF 2005C-DE.pdf">Technisches Datenblatt IF 2005C</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/IF-2005--series-application-doc-DE_0.pdf" type="application/pdf; length=234680" title="IF 2005- series application doc-DE.pdf">IF 2005-Serie Anwendung</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-2005C-FR.pdf" type="application/pdf; length=556116" title="TD IF 2005C-FR.pdf">Fiche technique IF 2005C</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/IF-2005--series-application-doc-FR.pdf" type="application/pdf; length=233410" title="IF 2005- series application doc-FR.pdf">Document d'application de la série IF 2005</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-2005C.pdf" type="application/pdf; length=467663" title="TD IF 2005C.pdf">Technical Data Sheet IF 2005C</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/IF-2005--series-application-doc.pdf" type="application/pdf; length=229382" title="IF 2005- series application doc.pdf">IF 2005 series application document</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 2005C" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-3 views-row-odd product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009M_7.jpg" width="200" height="200" alt="PACIFIC 2009M"/></div>
+                      <div class="product-name">
+                        <h3>PACIFIC 2009M</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Wasserbasiertes Flussmittel</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Für das Wellenlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Für das Selektivlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Für die Vorverzinnung</p>
+                          </li>
+                          <li>
+                            <div class="icon06"></div>
+                            <p>Für Sprühfluxen</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolut halogenfrei</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Hohe Kompatibilität mit Schutzlack</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Wenig Rückstände</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® PacIFic2009M ist ein wasserbasiertes Flussmittel das hauptsächlich verwendet wird für das
+                          <strong>Wellen- und Selektivlöten</strong>.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® PacIFic2009M ist ein wasserbasiertes Flussmittel das hauptsächlich verwendet wird für das Wellen- und Selektivlöten.<br/>
+                          SnPb und bleifrei kompatibel<br/>
+                          OR L0 gemäß EN und IPC-Standards<br/>
+                          Feststoffgehalt: 3,7% ±0,15<br/>
+                          Halogengehalt: 0,00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-PacIFic-2009M-DE_0.pdf" type="application/pdf; length=439464">TD PacIFic 2009M-DE.pdf</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-PacIFic-2009M-FR.pdf" type="application/pdf; length=401502" title="TD PacIFic 2009M-FR.pdf">Fiche technique PacIFic 2009M</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-PacIFic-2009M_0.pdf" type="application/pdf; length=433215" title="TD PacIFic 2009M.pdf">Technical Data Sheet PacIFic 2009M</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/Kyzen_P2009M.pdf" type="application/pdf; length=62971" title="Kyzen_P2009M.pdf">Cleaning PACIFIC 2009M by KYZEN</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009M" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-4 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_P-2009MLF_8.jpg" width="200" height="200" alt="PACIFIC 2009MLF"/></div>
+                      <div class="product-name">
+                        <h3>PACIFIC 2009MLF</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>Wasserbasiertes Flussmittel</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Für das Wellenlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Für das Selektivlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon06"></div>
+                            <p>Für Sprühfluxen</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolut halogenfrei</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>
+                              <strong>Anti-Lötperlenbildung</strong>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>PacIFic 2009MLF ist ein wasserbasiertes no-clean Flussmittel das entwickelt worden ist um die
+                          <strong>Lötperlenbildung zu minimieren</strong>.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>PacIFic 2009MLF ist ein wasserbasiertes no-clean Flussmittel das entwickelt worden ist um die Lötperlenbildung zu minimieren.<br/>
+                          SnPb und bleifrei kompatibel<br/>
+                          Haupteinsatzgebiet: Wellenlöten und Selektivlöten<br/>
+                          OR L0 gemäß EN und IPC-Standards<br/>
+                          Feststoffgehalt: 3,6% ±0,2<br/>
+                          Halogengehalt: 0,00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-PacIFic-2009MLF-DE_0.pdf" type="application/pdf; length=539026" title="TD PacIFic 2009MLF-DE.pdf">Technisches Datenblatt PacIFic 2009MLF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-PacIFic-2009MLF-FR_0.pdf" type="application/pdf; length=501536" title="TD PacIFic 2009MLF-FR.pdf">Fiche technique PacIFic 2009MLF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-PacIFic-2009MLF.pdf" type="application/pdf; length=532571" title="TD PacIFic 2009MLF.pdf">Technical Data Sheet PacIFic 2009MLF</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/PacIFicpreheat.pdf" type="application/pdf; length=46088" title="PacIFicpreheat.pdf">Preheating for water based fluxes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PACIFIC 2009MLF" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-5 views-row-odd views-row-last product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-3006_7.jpg" width="200" height="200" alt="IF 3006"/></div>
+                      <div class="product-name">
+                        <h3>IF 3006</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon13"></div>
+                            <p>Reduzierter VOC-Gehalt</p>
+                          </li>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Für das Wellenlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Für das Selektivlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Für die Vorverzinnung</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolut halogenfrei</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Hohe Kompatibilität mit Schutzlack</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 3006 ist ein kolophonium- und kunstharzfreies no-clean Flussmittel mit
+                          <strong>reduziertem VOC-Gehalt</strong>.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 3006 ist ein kolophonium- und kunstharzfreies no-clean Flussmittel mit reduziertem VOC-Gehalt.<br/>
+                          SnPb und bleifrei kompatibel<br/>
+                          Auch geeignet für die Vorverzinnung<br/>
+                          OR L0 gemäß EN und IPC-Standards<br/>
+                          Feststoffgehalt: 3,2% ±0,4<br/>
+                          Halogengehalt: 0,00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-3006-DE_0.pdf" type="application/pdf; length=441073" title="TD IF 3006-DE.pdf">Technisches Datenblatt IF 3006</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-3006-FR.pdf" type="application/pdf; length=442827" title="TD IF 3006-FR.pdf">Fiche technique IF 3006</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-3006.pdf" type="application/pdf; length=435445" title="TD IF 3006.pdf">Technical Data Sheet IF 3006</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 3006" target="_blank">Contact us for more info / demo / samples</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-process-views-interflux">
-                <h2 class="pane-title">
-                  <div class="fs28">Hilfsmittel</div>
-                  <div class="fs18 nc">fürs Selektivlöten</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_10 product-row-group view-dom-id-ec14ca659dd193110bccf34e69d409cc">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="views-row views-row-1 views-row-odd views-row-first product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-930-All-in-One.jpg" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/><img typeof="foaf:Image" src="/assets/images/IF-930kader.png" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/></div>
-                        <div class="product-name">
-                          <h3>IF 930</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>Düsenreiniger</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Für das Selektivlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Für SnPb(Ag)-Prozesse</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Für bleifreie Prozesse</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolut halogenfrei</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 930 reinigt und
-                            <strong>desoxydiert benetzbare Düsen</strong>
-                            von Selektivlötsystemen.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 930 reinigt und desoxydiert benetzbare Düsen von Selektivlötsystemen.<br/>
-                            Sichere und einfache Reinigung in einem Schritt<br/>
-                            Ersetzt IF 920</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-930-DE.pdf" type="application/pdf; length=522376" title="TD IF 930-DE.pdf">Technisches Datenblatt IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-930-FR.pdf" type="application/pdf; length=435025" title="TD IF 930-FR.pdf">Fiche technique IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-930_0.pdf" type="application/pdf; length=387275" title="TD IF 930.pdf">Technical Data Sheet IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 930" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-process-views-interflux">
+              <h2 class="pane-title">
+                <div class="fs28">Hilfsmittel</div>
+                <div class="fs18 nc">fürs Selektivlöten</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_10 product-row-group view-dom-id-2e55f54e833db07bf091c21a1688da88">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="views-row views-row-1 views-row-odd views-row-first product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-930-All-in-One.jpg" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/><img typeof="foaf:Image" src="/assets/images/IF-930kader.png" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/></div>
+                      <div class="product-name">
+                        <h3>IF 930</h3>
                       </div>
-                      <div class="views-row views-row-2 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AOP-lead-free.jpg" width="200" height="200" alt="Anti-oxidant pellets"/><img typeof="foaf:Image" src="/assets/images/CLP_AOP-SnPb.jpg" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>ANTIOXIDATIONSTABLETTEN</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Für das Wellenlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Für das Selektivlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Für die Vorverzinnung</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Für SnPb(Ag)-Prozesse</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Für bleifreie Prozesse</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Antioxidationstabletten minimieren die Oxydbildung in bleifreien und SnPb(Ag) Lötbäder.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Antioxidationstabletten minimieren die Oxydbildung in bleifreien und SnPb(Ag) Lötbäder.<br/>
-                            Verwendet als Zusatz im Lötbad<br/>
-                            Für SnPb(Ag)-Legierungen (Blaues Etikett) oder bleifreie Legierungen (grünes Etikett). Antioxidationstabletten werden nicht empfohlen für eine geschlossene inerte Atmosphäre und für Ni-dotiertes Lot.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Anti-oxidant-pellets-DE.pdf" type="application/pdf; length=366742" title="TD Anti-oxidant pellets-DE.pdf">Technisches Datenblatt Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Anti-oxidant-pellets-FR_0.pdf" type="application/pdf; length=371501" title="TD Anti-oxidant pellets-FR.pdf">Fiche technique Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Anti-oxidant-pellets.pdf" type="application/pdf; length=364659" title="TD Anti-oxidant pellets.pdf">Technical Data Sheet Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=ANTIOXIDATIONSTABLETTEN" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-name-extra">
+                        <h3>Düsenreiniger</h3>
                       </div>
-                      <div class="views-row views-row-3 views-row-odd product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/solder-bars_0.jpg" width="200" height="200" alt="solder bars"/></div>
-                        <div class="product-name">
-                          <h3>STANGENLOT</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Für das Wellenlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Für das Selektivlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Für die Vorverzinnung</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Für Tauchlöten</p>
-                            </li>
-                            <ul></ul>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Stangenlot wird hergestellt von Metallen mit hoher Reinheit und niedrigem Oxydationsgrad in SnPb(Ag) und bleifreien Legierungen.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Stangenlot wird hergestellt von Metallen mit hoher Reinheit und niedrigem Oxydationsgrad in SnPb(Ag) und bleifreien Legierungen.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=STANGENLOT" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Für das Selektivlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Für SnPb(Ag)-Prozesse</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Für bleifreie Prozesse</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolut halogenfrei</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="views-row views-row-4 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/plain-wire-2mm-4kg-5.png" width="200" height="200" alt="Plain Solder Wire"/></div>
-                        <div class="product-name">
-                          <h3>LÖTDRAHT OHNE FLUSSMITTEL</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Für Selektivlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Für die Vorverzinnung</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Für Tauchlöten</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Lötdraht ohne Flussmittel für die automatische Befüllung von Selektivlötsystemen in bleifreien und SnPb(Ag)-Legierungen.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Lötdraht ohne Flussmittel für die automatische Befüllung von Selektivlötsystemen in bleifreien und SnPb(Ag)-Legierungen.<br/>
-                            Drahtdurchmesser: 2mm/3mm<br/>
-                            4 kg/1kg Spulen<br/>
-                            Abmessungen der 4kg Spule : 125mm x 125mm (Durchmesser x Länge)
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=LÖTDRAHT OHNE FLUSSMITTEL" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 930 reinigt und
+                          <strong>desoxydiert benetzbare Düsen</strong>
+                          von Selektivlötsystemen.</p>
                       </div>
-                      <div class="views-row views-row-5 views-row-odd views-row-last product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles_2.png" width="200" height="200" alt="Lottabletten"/></div>
-                        <div class="product-name">
-                          <h3>LOTTABLETTEN</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Für das Wellenlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Für das Selektivlöten</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Für die Nacharbeit und Reparatur</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Für die Vorverzinnung</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Für Tauchlöten</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Lottabletten sind kleine Teile Lot in bleifreien und SnPb(Ag)-Legierungen für eine einfache Lötbadbefüllung.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Lottabletten sind kleine Teile Lot in bleifreien und SnPb(Ag)-Legierungen für eine einfache Lötbadbefüllung.<br/>
-                            Größe : ungefähr 1cm x 1cm<br/>
-                            Bleifreie und SnPb(Ag)-Legierungen</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=LOTTABLETTEN" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 930 reinigt und desoxydiert benetzbare Düsen von Selektivlötsystemen.<br/>
+                          Sichere und einfache Reinigung in einem Schritt<br/>
+                          Ersetzt IF 920</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-930-DE.pdf" type="application/pdf; length=522376" title="TD IF 930-DE.pdf">Technisches Datenblatt IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-930-FR.pdf" type="application/pdf; length=435025" title="TD IF 930-FR.pdf">Fiche technique IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-930_0.pdf" type="application/pdf; length=387275" title="TD IF 930.pdf">Technical Data Sheet IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 930" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-2 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AOP-lead-free.jpg" width="200" height="200" alt="Anti-oxidant pellets"/><img typeof="foaf:Image" src="/assets/images/CLP_AOP-SnPb.jpg" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>ANTIOXIDATIONSTABLETTEN</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Für das Wellenlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Für das Selektivlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Für die Vorverzinnung</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Für SnPb(Ag)-Prozesse</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Für bleifreie Prozesse</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Antioxidationstabletten minimieren die Oxydbildung in bleifreien und SnPb(Ag) Lötbäder.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Antioxidationstabletten minimieren die Oxydbildung in bleifreien und SnPb(Ag) Lötbäder.<br/>
+                          Verwendet als Zusatz im Lötbad<br/>
+                          Für SnPb(Ag)-Legierungen (Blaues Etikett) oder bleifreie Legierungen (grünes Etikett). Antioxidationstabletten werden nicht empfohlen für eine geschlossene inerte Atmosphäre und für Ni-dotiertes Lot.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Anti-oxidant-pellets-DE.pdf" type="application/pdf; length=366742" title="TD Anti-oxidant pellets-DE.pdf">Technisches Datenblatt Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Anti-oxidant-pellets-FR_0.pdf" type="application/pdf; length=371501" title="TD Anti-oxidant pellets-FR.pdf">Fiche technique Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Anti-oxidant-pellets.pdf" type="application/pdf; length=364659" title="TD Anti-oxidant pellets.pdf">Technical Data Sheet Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=ANTIOXIDATIONSTABLETTEN" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-3 views-row-odd product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/solder-bars_0.jpg" width="200" height="200" alt="solder bars"/></div>
+                      <div class="product-name">
+                        <h3>STANGENLOT</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Für das Wellenlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Für das Selektivlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Für die Vorverzinnung</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Für Tauchlöten</p>
+                          </li>
+                          <ul></ul>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Stangenlot wird hergestellt von Metallen mit hoher Reinheit und niedrigem Oxydationsgrad in SnPb(Ag) und bleifreien Legierungen.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Stangenlot wird hergestellt von Metallen mit hoher Reinheit und niedrigem Oxydationsgrad in SnPb(Ag) und bleifreien Legierungen.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=STANGENLOT" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-4 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/plain-wire-2mm-4kg-5.png" width="200" height="200" alt="Plain Solder Wire"/></div>
+                      <div class="product-name">
+                        <h3>LÖTDRAHT OHNE FLUSSMITTEL</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Für Selektivlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Für die Vorverzinnung</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Für Tauchlöten</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Lötdraht ohne Flussmittel für die automatische Befüllung von Selektivlötsystemen in bleifreien und SnPb(Ag)-Legierungen.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Lötdraht ohne Flussmittel für die automatische Befüllung von Selektivlötsystemen in bleifreien und SnPb(Ag)-Legierungen.<br/>
+                          Drahtdurchmesser: 2mm/3mm<br/>
+                          4 kg/1kg Spulen<br/>
+                          Abmessungen der 4kg Spule : 125mm x 125mm (Durchmesser x Länge)
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=LÖTDRAHT OHNE FLUSSMITTEL" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-5 views-row-odd views-row-last product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles_2.png" width="200" height="200" alt="Lottabletten"/></div>
+                      <div class="product-name">
+                        <h3>LOTTABLETTEN</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Für das Wellenlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Für das Selektivlöten</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Für die Nacharbeit und Reparatur</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Für die Vorverzinnung</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Für Tauchlöten</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Lottabletten sind kleine Teile Lot in bleifreien und SnPb(Ag)-Legierungen für eine einfache Lötbadbefüllung.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Lottabletten sind kleine Teile Lot in bleifreien und SnPb(Ag)-Legierungen für eine einfache Lötbadbefüllung.<br/>
+                          Größe : ungefähr 1cm x 1cm<br/>
+                          Bleifreie und SnPb(Ag)-Legierungen</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=LOTTABLETTEN" target="_blank">Contact us for more info / demo / samples</a>
                       </div>
                     </div>
                   </div>
@@ -752,16 +942,62 @@
             </div>
           </div>
         </div>
-        <div id="block-block-17" class="block block-block library-reference last even">
-          <div class="inner-block">
-            <p>Produkt nicht gefunden? Für eine komplette Liste, konsultieren Sie unsere
-              <a href="/de/documents">Bibliothek</a>
-            </p>
-          </div>
-        </div>
-        <div class="clear"></div>
       </div>
+      <div id="block-block-17" class="block block-block library-reference last even">
+        <div class="inner-block">
+          <p>Produkt nicht gefunden? Für eine komplette Liste, konsultieren Sie unsere
+            <a href="/de/documents">Bibliothek</a>
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
-  {% include "partials/footer.njk" %}
+  <div class="region region-footer2">
+    <div class="inner-region">
+      <div id="block-block-18" class="block block-block first last odd">
+        <div class="inner-block">
+          <div class="block grid-12" id="F1">
+            <div class="inner-block">
+              <div class="inner-content">
+                <a href="/de/contact" target="_self" title="Gehen Sie zur Kontaktseite für mehr Info"><img src="/assets/images/Interflux-Electronics-headquarters-belgium.jpg" width="171" height="271" alt="Interflux Electronics Belgien Bürogebäude"/></a>
+                <div class="contact-title">
+                  <span>KONTAKT</span><br/>INTERFLUX<br/>HAUPTSITZ</div>
+                <div class="contact-adress">
+                  <p>
+                    Interflux Electronics NV<br/>
+                    Gent zeehaven 3170A<br/>
+                    Eddastraat 51<br/>
+                    9042 Gent<br/>
+                    BELGIEN</p>
+                  <p>Tel.: +32 9251 4959<br/>
+                    Fax: +32 9251 4970<br/>
+                    <a href="mailto:info@interflux.com" target="_blank">info@interflux.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-12" id="F2">
+            <div class="inner-block">
+              <div class="inner-content">
+                <div class="contact-title">
+                  <span>KONTAKT</span><br/>INTERFLUX WELTWEIT</div>
+                <p>
+                  <a href="/de/contact" target="_self" title="Alle Rechte vorbehalten für Interflux® Electronics N.V."><img src="/assets/images/interflux-worldwide-map.jpg" width="446" height="196" alt="Geographische Karte von der Interflux Gruppe"/></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-24" id="F3">
+            <div class="copyright">©2012 Alle Rechte vorbehalten für Interflux® Electronics N.V.</div>
+            <div class="louder-than-words">Webseite durch
+              <a href="http://nabu.io" target="_new" title="NABU websites">NABU websites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
 {% endblock %}

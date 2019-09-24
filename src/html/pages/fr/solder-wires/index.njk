@@ -8,438 +8,341 @@
 {% block bodyClass %}html not-front not-logged-in no-sidebars page-solder-wires page-products i18n-fr section-solder-wires page-panels
 {% endblock %}
 {% block page %}
-  {% include "partials/highlight.njk" %}
+  <div class="region region-language">
+    <div class="inner-region">
+      <div id="block-locale-language" class="block block-locale language-menu block grid-24 first last odd" role="complementary">
+        <div class="inner-block">
+          <ul class="language-switcher-locale-url">
+            <li class="en first">
+              <a href="/en/solder-wires" class="language-link" lang="en" title="Solder wires">
+                <div class="flag en"></div>English</a>
+            </li>
+            <li class="zh-hans">
+              <a href="/zh-hans/solder-wires" class="language-link" lang="zh-hans" title="锡线">
+                <div class="flag zh-hans"></div>简体中文</a>
+            </li>
+            <li class="cs">
+              <a href="/cs/solder-wires" class="language-link" lang="cs" title="Pájecí dráty">
+                <div class="flag cs"></div>Čeština</a>
+            </li>
+            <li class="de">
+              <a href="/de/solder-wires" class="language-link" lang="de" title="Lötdraht">
+                <div class="flag de"></div>Deutsch</a>
+            </li>
+            <li class="fr active">
+              <a href="/fr/solder-wires" class="language-link active" lang="fr" title="Fils à braser">
+                <div class="flag fr"></div>Français</a>
+            </li>
+            <li class="it">
+              <a href="/it/solder-wires" class="language-link" lang="it" title="Fili per saldatura">
+                <div class="flag it"></div>Italiano</a>
+            </li>
+            <li class="id">
+              <a href="/id/solder-wires" class="language-link" lang="id" title="Timah solder">
+                <div class="flag id"></div>Bahasa Indonesia</a>
+            </li>
+            <li class="pt-pt">
+              <a href="/pt-pt/solder-wires" class="language-link" lang="pt-pt" title="Fios da solda">
+                <div class="flag pt-pt"></div>Português</a>
+            </li>
+            <li class="ro">
+              <a href="/ro/solder-wires" class="language-link" lang="ro" title="Sarma de lipit">
+                <div class="flag ro"></div>Română</a>
+            </li>
+            <li class="ru">
+              <a href="/ru/solder-wires" class="language-link" lang="ru" title="Проволочный припой">
+                <div class="flag ru"></div>Русский</a>
+            </li>
+            <li class="th">
+              <a href="/th/solder-wires" class="language-link" lang="th" title="ลวดบัดกรี">
+                <div class="flag th"></div>ภาษาไทย</a>
+            </li>
+            <li class="tr">
+              <a href="/tr/solder-wires" class="language-link" lang="tr">
+                <div class="flag tr"></div>Türkçe</a>
+            </li>
+            <li class="pl">
+              <a href="/pl/solder-wires" class="language-link" lang="pl" title="Druty lutownicze">
+                <div class="flag pl"></div>Polski</a>
+            </li>
+            <li class="es">
+              <a href="/es/solder-wires" class="language-link" lang="es" title="Hilo de soldadura">
+                <div class="flag es"></div>Español</a>
+            </li>
+            <li class="sv last">
+              <a href="/sv/solder-wires" class="language-link" lang="sv" title="Lödtråd">
+                <div class="flag sv"></div>Svenska</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-header">
+    <div class="inner-region">
+      <div id="block-block-11" class="block block-block grid-9 first odd">
+        <div class="inner-block">
+          <p>
+            <a href="/fr/" title="Interflux Electronics" target="_self"><img src="/assets/images/interflux-electronics-logo.png" width="343" height="87" alt="Logo de Interflux Electronics"/></a>
+          </p>
+        </div>
+      </div>
+      <div id="block-menu-menu-interflux-menu" class="block block-menu grid-15 header-nav last even" role="navigation">
+        <div class="inner-block">
+          <ul class="menu">
+            <li class="first expanded active-trail">
+              <a href="/fr" title="Trouver un produit par type" class="active-trail">Produits</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/fr/soldering-fluxes" title="">Flux de brasage</a>
+                </li>
+                <li class="leaf">
+                  <a href="/fr/solder-pastes" title="">Crèmes à braser</a>
+                </li>
+                <li class="leaf active-trail">
+                  <a href="/fr/solder-wires" title="" class="active-trail active">Fils à braser</a>
+                </li>
+                <li class="leaf">
+                  <a href="/fr/spray-fluxers" title="">Fluxeur spray</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/fr/auxiliaries" title="">Auxiliaires</a>
+                </li>
+              </ul>
+            </li>
+            <li class="expanded">
+              <a href="/fr" title="Trouver un produit par process">Process</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/fr/wave-soldering" title="">Brasage à la vague</a>
+                </li>
+                <li class="leaf">
+                  <a href="/fr/selective-soldering" title="">Brasage sélectif</a>
+                </li>
+                <li class="leaf">
+                  <a href="/fr/reflow-soldering" title="">Brasage en refusion</a>
+                </li>
+                <li class="leaf">
+                  <a href="/fr/rework-and-repair" title="">Retouche et réparation</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/fr/pre-tinning" title="">Étamage</a>
+                </li>
+              </ul>
+            </li>
+            <li class="leaf">
+              <a href="/fr/company" title="Au sujet d&#039;Interflux">Entreprise</a>
+            </li>
+            <li class="leaf">
+              <a href="/fr/documents" title="Trouver une fiche technique">Documents</a>
+            </li>
+            <li class="last leaf">
+              <a href="/fr/contact" title="Entrer en contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-highlight">
+    <div class="inner-region">
+      <div id="banners">
+        <div class="preload"></div>
+        <div class="stage">
+          <article id="ipc-apex-2017">
+            <a href="http://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
+              <picture>
+                <source srcset="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg 2x, http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018.jpg 1x"></source>
+                <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg" alt="Visit use at IPC APEX 2018 in San Diego"/>
+              </picture>
+            </a>
+          </article>
+          <article id="productronica-2017">
+            <a href="http://www.productronica.com/" target="_blank" title="Visit us at Productronica 2017">
+              <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/productronica-banner-2017.jpg"/>
+            </a>
+          </article>
+          <article id="lmpa">
+            <a href="https://lmpa.interflux.com" target="_blank">
+              <h1>Solder
+                <strong>5 times</strong>
+                faster whilst maintaining
+                <strong>zero defects</strong>
+              </h1>
+              <h1>Discover
+                <mark>LMPA<span>™</span>
+                </mark>
+              </h1>
+              <div id="video">
+                <video id="movie" width="276" height="220" autoplay loop>
+                  <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
+                  Your browser doesn't support HTML5 video tag.
+                </video>
+                <script></script>
+                <p>Speed: 30 mm/s</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <nav>
+          <div id="prev">
+            <div></div>
+          </div>
+          <div id="next">
+            <div></div>
+          </div>
+          <div id="timer">
+            <div></div>
+          </div>
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
   <div class="region region-corpus">
     <div class="inner-region">
-      <div class="inner-region">
-        <div class="panel-display panel-1col clearfix">
-          <div class="panel-panel panel-col">
-            <div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs18">Fils à braser</div>
-                  <div class="fs28">sans plomb</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_1 product-row-group view-dom-id-be89ebab013778323a43b53abec7f684">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_QF70-Pb-free.jpg" width="200" height="200" alt="QF 70 Pb-free"/></div>
-                        <div class="product-name">
-                          <h3>QF 70</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>Nouveau</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon32"></div>
-                              <p>Vitesse de mouillage augmentée</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Résidu transparant</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolument sans halogènes</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>QF 70</strong>
-                            pour les alliages sans plomb est un fil à braser à base de colophane, absolument sans halogènes et sans nettoyage pour un mouillage rapide et pour des
-                            <strong>applications de brasage rapides</strong>.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® QF 70 pour les alliages sans plomb est un fil à braser à base de colophane, absolument sans halogènes et sans nettoyage pour un mouillage rapide et pour des applications de brasage rapides.<br/>
-                            QF 70 convient pour le brasage manuel et le brasage par robot.<br/>
-                            Classé RO L0 suivant les normes IPC et EN<br/>
-                            Contenu d'halogènes : 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-QF-70-DE.pdf" type="application/pdf; length=577835" title="TD QF 70-DE.pdf">Technisches Datenblatt QF70</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-QF-70.pdf" type="application/pdf; length=567824" title="TD QF 70.pdf">Technical Data Sheet QF 70</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=QF 70" target="_blank">More information / demo / samples</a>
-                        </div>
-                        <a href="/fr/1404" title="QF 70" class="nid">1404</a>
+      <div class="panel-display panel-1col clearfix">
+        <div class="panel-panel panel-col">
+          <div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs18">Fils à braser</div>
+                <div class="fs28">sans plomb</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_1 product-row-group view-dom-id-8d2f8d0ae9952a39780ff68f36e8b9db">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_QF70-Pb-free.jpg" width="200" height="200" alt="QF 70 Pb-free"/></div>
+                      <div class="product-name">
+                        <h3>QF 70</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/NH1-SAC387.png" width="200" height="200" alt="NH1 lead-free solder wire"/></div>
-                        <div class="product-name">
-                          <h3>NH 1</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NEW</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Brasabilité améliorée, vitesse de mouillage augmentée</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Très peu de projections de flux</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Sans colophane</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Très peu de résidu transparent</p>
-                            </li>
-                            <li>
-                              <div class="icon35"></div>
-                              <p>Grande répétitivité dans le process</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Très approprié pour le brasage par laser</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>NH 1</strong>
-                            pour les alliages sans plomb est un fil à braser sans nettoyage,
-                            <strong>activé et sans colophane</strong>
-                            qui donne des résultats de brasage rapides et répétitifs sur une grande variété de finitions, inclusivement le laiton.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® NH 1 pour les alliages sans plomb est un fil à braser sans nettoyage, activé et sans colophane qui donne des résultats de brasage rapides et répétitifs sur une grande variété de finitions, inclusivement le laiton.<br/>
-                            NH 1 convient pour le brasage par laser et le brasage par robot mais également pour le brasage manuel.<br/>
-                            Classé RE L1 suivant les normes IPC et EN.
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-NH-1-DE.pdf" type="application/pdf; length=553998" title="TD NH 1-DE.pdf">Technical Data Sheet NH1</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-NH-1.pdf" type="application/pdf; length=562600" title="TD NH 1.pdf">Technical Data Sheet NH 1</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=NH 1" target="_blank">More information / demo / samples</a>
-                        </div>
-                        <a href="/fr/1392" title="NH 1" class="nid">1392</a>
+                      <div class="product-highlight">
+                        <h3>Nouveau</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SAC.png" width="200" height="200" alt="RosIX 705"/></div>
-                        <div class="product-name">
-                          <h3>RosIX 705</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>Nouveau</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Brasabilité améliorée</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Odeur pas désagréable</p>
-                            </li>
-                            <li>
-                              <div class="icon35"></div>
-                              <p>Grande répétitivité</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Résidu lisse et transparent</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Approprié pour le brasage par robot</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>RosIX 705</strong>
-                            pour les alliages sans plomb est un fil à braser sans nettoyage activé à base de colophane avec une
-                            <strong>brasabilité améliorée</strong>
-                            sur des surfaces qui sont dificiles à braser.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® RosIX 705 pour les alliages sans plomb est un fil à braser sans nettoyage activé à base de colophane avec une brasabilité améliorée sur des surfaces qui sont difficiles à braser.<br/>
-                            Le fil à braser RosIX 705 est approprié pour les surfaces difficiles à braser, comme le OSP, Ni, Zn, laiton, argent allemand, etc.. et également pour les surfaces dégradées et oxidées.<br/>
-                            Classé RO L1 suivant les normes IPC et EN.
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-RosIX-705-DE.pdf" type="application/pdf; length=1781865" title="TD RosIX 705-DE.pdf">Technisches Datenblatt RosIX 705</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Rosix-705-FR_0.pdf" type="application/pdf; length=1850021" title="TD Rosix 705-FR.pdf">Fiche Technique RosIX 705</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-RosIX-705.pdf" type="application/pdf; length=1845843" title="TD RosIX 705.pdf">Technical Data Sheet RosIX 705</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705" target="_blank">More information / demo / samples</a>
-                        </div>
-                        <a href="/fr/1428" title="RosIX 705" class="nid">1428</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon32"></div>
+                            <p>Vitesse de mouillage augmentée</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Résidu transparant</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolument sans halogènes</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Aquasol4018_10.jpg" width="200" height="200" alt="Aquasol 4018"/></div>
-                        <div class="product-name">
-                          <h3>AQUASOL 4018</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon17"></div>
-                              <p>Fil à braser hydrosoluble</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Fil à braser sans plomb</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Pour la retouche et la réparation</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Absolument sans colophane</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Haute activation</p>
-                            </li>
-                            <p></p>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Le fil à braser Interflux® Aquasol 4018 est à haute activation avec un
-                            <strong>résidu hydrosoluble</strong>
-                            en alliages sans plomb.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Le fil à braser Interflux® Aquasol 4018 est à haute activation avec un résidu hydrosoluble en alliages sans plomb.<br/>
-                            Excellente brasabilité sur les surfaces difficiles à braser<br/>
-                            Le résidu peut être nettoyé avec de l’eau déminéralisée à 35°C— 45°C (95°F— 114°F)<br/>
-                            Le résidu doit être nettoyé<br/>
-                            OR H1 suivant les normes IPC et EN<br/>
-                            Pourcentage de flux: 2.5%
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Aquasol-4018-DE.pdf" type="application/pdf; length=612173" title="TD Aquasol 4018-DE.pdf">Technisches Datenblatt Aquasol 4018</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Aquasol-4018-FR.pdf" type="application/pdf; length=613595" title="TD Aquasol 4018-FR.pdf">Fiche Technique Aquasol 4018</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Aquasol-4018_0.pdf" type="application/pdf; length=613767" title="TD Aquasol 4018.pdf">Technical Data Sheet Aquasol 4018</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=AQUASOL 4018" target="_blank">More information / demo / samples</a>
-                        </div>
-                        <a href="/fr/857" title="AQUASOL 4018" class="nid">857</a>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>QF 70</strong>
+                          pour les alliages sans plomb est un fil à braser à base de colophane, absolument sans halogènes et sans nettoyage pour un mouillage rapide et pour des
+                          <strong>applications de brasage rapides</strong>.
+                        </p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-lead-free_0.jpg" width="200" height="200" alt="Interflux IF14 series lead-free solder wire"/></div>
-                        <div class="product-name">
-                          <h3>SÉRIE IF 14  SANS PLOMB</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Fils à braser sans plomb</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Pour la retouche et la réparation</p>
-                            </li>
-                            <li>
-                              <div class="icon27"></div>
-                              <p>Résidu brossable à la main</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolument sans halogènes</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Absolument sans colophane</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Faibles résidus</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>La série des fils à braser Interflux® IF 14 est sans colophane, absolument sans halogènes et sans nettoyage en alliages sans plomb et avec plomb. Les
-                            <strong>résidus</strong>
-                            sont
-                            <strong>facilement nettoyables</strong>.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>La série des fils à braser Interflux® IF 14 est sans colophane, absolument sans halogènes et sans nettoyage en alliages sans plomb et avec plomb. Les résidus sont facilement nettoyables.<br/>
-                            Les résidus sont brossables à la main<br/>
-                            Classé RE L0 dans les normes EN et IPC<br/>
-                            Sans plomb : IF 14-16 et IF 14-22 (Pourcentage de flux : 1.6% et 2.2%)<br/>
-                            Avec plomb : Pourcentage de flux : 0.6%, 0.9%, 1.0% et 1.4%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-14-16-DE_0.pdf" type="application/pdf; length=1726634" title="TD IF 14-16-DE.pdf">Technisches Datenblatt IF 14-16</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-14-22-DE_0.pdf" type="application/pdf; length=1799161" title="TD IF 14-22-DE.pdf">Technisches Datenblatt IF 14-22</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-14-16-FR.pdf" type="application/pdf; length=1797018" title="TD IF 14-16-FR.pdf">Fiche technique IF 14-16</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-14-22-FR.pdf" type="application/pdf; length=1847498" title="TD IF 14-22-FR.pdf">Fiche technique IF 14-22</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-14-16_0.pdf" type="application/pdf; length=1740737" title="TD IF 14-16.pdf">Technical Data Sheet IF 14-16</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-14-22_0.pdf" type="application/pdf; length=1804579" title="TD IF 14-22.pdf">Technical Data Sheet IF 14-22</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SÉRIE IF 14  SANS PLOMB" target="_blank">More information / demo / samples</a>
-                        </div>
-                        <a href="/fr/500" title="SÉRIE IF 14  SANS PLOMB" class="nid">500</a>
+                      <div class="product-details">
+                        <p>Interflux® QF 70 pour les alliages sans plomb est un fil à braser à base de colophane, absolument sans halogènes et sans nettoyage pour un mouillage rapide et pour des applications de brasage rapides.<br/>
+                          QF 70 convient pour le brasage manuel et le brasage par robot.<br/>
+                          Classé RO L0 suivant les normes IPC et EN<br/>
+                          Contenu d'halogènes : 0,00%</p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-Flexsol-903.jpg" width="200" height="200" alt="Interflux Flexsol 903 solder wire"/></div>
-                        <div class="product-name">
-                          <h3>FLEXSOL 903</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Fil à braser sans plomb</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Pour la retouche et la réparation</p>
-                            </li>
-                            <li>
-                              <div class="icon14"></div>
-                              <p>Contient de la colophane</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolument sans halogènes</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Très peu de projections de flux</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Le fil à braser Interflux® Flexsol 903 est absolument sans halogènes et sans nettoyage en alliages sans plomb. Le fil
-                            <strong>réduit les projections</strong>
-                            de flux.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Le fil à braser Interflux® Flexsol 903 est absolument sans halogènes et sans nettoyage en alliages sans plomb. Le fil
-                            <strong>réduit les projections</strong>
-                            de flux.<br/>
-                            Classé RO L0 dans les normes EN et IPC<br/>
-                            Pourcentage de flux : 2.2% et 3.5%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Flexsol-903-DE.pdf" type="application/pdf; length=467002" title="TD Flexsol 903-DE.pdf">Technisches Datenblatt Flexsol 903</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Flexsol-903-FR_0.pdf" type="application/pdf; length=470317" title="TD Flexsol 903-FR.pdf">Fiche technique Flexsol 903</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Flexsol-903.pdf" type="application/pdf; length=463843" title="TD Flexsol 903.pdf">Technical Data Sheet Flexsol 903</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=FLEXSOL 903" target="_blank">More information / demo / samples</a>
-                        </div>
-                        <a href="/fr/501" title="FLEXSOL 903" class="nid">501</a>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-QF-70-DE.pdf" type="application/pdf; length=577835" title="TD QF 70-DE.pdf">Technisches Datenblatt QF70</a>
+                        </span>
                       </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-QF-70.pdf" type="application/pdf; length=567824" title="TD QF 70.pdf">Technical Data Sheet QF 70</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=QF 70" target="_blank">More information / demo / samples</a>
+                      </div>
+                      <a href="/fr/1404" title="QF 70" class="nid">1404</a>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs18">Fils à braser</div>
-                  <div class="fs30">avec plomb</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_2 product-row-group view-dom-id-055452c98aa25b7429768f5f19a7f324">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SnPbAg.png" width="200" height="200" alt="RosIX 705 SnPb(Ag)"/></div>
-                        <div class="product-name">
-                          <h3>RosIX 705 SnPb(Ag)</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>Nouveau</h3>
-                        </div>
-                        <div class="product-features">
-                          <p></p>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/NH1-SAC387.png" width="200" height="200" alt="NH1 lead-free solder wire"/></div>
+                      <div class="product-name">
+                        <h3>NH 1</h3>
+                      </div>
+                      <div class="product-highlight">
+                        <h3>NEW</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Brasabilité améliorée, vitesse de mouillage augmentée</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Très peu de projections de flux</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Sans colophane</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Très peu de résidu transparent</p>
+                          </li>
+                          <li>
+                            <div class="icon35"></div>
+                            <p>Grande répétitivité dans le process</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Très approprié pour le brasage par laser</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>NH 1</strong>
+                          pour les alliages sans plomb est un fil à braser sans nettoyage,
+                          <strong>activé et sans colophane</strong>
+                          qui donne des résultats de brasage rapides et répétitifs sur une grande variété de finitions, inclusivement le laiton.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® NH 1 pour les alliages sans plomb est un fil à braser sans nettoyage, activé et sans colophane qui donne des résultats de brasage rapides et répétitifs sur une grande variété de finitions, inclusivement le laiton.<br/>
+                          NH 1 convient pour le brasage par laser et le brasage par robot mais également pour le brasage manuel.<br/>
+                          Classé RE L1 suivant les normes IPC et EN.
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-NH-1-DE.pdf" type="application/pdf; length=553998" title="TD NH 1-DE.pdf">Technical Data Sheet NH1</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-NH-1.pdf" type="application/pdf; length=562600" title="TD NH 1.pdf">Technical Data Sheet NH 1</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=NH 1" target="_blank">More information / demo / samples</a>
+                      </div>
+                      <a href="/fr/1392" title="NH 1" class="nid">1392</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SAC.png" width="200" height="200" alt="RosIX 705"/></div>
+                      <div class="product-name">
+                        <h3>RosIX 705</h3>
+                      </div>
+                      <div class="product-highlight">
+                        <h3>Nouveau</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
                           <li>
                             <div class="icon21"></div>
                             <p>Brasabilité améliorée</p>
@@ -460,105 +363,392 @@
                             <div class="icon00"></div>
                             <p>Approprié pour le brasage par robot</p>
                           </li>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>RosIX 705 SnPb(Ag)</strong>
-                            pour les alliages SnPb(Ag) est un fil à braser sans nettoyage activé à base de colophane avec une
-                            <strong>brasabilité améliorée</strong>
-                            sur des surfaces qui sont dificiles à braser.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® RosIX 705 SnPb(Ag) pour les alliages SnPb(Ag) est un fil à braser sans nettoyage activé à base de colophane avec une brasabilité améliorée sur des surfaces qui sont dificiles à braser.<br/>
-                            Le fil à braser RosIX 705 SnPb(Ag) est approprié pour les surfaces difficiles à braser, comme le OSP, Ni, Zn, laiton, argent allemand, etc.. et également pour les surfaces dégradées et oxidées.<br/>
-                            Classé RO L1 suivant les normes IPC et EN.
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-RosIX-705-SnPbAg-DE.pdf" type="application/pdf; length=1786789" title="TD RosIX 705 SnPb(Ag)-DE.pdf">Technisches Datenblatt RosIX 705 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Rosix-705-SnPbAg-FR.pdf" type="application/pdf; length=1851648" title="TD Rosix 705 SnPb(Ag)-FR.pdf">Fiche technique RosIX 705 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Rosix-705-SnPbAg.pdf" type="application/pdf; length=1904997" title="TD Rosix 705 SnPb(Ag).pdf">Technical Data Sheet RosIX 705 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705 SnPb(Ag)" target="_blank">More information / demo / samples</a>
-                        </div>
-                        <a href="/fr/1416" title="RosIX 705 SnPb(Ag)" class="nid">1416</a>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-leaded.jpg" width="200" height="200" alt="Interflux IF14 series leaded solder wire"/></div>
-                        <div class="product-name">
-                          <h3>SÉRIE IF14 SnPb(Ag)</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Fil à braser SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Pour la retouche et la réparation</p>
-                            </li>
-                            <li>
-                              <div class="icon27"></div>
-                              <p>Résidu brossable à la main</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolument sans halogènes</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Absolument sans colophane</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Faibles résidus</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>La série des fils à braser Interflux® IF 14 est sans colophane, absolument sans halogènes et sans nettoyage en alliages avec plomb et sans plomb. Les
-                            <strong>résidus</strong>
-                            sont
-                            <strong>facilement nettoyables</strong>.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>La série des fils à braser Interflux® IF 14 est sans colophane, absolument sans halogènes et sans nettoyage en alliages avec plomb et sans plomb. Les résidus sont facilement nettoyables.<br/>
-                            Classé RE L0 dans les normes EN et IPC<br/>
-                            Avec plomb : IF 14-06, IF 14-09, IF 14-10, IF 14-14 (Pourcentage de flux : 0.6%, 0.9%, 1.0% et 1.4%)<br/>
-                            Sans plomb : Pourcentage de flux : 1.6% et 2.2%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-14-06-09-14-DE_0.pdf" type="application/pdf; length=1839549" title="TD IF 14-06-09-14-DE.pdf">Technisches Datenblatt IF 14-06-09-14 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-14-06-09-14-FR.pdf" type="application/pdf; length=1812757" title="TD IF 14-06-09-14-FR.pdf">Fiche technique IF 14-06-09-14 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-14-06-09-14_0.pdf" type="application/pdf; length=1811232" title="TD IF 14-06-09-14.pdf">Technical Data Sheet IF 14-06-09-14 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SÉRIE IF14 SnPb(Ag)" target="_blank">More information / demo / samples</a>
-                        </div>
-                        <a href="/fr/504" title="SÉRIE IF14 SnPb(Ag)" class="nid">504</a>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>RosIX 705</strong>
+                          pour les alliages sans plomb est un fil à braser sans nettoyage activé à base de colophane avec une
+                          <strong>brasabilité améliorée</strong>
+                          sur des surfaces qui sont dificiles à braser.</p>
                       </div>
+                      <div class="product-details">
+                        <p>Interflux® RosIX 705 pour les alliages sans plomb est un fil à braser sans nettoyage activé à base de colophane avec une brasabilité améliorée sur des surfaces qui sont difficiles à braser.<br/>
+                          Le fil à braser RosIX 705 est approprié pour les surfaces difficiles à braser, comme le OSP, Ni, Zn, laiton, argent allemand, etc.. et également pour les surfaces dégradées et oxidées.<br/>
+                          Classé RO L1 suivant les normes IPC et EN.
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-RosIX-705-DE.pdf" type="application/pdf; length=1781865" title="TD RosIX 705-DE.pdf">Technisches Datenblatt RosIX 705</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Rosix-705-FR_0.pdf" type="application/pdf; length=1850021" title="TD Rosix 705-FR.pdf">Fiche Technique RosIX 705</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-RosIX-705.pdf" type="application/pdf; length=1845843" title="TD RosIX 705.pdf">Technical Data Sheet RosIX 705</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705" target="_blank">More information / demo / samples</a>
+                      </div>
+                      <a href="/fr/1428" title="RosIX 705" class="nid">1428</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Aquasol4018_10.jpg" width="200" height="200" alt="Aquasol 4018"/></div>
+                      <div class="product-name">
+                        <h3>AQUASOL 4018</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon17"></div>
+                            <p>Fil à braser hydrosoluble</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Fil à braser sans plomb</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Pour la retouche et la réparation</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Absolument sans colophane</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Haute activation</p>
+                          </li>
+                          <p></p>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Le fil à braser Interflux® Aquasol 4018 est à haute activation avec un
+                          <strong>résidu hydrosoluble</strong>
+                          en alliages sans plomb.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Le fil à braser Interflux® Aquasol 4018 est à haute activation avec un résidu hydrosoluble en alliages sans plomb.<br/>
+                          Excellente brasabilité sur les surfaces difficiles à braser<br/>
+                          Le résidu peut être nettoyé avec de l’eau déminéralisée à 35°C— 45°C (95°F— 114°F)<br/>
+                          Le résidu doit être nettoyé<br/>
+                          OR H1 suivant les normes IPC et EN<br/>
+                          Pourcentage de flux: 2.5%
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Aquasol-4018-DE.pdf" type="application/pdf; length=612173" title="TD Aquasol 4018-DE.pdf">Technisches Datenblatt Aquasol 4018</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Aquasol-4018-FR.pdf" type="application/pdf; length=613595" title="TD Aquasol 4018-FR.pdf">Fiche Technique Aquasol 4018</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Aquasol-4018_0.pdf" type="application/pdf; length=613767" title="TD Aquasol 4018.pdf">Technical Data Sheet Aquasol 4018</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=AQUASOL 4018" target="_blank">More information / demo / samples</a>
+                      </div>
+                      <a href="/fr/857" title="AQUASOL 4018" class="nid">857</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-lead-free_0.jpg" width="200" height="200" alt="Interflux IF14 series lead-free solder wire"/></div>
+                      <div class="product-name">
+                        <h3>SÉRIE IF 14  SANS PLOMB</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Fils à braser sans plomb</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Pour la retouche et la réparation</p>
+                          </li>
+                          <li>
+                            <div class="icon27"></div>
+                            <p>Résidu brossable à la main</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolument sans halogènes</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Absolument sans colophane</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Faibles résidus</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>La série des fils à braser Interflux® IF 14 est sans colophane, absolument sans halogènes et sans nettoyage en alliages sans plomb et avec plomb. Les
+                          <strong>résidus</strong>
+                          sont
+                          <strong>facilement nettoyables</strong>.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>La série des fils à braser Interflux® IF 14 est sans colophane, absolument sans halogènes et sans nettoyage en alliages sans plomb et avec plomb. Les résidus sont facilement nettoyables.<br/>
+                          Les résidus sont brossables à la main<br/>
+                          Classé RE L0 dans les normes EN et IPC<br/>
+                          Sans plomb : IF 14-16 et IF 14-22 (Pourcentage de flux : 1.6% et 2.2%)<br/>
+                          Avec plomb : Pourcentage de flux : 0.6%, 0.9%, 1.0% et 1.4%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-14-16-DE_0.pdf" type="application/pdf; length=1726634" title="TD IF 14-16-DE.pdf">Technisches Datenblatt IF 14-16</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-14-22-DE_0.pdf" type="application/pdf; length=1799161" title="TD IF 14-22-DE.pdf">Technisches Datenblatt IF 14-22</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-14-16-FR.pdf" type="application/pdf; length=1797018" title="TD IF 14-16-FR.pdf">Fiche technique IF 14-16</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-14-22-FR.pdf" type="application/pdf; length=1847498" title="TD IF 14-22-FR.pdf">Fiche technique IF 14-22</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-14-16_0.pdf" type="application/pdf; length=1740737" title="TD IF 14-16.pdf">Technical Data Sheet IF 14-16</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-14-22_0.pdf" type="application/pdf; length=1804579" title="TD IF 14-22.pdf">Technical Data Sheet IF 14-22</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SÉRIE IF 14  SANS PLOMB" target="_blank">More information / demo / samples</a>
+                      </div>
+                      <a href="/fr/500" title="SÉRIE IF 14  SANS PLOMB" class="nid">500</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-Flexsol-903.jpg" width="200" height="200" alt="Interflux Flexsol 903 solder wire"/></div>
+                      <div class="product-name">
+                        <h3>FLEXSOL 903</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Fil à braser sans plomb</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Pour la retouche et la réparation</p>
+                          </li>
+                          <li>
+                            <div class="icon14"></div>
+                            <p>Contient de la colophane</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolument sans halogènes</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Très peu de projections de flux</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Le fil à braser Interflux® Flexsol 903 est absolument sans halogènes et sans nettoyage en alliages sans plomb. Le fil
+                          <strong>réduit les projections</strong>
+                          de flux.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Le fil à braser Interflux® Flexsol 903 est absolument sans halogènes et sans nettoyage en alliages sans plomb. Le fil
+                          <strong>réduit les projections</strong>
+                          de flux.<br/>
+                          Classé RO L0 dans les normes EN et IPC<br/>
+                          Pourcentage de flux : 2.2% et 3.5%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Flexsol-903-DE.pdf" type="application/pdf; length=467002" title="TD Flexsol 903-DE.pdf">Technisches Datenblatt Flexsol 903</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Flexsol-903-FR_0.pdf" type="application/pdf; length=470317" title="TD Flexsol 903-FR.pdf">Fiche technique Flexsol 903</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Flexsol-903.pdf" type="application/pdf; length=463843" title="TD Flexsol 903.pdf">Technical Data Sheet Flexsol 903</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=FLEXSOL 903" target="_blank">More information / demo / samples</a>
+                      </div>
+                      <a href="/fr/501" title="FLEXSOL 903" class="nid">501</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs18">Fils à braser</div>
+                <div class="fs30">avec plomb</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_2 product-row-group view-dom-id-8763e8d1b8f4a318bfe51c05754f47e9">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SnPbAg.png" width="200" height="200" alt="RosIX 705 SnPb(Ag)"/></div>
+                      <div class="product-name">
+                        <h3>RosIX 705 SnPb(Ag)</h3>
+                      </div>
+                      <div class="product-highlight">
+                        <h3>Nouveau</h3>
+                      </div>
+                      <div class="product-features">
+                        <p></p>
+                        <li>
+                          <div class="icon21"></div>
+                          <p>Brasabilité améliorée</p>
+                        </li>
+                        <li>
+                          <div class="icon00"></div>
+                          <p>Odeur pas désagréable</p>
+                        </li>
+                        <li>
+                          <div class="icon35"></div>
+                          <p>Grande répétitivité</p>
+                        </li>
+                        <li>
+                          <div class="icon20"></div>
+                          <p>Résidu lisse et transparent</p>
+                        </li>
+                        <li>
+                          <div class="icon00"></div>
+                          <p>Approprié pour le brasage par robot</p>
+                        </li>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>RosIX 705 SnPb(Ag)</strong>
+                          pour les alliages SnPb(Ag) est un fil à braser sans nettoyage activé à base de colophane avec une
+                          <strong>brasabilité améliorée</strong>
+                          sur des surfaces qui sont dificiles à braser.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® RosIX 705 SnPb(Ag) pour les alliages SnPb(Ag) est un fil à braser sans nettoyage activé à base de colophane avec une brasabilité améliorée sur des surfaces qui sont dificiles à braser.<br/>
+                          Le fil à braser RosIX 705 SnPb(Ag) est approprié pour les surfaces difficiles à braser, comme le OSP, Ni, Zn, laiton, argent allemand, etc.. et également pour les surfaces dégradées et oxidées.<br/>
+                          Classé RO L1 suivant les normes IPC et EN.
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-RosIX-705-SnPbAg-DE.pdf" type="application/pdf; length=1786789" title="TD RosIX 705 SnPb(Ag)-DE.pdf">Technisches Datenblatt RosIX 705 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Rosix-705-SnPbAg-FR.pdf" type="application/pdf; length=1851648" title="TD Rosix 705 SnPb(Ag)-FR.pdf">Fiche technique RosIX 705 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Rosix-705-SnPbAg.pdf" type="application/pdf; length=1904997" title="TD Rosix 705 SnPb(Ag).pdf">Technical Data Sheet RosIX 705 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705 SnPb(Ag)" target="_blank">More information / demo / samples</a>
+                      </div>
+                      <a href="/fr/1416" title="RosIX 705 SnPb(Ag)" class="nid">1416</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-leaded.jpg" width="200" height="200" alt="Interflux IF14 series leaded solder wire"/></div>
+                      <div class="product-name">
+                        <h3>SÉRIE IF14 SnPb(Ag)</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Fil à braser SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Pour la retouche et la réparation</p>
+                          </li>
+                          <li>
+                            <div class="icon27"></div>
+                            <p>Résidu brossable à la main</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolument sans halogènes</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Absolument sans colophane</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Faibles résidus</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>La série des fils à braser Interflux® IF 14 est sans colophane, absolument sans halogènes et sans nettoyage en alliages avec plomb et sans plomb. Les
+                          <strong>résidus</strong>
+                          sont
+                          <strong>facilement nettoyables</strong>.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>La série des fils à braser Interflux® IF 14 est sans colophane, absolument sans halogènes et sans nettoyage en alliages avec plomb et sans plomb. Les résidus sont facilement nettoyables.<br/>
+                          Classé RE L0 dans les normes EN et IPC<br/>
+                          Avec plomb : IF 14-06, IF 14-09, IF 14-10, IF 14-14 (Pourcentage de flux : 0.6%, 0.9%, 1.0% et 1.4%)<br/>
+                          Sans plomb : Pourcentage de flux : 1.6% et 2.2%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-14-06-09-14-DE_0.pdf" type="application/pdf; length=1839549" title="TD IF 14-06-09-14-DE.pdf">Technisches Datenblatt IF 14-06-09-14 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-14-06-09-14-FR.pdf" type="application/pdf; length=1812757" title="TD IF 14-06-09-14-FR.pdf">Fiche technique IF 14-06-09-14 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-14-06-09-14_0.pdf" type="application/pdf; length=1811232" title="TD IF 14-06-09-14.pdf">Technical Data Sheet IF 14-06-09-14 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SÉRIE IF14 SnPb(Ag)" target="_blank">More information / demo / samples</a>
+                      </div>
+                      <a href="/fr/504" title="SÉRIE IF14 SnPb(Ag)" class="nid">504</a>
                     </div>
                   </div>
                 </div>
@@ -566,16 +756,62 @@
             </div>
           </div>
         </div>
-        <div id="block-block-17" class="block block-block library-reference last even">
-          <div class="inner-block">
-            <p>Vous ne trouvez pas le produit ? Voir la liste complète dans la
-              <a href="/fr/documents">librairie</a>
-            </p>
-          </div>
-        </div>
-        <div class="clear"></div>
       </div>
+      <div id="block-block-17" class="block block-block library-reference last even">
+        <div class="inner-block">
+          <p>Vous ne trouvez pas le produit ? Voir la liste complète dans la
+            <a href="/fr/documents">librairie</a>
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
-  {% include "partials/footer.njk" %}
+  <div class="region region-footer2">
+    <div class="inner-region">
+      <div id="block-block-18" class="block block-block first last odd">
+        <div class="inner-block">
+          <div class="block grid-12" id="F1">
+            <div class="inner-block">
+              <div class="inner-content">
+                <a href="/fr/contact" target="_self" title="Aller vers la page de contact pour plus d'informations"><img src="/assets/images/Interflux-Electronics-headquarters-belgium.jpg" width="171" height="271" alt="Bureau de Interflux Electronics en Belgique"/></a>
+                <div class="contact-title">
+                  <span>CONTACTER</span><br/>LA MAISON MERE D'INTERFLUX</div>
+                <div class="contact-adress">
+                  <p>
+                    Interflux Electronics NV<br/>
+                    Gent zeehaven 3170A<br/>
+                    Eddastraat 51<br/>
+                    9042 Gent<br/>
+                    BELGIQUE</p>
+                  <p>Tel.: +32 9251 4959<br/>
+                    Fax: +32 9251 4970<br/>
+                    <a href="mailto:info@interflux.com" target="_blank">info@interflux.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-12" id="F2">
+            <div class="inner-block">
+              <div class="inner-content">
+                <div class="contact-title">
+                  <span>CONTACTER</span><br/>INTERFLUX DANS LE MONDE</div>
+                <p>
+                  <a href="/fr/contact" target="_self" title="Aller vers la page de contact pour plus d'informations"><img src="/assets/images/interflux-worldwide-map.jpg" width="446" height="196" alt="Carte géographique du groupe Interflux"/></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-24" id="F3">
+            <div class="copyright">©2012 Tous droits réservés par Interflux Interflux® Electronics N.V.</div>
+            <div class="louder-than-words">Site Web de
+              <a href="http://nabu.io" target="_new" title="NABU websites">NABU websites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
 {% endblock %}

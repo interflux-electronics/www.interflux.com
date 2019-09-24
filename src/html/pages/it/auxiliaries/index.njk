@@ -8,785 +8,975 @@
 {% block bodyClass %}html not-front not-logged-in no-sidebars page-auxiliaries page-products i18n-it section-auxiliaries page-panels
 {% endblock %}
 {% block page %}
-  {% include "partials/highlight.njk" %}
+  <div class="region region-language">
+    <div class="inner-region">
+      <div id="block-locale-language" class="block block-locale language-menu block grid-24 first last odd" role="complementary">
+        <div class="inner-block">
+          <ul class="language-switcher-locale-url">
+            <li class="en first">
+              <a href="/en/auxiliaries" class="language-link" lang="en" title="Auxiliaries">
+                <div class="flag en"></div>English</a>
+            </li>
+            <li class="zh-hans">
+              <a href="/zh-hans/auxiliaries" class="language-link" lang="zh-hans" title="其他">
+                <div class="flag zh-hans"></div>简体中文</a>
+            </li>
+            <li class="cs">
+              <a href="/cs/auxiliaries" class="language-link" lang="cs" title="Doplňky">
+                <div class="flag cs"></div>Čeština</a>
+            </li>
+            <li class="de">
+              <a href="/de/auxiliaries" class="language-link" lang="de" title="Hilfsmittel">
+                <div class="flag de"></div>Deutsch</a>
+            </li>
+            <li class="fr">
+              <a href="/fr/auxiliaries" class="language-link" lang="fr" title="Auxiliaires">
+                <div class="flag fr"></div>Français</a>
+            </li>
+            <li class="it active">
+              <a href="/it/auxiliaries" class="language-link active" lang="it" title="Prodotti ausiliari">
+                <div class="flag it"></div>Italiano</a>
+            </li>
+            <li class="id">
+              <a href="/id/auxiliaries" class="language-link" lang="id" title="Alat pembantu">
+                <div class="flag id"></div>Bahasa Indonesia</a>
+            </li>
+            <li class="pt-pt">
+              <a href="/pt-pt/auxiliaries" class="language-link" lang="pt-pt" title="Acessórios">
+                <div class="flag pt-pt"></div>Português</a>
+            </li>
+            <li class="ro">
+              <a href="/ro/auxiliaries" class="language-link" lang="ro" title="Auxiliare pentru">
+                <div class="flag ro"></div>Română</a>
+            </li>
+            <li class="ru">
+              <a href="/ru/auxiliaries" class="language-link" lang="ru" title="Вспомогательные материалы">
+                <div class="flag ru"></div>Русский</a>
+            </li>
+            <li class="th">
+              <a href="/th/auxiliaries" class="language-link" lang="th" title="อุปกรณ์เสริม">
+                <div class="flag th"></div>ภาษาไทย</a>
+            </li>
+            <li class="tr">
+              <a href="/tr/auxiliaries" class="language-link" lang="tr">
+                <div class="flag tr"></div>Türkçe</a>
+            </li>
+            <li class="pl">
+              <a href="/pl/auxiliaries" class="language-link" lang="pl" title="Produkty wspomagające">
+                <div class="flag pl"></div>Polski</a>
+            </li>
+            <li class="es">
+              <a href="/es/auxiliaries" class="language-link" lang="es" title="Accesorios">
+                <div class="flag es"></div>Español</a>
+            </li>
+            <li class="sv last">
+              <a href="/sv/auxiliaries" class="language-link" lang="sv" title="Ytterligare produkter">
+                <div class="flag sv"></div>Svenska</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-header">
+    <div class="inner-region">
+      <div id="block-block-11" class="block block-block grid-9 first odd">
+        <div class="inner-block">
+          <p>
+            <a href="/it/" title="Interflux Electronics" target="_self"><img src="/assets/images/interflux-electronics-logo.png" width="343" height="87" alt="Logo di Interflux Electronics&lt;br /&gt;&#10;"/></a>
+          </p>
+        </div>
+      </div>
+      <div id="block-menu-menu-interflux-menu" class="block block-menu grid-15 header-nav last even" role="navigation">
+        <div class="inner-block">
+          <ul class="menu">
+            <li class="first expanded active-trail">
+              <a href="/it" title="Selezionare tipo di documento" class="active-trail">Prodotti</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/it/soldering-fluxes" title="">Flussanti per saldatura</a>
+                </li>
+                <li class="leaf">
+                  <a href="/it/solder-pastes" title="">Paste saldanti</a>
+                </li>
+                <li class="leaf">
+                  <a href="/it/solder-wires" title="">Fili per saldatura</a>
+                </li>
+                <li class="leaf">
+                  <a href="/it/spray-fluxers" title="">Unità spray</a>
+                </li>
+                <li class="last leaf active-trail">
+                  <a href="/it/auxiliaries" title="" class="active-trail active">Prodotti ausiliari</a>
+                </li>
+              </ul>
+            </li>
+            <li class="expanded">
+              <a href="/it" title="Ricerca prodotti per processo">Processi</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/it/wave-soldering" title="">Saldatura a onda</a>
+                </li>
+                <li class="leaf">
+                  <a href="/it/selective-soldering" title="">Saldatura selettiva</a>
+                </li>
+                <li class="leaf">
+                  <a href="/it/reflow-soldering" title="">Saldatura di rifusione</a>
+                </li>
+                <li class="leaf">
+                  <a href="/it/rework-and-repair" title="">Rilavorazione & Riparazione</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/it/pre-tinning" title="">Pre-stagnatura</a>
+                </li>
+              </ul>
+            </li>
+            <li class="leaf">
+              <a href="/it/company" title="Informazioni circa Interflux">Società</a>
+            </li>
+            <li class="leaf">
+              <a href="/it/documents" title="Ricerca dati tecnici">Documenti</a>
+            </li>
+            <li class="last leaf">
+              <a href="/it/contact" title="Contattaci">Contatto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-highlight">
+    <div class="inner-region">
+      <div id="banners">
+        <div class="preload"></div>
+        <div class="stage">
+          <article id="ipc-apex-2017">
+            <a href="http://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
+              <picture>
+                <source srcset="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg 2x, http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018.jpg 1x"></source>
+                <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg" alt="Visit use at IPC APEX 2018 in San Diego"/>
+              </picture>
+            </a>
+          </article>
+          <article id="productronica-2017">
+            <a href="http://www.productronica.com/" target="_blank" title="Visit us at Productronica 2017">
+              <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/productronica-banner-2017.jpg"/>
+            </a>
+          </article>
+          <article id="lmpa">
+            <a href="https://lmpa.interflux.com" target="_blank">
+              <h1>Solder
+                <strong>5 times</strong>
+                faster whilst maintaining
+                <strong>zero defects</strong>
+              </h1>
+              <h1>Discover
+                <mark>LMPA<span>™</span>
+                </mark>
+              </h1>
+              <div id="video">
+                <video id="movie" width="276" height="220" autoplay loop>
+                  <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
+                  Your browser doesn't support HTML5 video tag.
+                </video>
+                <script></script>
+                <p>Speed: 30 mm/s</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <nav>
+          <div id="prev">
+            <div></div>
+          </div>
+          <div id="next">
+            <div></div>
+          </div>
+          <div id="timer">
+            <div></div>
+          </div>
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
   <div class="region region-corpus">
     <div class="inner-region">
-      <div class="inner-region">
-        <div class="panel-display panel-1col clearfix">
-          <div class="panel-panel panel-col">
-            <div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">Strumenti</div>
-                  <div class="fs18">per la produzione</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_18 product-row-group view-dom-id-9176cbaacc176f613253f24d380dccec">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-710-PSM_0.jpg" width="200" height="200" alt="IF 710PSM"/></div>
-                        <div class="product-name">
-                          <h3>IF 710 PSM</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>peelable solder mask</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Per saldatura a onda</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Per processi in SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Per processi in lead-free</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Veloce asciugatura, facilmente pelabile</p>
-                            </li>
-                            <li>
-                              <div class="icon28"></div>
-                              <p>A norma RoHS</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong></strong>IF 710 PSM è una pasta pelabile, solder mask, a base di lattice naturale, veloce vulcanizzazione.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 710 PSM è una pasta pelabile, solder mask, a base di lattice naturale, veloce vulcanizzazione.<br/>
-                            Per coprire le aree sul PCB dal contatto del flussante e dell’onda.<br/>
-                            Facilmente rimovibile, durante la rimozione non si rompe.<br/>
-                            Resistente al calore<br/>
-                            Potrebbe dare una colorazione di Cu quando applicato su rame nudo o su Cu-OSP.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-710-DE_0.pdf" type="application/pdf; length=292541" title="TD IF 710-DE.pdf">Technisches Datenblatt IF 710 PSM</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-710-FR_0.pdf" type="application/pdf; length=416162" title="TD IF 710-FR.pdf">Fiche technique IF 710 PSM</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-710_0.pdf" type="application/pdf; length=369316" title="TD IF 710.pdf">Technical Data Sheet IF 710 PSM</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 710 PSM" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/605" title="IF 710 PSM" class="nid">605</a>
+      <div class="panel-display panel-1col clearfix">
+        <div class="panel-panel panel-col">
+          <div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">Strumenti</div>
+                <div class="fs18">per la produzione</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_18 product-row-group view-dom-id-827d9e914315b91e935464d5e76115e4">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-710-PSM_0.jpg" width="200" height="200" alt="IF 710PSM"/></div>
+                      <div class="product-name">
+                        <h3>IF 710 PSM</h3>
                       </div>
+                      <div class="product-name-extra">
+                        <h3>peelable solder mask</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Per saldatura a onda</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Per processi in SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Per processi in lead-free</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Veloce asciugatura, facilmente pelabile</p>
+                          </li>
+                          <li>
+                            <div class="icon28"></div>
+                            <p>A norma RoHS</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong></strong>IF 710 PSM è una pasta pelabile, solder mask, a base di lattice naturale, veloce vulcanizzazione.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 710 PSM è una pasta pelabile, solder mask, a base di lattice naturale, veloce vulcanizzazione.<br/>
+                          Per coprire le aree sul PCB dal contatto del flussante e dell’onda.<br/>
+                          Facilmente rimovibile, durante la rimozione non si rompe.<br/>
+                          Resistente al calore<br/>
+                          Potrebbe dare una colorazione di Cu quando applicato su rame nudo o su Cu-OSP.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-710-DE_0.pdf" type="application/pdf; length=292541" title="TD IF 710-DE.pdf">Technisches Datenblatt IF 710 PSM</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-710-FR_0.pdf" type="application/pdf; length=416162" title="TD IF 710-FR.pdf">Fiche technique IF 710 PSM</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-710_0.pdf" type="application/pdf; length=369316" title="TD IF 710.pdf">Technical Data Sheet IF 710 PSM</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 710 PSM" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/605" title="IF 710 PSM" class="nid">605</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">Lavaggio</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_16 product-row-group view-dom-id-2d549a56ef278a06f622d9d5fb2cb428">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-930-All-in-One_1.jpg" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/><img typeof="foaf:Image" src="/assets/images/IF-930kader.png" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/></div>
-                        <div class="product-name">
-                          <h3>IF 930</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>nozzle cleaner</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Per saldatura selettiva</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Per processi SnPb(Ag)
-                              </p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Per processi lead-free
-                              </p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Assolutamente senza alogenuri
-                              </p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 930 pulisce e
-                            <strong>disossida gli ugelli</strong>
-                            dei sistemi di saldatura selettiva.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 930 pulisce e disossida gli ugelli dei sistemi di saldatura selettiva.<br/>
-                            Sicura e facile pulizia in uno step.<br/>
-                            Sostituisce  IF 920
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-930-DE.pdf" type="application/pdf; length=522376" title="TD IF 930-DE.pdf">Technisches Datenblatt IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-930-FR.pdf" type="application/pdf; length=435025" title="TD IF 930-FR.pdf">Fiche technique IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-930_0.pdf" type="application/pdf; length=387275" title="TD IF 930.pdf">Technical Data Sheet IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 930" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/603" title="IF 930" class="nid">603</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">Lavaggio</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_16 product-row-group view-dom-id-e65cadfea23445644c4053e1ca04b775">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-930-All-in-One_1.jpg" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/><img typeof="foaf:Image" src="/assets/images/IF-930kader.png" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/></div>
+                      <div class="product-name">
+                        <h3>IF 930</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Tip-Tinner.jpg" width="200" height="200" alt="Tip Tinner"/></div>
-                        <div class="product-name">
-                          <h3>TIP TINNER</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Per rilavorazione & riparazione</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Per processi in SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Per processi in Lead-free</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Assolutamente senza alogenuri
-                              </p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Senza Colofonia</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Tip Tinner pulisce le punte in ferro dei saldatori.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Tip Tinner pulisce le punte in ferro dei saldatori.<br/>
-                            Aumenta la durata delle punte dei saldatori, in modo significativo.<br/>
-                            Assolutamente senza alogenuri.<br/>
-                            Non abrasivo.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Tip-Tinner-DE_0.pdf" type="application/pdf; length=381222" title="TD Tip Tinner-DE.pdf">Technisches Datenblatt Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Tip-Tinner-FR_0.pdf" type="application/pdf; length=425441" title="TD Tip Tinner-FR.pdf">Fiche technique Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Tip-Tinner_0.pdf" type="application/pdf; length=418029" title="TD Tip Tinner.pdf">Technical Data Sheet Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=TIP TINNER" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/602" title="TIP TINNER" class="nid">602</a>
+                      <div class="product-name-extra">
+                        <h3>nozzle cleaner</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Purgel.jpg" width="200" height="200" alt="IF Purgel"/></div>
-                        <div class="product-name">
-                          <h3>PURGEL</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Per rilavorazione & riparazione</p>
-                            </li>
-                            <li>
-                              <div class="icon08"></div>
-                              <p>Per dispensazione</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Approvato per MYDATA MY 500</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong></strong>
-                            Purgel è un
-                            <strong>lavante/ricondizionatore neutro</strong>
-                            per pompe e valvole per sistemi di dispensazione.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Purgel è un  lavante/ricondizionatore neutro per pompe e valvole per sistemi di dispensazione.<br/>
-                            Per preservare le parti del dispensatore quando non è in uso.<br/>
-                            MYDATA MY 500 approved.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Purgel-DE_0.pdf" type="application/pdf; length=371237" title="TD Purgel-DE.pdf">Technisches Datenblatt Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Purgel-FR_0.pdf" type="application/pdf; length=370051" title="TD Purgel-FR.pdf">Fiche technique Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Purgel_0.pdf" type="application/pdf; length=363113" title="TD Purgel.pdf">Technical Data Sheet Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PURGEL" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/601" title="PURGEL" class="nid">601</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Per saldatura selettiva</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Per processi SnPb(Ag)
+                            </p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Per processi lead-free
+                            </p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Assolutamente senza alogenuri
+                            </p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes-jar.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/></div>
-                        <div class="product-name">
-                          <h3>IPA/DI WIPES</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon30"></div>
-                              <p>ESD-safe</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® salviette pre saturate IPA / DI per
-                            <strong>pulizia generale</strong>
-                            delle superfici, in contenitori a  tubo e in confezioni per ricarica.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Interflux® salviette pre saturate IPA / DI per pulizia generale delle superfici, in contenitori a  tubo e in confezioni per ricarica.<br/>
-                            senza sfillacciamenti, non tessuto<br/>
-                            salvietta singola misura: 15 x 21cm<br/>
-                            100 pcs/ roll
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IPA-DI-wipes-DE.pdf" type="application/pdf; length=430094" title="TD IPA-DI wipes-DE.pdf">Technisches Datenblatt IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IPA-DI-wipes-FR.pdf" type="application/pdf; length=433271" title="TD IPA-DI wipes-FR.pdf">Fiche technique IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IPA-DI-wipes_0.pdf" type="application/pdf; length=425179" title="TD IPA-DI wipes.pdf">Technical Data Sheet IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IPA/DI WIPES" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/598" title="IPA/DI WIPES" class="nid">598</a>
+                      <div class="product-summary">
+                        <p>Interflux® IF 930 pulisce e
+                          <strong>disossida gli ugelli</strong>
+                          dei sistemi di saldatura selettiva.</p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Tub_2.jpg" width="200" height="200" alt="IF Stencil Clean Wipes"/><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Bag_2.jpg" width="200" height="200" alt="IF Stencil Clean Refil bag"/></div>
-                        <div class="product-name">
-                          <h3>STENCIL CLEAN WIPES</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon09"></div>
-                              <p>Per telaio xerigrafico</p>
-                            </li>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Base alcolica</p>
-                            </li>
-                            <li>
-                              <div class="icon30"></div>
-                              <p>ESD-safe</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® pre-saturated stencil clean wipes, sono salviette presaturate, in contenitori a tubo e in confezioni per ricambi, per la rimozione della
-                            <strong>pasta e delle colle SMT</strong>
-                            dai telai e dagli attrezzi.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® pre-saturated stencil clean wipes, sono salviette presaturate, in contenitori a tubo e in confezioni per ricambi, per la rimozione della pasta e delle colle SMT dai telai e dagli attrezzi.<br/>
-                            senza sfillacciamenti, non tessuto<br/>
-                            salvietta singola misura: 15 x 21cm<br/>
-                            100 pcs/ roll</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Stencil-clean-wipes-DE.pdf" type="application/pdf; length=421028" title="TD Stencil clean wipes-DE.pdf">Technisches Datenblatt Stencil Clean Wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Stencil-clean-wipes-FR_0.pdf" type="application/pdf; length=427631" title="TD Stencil clean wipes-FR.pdf">Fiche technique Stencil Clean Wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Stencil-clean-wipes.pdf" type="application/pdf; length=417010" title="TD Stencil clean wipes.pdf">Technical Data Sheet Stencil Clean Wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=STENCIL CLEAN WIPES" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/599" title="STENCIL CLEAN WIPES" class="nid">599</a>
+                      <div class="product-details">
+                        <p>Interflux® IF 930 pulisce e disossida gli ugelli dei sistemi di saldatura selettiva.<br/>
+                          Sicura e facile pulizia in uno step.<br/>
+                          Sostituisce  IF 920
+                        </p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_ISC-8020_0.jpg" width="200" height="200" alt="ISC 8020"/></div>
-                        <div class="product-name">
-                          <h3>ISC 8020</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>fluido per la pulizia del telaio
-                          </h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon09"></div>
-                              <p>Per telaio xerigrafico</p>
-                            </li>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Base alcolica</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® ISC 8020 è un fluido per la pulizia del telaio xerigrafico.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® ISC 8020 è un fluido per la pulizia del telaio xerigrafico.<br/>
-                            Per la rimozione della pasta e della colla SMT prima della rifusione.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-ISC-8020-DE.pdf" type="application/pdf; length=346604" title="TD ISC 8020-DE.pdf">Technisches Datenblatt ISC 8020</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-ISC-8020.pdf" type="application/pdf; length=344448" title="TD ISC 8020.pdf">Technical Data Sheet ISC 8020</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=ISC 8020" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/600" title="ISC 8020" class="nid">600</a>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-930-DE.pdf" type="application/pdf; length=522376" title="TD IF 930-DE.pdf">Technisches Datenblatt IF 930</a>
+                        </span>
                       </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-930-FR.pdf" type="application/pdf; length=435025" title="TD IF 930-FR.pdf">Fiche technique IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-930_0.pdf" type="application/pdf; length=387275" title="TD IF 930.pdf">Technical Data Sheet IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 930" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/603" title="IF 930" class="nid">603</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Tip-Tinner.jpg" width="200" height="200" alt="Tip Tinner"/></div>
+                      <div class="product-name">
+                        <h3>TIP TINNER</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Per rilavorazione & riparazione</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Per processi in SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Per processi in Lead-free</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Assolutamente senza alogenuri
+                            </p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Senza Colofonia</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Tip Tinner pulisce le punte in ferro dei saldatori.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Tip Tinner pulisce le punte in ferro dei saldatori.<br/>
+                          Aumenta la durata delle punte dei saldatori, in modo significativo.<br/>
+                          Assolutamente senza alogenuri.<br/>
+                          Non abrasivo.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Tip-Tinner-DE_0.pdf" type="application/pdf; length=381222" title="TD Tip Tinner-DE.pdf">Technisches Datenblatt Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Tip-Tinner-FR_0.pdf" type="application/pdf; length=425441" title="TD Tip Tinner-FR.pdf">Fiche technique Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Tip-Tinner_0.pdf" type="application/pdf; length=418029" title="TD Tip Tinner.pdf">Technical Data Sheet Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=TIP TINNER" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/602" title="TIP TINNER" class="nid">602</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Purgel.jpg" width="200" height="200" alt="IF Purgel"/></div>
+                      <div class="product-name">
+                        <h3>PURGEL</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Per rilavorazione & riparazione</p>
+                          </li>
+                          <li>
+                            <div class="icon08"></div>
+                            <p>Per dispensazione</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Approvato per MYDATA MY 500</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong></strong>
+                          Purgel è un
+                          <strong>lavante/ricondizionatore neutro</strong>
+                          per pompe e valvole per sistemi di dispensazione.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Purgel è un  lavante/ricondizionatore neutro per pompe e valvole per sistemi di dispensazione.<br/>
+                          Per preservare le parti del dispensatore quando non è in uso.<br/>
+                          MYDATA MY 500 approved.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Purgel-DE_0.pdf" type="application/pdf; length=371237" title="TD Purgel-DE.pdf">Technisches Datenblatt Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Purgel-FR_0.pdf" type="application/pdf; length=370051" title="TD Purgel-FR.pdf">Fiche technique Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Purgel_0.pdf" type="application/pdf; length=363113" title="TD Purgel.pdf">Technical Data Sheet Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PURGEL" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/601" title="PURGEL" class="nid">601</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes-jar.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/></div>
+                      <div class="product-name">
+                        <h3>IPA/DI WIPES</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon30"></div>
+                            <p>ESD-safe</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® salviette pre saturate IPA / DI per
+                          <strong>pulizia generale</strong>
+                          delle superfici, in contenitori a  tubo e in confezioni per ricarica.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Interflux® salviette pre saturate IPA / DI per pulizia generale delle superfici, in contenitori a  tubo e in confezioni per ricarica.<br/>
+                          senza sfillacciamenti, non tessuto<br/>
+                          salvietta singola misura: 15 x 21cm<br/>
+                          100 pcs/ roll
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IPA-DI-wipes-DE.pdf" type="application/pdf; length=430094" title="TD IPA-DI wipes-DE.pdf">Technisches Datenblatt IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IPA-DI-wipes-FR.pdf" type="application/pdf; length=433271" title="TD IPA-DI wipes-FR.pdf">Fiche technique IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IPA-DI-wipes_0.pdf" type="application/pdf; length=425179" title="TD IPA-DI wipes.pdf">Technical Data Sheet IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IPA/DI WIPES" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/598" title="IPA/DI WIPES" class="nid">598</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Tub_2.jpg" width="200" height="200" alt="IF Stencil Clean Wipes"/><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Bag_2.jpg" width="200" height="200" alt="IF Stencil Clean Refil bag"/></div>
+                      <div class="product-name">
+                        <h3>STENCIL CLEAN WIPES</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon09"></div>
+                            <p>Per telaio xerigrafico</p>
+                          </li>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Base alcolica</p>
+                          </li>
+                          <li>
+                            <div class="icon30"></div>
+                            <p>ESD-safe</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® pre-saturated stencil clean wipes, sono salviette presaturate, in contenitori a tubo e in confezioni per ricambi, per la rimozione della
+                          <strong>pasta e delle colle SMT</strong>
+                          dai telai e dagli attrezzi.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® pre-saturated stencil clean wipes, sono salviette presaturate, in contenitori a tubo e in confezioni per ricambi, per la rimozione della pasta e delle colle SMT dai telai e dagli attrezzi.<br/>
+                          senza sfillacciamenti, non tessuto<br/>
+                          salvietta singola misura: 15 x 21cm<br/>
+                          100 pcs/ roll</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Stencil-clean-wipes-DE.pdf" type="application/pdf; length=421028" title="TD Stencil clean wipes-DE.pdf">Technisches Datenblatt Stencil Clean Wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Stencil-clean-wipes-FR_0.pdf" type="application/pdf; length=427631" title="TD Stencil clean wipes-FR.pdf">Fiche technique Stencil Clean Wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Stencil-clean-wipes.pdf" type="application/pdf; length=417010" title="TD Stencil clean wipes.pdf">Technical Data Sheet Stencil Clean Wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=STENCIL CLEAN WIPES" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/599" title="STENCIL CLEAN WIPES" class="nid">599</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_ISC-8020_0.jpg" width="200" height="200" alt="ISC 8020"/></div>
+                      <div class="product-name">
+                        <h3>ISC 8020</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>fluido per la pulizia del telaio
+                        </h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon09"></div>
+                            <p>Per telaio xerigrafico</p>
+                          </li>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Base alcolica</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® ISC 8020 è un fluido per la pulizia del telaio xerigrafico.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® ISC 8020 è un fluido per la pulizia del telaio xerigrafico.<br/>
+                          Per la rimozione della pasta e della colla SMT prima della rifusione.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-ISC-8020-DE.pdf" type="application/pdf; length=346604" title="TD ISC 8020-DE.pdf">Technisches Datenblatt ISC 8020</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-ISC-8020.pdf" type="application/pdf; length=344448" title="TD ISC 8020.pdf">Technical Data Sheet ISC 8020</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=ISC 8020" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/600" title="ISC 8020" class="nid">600</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs22">Trattamento del bagno di saldatura</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_15 product-row-group view-dom-id-117af2dfcb61831d1c363942c0891334">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-910_final2.png" width="200" height="200" alt="IF 910 de-oxidation oil"/></div>
-                        <div class="product-name">
-                          <h3>IF 910</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>olio disossidante</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Per saldatura a onda</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Per pre-stagnatura</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Per immersione</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Per leghe SnPb(Ag)
-                              </p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Per leghe lead-free</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 910 è un olio disossidante e separatore dell’ossido/scorie dallo stagno buono del bagno di saldatura.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux®  IF 910 è un olio disossidante e separatore dell’ossido/scorie dallo stagno buono del bagno di saldatura.<br/>
-                            Riduce il consumo di stagno.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-910-DE.pdf" type="application/pdf; length=526614" title="TD IF 910-DE.pdf">Technisches Datenblatt IF 910</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-910-FR_0.pdf" type="application/pdf; length=495807" title="TD IF 910-FR.pdf">Fiche technique IF 910</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-910.pdf" type="application/pdf; length=484684" title="TD IF 910.pdf">Technical Data Sheet IF 910</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 910" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/596" title="IF 910" class="nid">596</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs22">Trattamento del bagno di saldatura</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_15 product-row-group view-dom-id-036bf4cf15df7462b9d6ecb82c1dfa11">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-910_final2.png" width="200" height="200" alt="IF 910 de-oxidation oil"/></div>
+                      <div class="product-name">
+                        <h3>IF 910</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AOP-lead-free.jpg" width="200" height="200" alt="Anti-oxidant pellets"/><img typeof="foaf:Image" src="/assets/images/CLP_AOP-SnPb.jpg" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>PELLETS ANTI-OSSIDANTI
-                          </h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Per saldatura a onda</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Per saldatura selettiva</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Per pre-stagnatura</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Per processi in  SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Per processi in lead-free</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Pellets Anti-ossidanti minimizza la formazione di ossidi nei bagni di saldatura in leghe lead-free e  SnPb(Ag).</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Pellets Anti-ossidanti minimizza la formazione di ossidi nei bagni di saldatura in leghe lead-free e  SnPb(Ag).<br/>
-                            Usato come aggiunta nel bagno di saldatura.<br/>
-                            Per  leghe SnPb(Ag) (etichetta blu) o lead-free (etichetta verde)<br/>
-                            Anti-oxidant pellets non è raccomandato per bagni in atmosfera chiusa inerte e leghe saldanti con Ni.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Anti-oxidant-pellets-DE.pdf" type="application/pdf; length=366742" title="TD Anti-oxidant pellets-DE.pdf">Technisches Datenblatt Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Anti-oxidant-pellets-FR_0.pdf" type="application/pdf; length=371501" title="TD Anti-oxidant pellets-FR.pdf">Fiche technique Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Anti-oxidant-pellets.pdf" type="application/pdf; length=364659" title="TD Anti-oxidant pellets.pdf">Technical Data Sheet Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PELLETS ANTI-OSSIDANTI " target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/597" title="PELLETS ANTI-OSSIDANTI " class="nid">597</a>
+                      <div class="product-name-extra">
+                        <h3>olio disossidante</h3>
                       </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Per saldatura a onda</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Per pre-stagnatura</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Per immersione</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Per leghe SnPb(Ag)
+                            </p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Per leghe lead-free</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 910 è un olio disossidante e separatore dell’ossido/scorie dallo stagno buono del bagno di saldatura.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux®  IF 910 è un olio disossidante e separatore dell’ossido/scorie dallo stagno buono del bagno di saldatura.<br/>
+                          Riduce il consumo di stagno.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-910-DE.pdf" type="application/pdf; length=526614" title="TD IF 910-DE.pdf">Technisches Datenblatt IF 910</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-910-FR_0.pdf" type="application/pdf; length=495807" title="TD IF 910-FR.pdf">Fiche technique IF 910</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-910.pdf" type="application/pdf; length=484684" title="TD IF 910.pdf">Technical Data Sheet IF 910</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 910" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/596" title="IF 910" class="nid">596</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AOP-lead-free.jpg" width="200" height="200" alt="Anti-oxidant pellets"/><img typeof="foaf:Image" src="/assets/images/CLP_AOP-SnPb.jpg" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>PELLETS ANTI-OSSIDANTI
+                        </h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Per saldatura a onda</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Per saldatura selettiva</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Per pre-stagnatura</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Per processi in  SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Per processi in lead-free</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Pellets Anti-ossidanti minimizza la formazione di ossidi nei bagni di saldatura in leghe lead-free e  SnPb(Ag).</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Pellets Anti-ossidanti minimizza la formazione di ossidi nei bagni di saldatura in leghe lead-free e  SnPb(Ag).<br/>
+                          Usato come aggiunta nel bagno di saldatura.<br/>
+                          Per  leghe SnPb(Ag) (etichetta blu) o lead-free (etichetta verde)<br/>
+                          Anti-oxidant pellets non è raccomandato per bagni in atmosfera chiusa inerte e leghe saldanti con Ni.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Anti-oxidant-pellets-DE.pdf" type="application/pdf; length=366742" title="TD Anti-oxidant pellets-DE.pdf">Technisches Datenblatt Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Anti-oxidant-pellets-FR_0.pdf" type="application/pdf; length=371501" title="TD Anti-oxidant pellets-FR.pdf">Fiche technique Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Anti-oxidant-pellets.pdf" type="application/pdf; length=364659" title="TD Anti-oxidant pellets.pdf">Technical Data Sheet Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PELLETS ANTI-OSSIDANTI " target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/597" title="PELLETS ANTI-OSSIDANTI " class="nid">597</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs28">Leghe di saldatura</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_14 product-row-group view-dom-id-2e5d11be0c562884411c520a672868e9">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/solder-bars_0.jpg" width="200" height="200" alt="solder bars"/></div>
-                        <div class="product-name">
-                          <h3>BARRE SALDANTI</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Per saldatura a onda</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Per saldatura selettiva</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Pre pre-stagnatura</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Per immersione</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Barre di stagno, sono ottenute da leghe metalliche SnPb(Ag) e lead-free, di alta purezza e di bassa ossidazione.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Barre di stagno, sono ottenute da leghe metalliche SnPb(Ag) e lead-free, di alta purezza e di bassa ossidazione.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=BARRE SALDANTI" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/593" title="BARRE SALDANTI" class="nid">593</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs28">Leghe di saldatura</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_14 product-row-group view-dom-id-38a25431a278407cc40d9239ae8ab4b6">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/solder-bars_0.jpg" width="200" height="200" alt="solder bars"/></div>
+                      <div class="product-name">
+                        <h3>BARRE SALDANTI</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/plain-wire-2mm-4kg-5.png" width="200" height="200" alt="Plain Solder Wire"/></div>
-                        <div class="product-name">
-                          <h3>FILI SENZA FLUSSANTE</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Per saldatura selettiva</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Per pre-stagnatura</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Per immersione</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Plain Solder è un filo per alimentatore automatico nei sistemi di saldatura selettiva, in leghe lead-free and SnPb(Ag).</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Plain Solder è un filo per alimentatore automatico nei sistemi di saldatura selettiva, in leghe lead-free and SnPb(Ag).<br/>
-                            Filo diametro: 2mm<br/>
-                            Su rocchetti da  4kg<br/>
-                            Dimensioni del rocchetto: 125mm x 125mm (diametro x lungh.)
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=FILI SENZA FLUSSANTE" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/594" title="FILI SENZA FLUSSANTE" class="nid">594</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Per saldatura a onda</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Per saldatura selettiva</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Pre pre-stagnatura</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Per immersione</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles_2.png" width="200" height="200" alt="Solder pellets"/></div>
-                        <div class="product-name">
-                          <h3>SOLDER PELLETS</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Per saldatura a onda</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Per saldatura selettiva</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Per rilavorazione & riparazione</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Per pre-stagnatura</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Per immersione</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Solder Pellets sono dei piccoli pezzi di stagno da mettere con facilità nel bagno, in leghe lead-free e SnPb(Ag).
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Solder Pellets sono dei piccoli pezzi di stagno da mettere con facilità nel bagno, in leghe lead-free e SnPb(Ag) .<br/>
-                            Forma: 1cm x 1cm approx.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SOLDER PELLETS" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/it/595" title="SOLDER PELLETS" class="nid">595</a>
+                      <div class="product-summary">
+                        <p>Interflux® Barre di stagno, sono ottenute da leghe metalliche SnPb(Ag) e lead-free, di alta purezza e di bassa ossidazione.</p>
                       </div>
+                      <div class="product-details">
+                        <p>Interflux® Barre di stagno, sono ottenute da leghe metalliche SnPb(Ag) e lead-free, di alta purezza e di bassa ossidazione.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=BARRE SALDANTI" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/593" title="BARRE SALDANTI" class="nid">593</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/plain-wire-2mm-4kg-5.png" width="200" height="200" alt="Plain Solder Wire"/></div>
+                      <div class="product-name">
+                        <h3>FILI SENZA FLUSSANTE</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Per saldatura selettiva</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Per pre-stagnatura</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Per immersione</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Plain Solder è un filo per alimentatore automatico nei sistemi di saldatura selettiva, in leghe lead-free and SnPb(Ag).</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Plain Solder è un filo per alimentatore automatico nei sistemi di saldatura selettiva, in leghe lead-free and SnPb(Ag).<br/>
+                          Filo diametro: 2mm<br/>
+                          Su rocchetti da  4kg<br/>
+                          Dimensioni del rocchetto: 125mm x 125mm (diametro x lungh.)
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=FILI SENZA FLUSSANTE" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/594" title="FILI SENZA FLUSSANTE" class="nid">594</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles_2.png" width="200" height="200" alt="Solder pellets"/></div>
+                      <div class="product-name">
+                        <h3>SOLDER PELLETS</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Per saldatura a onda</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Per saldatura selettiva</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Per rilavorazione & riparazione</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Per pre-stagnatura</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Per immersione</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Solder Pellets sono dei piccoli pezzi di stagno da mettere con facilità nel bagno, in leghe lead-free e SnPb(Ag).
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Solder Pellets sono dei piccoli pezzi di stagno da mettere con facilità nel bagno, in leghe lead-free e SnPb(Ag) .<br/>
+                          Forma: 1cm x 1cm approx.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SOLDER PELLETS" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/it/595" title="SOLDER PELLETS" class="nid">595</a>
                     </div>
                   </div>
                 </div>
@@ -794,16 +984,62 @@
             </div>
           </div>
         </div>
-        <div id="block-block-17" class="block block-block library-reference last even">
-          <div class="inner-block">
-            <p>Non trovi il prodotto? Per la lista completa dei prodotti, cerca nella
-              <a href="/it/documents">libreria</a>
-            </p>
-          </div>
-        </div>
-        <div class="clear"></div>
       </div>
+      <div id="block-block-17" class="block block-block library-reference last even">
+        <div class="inner-block">
+          <p>Non trovi il prodotto? Per la lista completa dei prodotti, cerca nella
+            <a href="/it/documents">libreria</a>
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
-  {% include "partials/footer.njk" %}
+  <div class="region region-footer2">
+    <div class="inner-region">
+      <div id="block-block-18" class="block block-block first last odd">
+        <div class="inner-block">
+          <div class="block grid-12" id="F1">
+            <div class="inner-block">
+              <div class="inner-content">
+                <a href="/it/contact" target="_self" title="Vai alla pagina dei contatti per ulteriori informazioni"><img src="/assets/images/Interflux-Electronics-headquarters-belgium.jpg" width="171" height="271" alt="Interflux Electronics Belgio immobile uffici"/></a>
+                <div class="contact-title">
+                  <span>CONTATTI</span><br/>INTERFLUX<br/>HEADQUARTER</div>
+                <div class="contact-adress">
+                  <p>
+                    Interflux Electronics NV<br/>
+                    Gent zeehaven 3170A<br/>
+                    Eddastraat 51<br/>
+                    9042 Gent<br/>
+                    BELGIO</p>
+                  <p>Tel.: +32 9251 4959<br/>
+                    Fax: +32 9251 4970<br/>
+                    <a href="mailto:info@interflux.com" target="_blank">info@interflux.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-12" id="F2">
+            <div class="inner-block">
+              <div class="inner-content">
+                <div class="contact-title">
+                  <span>CONTATTI</span><br/>INTERFLUX MONDO</div>
+                <p>
+                  <a href="/it/contact" target="_self" title="Vai alla pagina dei contatti per ulteriori informazioni"><img src="/assets/images/interflux-worldwide-map.jpg" width="446" height="196" alt="Carta geografica del gruppo Interflux"/></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-24" id="F3">
+            <div class="copyright">©2012 Tutti i diritti riservati da Interflux® Electronics N.V.</div>
+            <div class="louder-than-words">Sito web da
+              <a href="http://nabu.io" target="_new" title="NABU websites">NABU websites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
 {% endblock %}

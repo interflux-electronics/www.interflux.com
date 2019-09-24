@@ -8,784 +8,974 @@
 {% block bodyClass %}html not-front not-logged-in no-sidebars page-auxiliaries page-products i18n-id section-auxiliaries page-panels
 {% endblock %}
 {% block page %}
-  {% include "partials/highlight.njk" %}
+  <div class="region region-language">
+    <div class="inner-region">
+      <div id="block-locale-language" class="block block-locale language-menu block grid-24 first last odd" role="complementary">
+        <div class="inner-block">
+          <ul class="language-switcher-locale-url">
+            <li class="en first">
+              <a href="/en/auxiliaries" class="language-link" lang="en" title="Auxiliaries">
+                <div class="flag en"></div>English</a>
+            </li>
+            <li class="zh-hans">
+              <a href="/zh-hans/auxiliaries" class="language-link" lang="zh-hans" title="其他">
+                <div class="flag zh-hans"></div>简体中文</a>
+            </li>
+            <li class="cs">
+              <a href="/cs/auxiliaries" class="language-link" lang="cs" title="Doplňky">
+                <div class="flag cs"></div>Čeština</a>
+            </li>
+            <li class="de">
+              <a href="/de/auxiliaries" class="language-link" lang="de" title="Hilfsmittel">
+                <div class="flag de"></div>Deutsch</a>
+            </li>
+            <li class="fr">
+              <a href="/fr/auxiliaries" class="language-link" lang="fr" title="Auxiliaires">
+                <div class="flag fr"></div>Français</a>
+            </li>
+            <li class="it">
+              <a href="/it/auxiliaries" class="language-link" lang="it" title="Prodotti ausiliari">
+                <div class="flag it"></div>Italiano</a>
+            </li>
+            <li class="id active">
+              <a href="/id/auxiliaries" class="language-link active" lang="id" title="Alat pembantu">
+                <div class="flag id"></div>Bahasa Indonesia</a>
+            </li>
+            <li class="pt-pt">
+              <a href="/pt-pt/auxiliaries" class="language-link" lang="pt-pt" title="Acessórios">
+                <div class="flag pt-pt"></div>Português</a>
+            </li>
+            <li class="ro">
+              <a href="/ro/auxiliaries" class="language-link" lang="ro" title="Auxiliare pentru">
+                <div class="flag ro"></div>Română</a>
+            </li>
+            <li class="ru">
+              <a href="/ru/auxiliaries" class="language-link" lang="ru" title="Вспомогательные материалы">
+                <div class="flag ru"></div>Русский</a>
+            </li>
+            <li class="th">
+              <a href="/th/auxiliaries" class="language-link" lang="th" title="อุปกรณ์เสริม">
+                <div class="flag th"></div>ภาษาไทย</a>
+            </li>
+            <li class="tr">
+              <a href="/tr/auxiliaries" class="language-link" lang="tr">
+                <div class="flag tr"></div>Türkçe</a>
+            </li>
+            <li class="pl">
+              <a href="/pl/auxiliaries" class="language-link" lang="pl" title="Produkty wspomagające">
+                <div class="flag pl"></div>Polski</a>
+            </li>
+            <li class="es">
+              <a href="/es/auxiliaries" class="language-link" lang="es" title="Accesorios">
+                <div class="flag es"></div>Español</a>
+            </li>
+            <li class="sv last">
+              <a href="/sv/auxiliaries" class="language-link" lang="sv" title="Ytterligare produkter">
+                <div class="flag sv"></div>Svenska</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-header">
+    <div class="inner-region">
+      <div id="block-block-11" class="block block-block grid-9 first odd">
+        <div class="inner-block">
+          <p>
+            <a href="/" title="Interflux Electronics" target="_self"><img src="/assets/images/interflux-electronics-logo.png" width="343" height="87" alt="Interflux Electronics logo"/></a>
+          </p>
+        </div>
+      </div>
+      <div id="block-menu-menu-interflux-menu" class="block block-menu grid-15 header-nav last even" role="navigation">
+        <div class="inner-block">
+          <ul class="menu">
+            <li class="first expanded active-trail">
+              <a href="/id" title="Temukan produk berdasarkan jenis" class="active-trail">Produk</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/id/soldering-fluxes" title="">Flux penyolderan</a>
+                </li>
+                <li class="leaf">
+                  <a href="/id/solder-pastes" title="">Pasta solder</a>
+                </li>
+                <li class="leaf">
+                  <a href="/id/solder-wires" title="">Timah solder</a>
+                </li>
+                <li class="leaf">
+                  <a href="/id/spray-fluxers" title="">Penyemprot flux</a>
+                </li>
+                <li class="last leaf active-trail">
+                  <a href="/id/auxiliaries" title="" class="active-trail active">Alat pembantu</a>
+                </li>
+              </ul>
+            </li>
+            <li class="expanded">
+              <a href="/id" title="Temukan produk berdasarkan proses">Proses</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/id/wave-soldering" title="">Penyolderan gelombang</a>
+                </li>
+                <li class="leaf">
+                  <a href="/id/selective-soldering" title="">Penyolderan selektif</a>
+                </li>
+                <li class="leaf">
+                  <a href="/id/reflow-soldering" title="">Penyolderan reflow</a>
+                </li>
+                <li class="leaf">
+                  <a href="/id/rework-and-repair" title="">Pengerjaan ulang & Perbaikan</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/id/pre-tinning" title="">Pra-pelapisan timah</a>
+                </li>
+              </ul>
+            </li>
+            <li class="leaf">
+              <a href="/id/company" title="Pelajari tentang Interflux">Perusahaan</a>
+            </li>
+            <li class="leaf">
+              <a href="/id/documents" title="Temukan data teknis">Dokumen</a>
+            </li>
+            <li class="last leaf">
+              <a href="/id/contact" title="Hubungi kami">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-highlight">
+    <div class="inner-region">
+      <div id="banners">
+        <div class="preload"></div>
+        <div class="stage">
+          <article id="ipc-apex-2017">
+            <a href="http://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
+              <picture>
+                <source srcset="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg 2x, http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018.jpg 1x"></source>
+                <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg" alt="Visit use at IPC APEX 2018 in San Diego"/>
+              </picture>
+            </a>
+          </article>
+          <article id="productronica-2017">
+            <a href="http://www.productronica.com/" target="_blank" title="Visit us at Productronica 2017">
+              <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/productronica-banner-2017.jpg"/>
+            </a>
+          </article>
+          <article id="lmpa">
+            <a href="https://lmpa.interflux.com" target="_blank">
+              <h1>Solder
+                <strong>5 times</strong>
+                faster whilst maintaining
+                <strong>zero defects</strong>
+              </h1>
+              <h1>Discover
+                <mark>LMPA<span>™</span>
+                </mark>
+              </h1>
+              <div id="video">
+                <video id="movie" width="276" height="220" autoplay loop>
+                  <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
+                  Your browser doesn't support HTML5 video tag.
+                </video>
+                <script></script>
+                <p>Speed: 30 mm/s</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <nav>
+          <div id="prev">
+            <div></div>
+          </div>
+          <div id="next">
+            <div></div>
+          </div>
+          <div id="timer">
+            <div></div>
+          </div>
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
   <div class="region region-corpus">
     <div class="inner-region">
-      <div class="inner-region">
-        <div class="panel-display panel-1col clearfix">
-          <div class="panel-panel panel-col">
-            <div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">Alat produksi</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_18 product-row-group view-dom-id-eb015ade10e09faa1966f350ef9f5910">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-710-PSM_0.jpg" width="200" height="200" alt="IF 710PSM"/></div>
-                        <div class="product-name">
-                          <h3>IF 710 PSM</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>peelable solder mask</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Untuk proses soldering gelombang</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Untuk proses SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Untuk proses bebas timbal</p>
-                            </li>
-                            <li>
-                              <div class="icon24"></div>
-                              <p>Cepat kering, mudah dikelupas</p>
-                            </li>
-                            <li>
-                              <div class="icon28"></div>
-                              <p>Sesuai dengan RoHS</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong></strong>IF 710 PSM adalah masker solder berbasis karet yang dapat dikelupas dengan cepat.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 710 PSM adalah masker solder berbasis karet yang dapat dikelupas dengan cepat.<br/>
-                            Untuk menutupi area pada PCB dari kontak gelombang solder dan flux.<br/>
-                            Mudah dibersihkan, tidak mudah retak saat pengelupasan.<br/>
-                            Tahan panas<br/>
-                            Dapat menimbulkan perubahan warna dari Cu ketika diterapkan pada Cu atau Cu-OSP</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-710-DE_0.pdf" type="application/pdf; length=292541" title="TD IF 710-DE.pdf">Technisches Datenblatt IF 710 PSM</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-710-FR_0.pdf" type="application/pdf; length=416162" title="TD IF 710-FR.pdf">Fiche technique IF 710 PSM</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-710_0.pdf" type="application/pdf; length=369316" title="TD IF 710.pdf">Technical Data Sheet IF 710 PSM</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 710 PSM" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1138" title="IF 710 PSM" class="nid">1138</a>
+      <div class="panel-display panel-1col clearfix">
+        <div class="panel-panel panel-col">
+          <div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">Alat produksi</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_18 product-row-group view-dom-id-adbd638f48d29a612c2f05a5ee9efcf4">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-710-PSM_0.jpg" width="200" height="200" alt="IF 710PSM"/></div>
+                      <div class="product-name">
+                        <h3>IF 710 PSM</h3>
                       </div>
+                      <div class="product-name-extra">
+                        <h3>peelable solder mask</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Untuk proses soldering gelombang</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Untuk proses SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Untuk proses bebas timbal</p>
+                          </li>
+                          <li>
+                            <div class="icon24"></div>
+                            <p>Cepat kering, mudah dikelupas</p>
+                          </li>
+                          <li>
+                            <div class="icon28"></div>
+                            <p>Sesuai dengan RoHS</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong></strong>IF 710 PSM adalah masker solder berbasis karet yang dapat dikelupas dengan cepat.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 710 PSM adalah masker solder berbasis karet yang dapat dikelupas dengan cepat.<br/>
+                          Untuk menutupi area pada PCB dari kontak gelombang solder dan flux.<br/>
+                          Mudah dibersihkan, tidak mudah retak saat pengelupasan.<br/>
+                          Tahan panas<br/>
+                          Dapat menimbulkan perubahan warna dari Cu ketika diterapkan pada Cu atau Cu-OSP</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-710-DE_0.pdf" type="application/pdf; length=292541" title="TD IF 710-DE.pdf">Technisches Datenblatt IF 710 PSM</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-710-FR_0.pdf" type="application/pdf; length=416162" title="TD IF 710-FR.pdf">Fiche technique IF 710 PSM</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-710_0.pdf" type="application/pdf; length=369316" title="TD IF 710.pdf">Technical Data Sheet IF 710 PSM</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 710 PSM" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1138" title="IF 710 PSM" class="nid">1138</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">Pembersihan</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_16 product-row-group view-dom-id-b7a9e2f48560268d6ef11d108057c86a">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-930-All-in-One_4.jpg" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/><img typeof="foaf:Image" src="/assets/images/IF-930kader.png" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/></div>
-                        <div class="product-name">
-                          <h3>IF 930</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>nozzle cleaner</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Untuk proses soldering selektif</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Untuk penyolderan SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Untuk proses bebas timbal</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Tidak mengandung halida</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 930 membersihkan dan mendeoksidasikan ujung nozzle yang dapat dibasahi pada sistem proses soldering selektif.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 930 membersihkan dan mendeoksidasikan ujung nozzle yang dapat dibasahi pada sistem proses soldering selektif.<br/>
-                            Pembersihan satu langkah yang aman dan mudah<br/>
-                            Mengganti IF 920
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-930-DE.pdf" type="application/pdf; length=522376" title="TD IF 930-DE.pdf">Technisches Datenblatt IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-930-FR.pdf" type="application/pdf; length=435025" title="TD IF 930-FR.pdf">Fiche technique IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-930_0.pdf" type="application/pdf; length=387275" title="TD IF 930.pdf">Technical Data Sheet IF 930</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 930" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1144" title="IF 930" class="nid">1144</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">Pembersihan</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_16 product-row-group view-dom-id-8be5018804ac3a719cce4c5dae63c5ab">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-930-All-in-One_4.jpg" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/><img typeof="foaf:Image" src="/assets/images/IF-930kader.png" width="200" height="200" alt="IF 930 wettable nozzle cleaner"/></div>
+                      <div class="product-name">
+                        <h3>IF 930</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Tip-Tinner.jpg" width="200" height="200" alt="Tip Tinner"/></div>
-                        <div class="product-name">
-                          <h3>TIP TINNER</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Untuk pengerjaan kembali & perbaikan</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Untuk proses SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Untuk proses bebas timbal</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Bebas halida</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Bebas rosin</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Tip Tinner membersihkan dan melapisi kembali pucuk alat solder.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Tip Tinner membersihkan dan melapisi kembali pucuk alat solder.<br/>
-                            Meningkatkan masa pakai pucuk<br/>
-                            Bebas halida<br/>
-                            Non-abrasif</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Tip-Tinner-DE_0.pdf" type="application/pdf; length=381222" title="TD Tip Tinner-DE.pdf">Technisches Datenblatt Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Tip-Tinner-FR_0.pdf" type="application/pdf; length=425441" title="TD Tip Tinner-FR.pdf">Fiche technique Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Tip-Tinner_0.pdf" type="application/pdf; length=418029" title="TD Tip Tinner.pdf">Technical Data Sheet Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=TIP TINNER" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1164" title="TIP TINNER" class="nid">1164</a>
+                      <div class="product-name-extra">
+                        <h3>nozzle cleaner</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Purgel.jpg" width="200" height="200" alt="IF Purgel"/></div>
-                        <div class="product-name">
-                          <h3>PURGEL</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Untuk pengerjaan ulang & perbaikan</p>
-                            </li>
-                            <li>
-                              <div class="icon08"></div>
-                              <p>Untuk pemakaian dengan ar diteteskan</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Disetujui untuk MYDATA MY 500</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong></strong>
-                            Purgel adalah pembersih / pencair untuk pompa dan katup pada sistem pembuangan.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Purgel adalah pembersih / pencair untuk pompa dan katup pada sistem pembuangan.<br/>
-                            Untuk merawat bagian pembuangan saat tidak digunakan.<br/>
-                            MYDATA MY 500 disetujui.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Purgel-DE_0.pdf" type="application/pdf; length=371237" title="TD Purgel-DE.pdf">Technisches Datenblatt Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Purgel-FR_0.pdf" type="application/pdf; length=370051" title="TD Purgel-FR.pdf">Fiche technique Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Purgel_0.pdf" type="application/pdf; length=363113" title="TD Purgel.pdf">Technical Data Sheet Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PURGEL" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1157" title="PURGEL" class="nid">1157</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Untuk proses soldering selektif</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Untuk penyolderan SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Untuk proses bebas timbal</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Tidak mengandung halida</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes-jar.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/></div>
-                        <div class="product-name">
-                          <h3>IPA/DI WIPES</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon30"></div>
-                              <p>aman dari ESD</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Lap Interflux ® tersaturasi IPA / DI dalam tabung flip-top dan tas isi ulang untuk pembersihan permukaan secara umum.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Lap Interflux ® tersaturasi IPA / DI dalam tabung flip-top dan tas isi ulang untuk pembersihan permukaan secara umum.<br/>
-                            bebas serat, kain non-woven<br/>
-                            ukuran lap satuan: 15 x 21cm<br/>
-                            100 buah/ rol
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IPA-DI-wipes-DE.pdf" type="application/pdf; length=430094" title="TD IPA-DI wipes-DE.pdf">Technisches Datenblatt IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IPA-DI-wipes-FR.pdf" type="application/pdf; length=433271" title="TD IPA-DI wipes-FR.pdf">Fiche technique IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IPA-DI-wipes_0.pdf" type="application/pdf; length=425179" title="TD IPA-DI wipes.pdf">Technical Data Sheet IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IPA/DI WIPES" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1147" title="IPA/DI WIPES" class="nid">1147</a>
+                      <div class="product-summary">
+                        <p>Interflux® IF 930 membersihkan dan mendeoksidasikan ujung nozzle yang dapat dibasahi pada sistem proses soldering selektif.</p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Tub.jpg" width="200" height="200" alt="IF Stencil Clean Wipes"/><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Bag.jpg" width="200" height="200" alt="IF Stencil Clean Refil bag"/></div>
-                        <div class="product-name">
-                          <h3>STENCIL CLEAN WIPES</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>Lap pembersih stensil</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon09"></div>
-                              <p>Untuk pembersihan stensil</p>
-                            </li>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Berbasis alkohol</p>
-                            </li>
-                            <li>
-                              <div class="icon30"></div>
-                              <p>Aman dari ESD</p>
-                            </li>
-                            <ul></ul>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Lap pembersih stensil tersaturasi Interflux® dalam tabung flip-top dan tas isi ulang untuk pembersihan pasta solder dan perekat STM yang membandel dari stensil dan alat.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Lap pembersih stensil tersaturasi Interflux® dalam tabung flip-top dan tas isi ulang untuk pembersihan pasta solder dan perekat STM yang membandel dari stensil dan alat.<br/>
-                            bebas serat, kain non-woven<br/>
-                            ukuran lap satuan: 15 x 21cm<br/>
-                            100 buah/ rol
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Stencil-clean-wipes-DE.pdf" type="application/pdf; length=421028" title="TD Stencil clean wipes-DE.pdf">Technisches Datenblatt Stencil Clean Wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Stencil-clean-wipes-FR_0.pdf" type="application/pdf; length=427631" title="TD Stencil clean wipes-FR.pdf">Fiche technique Stencil Clean Wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Stencil-clean-wipes.pdf" type="application/pdf; length=417010" title="TD Stencil clean wipes.pdf">Technical Data Sheet Stencil Clean Wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=STENCIL CLEAN WIPES" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1161" title="STENCIL CLEAN WIPES" class="nid">1161</a>
+                      <div class="product-details">
+                        <p>Interflux® IF 930 membersihkan dan mendeoksidasikan ujung nozzle yang dapat dibasahi pada sistem proses soldering selektif.<br/>
+                          Pembersihan satu langkah yang aman dan mudah<br/>
+                          Mengganti IF 920
+                        </p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_ISC-8020_0.jpg" width="200" height="200" alt="ISC 8020"/></div>
-                        <div class="product-name">
-                          <h3>ISC 8020</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>stencil cleaning fluid</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon09"></div>
-                              <p>Untuk pencetakan stensil</p>
-                            </li>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>Berbasis alkohol</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® ISC 8020 adalah cairan pembersih stensil untuk printer stensil.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® ISC 8020 adalah cairan pembersih stensil untuk printer stensil.<br/>
-                            Untuk membersihkan pasta solder dan perekat SMT yang membandel.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-ISC-8020-DE.pdf" type="application/pdf; length=346604" title="TD ISC 8020-DE.pdf">Technisches Datenblatt ISC 8020</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-ISC-8020.pdf" type="application/pdf; length=344448" title="TD ISC 8020.pdf">Technical Data Sheet ISC 8020</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=ISC 8020" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1148" title="ISC 8020" class="nid">1148</a>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-930-DE.pdf" type="application/pdf; length=522376" title="TD IF 930-DE.pdf">Technisches Datenblatt IF 930</a>
+                        </span>
                       </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-930-FR.pdf" type="application/pdf; length=435025" title="TD IF 930-FR.pdf">Fiche technique IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-930_0.pdf" type="application/pdf; length=387275" title="TD IF 930.pdf">Technical Data Sheet IF 930</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 930" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1144" title="IF 930" class="nid">1144</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Tip-Tinner.jpg" width="200" height="200" alt="Tip Tinner"/></div>
+                      <div class="product-name">
+                        <h3>TIP TINNER</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Untuk pengerjaan kembali & perbaikan</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Untuk proses SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Untuk proses bebas timbal</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Bebas halida</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Bebas rosin</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Tip Tinner membersihkan dan melapisi kembali pucuk alat solder.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Tip Tinner membersihkan dan melapisi kembali pucuk alat solder.<br/>
+                          Meningkatkan masa pakai pucuk<br/>
+                          Bebas halida<br/>
+                          Non-abrasif</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Tip-Tinner-DE_0.pdf" type="application/pdf; length=381222" title="TD Tip Tinner-DE.pdf">Technisches Datenblatt Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Tip-Tinner-FR_0.pdf" type="application/pdf; length=425441" title="TD Tip Tinner-FR.pdf">Fiche technique Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Tip-Tinner_0.pdf" type="application/pdf; length=418029" title="TD Tip Tinner.pdf">Technical Data Sheet Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=TIP TINNER" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1164" title="TIP TINNER" class="nid">1164</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Purgel.jpg" width="200" height="200" alt="IF Purgel"/></div>
+                      <div class="product-name">
+                        <h3>PURGEL</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Untuk pengerjaan ulang & perbaikan</p>
+                          </li>
+                          <li>
+                            <div class="icon08"></div>
+                            <p>Untuk pemakaian dengan ar diteteskan</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Disetujui untuk MYDATA MY 500</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong></strong>
+                          Purgel adalah pembersih / pencair untuk pompa dan katup pada sistem pembuangan.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Purgel adalah pembersih / pencair untuk pompa dan katup pada sistem pembuangan.<br/>
+                          Untuk merawat bagian pembuangan saat tidak digunakan.<br/>
+                          MYDATA MY 500 disetujui.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Purgel-DE_0.pdf" type="application/pdf; length=371237" title="TD Purgel-DE.pdf">Technisches Datenblatt Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Purgel-FR_0.pdf" type="application/pdf; length=370051" title="TD Purgel-FR.pdf">Fiche technique Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Purgel_0.pdf" type="application/pdf; length=363113" title="TD Purgel.pdf">Technical Data Sheet Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PURGEL" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1157" title="PURGEL" class="nid">1157</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes-jar.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/></div>
+                      <div class="product-name">
+                        <h3>IPA/DI WIPES</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon30"></div>
+                            <p>aman dari ESD</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Lap Interflux ® tersaturasi IPA / DI dalam tabung flip-top dan tas isi ulang untuk pembersihan permukaan secara umum.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Lap Interflux ® tersaturasi IPA / DI dalam tabung flip-top dan tas isi ulang untuk pembersihan permukaan secara umum.<br/>
+                          bebas serat, kain non-woven<br/>
+                          ukuran lap satuan: 15 x 21cm<br/>
+                          100 buah/ rol
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IPA-DI-wipes-DE.pdf" type="application/pdf; length=430094" title="TD IPA-DI wipes-DE.pdf">Technisches Datenblatt IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IPA-DI-wipes-FR.pdf" type="application/pdf; length=433271" title="TD IPA-DI wipes-FR.pdf">Fiche technique IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IPA-DI-wipes_0.pdf" type="application/pdf; length=425179" title="TD IPA-DI wipes.pdf">Technical Data Sheet IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IPA/DI WIPES" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1147" title="IPA/DI WIPES" class="nid">1147</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Tub.jpg" width="200" height="200" alt="IF Stencil Clean Wipes"/><img typeof="foaf:Image" src="/assets/images/CLP_Stencil-Clean-Bag.jpg" width="200" height="200" alt="IF Stencil Clean Refil bag"/></div>
+                      <div class="product-name">
+                        <h3>STENCIL CLEAN WIPES</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>Lap pembersih stensil</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon09"></div>
+                            <p>Untuk pembersihan stensil</p>
+                          </li>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Berbasis alkohol</p>
+                          </li>
+                          <li>
+                            <div class="icon30"></div>
+                            <p>Aman dari ESD</p>
+                          </li>
+                          <ul></ul>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Lap pembersih stensil tersaturasi Interflux® dalam tabung flip-top dan tas isi ulang untuk pembersihan pasta solder dan perekat STM yang membandel dari stensil dan alat.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Lap pembersih stensil tersaturasi Interflux® dalam tabung flip-top dan tas isi ulang untuk pembersihan pasta solder dan perekat STM yang membandel dari stensil dan alat.<br/>
+                          bebas serat, kain non-woven<br/>
+                          ukuran lap satuan: 15 x 21cm<br/>
+                          100 buah/ rol
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Stencil-clean-wipes-DE.pdf" type="application/pdf; length=421028" title="TD Stencil clean wipes-DE.pdf">Technisches Datenblatt Stencil Clean Wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Stencil-clean-wipes-FR_0.pdf" type="application/pdf; length=427631" title="TD Stencil clean wipes-FR.pdf">Fiche technique Stencil Clean Wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Stencil-clean-wipes.pdf" type="application/pdf; length=417010" title="TD Stencil clean wipes.pdf">Technical Data Sheet Stencil Clean Wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=STENCIL CLEAN WIPES" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1161" title="STENCIL CLEAN WIPES" class="nid">1161</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_ISC-8020_0.jpg" width="200" height="200" alt="ISC 8020"/></div>
+                      <div class="product-name">
+                        <h3>ISC 8020</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>stencil cleaning fluid</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon09"></div>
+                            <p>Untuk pencetakan stensil</p>
+                          </li>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>Berbasis alkohol</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® ISC 8020 adalah cairan pembersih stensil untuk printer stensil.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® ISC 8020 adalah cairan pembersih stensil untuk printer stensil.<br/>
+                          Untuk membersihkan pasta solder dan perekat SMT yang membandel.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-ISC-8020-DE.pdf" type="application/pdf; length=346604" title="TD ISC 8020-DE.pdf">Technisches Datenblatt ISC 8020</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-ISC-8020.pdf" type="application/pdf; length=344448" title="TD ISC 8020.pdf">Technical Data Sheet ISC 8020</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=ISC 8020" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1148" title="ISC 8020" class="nid">1148</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">Pengerjaan solder bath</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_15 product-row-group view-dom-id-168b704c2dd1eea9bbe307a6b5bb4601">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-910_final2.png" width="200" height="200" alt="IF 910 de-oxidation oil"/></div>
-                        <div class="product-name">
-                          <h3>IF 910</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>de-oxidation oil</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Untuk proses soldering gelombang</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Untuk pra-pelapisan timah</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Untuk pencelupan</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Untuk logam campuran SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Untuk logam campuran bebas timbal</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Minyak deoksidasi Interflux® IF 910 memisahkan oksida dari solder yang baik pada solder bath.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Minyak deoksidasi Interflux® IF 910 memisahkan oksida dari solder yang baik pada solder bath.<br/>
-                            Mengurangi konsumsi solder.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-910-DE.pdf" type="application/pdf; length=526614" title="TD IF 910-DE.pdf">Technisches Datenblatt IF 910</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-910-FR_0.pdf" type="application/pdf; length=495807" title="TD IF 910-FR.pdf">Fiche technique IF 910</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-910.pdf" type="application/pdf; length=484684" title="TD IF 910.pdf">Technical Data Sheet IF 910</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 910" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1143" title="IF 910" class="nid">1143</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">Pengerjaan solder bath</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_15 product-row-group view-dom-id-50f5666bf6e7e0bb7699536b826d80f6">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/IF-910_final2.png" width="200" height="200" alt="IF 910 de-oxidation oil"/></div>
+                      <div class="product-name">
+                        <h3>IF 910</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AOP-lead-free.jpg" width="200" height="200" alt="Anti-oxidant pellets"/><img typeof="foaf:Image" src="/assets/images/CLP_AOP-SnPb.jpg" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>ANTI-OXIDANT PELLETS</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>Butir antioksidan</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Untuk penyolderan gelombang</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Untuk penyolderan selektif</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Untuk pra-pelapisan timah</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Untuk proses SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Untuk proses bebas timbal</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Butir antioksidan Interflux® meminimalkan pembentukan oksida pada solder bath SnPb(Ag) dan bebas timbal.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Butir antioksidan Interflux® meminimalkan pembentukan oksida pada solder bath SnPb(Ag) dan bebas timbal.<br/>
-                            Gunakan sebagai tambahan pada solder bath<br/>
-                            Untuk logam campuran SnPb(Ag) (label biru) atau bebas timbal (label hijau)<br/>
-                            Butir antioksidan tidak disarankan pada atmosfer lembam yang tertutup dan untuk logam campuran solder yang mengandung Ni.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Anti-oxidant-pellets-DE.pdf" type="application/pdf; length=366742" title="TD Anti-oxidant pellets-DE.pdf">Technisches Datenblatt Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Anti-oxidant-pellets-FR_0.pdf" type="application/pdf; length=371501" title="TD Anti-oxidant pellets-FR.pdf">Fiche technique Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Anti-oxidant-pellets.pdf" type="application/pdf; length=364659" title="TD Anti-oxidant pellets.pdf">Technical Data Sheet Anti-oxidant pellets</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=ANTI-OXIDANT PELLETS" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1117" title="ANTI-OXIDANT PELLETS" class="nid">1117</a>
+                      <div class="product-name-extra">
+                        <h3>de-oxidation oil</h3>
                       </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Untuk proses soldering gelombang</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Untuk pra-pelapisan timah</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Untuk pencelupan</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Untuk logam campuran SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Untuk logam campuran bebas timbal</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Minyak deoksidasi Interflux® IF 910 memisahkan oksida dari solder yang baik pada solder bath.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Minyak deoksidasi Interflux® IF 910 memisahkan oksida dari solder yang baik pada solder bath.<br/>
+                          Mengurangi konsumsi solder.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-910-DE.pdf" type="application/pdf; length=526614" title="TD IF 910-DE.pdf">Technisches Datenblatt IF 910</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-910-FR_0.pdf" type="application/pdf; length=495807" title="TD IF 910-FR.pdf">Fiche technique IF 910</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-910.pdf" type="application/pdf; length=484684" title="TD IF 910.pdf">Technical Data Sheet IF 910</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 910" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1143" title="IF 910" class="nid">1143</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_AOP-lead-free.jpg" width="200" height="200" alt="Anti-oxidant pellets"/><img typeof="foaf:Image" src="/assets/images/CLP_AOP-SnPb.jpg" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>ANTI-OXIDANT PELLETS</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>Butir antioksidan</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Untuk penyolderan gelombang</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Untuk penyolderan selektif</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Untuk pra-pelapisan timah</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Untuk proses SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Untuk proses bebas timbal</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Butir antioksidan Interflux® meminimalkan pembentukan oksida pada solder bath SnPb(Ag) dan bebas timbal.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Butir antioksidan Interflux® meminimalkan pembentukan oksida pada solder bath SnPb(Ag) dan bebas timbal.<br/>
+                          Gunakan sebagai tambahan pada solder bath<br/>
+                          Untuk logam campuran SnPb(Ag) (label biru) atau bebas timbal (label hijau)<br/>
+                          Butir antioksidan tidak disarankan pada atmosfer lembam yang tertutup dan untuk logam campuran solder yang mengandung Ni.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Anti-oxidant-pellets-DE.pdf" type="application/pdf; length=366742" title="TD Anti-oxidant pellets-DE.pdf">Technisches Datenblatt Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Anti-oxidant-pellets-FR_0.pdf" type="application/pdf; length=371501" title="TD Anti-oxidant pellets-FR.pdf">Fiche technique Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Anti-oxidant-pellets.pdf" type="application/pdf; length=364659" title="TD Anti-oxidant pellets.pdf">Technical Data Sheet Anti-oxidant pellets</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=ANTI-OXIDANT PELLETS" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1117" title="ANTI-OXIDANT PELLETS" class="nid">1117</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs30">Logam campuran solder</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_14 product-row-group view-dom-id-e28b84bab67952e4cf6566428378edc7">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/solder-bars_0.jpg" width="200" height="200" alt="solder bars"/></div>
-                        <div class="product-name">
-                          <h3>SOLDER BARS</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>Batang solder</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Untuk penyolderan gelombang</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Untuk penyolderan selektif</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Untuk pra-pelapisan timah</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Untuk pencelupan</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Batang Solder Interflux® terbuat dari logam dengan kemurnian tinggi dan beroksidasi rendah dalam logam campuran SnPb(Ag) dan bebas timbal.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Batang Solder Interflux® terbuat dari logam dengan kemurnian tinggi dan beroksidasi rendah dalam logam campuran SnPb(Ag) dan bebas timbal.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SOLDER BARS" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1159" title="SOLDER BARS" class="nid">1159</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs30">Logam campuran solder</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_14 product-row-group view-dom-id-364aa740b883b492507916f13be6ae4a">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/solder-bars_0.jpg" width="200" height="200" alt="solder bars"/></div>
+                      <div class="product-name">
+                        <h3>SOLDER BARS</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/plain-wire-2mm-4kg-5.png" width="200" height="200" alt="Plain Solder Wire"/></div>
-                        <div class="product-name">
-                          <h3>PLAIN SOLDER WIRE</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>Timah solder murni</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Untuk proses soldering selektif</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Untuk pra-pelapisan timah</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Untuk pencelupan</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Kabel Solder Polos Interflux® untuk penyolderan otomatis pada sistem penyolderan selektif dalam logam campuran SnPb(Ag) dan bebas timbal.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Kabel Solder Polos Interflux® untuk penyolderan otomatis pada sistem penyolderan selektif dalam logam campuran SnPb(Ag) dan bebas timbal.<br/>
-                            Diameter kabel: 2mm<br/>
-                            Dalam kumparan 4kg<br/>
-                            Ukuran kumparan: 125mm x 125mm (dia.x panjang)
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PLAIN SOLDER WIRE" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1156" title="PLAIN SOLDER WIRE" class="nid">1156</a>
+                      <div class="product-name-extra">
+                        <h3>Batang solder</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles.png" width="200" height="200" alt="Solder Grenailles"/></div>
-                        <div class="product-name">
-                          <h3>SOLDER PELLETS</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>Butir solder</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>Untuk penyolderan gelombang</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>Untuk penyolderan selektif</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Untuk pengerjaan ulang dan perbaikan</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>Untuk pra-pelapisan timah</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>Untuk pencelupan</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Butir Solder Interflux® adalah bagian kecil dari solder untuk pengisian bath solder yang mudah dalam logam campuran SnPb(Ag) dan bebas timbal.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Butir Solder Interflux® adalah bagian kecil dari solder untuk pengisian bath solder yang mudah dalam logam campuran SnPb(Ag) dan bebas timbal.</p>
-                          <p>Ukuran: Sekitar 1cm x 1cm</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SOLDER PELLETS" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/id/1160" title="SOLDER PELLETS" class="nid">1160</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Untuk penyolderan gelombang</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Untuk penyolderan selektif</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Untuk pra-pelapisan timah</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Untuk pencelupan</p>
+                          </li>
+                        </ul>
                       </div>
+                      <div class="product-summary">
+                        <p>Batang Solder Interflux® terbuat dari logam dengan kemurnian tinggi dan beroksidasi rendah dalam logam campuran SnPb(Ag) dan bebas timbal.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Batang Solder Interflux® terbuat dari logam dengan kemurnian tinggi dan beroksidasi rendah dalam logam campuran SnPb(Ag) dan bebas timbal.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SOLDER BARS" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1159" title="SOLDER BARS" class="nid">1159</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/plain-wire-2mm-4kg-5.png" width="200" height="200" alt="Plain Solder Wire"/></div>
+                      <div class="product-name">
+                        <h3>PLAIN SOLDER WIRE</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>Timah solder murni</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Untuk proses soldering selektif</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Untuk pra-pelapisan timah</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Untuk pencelupan</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Kabel Solder Polos Interflux® untuk penyolderan otomatis pada sistem penyolderan selektif dalam logam campuran SnPb(Ag) dan bebas timbal.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Kabel Solder Polos Interflux® untuk penyolderan otomatis pada sistem penyolderan selektif dalam logam campuran SnPb(Ag) dan bebas timbal.<br/>
+                          Diameter kabel: 2mm<br/>
+                          Dalam kumparan 4kg<br/>
+                          Ukuran kumparan: 125mm x 125mm (dia.x panjang)
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PLAIN SOLDER WIRE" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1156" title="PLAIN SOLDER WIRE" class="nid">1156</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles.png" width="200" height="200" alt="Solder Grenailles"/></div>
+                      <div class="product-name">
+                        <h3>SOLDER PELLETS</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>Butir solder</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>Untuk penyolderan gelombang</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>Untuk penyolderan selektif</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Untuk pengerjaan ulang dan perbaikan</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>Untuk pra-pelapisan timah</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>Untuk pencelupan</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Butir Solder Interflux® adalah bagian kecil dari solder untuk pengisian bath solder yang mudah dalam logam campuran SnPb(Ag) dan bebas timbal.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Butir Solder Interflux® adalah bagian kecil dari solder untuk pengisian bath solder yang mudah dalam logam campuran SnPb(Ag) dan bebas timbal.</p>
+                        <p>Ukuran: Sekitar 1cm x 1cm</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SOLDER PELLETS" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/id/1160" title="SOLDER PELLETS" class="nid">1160</a>
                     </div>
                   </div>
                 </div>
@@ -793,16 +983,64 @@
             </div>
           </div>
         </div>
-        <div id="block-block-17" class="block block-block library-reference last even">
-          <div class="inner-block">
-            <p>Tidak dapat menemukan produk? Untuk daftar yang lengkap mengenai produk, cek
-              <a href="/id/documents">perpustakaan kami</a>
-            </p>
-          </div>
-        </div>
-        <div class="clear"></div>
       </div>
+      <div id="block-block-17" class="block block-block library-reference last even">
+        <div class="inner-block">
+          <p>Tidak dapat menemukan produk? Untuk daftar yang lengkap mengenai produk, cek
+            <a href="/id/documents">perpustakaan kami</a>
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
-  {% include "partials/footer.njk" %}
+  <div class="region region-footer2">
+    <div class="inner-region">
+      <div id="block-block-18" class="block block-block first last odd">
+        <div class="inner-block">
+          <div class="block grid-12" id="F1">
+            <div class="inner-block">
+              <div class="inner-content">
+                <a href="/en/contact" target="_self" title="Go to the contact page for more information"><img src="/assets/images/Interflux-Electronics-headquarters-belgium.jpg" width="171" height="271" alt="Interflux Electronics Belgium office building"/></a>
+                <div class="contact-title">
+                  <span>Kontak Kantor Pusat Interflux</span>
+                </div>
+                <div class="contact-adress">
+                  <p>
+                    Interflux Electronics NV<br/>
+                    Gent zeehaven 3170A<br/>
+                    Eddastraat 51<br/>
+                    9042 Gent<br/>
+                    BELGIUM</p>
+                  <p>Tel.: +32 9251 4959<br/>
+                    Fax: +32 9251 4970<br/>
+                    <a href="mailto:info@interflux.com" target="_blank">info@interflux.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-12" id="F2">
+            <div class="inner-block">
+              <div class="inner-content">
+                <div class="contact-title">
+                  <span>Kontak Interflux di Seluruh Dunia</span>
+                </div>
+                <p>
+                  <a href="/en/contact" target="_self" title="Go to the contact page for more information"><img src="/assets/images/interflux-worldwide-map.jpg" width="446" height="196" alt="Geographical map of the Interflux group"/></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-24" id="F3">
+            <div class="copyright">©2012 Hak cipta oleh Interflux</div>
+            <div class="louder-than-words">Website oleh
+              <a href="http://nabu.io" target="_new" title="NABU websites">NABU websites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
 {% endblock %}

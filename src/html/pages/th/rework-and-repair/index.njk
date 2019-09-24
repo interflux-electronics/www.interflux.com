@@ -8,1172 +8,1362 @@
 {% block bodyClass %}html not-front not-logged-in no-sidebars page-rework-and-repair page-products i18n-th section-rework-and-repair page-panels
 {% endblock %}
 {% block page %}
-  {% include "partials/highlight.njk" %}
+  <div class="region region-language">
+    <div class="inner-region">
+      <div id="block-locale-language" class="block block-locale language-menu block grid-24 first last odd" role="complementary">
+        <div class="inner-block">
+          <ul class="language-switcher-locale-url">
+            <li class="en first">
+              <a href="/en/rework-and-repair" class="language-link" lang="en" title="Rework &amp; Repair">
+                <div class="flag en"></div>English</a>
+            </li>
+            <li class="zh-hans">
+              <a href="/zh-hans/rework-and-repair" class="language-link" lang="zh-hans" title="返修">
+                <div class="flag zh-hans"></div>简体中文</a>
+            </li>
+            <li class="cs">
+              <a href="/cs/rework-and-repair" class="language-link" lang="cs" title="Přepracování &amp; Opravy">
+                <div class="flag cs"></div>Čeština</a>
+            </li>
+            <li class="de">
+              <a href="/de/rework-and-repair" class="language-link" lang="de" title="Nacharbeit und Reparatur">
+                <div class="flag de"></div>Deutsch</a>
+            </li>
+            <li class="fr">
+              <a href="/fr/rework-and-repair" class="language-link" lang="fr" title="Retouche et réparation">
+                <div class="flag fr"></div>Français</a>
+            </li>
+            <li class="it">
+              <a href="/it/rework-and-repair" class="language-link" lang="it" title="Rilavorazione &amp; Riparazione">
+                <div class="flag it"></div>Italiano</a>
+            </li>
+            <li class="id">
+              <a href="/id/rework-and-repair" class="language-link" lang="id" title="Pengerjaan ulang &amp; Perbaikan">
+                <div class="flag id"></div>Bahasa Indonesia</a>
+            </li>
+            <li class="pt-pt">
+              <a href="/pt-pt/rework-and-repair" class="language-link" lang="pt-pt" title="Retrabalho e Reparação">
+                <div class="flag pt-pt"></div>Português</a>
+            </li>
+            <li class="ro">
+              <a href="/ro/rework-and-repair" class="language-link" lang="ro" title="Rewirk si reparatie">
+                <div class="flag ro"></div>Română</a>
+            </li>
+            <li class="ru">
+              <a href="/ru/rework-and-repair" class="language-link" lang="ru" title="Ремонт">
+                <div class="flag ru"></div>Русский</a>
+            </li>
+            <li class="th active">
+              <a href="/th/rework-and-repair" class="language-link active" lang="th" title="งานปรับปรุงและซ่อมแซม">
+                <div class="flag th"></div>ภาษาไทย</a>
+            </li>
+            <li class="tr">
+              <a href="/tr/rework-and-repair" class="language-link" lang="tr">
+                <div class="flag tr"></div>Türkçe</a>
+            </li>
+            <li class="pl">
+              <a href="/pl/rework-and-repair" class="language-link" lang="pl" title="Rework &amp; Repair">
+                <div class="flag pl"></div>Polski</a>
+            </li>
+            <li class="es">
+              <a href="/es/rework-and-repair" class="language-link" lang="es" title="Reparación y reproceso">
+                <div class="flag es"></div>Español</a>
+            </li>
+            <li class="sv last">
+              <a href="/sv/rework-and-repair" class="language-link" lang="sv" title="Rework &amp; reparation">
+                <div class="flag sv"></div>Svenska</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-header">
+    <div class="inner-region">
+      <div id="block-block-11" class="block block-block grid-9 first odd">
+        <div class="inner-block">
+          <p>
+            <a href="/" title="Interflux Electronics" target="_self"><img src="/assets/images/interflux-electronics-logo.png" width="343" height="87" alt="Interflux Electronics logo"/></a>
+          </p>
+        </div>
+      </div>
+      <div id="block-menu-menu-interflux-menu" class="block block-menu grid-15 header-nav last even" role="navigation">
+        <div class="inner-block">
+          <ul class="menu">
+            <li class="first expanded">
+              <a href="/th" title="ค้นหาผลิตภัณฑ์ตามประเภท">ผลิตภัณฑ์</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/th/soldering-fluxes" title="">ฟลักซ์บัดกรี</a>
+                </li>
+                <li class="leaf">
+                  <a href="/th/solder-pastes" title="">ตะกั่วเหลว</a>
+                </li>
+                <li class="leaf">
+                  <a href="/th/solder-wires" title="">ลวดบัดกรี</a>
+                </li>
+                <li class="leaf">
+                  <a href="/th/spray-fluxers" title="">เครื่องพ่นสเปรย์น้ำฟลักซ์</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/th/auxiliaries" title="">อุปกรณ์เสริม</a>
+                </li>
+              </ul>
+            </li>
+            <li class="expanded active-trail">
+              <a href="/th" title="ค้นหาผลิตภัณฑ์ตามกระบวนการ" class="active-trail">กระบวนการ</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/th/wave-soldering" title="">การบัดกรีแบบเคลื่นน้ำตะกั่ว</a>
+                </li>
+                <li class="leaf">
+                  <a href="/th/selective-soldering" title="">การบัดกรีเฉพาะส่วน</a>
+                </li>
+                <li class="leaf">
+                  <a href="/th/reflow-soldering" title="">การบัดกรีแบบรีโฟลว์</a>
+                </li>
+                <li class="leaf active-trail">
+                  <a href="/th/rework-and-repair" title="" class="active-trail active">งานปรับปรุงและซ่อมแซม</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/th/pre-tinning" title="">การฉาบดีบุกก่อนบัดกรี</a>
+                </li>
+              </ul>
+            </li>
+            <li class="leaf">
+              <a href="/th/company" title="เรียนรู้เกี่ยวกับอินเตอร์ฟลักซ์">บริษัท</a>
+            </li>
+            <li class="leaf">
+              <a href="/th/documents" title="ค้นหาข้อมูลด้านเทคนิค">เอกสาร</a>
+            </li>
+            <li class="last leaf">
+              <a href="/th/contact" title="การติดต่อ">ข้อมูลติดต่อ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-highlight">
+    <div class="inner-region">
+      <div id="banners">
+        <div class="preload"></div>
+        <div class="stage">
+          <article id="ipc-apex-2017">
+            <a href="http://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
+              <picture>
+                <source srcset="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg 2x, http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018.jpg 1x"></source>
+                <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg" alt="Visit use at IPC APEX 2018 in San Diego"/>
+              </picture>
+            </a>
+          </article>
+          <article id="productronica-2017">
+            <a href="http://www.productronica.com/" target="_blank" title="Visit us at Productronica 2017">
+              <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/productronica-banner-2017.jpg"/>
+            </a>
+          </article>
+          <article id="lmpa">
+            <a href="https://lmpa.interflux.com" target="_blank">
+              <h1>Solder
+                <strong>5 times</strong>
+                faster whilst maintaining
+                <strong>zero defects</strong>
+              </h1>
+              <h1>Discover
+                <mark>LMPA<span>™</span>
+                </mark>
+              </h1>
+              <div id="video">
+                <video id="movie" width="276" height="220" autoplay loop>
+                  <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
+                  Your browser doesn't support HTML5 video tag.
+                </video>
+                <script></script>
+                <p>Speed: 30 mm/s</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <nav>
+          <div id="prev">
+            <div></div>
+          </div>
+          <div id="next">
+            <div></div>
+          </div>
+          <div id="timer">
+            <div></div>
+          </div>
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
   <div class="region region-corpus">
     <div class="inner-region">
-      <div class="inner-region">
-        <div class="panel-display panel-1col clearfix">
-          <div class="panel-panel panel-col">
-            <div>
-              <div class="panel-pane pane-views pane-process-views-interflux">
-                <h2 class="pane-title">
-                  <div class="fs30">ฟลักซ์บัดกรีสำหรับงานปรับปรุงและซ่อมแซม</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_16 product-row-group view-dom-id-d322dbe4136a256fec60b869b17d952a">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="views-row views-row-1 views-row-odd views-row-first product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-8300.jpg" width="200" height="200" alt="IF 8300"/></div>
-                        <div class="product-name">
-                          <h3>IF 8300 SERIES</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon03"></div>
-                              <p>สำหรับการบัดกรีแบบรีโฟลว์</p>
-                            </li>
-                            <li>
-                              <div class="icon08"></div>
-                              <p>สำหรับการใช้งาน แบบบีบหรือกดหลอด</p>
-                            </li>
-                            <li>
-                              <div class="icon09"></div>
-                              <p>สำหรับการใช้งาน แบบทาลงบนลายฉลุ</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>สำหรับการใช้งาน แบบจุ่มชิ้นงาน</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>ปราศจากสารเฮไลด์</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>มีคราบตกค้างน้อย</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 8300 คือฟลักซ์แบบเจลที่ไม่ต้องทำความสะอาด ปราศจากสารเฮไลด์</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 8300 คือฟลักซ์แบบเจลที่ไม่ต้องทำความสะอาด ปราศจากสารเฮไลด์<br/>
-                            สำหรับกระบวนการที่ใช้ตะกั่วที่มีสาร SnPb และชนิดไร้สารตะกั่ว<br/>
-                            เหมาะสำหรับการแก้ไขที่ต้องมีการขัดขืน และงานปรับปรุงชิพ BGA<br/>
-                            RE L0 ตามมาตรฐาน EN และ IPC<br/>
-                            ปริมาณสารเฮไลด์: 0.00%<br/>
-                            มีค่าความหนืด 3 ค่าที่ต่างกัน:<br/>
-                            IF 8300 : 210 kcps<br/>
-                            IF 8300-4 : 70 kcps<br/>
-                            IF 8300-6 : 25 kcps</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-8300-DE_0.pdf" type="application/pdf; length=886358" title="TD IF 8300-DE.pdf">Technisches Datenblatt IF 8300</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-8300-FR_0.pdf" type="application/pdf; length=1056853" title="TD IF 8300-FR.pdf">Fiche technique IF 8300</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-8300.pdf" type="application/pdf; length=877318" title="TD IF 8300.pdf">Technical Data Sheet IF 8300</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 8300 SERIES" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+      <div class="panel-display panel-1col clearfix">
+        <div class="panel-panel panel-col">
+          <div>
+            <div class="panel-pane pane-views pane-process-views-interflux">
+              <h2 class="pane-title">
+                <div class="fs30">ฟลักซ์บัดกรีสำหรับงานปรับปรุงและซ่อมแซม</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_16 product-row-group view-dom-id-26ebcd2f98e336f86a6592d69b294cb6">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="views-row views-row-1 views-row-odd views-row-first product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-8300.jpg" width="200" height="200" alt="IF 8300"/></div>
+                      <div class="product-name">
+                        <h3>IF 8300 SERIES</h3>
                       </div>
-                      <div class="views-row views-row-2 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF7500HAB_0.jpg" width="200" height="200" alt="Interflux IF7500HAB solder flux"/><img typeof="foaf:Image" src="/assets/images/Interflux-IF7500HAB-tube.jpg" width="200" height="200" alt="Interflux IF7500HAB solder flux"/></div>
-                        <div class="product-name">
-                          <h3>IF 7500HAB</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon03"></div>
-                              <p>สำหรับการบัดกรีแบบรีโฟลว์</p>
-                            </li>
-                            <li>
-                              <div class="icon08"></div>
-                              <p>สำหรับการใช้งาน แบบบีบหรือกดหลอด</p>
-                            </li>
-                            <li>
-                              <div class="icon09"></div>
-                              <p>สำหรับการใช้งาน แบบทาลงบนลายฉลุ</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>สำหรับการใช้งาน แบบจุ่มชิ้นงาน</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>ปราศจากสารเฮไลด์</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>สามารถทนทานอยู่ในขบวนการผลิตได้นาน</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>มีความสามารถในการลดออกซิเดชั่นสูง</p>
-                            </li>
-                            <li>
-                              <div class="icon14"></div>
-                              <p>มีชันสน</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 7500HAB คือ ฟลักซ์แบบเจลที่ปราศจากสารเฮไลด์แบบไม่ต้องทำความสะอาด ทำให้มีช่วงใช้งาน ในกระบวนการเพิ่มขึ้น</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 7500HAB คือ ฟลักซ์แบบเจลที่ปราศจากสารเฮไลด์แบบไม่ต้องทำความสะอาด ทำให้มีช่วงใช้งาน ในกระบวนการเพิ่มขึ้น<br/>
-                            สำหรับกระบวนการที่ใช้ตะกั่วที่มีสาร SnPb และ ชนิดไร้สารตะกั่ว<br/>
-                            เหมาะสำหรับการแก้ไขที่ต้องมีการขัดขืน และงานปรับปรุง BGA<br/>
-                            RO M0 ถึงมาตรฐาน EN และ IPC<br/>
-                            ปริมาณสารเฮไลด์: 0.00%<br/>
-                            ความหนืด: 200 kcps</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-7500HAB-DE_0.pdf" type="application/pdf; length=494085" title="TD IF 7500HAB-DE.pdf">Technisches Datenblatt IF 7500HAB</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-7500HAB_0.pdf" type="application/pdf; length=491460" title="TD IF 7500HAB.pdf">Technical Data Sheet IF 7500HAB</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 7500HAB" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon03"></div>
+                            <p>สำหรับการบัดกรีแบบรีโฟลว์</p>
+                          </li>
+                          <li>
+                            <div class="icon08"></div>
+                            <p>สำหรับการใช้งาน แบบบีบหรือกดหลอด</p>
+                          </li>
+                          <li>
+                            <div class="icon09"></div>
+                            <p>สำหรับการใช้งาน แบบทาลงบนลายฉลุ</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>สำหรับการใช้งาน แบบจุ่มชิ้นงาน</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>ปราศจากสารเฮไลด์</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>มีคราบตกค้างน้อย</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="views-row views-row-3 views-row-odd product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-8001.jpg" width="200" height="200" alt="IF 8001"/></div>
-                        <div class="product-name">
-                          <h3>IF 8001</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>สูตรมีแอลกอฮอล์เป็นองค์ประกอบ</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>ปราศจากสารเฮไลด์</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>มีคราบตกค้างน้อย</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 8001 คือฟลักซ์บัดกรีสูตรตัวทำละลายที่ไม่ต้องทำความสะอาดที่ทำให้เกิดคราบตกค้างน้อยสำหรับการใช้งานฟลักซ์เฉพาะส่วน</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 8001 คือฟลักซ์บัดกรีสูตรตัวทำละลายที่ไม่ต้องทำความสะอาดที่ทำให้เกิดคราบตกค้างน้อยสำหรับการใช้งานฟลักซ์เฉพาะส่วน<br/>
-                            สำหรับกระบวนการที่ใช้ตะกั่วที่มีสาร SnPb และชนิดไร้สารตะกั่ว<br/>
-                            การใช้งานหลัก: การบัดกรีด้วยมือ การใช้งานอื่นๆ: การบัดกรีอัตโนมัติ การบัดกรีแบบปั๊ม เป็นต้น...<br/>
-                            RE L0 ถึงมาตรฐาน EN และ IPC<br/>
-                            ปริมาณสารเฮไลด์: 0.00%<br/>
-                            IF 8001 มีจำหน่ายในแบบปากกาฟลักซ์ที่สามารถเติมได้และไม่สามารถเติมได้</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-8001-DE_0.pdf" type="application/pdf; length=442493" title="TD IF 8001-DE.pdf">Technisches Datenblatt IF 8001</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-8001-FR_0.pdf" type="application/pdf; length=370992" title="TD IF 8001-FR.pdf">Fiche technique IF 8001</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-8001_0.pdf" type="application/pdf; length=404562" title="TD IF 8001.pdf">Technical Data Sheet IF 8001</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 8001" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 8300 คือฟลักซ์แบบเจลที่ไม่ต้องทำความสะอาด ปราศจากสารเฮไลด์</p>
                       </div>
-                      <div class="views-row views-row-4 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-6000-1liter.jpg" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>IF 6000</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon11"></div>
-                              <p>สูตรแอลกอฮอล์เป็นองค์ประกอบ</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>ปราศจากสารเฮไลด์</p>
-                            </li>
-                            <li>
-                              <div class="icon14"></div>
-                              <p>มีส่วนผสมของชันสน</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>มีความสามารถในการลดออกซิเดชั่นสูง</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>ทนความร้อนในขณะอุ่นก่อนเชื่อมได้ยาวนาน</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 6000 คือฟลักซ์บัดกรีแบบไม่ต้องทำความสะอาดที่มีส่วนผสมของชันสน โดยมีช่วงของกระบวนการที่ใช้ได้เพิ่มขึ้น สำหรับการใช้งานฟลักซ์เฉพาะที่</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 6000 คือฟลักซ์บัดกรีแบบไม่ต้องทำความสะอาดที่มีส่วนผสมของชันสน โดยมีช่วงของกระบวนการที่ใช้ได้เพิ่มขึ้น สำหรับการใช้งานฟลักซ์เฉพาะที่<br/>
-                            สำหรับกระบวนการที่ใช้ตะกั่วที่มีสาร SnPb และชนิดไร้สารตะกั่ว<br/>
-                            การใช้งานหลัก: การบัดกรีด้วยมือ การใช้งานอื่นๆ: การบัดกรีอัตโนมัติ การบัดกรีแบบปั๊ม งานปรับปรุง BGA, แนวกระทบของแผ่นเวเฟอร์ เป็นต้น...<br/>
-                            RO L0 ตามมาตรฐาน EN และ IPC<br/>
-                            ปริมาณสารเฮไลด์: 0.00%<br/>
-                            IF 6000 มีจำหน่ายในแบบปากกาฟลักซ์ที่สามารถเติมได้และไม่สามารถเติมได้</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-6000-DE_0.pdf" type="application/pdf; length=418115" title="TD IF 6000-DE.pdf">Technisches Datenblatt IF 6000</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-6000-FR.pdf" type="application/pdf; length=381276" title="TD IF 6000-FR.pdf">Fiche technique IF 6000</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-6000.pdf" type="application/pdf; length=411656" title="TD IF 6000.pdf">Technical Data Sheet IF 6000</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 6000" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 8300 คือฟลักซ์แบบเจลที่ไม่ต้องทำความสะอาด ปราศจากสารเฮไลด์<br/>
+                          สำหรับกระบวนการที่ใช้ตะกั่วที่มีสาร SnPb และชนิดไร้สารตะกั่ว<br/>
+                          เหมาะสำหรับการแก้ไขที่ต้องมีการขัดขืน และงานปรับปรุงชิพ BGA<br/>
+                          RE L0 ตามมาตรฐาน EN และ IPC<br/>
+                          ปริมาณสารเฮไลด์: 0.00%<br/>
+                          มีค่าความหนืด 3 ค่าที่ต่างกัน:<br/>
+                          IF 8300 : 210 kcps<br/>
+                          IF 8300-4 : 70 kcps<br/>
+                          IF 8300-6 : 25 kcps</p>
                       </div>
-                      <div class="views-row views-row-5 views-row-odd views-row-last product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Terrific-RP65-1liter.jpg" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>TERRIFIC RP65</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon12"></div>
-                              <p>ฟลักซ์สูตรน้ำ</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>ปราศจากสารเฮไลด์</p>
-                            </li>
-                            <li>
-                              <div class="icon22"></div>
-                              <p>ทนความร้อนในขณะอุ่นก่อนเชื่อมได้ยาวนาน</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>TerrIFic RP65 เป็นฟลักซ์บัดกรีสูตรน้ำที่ไม่ต้องทำความสะอาดสำหรับการใช้งานที่ใช้ฟลักซ์เฉพาะส่วน</p>
-                        </div>
-                        <div class="product-details">
-                          <p>TerrIFic RP65 เป็นฟลักซ์บัดกรีสูตรน้ำที่ไม่ต้องทำความสะอาดสำหรับการใช้งานที่ใช้ฟลักซ์เฉพาะส่วน<br/>
-                            ใช้สำหรับกระบวนการที่ใช้ตะกั่วที่มีสาร SnPb และชนิดไร้สารตะกั่ว<br/>
-                            การใช้งานหลัก: การบัดกรีด้วยมือ การใช้งานอื่นๆ: การบัดกรีอัตโนมัติ การบัดกรีแบบปั๊ม เป็นต้น...<br/>
-                            OR L0 ถึงมาตรฐาน EN และ IPC<br/>
-                            ปริมาณสารเฮไลด์: 0.00%<br/>
-                            TerrIFic RP 65 มีจำหน่ายในแบบปากกาฟลักซ์ที่สามารถเติมได้และไม่สามารถเติมได้</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Terrific-RP65-DE_0.pdf" type="application/pdf; length=396763" title="TD Terrific RP65-DE.pdf">Technisches Datenblatt TerrIFic RP65</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Terrific-RP65-FR_0.pdf" type="application/pdf; length=412192" title="TD Terrific RP65-FR.pdf">Fiche technique TerrIFic RP65</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Terrific-RP65_0.pdf" type="application/pdf; length=393579" title="TD Terrific RP65.pdf">Technical Data Sheet TerrIFic RP65</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=TERRIFIC RP65" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-8300-DE_0.pdf" type="application/pdf; length=886358" title="TD IF 8300-DE.pdf">Technisches Datenblatt IF 8300</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-8300-FR_0.pdf" type="application/pdf; length=1056853" title="TD IF 8300-FR.pdf">Fiche technique IF 8300</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-8300.pdf" type="application/pdf; length=877318" title="TD IF 8300.pdf">Technical Data Sheet IF 8300</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 8300 SERIES" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-2 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF7500HAB_0.jpg" width="200" height="200" alt="Interflux IF7500HAB solder flux"/><img typeof="foaf:Image" src="/assets/images/Interflux-IF7500HAB-tube.jpg" width="200" height="200" alt="Interflux IF7500HAB solder flux"/></div>
+                      <div class="product-name">
+                        <h3>IF 7500HAB</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon03"></div>
+                            <p>สำหรับการบัดกรีแบบรีโฟลว์</p>
+                          </li>
+                          <li>
+                            <div class="icon08"></div>
+                            <p>สำหรับการใช้งาน แบบบีบหรือกดหลอด</p>
+                          </li>
+                          <li>
+                            <div class="icon09"></div>
+                            <p>สำหรับการใช้งาน แบบทาลงบนลายฉลุ</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>สำหรับการใช้งาน แบบจุ่มชิ้นงาน</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>ปราศจากสารเฮไลด์</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>สามารถทนทานอยู่ในขบวนการผลิตได้นาน</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>มีความสามารถในการลดออกซิเดชั่นสูง</p>
+                          </li>
+                          <li>
+                            <div class="icon14"></div>
+                            <p>มีชันสน</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 7500HAB คือ ฟลักซ์แบบเจลที่ปราศจากสารเฮไลด์แบบไม่ต้องทำความสะอาด ทำให้มีช่วงใช้งาน ในกระบวนการเพิ่มขึ้น</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 7500HAB คือ ฟลักซ์แบบเจลที่ปราศจากสารเฮไลด์แบบไม่ต้องทำความสะอาด ทำให้มีช่วงใช้งาน ในกระบวนการเพิ่มขึ้น<br/>
+                          สำหรับกระบวนการที่ใช้ตะกั่วที่มีสาร SnPb และ ชนิดไร้สารตะกั่ว<br/>
+                          เหมาะสำหรับการแก้ไขที่ต้องมีการขัดขืน และงานปรับปรุง BGA<br/>
+                          RO M0 ถึงมาตรฐาน EN และ IPC<br/>
+                          ปริมาณสารเฮไลด์: 0.00%<br/>
+                          ความหนืด: 200 kcps</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-7500HAB-DE_0.pdf" type="application/pdf; length=494085" title="TD IF 7500HAB-DE.pdf">Technisches Datenblatt IF 7500HAB</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-7500HAB_0.pdf" type="application/pdf; length=491460" title="TD IF 7500HAB.pdf">Technical Data Sheet IF 7500HAB</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 7500HAB" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-3 views-row-odd product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-8001.jpg" width="200" height="200" alt="IF 8001"/></div>
+                      <div class="product-name">
+                        <h3>IF 8001</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>สูตรมีแอลกอฮอล์เป็นองค์ประกอบ</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>ปราศจากสารเฮไลด์</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>มีคราบตกค้างน้อย</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 8001 คือฟลักซ์บัดกรีสูตรตัวทำละลายที่ไม่ต้องทำความสะอาดที่ทำให้เกิดคราบตกค้างน้อยสำหรับการใช้งานฟลักซ์เฉพาะส่วน</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 8001 คือฟลักซ์บัดกรีสูตรตัวทำละลายที่ไม่ต้องทำความสะอาดที่ทำให้เกิดคราบตกค้างน้อยสำหรับการใช้งานฟลักซ์เฉพาะส่วน<br/>
+                          สำหรับกระบวนการที่ใช้ตะกั่วที่มีสาร SnPb และชนิดไร้สารตะกั่ว<br/>
+                          การใช้งานหลัก: การบัดกรีด้วยมือ การใช้งานอื่นๆ: การบัดกรีอัตโนมัติ การบัดกรีแบบปั๊ม เป็นต้น...<br/>
+                          RE L0 ถึงมาตรฐาน EN และ IPC<br/>
+                          ปริมาณสารเฮไลด์: 0.00%<br/>
+                          IF 8001 มีจำหน่ายในแบบปากกาฟลักซ์ที่สามารถเติมได้และไม่สามารถเติมได้</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-8001-DE_0.pdf" type="application/pdf; length=442493" title="TD IF 8001-DE.pdf">Technisches Datenblatt IF 8001</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-8001-FR_0.pdf" type="application/pdf; length=370992" title="TD IF 8001-FR.pdf">Fiche technique IF 8001</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-8001_0.pdf" type="application/pdf; length=404562" title="TD IF 8001.pdf">Technical Data Sheet IF 8001</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 8001" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-4 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_IF-6000-1liter.jpg" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>IF 6000</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon11"></div>
+                            <p>สูตรแอลกอฮอล์เป็นองค์ประกอบ</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>ปราศจากสารเฮไลด์</p>
+                          </li>
+                          <li>
+                            <div class="icon14"></div>
+                            <p>มีส่วนผสมของชันสน</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>มีความสามารถในการลดออกซิเดชั่นสูง</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>ทนความร้อนในขณะอุ่นก่อนเชื่อมได้ยาวนาน</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 6000 คือฟลักซ์บัดกรีแบบไม่ต้องทำความสะอาดที่มีส่วนผสมของชันสน โดยมีช่วงของกระบวนการที่ใช้ได้เพิ่มขึ้น สำหรับการใช้งานฟลักซ์เฉพาะที่</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 6000 คือฟลักซ์บัดกรีแบบไม่ต้องทำความสะอาดที่มีส่วนผสมของชันสน โดยมีช่วงของกระบวนการที่ใช้ได้เพิ่มขึ้น สำหรับการใช้งานฟลักซ์เฉพาะที่<br/>
+                          สำหรับกระบวนการที่ใช้ตะกั่วที่มีสาร SnPb และชนิดไร้สารตะกั่ว<br/>
+                          การใช้งานหลัก: การบัดกรีด้วยมือ การใช้งานอื่นๆ: การบัดกรีอัตโนมัติ การบัดกรีแบบปั๊ม งานปรับปรุง BGA, แนวกระทบของแผ่นเวเฟอร์ เป็นต้น...<br/>
+                          RO L0 ตามมาตรฐาน EN และ IPC<br/>
+                          ปริมาณสารเฮไลด์: 0.00%<br/>
+                          IF 6000 มีจำหน่ายในแบบปากกาฟลักซ์ที่สามารถเติมได้และไม่สามารถเติมได้</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-6000-DE_0.pdf" type="application/pdf; length=418115" title="TD IF 6000-DE.pdf">Technisches Datenblatt IF 6000</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-6000-FR.pdf" type="application/pdf; length=381276" title="TD IF 6000-FR.pdf">Fiche technique IF 6000</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-6000.pdf" type="application/pdf; length=411656" title="TD IF 6000.pdf">Technical Data Sheet IF 6000</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 6000" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-5 views-row-odd views-row-last product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Terrific-RP65-1liter.jpg" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>TERRIFIC RP65</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon12"></div>
+                            <p>ฟลักซ์สูตรน้ำ</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>ปราศจากสารเฮไลด์</p>
+                          </li>
+                          <li>
+                            <div class="icon22"></div>
+                            <p>ทนความร้อนในขณะอุ่นก่อนเชื่อมได้ยาวนาน</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>TerrIFic RP65 เป็นฟลักซ์บัดกรีสูตรน้ำที่ไม่ต้องทำความสะอาดสำหรับการใช้งานที่ใช้ฟลักซ์เฉพาะส่วน</p>
+                      </div>
+                      <div class="product-details">
+                        <p>TerrIFic RP65 เป็นฟลักซ์บัดกรีสูตรน้ำที่ไม่ต้องทำความสะอาดสำหรับการใช้งานที่ใช้ฟลักซ์เฉพาะส่วน<br/>
+                          ใช้สำหรับกระบวนการที่ใช้ตะกั่วที่มีสาร SnPb และชนิดไร้สารตะกั่ว<br/>
+                          การใช้งานหลัก: การบัดกรีด้วยมือ การใช้งานอื่นๆ: การบัดกรีอัตโนมัติ การบัดกรีแบบปั๊ม เป็นต้น...<br/>
+                          OR L0 ถึงมาตรฐาน EN และ IPC<br/>
+                          ปริมาณสารเฮไลด์: 0.00%<br/>
+                          TerrIFic RP 65 มีจำหน่ายในแบบปากกาฟลักซ์ที่สามารถเติมได้และไม่สามารถเติมได้</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Terrific-RP65-DE_0.pdf" type="application/pdf; length=396763" title="TD Terrific RP65-DE.pdf">Technisches Datenblatt TerrIFic RP65</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Terrific-RP65-FR_0.pdf" type="application/pdf; length=412192" title="TD Terrific RP65-FR.pdf">Fiche technique TerrIFic RP65</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Terrific-RP65_0.pdf" type="application/pdf; length=393579" title="TD Terrific RP65.pdf">Technical Data Sheet TerrIFic RP65</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=TERRIFIC RP65" target="_blank">Contact us for more info / demo / samples</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-process-views-interflux">
-                <h2 class="pane-title">
-                  <div class="fs30">ตะกั่วเหลวสำหรับงานปรับปรุงและซ่อมแซม</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_17 product-row-group view-dom-id-140e03cfcf8c99406a689dfc8f64d263">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="views-row views-row-1 views-row-odd views-row-first views-row-last product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/micro-dife7-web3.png" width="200" height="200" alt=""/></div>
-                        <div class="product-name">
-                          <h3>µ-DIFE 7</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon03"></div>
-                              <p>สำหรับการบัดกรีแบบรีโฟลว์</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>สำหรับการจุ่มชิ้นงาน</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>ปราศจากสารเฮไลด์</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® µ-dIFe 7 คือตะกั่วเหลวแบบไม่ต้องทำความสะอาดที่ปราศจากสารตะกั่วสำหรับการใช้งานแบบจุ่มชิ้นงาน</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® µ-dIFe 7 คือตะกั่วเหลวแบบไม่ต้องทำความสะอาดที่ปราศจากสารตะกั่วสำหรับการใช้งานแบบจุ่มชิ้นงาน<br/>
-                            ปริมาณที่สามารถใช้ซ้ำได้และใช้เฉพาะที่<br/>
-                            ใช้งานง่ายและรวดเร็ว<br/>
-                            ลดความเสี่ยงในการเชื่อมต่อกันบน μ-BGA<br/>
-                            เหมาะสำหรับสถานีจุ่มและพิมพ์ ERSA<br/>
-                            สำหรับชิพแบบ Ball Grid Arrays, J-lead และ Gull Wing IC<br/>
-                            RO L0 ตามมาตรฐาน EN และ IPC<br/>
-                            ปริมาณสารเฮไลด์: 0.00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-micro-dIFe-7-DE_0.pdf" type="application/pdf; length=466240" title="TD µ-dIFe 7-DE.pdf">Technisches Datenblatt µ-dIFe 7</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-micro-dIFe-7-FR_0.pdf" type="application/pdf; length=493264" title="TD µ-dIFe 7-FR.pdf">Fiche technique µ-dIFe 7</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-micro-dIFe-7_0.pdf" type="application/pdf; length=485359" title="TD µ-dIFe 7.pdf">Technical Data Sheet µ-dIFe 7</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=µ-DIFE 7" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-process-views-interflux">
+              <h2 class="pane-title">
+                <div class="fs30">ตะกั่วเหลวสำหรับงานปรับปรุงและซ่อมแซม</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_17 product-row-group view-dom-id-55929da92a6b9766931487c8db57847f">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="views-row views-row-1 views-row-odd views-row-first views-row-last product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/micro-dife7-web3.png" width="200" height="200" alt=""/></div>
+                      <div class="product-name">
+                        <h3>µ-DIFE 7</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon03"></div>
+                            <p>สำหรับการบัดกรีแบบรีโฟลว์</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>สำหรับการจุ่มชิ้นงาน</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>ปราศจากสารเฮไลด์</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® µ-dIFe 7 คือตะกั่วเหลวแบบไม่ต้องทำความสะอาดที่ปราศจากสารตะกั่วสำหรับการใช้งานแบบจุ่มชิ้นงาน</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® µ-dIFe 7 คือตะกั่วเหลวแบบไม่ต้องทำความสะอาดที่ปราศจากสารตะกั่วสำหรับการใช้งานแบบจุ่มชิ้นงาน<br/>
+                          ปริมาณที่สามารถใช้ซ้ำได้และใช้เฉพาะที่<br/>
+                          ใช้งานง่ายและรวดเร็ว<br/>
+                          ลดความเสี่ยงในการเชื่อมต่อกันบน μ-BGA<br/>
+                          เหมาะสำหรับสถานีจุ่มและพิมพ์ ERSA<br/>
+                          สำหรับชิพแบบ Ball Grid Arrays, J-lead และ Gull Wing IC<br/>
+                          RO L0 ตามมาตรฐาน EN และ IPC<br/>
+                          ปริมาณสารเฮไลด์: 0.00%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-micro-dIFe-7-DE_0.pdf" type="application/pdf; length=466240" title="TD µ-dIFe 7-DE.pdf">Technisches Datenblatt µ-dIFe 7</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-micro-dIFe-7-FR_0.pdf" type="application/pdf; length=493264" title="TD µ-dIFe 7-FR.pdf">Fiche technique µ-dIFe 7</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-micro-dIFe-7_0.pdf" type="application/pdf; length=485359" title="TD µ-dIFe 7.pdf">Technical Data Sheet µ-dIFe 7</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=µ-DIFE 7" target="_blank">Contact us for more info / demo / samples</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-process-views-interflux">
-                <h2 class="pane-title">
-                  <div class="fs30">ลวดบัดกรีสำหรับงานปรับปรุงและซ่อมแซม</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_18 product-row-group view-dom-id-785c8dff1d183cf29637a60be6e2691b">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="views-row views-row-1 views-row-odd views-row-first product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_QF70-Pb-free.jpg" width="200" height="200" alt="QF 70 Pb-free"/></div>
-                        <div class="product-name">
-                          <h3>QF 70</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NEW</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon32"></div>
-                              <p>Increased wetting speed</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Transparent residue</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolutely halide-free</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>QF 70</strong>
-                            is an absolutely halide-free, rosin based no-clean solder wire with
-                            <strong>fast wetting for fast soldering</strong>
-                            operations in lead-free alloys.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® QF 70 is an absolutely halide-free, rosin based no-clean solder wire with fast wetting for fast soldering operations in lead-free alloys.<br/>
-                            QF 70 can be used in both hand soldering and auto-mated soldering processes<br/>
-                            RO L0 to IPC and EN standards.<br/>
-                            Halide content 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-QF-70-DE.pdf" type="application/pdf; length=577835" title="TD QF 70-DE.pdf">Technisches Datenblatt QF70</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-QF-70.pdf" type="application/pdf; length=567824" title="TD QF 70.pdf">Technical Data Sheet QF 70</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=QF 70" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-process-views-interflux">
+              <h2 class="pane-title">
+                <div class="fs30">ลวดบัดกรีสำหรับงานปรับปรุงและซ่อมแซม</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_18 product-row-group view-dom-id-0aadf4c9b02aa9fa6789f91f600d1b0f">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="views-row views-row-1 views-row-odd views-row-first product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_QF70-Pb-free.jpg" width="200" height="200" alt="QF 70 Pb-free"/></div>
+                      <div class="product-name">
+                        <h3>QF 70</h3>
                       </div>
-                      <div class="views-row views-row-2 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/NH1-SAC387.png" width="200" height="200" alt="NH1 lead-free solder wire"/></div>
-                        <div class="product-name">
-                          <h3>NH 1</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NEW</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Increased wetting ability, increased wetting speed</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Low spattering</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Colophony free</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Low transparent residue</p>
-                            </li>
-                            <li>
-                              <div class="icon35"></div>
-                              <p>High repeatability</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Perfect for laser soldering</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>NH 1</strong>
-                            is a no-clean
-                            <strong>colophony free activated solder wire</strong>
-                            that gives fast and repeatable soldering results on a wide range of surfaces including brass, in lead-free alloys.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® NH 1 is a no-clean colophony free activated solder wire that gives fast and repeatable soldering results on a wide range of surfaces including brass, in lead-free alloys.<br/>
-                            NH 1 can be used in both hand soldering and auto-mated soldering processes<br/>
-                            RE L1 to IPC and EN standards.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-NH-1-DE.pdf" type="application/pdf; length=553998" title="TD NH 1-DE.pdf">Technical Data Sheet NH1</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-NH-1.pdf" type="application/pdf; length=562600" title="TD NH 1.pdf">Technical Data Sheet NH 1</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=NH 1" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-highlight">
+                        <h3>NEW</h3>
                       </div>
-                      <div class="views-row views-row-3 views-row-odd product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SnPbAg.png" width="200" height="200" alt="RosIX 705 SnPb(Ag)"/></div>
-                        <div class="product-name">
-                          <h3>RosIX 705 SnPb(Ag)</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NEW</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Increased wetting ability</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Non disturbing smell</p>
-                            </li>
-                            <li>
-                              <div class="icon35"></div>
-                              <p>High repeatability</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Smooth transparent residue</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Suitable for robot soldering</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>RosIX 705 SnPb(Ag)</strong>
-                            is an
-                            <strong>activated rosin based</strong>, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in SnPb(Ag) alloys.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® RosIX 705 SnPb(Ag) is an activated rosin based, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in SnPb(Ag) alloys.<br/>
-                            RosIX 705 SnPb(Ag) can be used on surfaces that are difficult to solder, e.g. OSP, Ni, Zn, brass, German silver,... as well as on degraded and oxidized surfaces.<br/>
-                            RO L1 to IPC and EN standards.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-RosIX-705-SnPbAg-DE.pdf" type="application/pdf; length=1786789" title="TD RosIX 705 SnPb(Ag)-DE.pdf">Technisches Datenblatt RosIX 705 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Rosix-705-SnPbAg-FR.pdf" type="application/pdf; length=1851648" title="TD Rosix 705 SnPb(Ag)-FR.pdf">Fiche technique RosIX 705 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Rosix-705-SnPbAg.pdf" type="application/pdf; length=1904997" title="TD Rosix 705 SnPb(Ag).pdf">Technical Data Sheet RosIX 705 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705 SnPb(Ag)" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon32"></div>
+                            <p>Increased wetting speed</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Transparent residue</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolutely halide-free</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="views-row views-row-4 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SAC.png" width="200" height="200" alt="RosIX 705"/></div>
-                        <div class="product-name">
-                          <h3>RosIX 705</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NEW</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Increased wetting ability</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Non disturbing smell</p>
-                            </li>
-                            <li>
-                              <div class="icon35"></div>
-                              <p>High repeatability</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Smooth transparent residue</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Suitable for robot soldering</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>RosIX 705</strong>
-                            is an activated rosin based, no-clean solder wire with
-                            <strong>increased wetting ability
-                            </strong>on surfaces that are difficult to solder in lead-free alloys.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® RosIX 705 is an activated rosin based, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in lead-free alloys.<br/>
-                            RosIX 705 can be used on surfaces that are difficult<br/>
-                            to solder, e.g. OSP, Ni, Zn, brass, German silver, etc.. as well<br/>
-                            as on degraded and oxidized surfaces.<br/>
-                            RO L1 to IPC and EN standards.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-RosIX-705-DE.pdf" type="application/pdf; length=1781865" title="TD RosIX 705-DE.pdf">Technisches Datenblatt RosIX 705</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Rosix-705-FR_0.pdf" type="application/pdf; length=1850021" title="TD Rosix 705-FR.pdf">Fiche Technique RosIX 705</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-RosIX-705.pdf" type="application/pdf; length=1845843" title="TD RosIX 705.pdf">Technical Data Sheet RosIX 705</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>QF 70</strong>
+                          is an absolutely halide-free, rosin based no-clean solder wire with
+                          <strong>fast wetting for fast soldering</strong>
+                          operations in lead-free alloys.
+                        </p>
                       </div>
-                      <div class="views-row views-row-5 views-row-odd product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Aquasol4018_11.jpg" width="200" height="200" alt="Aquasol 4018"/></div>
-                        <div class="product-name">
-                          <h3>AQUASOL 4018</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon17"></div>
-                              <p>ลวดบัดกรีที่ลายละลายน้ำได้</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>ลวดบัดกรีชนิดปราศจากสารตะกั่ว</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>ปราศจากยางไม้</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>ขอบเขตการใช้งานสูง</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Aquasol 4018 คือลวดบัดกรีที่มีขอบเขตการใช้งานสูง ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่ว โดยมีคราบตกค้างที่ละลายน้ำได้</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Aquasol 4018 คือลวดบัดกรีที่มีขอบเขตการใช้งานสูง ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่ว โดยมีคราบตกค้างที่ละลายน้ำได้<br/>
-                            มีความสามารถสูงในการทำให้ตะกั่วชุ่มบนพื้นผิวที่บัดกรีได้ยาก<br/>
-                            จำเป็นต้องทำความสะอาดคราบตกค้าง<br/>
-                            สามารถทำความสะอาดคราบตกค้างได้ด้วยน้ำบริสุทธิ์ที่ปราศจากประจุไฟฟ้า ที่อุณหภูมิ 35°C-45°C (95°F— 114°F)<br/>
-                            OR H1 ตามมาตรฐาน EN และ IPC<br/>
-                            ปริมาณฟลักซ์: 2.5%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Aquasol-4018-DE.pdf" type="application/pdf; length=612173" title="TD Aquasol 4018-DE.pdf">Technisches Datenblatt Aquasol 4018</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Aquasol-4018-FR.pdf" type="application/pdf; length=613595" title="TD Aquasol 4018-FR.pdf">Fiche Technique Aquasol 4018</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Aquasol-4018_0.pdf" type="application/pdf; length=613767" title="TD Aquasol 4018.pdf">Technical Data Sheet Aquasol 4018</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=AQUASOL 4018" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-details">
+                        <p>Interflux® QF 70 is an absolutely halide-free, rosin based no-clean solder wire with fast wetting for fast soldering operations in lead-free alloys.<br/>
+                          QF 70 can be used in both hand soldering and auto-mated soldering processes<br/>
+                          RO L0 to IPC and EN standards.<br/>
+                          Halide content 0,00%</p>
                       </div>
-                      <div class="views-row views-row-6 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-lead-free_0.jpg" width="200" height="200" alt="Interflux IF14 series lead-free solder wire"/></div>
-                        <div class="product-name">
-                          <h3>IF 14 SERIES LEAD-FREE</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>ซีรี่ส์ IF 14 ปราศจากสารตะกั่ว</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>ลวดบัดกรีปราศจากสารตะกั่ว</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon27"></div>
-                              <p>สามารถใช้แปรงขจัดคราบตกค้างออกได้</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>ปราศจากสารเฮไลด์</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>ปราศจากยางไม้โดยสิ้นเชิง</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>มีคราบตกค้างน้อย</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 14 ซีรี่ส์คือลวดบัดกรีแบบไม่ต้องทำความสะอาดที่ปราศจากยางไม้ ปราศจากสารเฮไลด์ ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่วและชนิดที่มีสาร SnPb(Ag) ซึ่งสามารถกำจัดคราบตกค้างได้อย่างง่ายดาย</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 14 ซีรี่ส์คือลวดบัดกรีแบบไม่ต้องทำความสะอาดที่ปราศจากยางไม้ ปราศจากสารเฮไลด์ ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่วและชนิดที่มีสาร SnPb(Ag) ซึ่งสามารถกำจัดคราบตกค้างได้อย่างง่ายดาย<br/>
-                            สามารถแปรงขจัดคราบตกค้างออกได้ด้วยมือ<br/>
-                            RE L0 ตามมาตรฐาน EN และ IPC<br/>
-                            ปราศจากสารตะกั่ว: IF 14-16 และ IF 14-22 (ปริมาณฟลักซ์ 1.6% และ 2.2%)<br/>
-                            SnPb(Ag) : ปริมาณฟลักซ์ 0.6%, 0.9%,1.0% และ 1.4%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-14-16-DE_0.pdf" type="application/pdf; length=1726634" title="TD IF 14-16-DE.pdf">Technisches Datenblatt IF 14-16</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-14-22-DE_0.pdf" type="application/pdf; length=1799161" title="TD IF 14-22-DE.pdf">Technisches Datenblatt IF 14-22</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-14-16-FR.pdf" type="application/pdf; length=1797018" title="TD IF 14-16-FR.pdf">Fiche technique IF 14-16</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-14-22-FR.pdf" type="application/pdf; length=1847498" title="TD IF 14-22-FR.pdf">Fiche technique IF 14-22</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-14-16_0.pdf" type="application/pdf; length=1740737" title="TD IF 14-16.pdf">Technical Data Sheet IF 14-16</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-14-22_0.pdf" type="application/pdf; length=1804579" title="TD IF 14-22.pdf">Technical Data Sheet IF 14-22</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF 14 SERIES LEAD-FREE" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-QF-70-DE.pdf" type="application/pdf; length=577835" title="TD QF 70-DE.pdf">Technisches Datenblatt QF70</a>
+                        </span>
                       </div>
-                      <div class="views-row views-row-7 views-row-odd product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-leaded.jpg" width="200" height="200" alt="Interflux IF14 series leaded solder wire"/></div>
-                        <div class="product-name">
-                          <h3>IF14 SERIES SnPb(Ag)</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>IF14 ซีรี่ส์ SnPb(Ag)</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>ลวดบัดกรีชนิดมีสาร SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม
-                              </p>
-                            </li>
-                            <li>
-                              <div class="icon27"></div>
-                              <p>สามารถใช้แปรงขจัดคราบตกค้างออกได้</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>ปราศจากสารเฮไลด์</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>ปราศจากยางไม้</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>มีคราบตกค้างต่ำ</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® IF 14 ซีรี่ส์คือลวดบัดกรีแบบไม่ต้องทำความสะอาดที่ปราศจากยางไม้ ปราศจากสารเฮไลด์ ซึ่งสามารถกำจัดคราบตกค้างได้อย่างง่ายดาย ในรูปแบบโลหะผสมชนิดที่มีสาร SnPb(Ag) และชนิดไร้สารตะกั่ว</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® IF 14 ซีรี่ส์คือลวดบัดกรีแบบไม่ต้องทำความสะอาดที่ปราศจากยางไม้ ปราศจากสารเฮไลด์ ซึ่งสามารถกำจัดคราบตกค้างได้อย่างง่ายดาย ในรูปแบบโลหะผสมชนิดที่มีสาร SnPb(Ag) และชนิดไร้สารตะกั่ว<br/>
-                            สามารถแปรงคราบตกค้างออกได้ด้วยมือ<br/>
-                            RE L0 ตามมาตรฐาน EN และ IPC<br/>
-                            SnPb(Ag) : IF 14-06, IF 14-09, IF 14-10, IF14-14 (ปริมาณฟลักซ์ 0.6%, 0.9%,1.0% และ 1.4%)<br/>
-                            ปราศจากสารตะกั่ว : ปริมาณฟลักซ์ 1.6% และ 2.2%
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-14-06-09-14-DE_0.pdf" type="application/pdf; length=1839549" title="TD IF 14-06-09-14-DE.pdf">Technisches Datenblatt IF 14-06-09-14 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-14-06-09-14-FR.pdf" type="application/pdf; length=1812757" title="TD IF 14-06-09-14-FR.pdf">Fiche technique IF 14-06-09-14 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-14-06-09-14_0.pdf" type="application/pdf; length=1811232" title="TD IF 14-06-09-14.pdf">Technical Data Sheet IF 14-06-09-14 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IF14 SERIES SnPb(Ag)" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-QF-70.pdf" type="application/pdf; length=567824" title="TD QF 70.pdf">Technical Data Sheet QF 70</a>
+                        </span>
                       </div>
-                      <div class="views-row views-row-8 views-row-even views-row-last product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-Flexsol-903.jpg" width="200" height="200" alt="Interflux Flexsol 903 solder wire"/></div>
-                        <div class="product-name">
-                          <h3>FLEXSOL 903</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>ลวดบัดกรีปราศจากสารตะกั่ว</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon14"></div>
-                              <p>มียางสนเป็นองค์ประกอบ</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>ปราศจากสารเฮไลด์</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>การกระเด็นต่ำ</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Flexsol 903 คือลวดบัดกรีแบบไม่ต้องทำความสะอาด ปราศจากสารเฮไลด์พร้อมคุณสมบัติลดการกระเด็น ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่ว
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Flexsol 903 คือลวดบัดกรีแบบไม่ต้องทำความสะอาด ปราศจากสารเฮไลด์พร้อมคุณสมบัติลดการกระเด็น ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่ว<br/>
-                            RO L0 ตามมาตรฐาน EN และ IPC<br/>
-                            ปริมาณฟลักซ์: 2.2% และ 3.5%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Flexsol-903-DE.pdf" type="application/pdf; length=467002" title="TD Flexsol 903-DE.pdf">Technisches Datenblatt Flexsol 903</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Flexsol-903-FR_0.pdf" type="application/pdf; length=470317" title="TD Flexsol 903-FR.pdf">Fiche technique Flexsol 903</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Flexsol-903.pdf" type="application/pdf; length=463843" title="TD Flexsol 903.pdf">Technical Data Sheet Flexsol 903</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=FLEXSOL 903" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=QF 70" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-2 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/NH1-SAC387.png" width="200" height="200" alt="NH1 lead-free solder wire"/></div>
+                      <div class="product-name">
+                        <h3>NH 1</h3>
+                      </div>
+                      <div class="product-highlight">
+                        <h3>NEW</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Increased wetting ability, increased wetting speed</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Low spattering</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Colophony free</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Low transparent residue</p>
+                          </li>
+                          <li>
+                            <div class="icon35"></div>
+                            <p>High repeatability</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Perfect for laser soldering</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>NH 1</strong>
+                          is a no-clean
+                          <strong>colophony free activated solder wire</strong>
+                          that gives fast and repeatable soldering results on a wide range of surfaces including brass, in lead-free alloys.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® NH 1 is a no-clean colophony free activated solder wire that gives fast and repeatable soldering results on a wide range of surfaces including brass, in lead-free alloys.<br/>
+                          NH 1 can be used in both hand soldering and auto-mated soldering processes<br/>
+                          RE L1 to IPC and EN standards.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-NH-1-DE.pdf" type="application/pdf; length=553998" title="TD NH 1-DE.pdf">Technical Data Sheet NH1</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-NH-1.pdf" type="application/pdf; length=562600" title="TD NH 1.pdf">Technical Data Sheet NH 1</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=NH 1" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-3 views-row-odd product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SnPbAg.png" width="200" height="200" alt="RosIX 705 SnPb(Ag)"/></div>
+                      <div class="product-name">
+                        <h3>RosIX 705 SnPb(Ag)</h3>
+                      </div>
+                      <div class="product-highlight">
+                        <h3>NEW</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Increased wetting ability</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Non disturbing smell</p>
+                          </li>
+                          <li>
+                            <div class="icon35"></div>
+                            <p>High repeatability</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Smooth transparent residue</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Suitable for robot soldering</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>RosIX 705 SnPb(Ag)</strong>
+                          is an
+                          <strong>activated rosin based</strong>, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in SnPb(Ag) alloys.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® RosIX 705 SnPb(Ag) is an activated rosin based, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in SnPb(Ag) alloys.<br/>
+                          RosIX 705 SnPb(Ag) can be used on surfaces that are difficult to solder, e.g. OSP, Ni, Zn, brass, German silver,... as well as on degraded and oxidized surfaces.<br/>
+                          RO L1 to IPC and EN standards.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-RosIX-705-SnPbAg-DE.pdf" type="application/pdf; length=1786789" title="TD RosIX 705 SnPb(Ag)-DE.pdf">Technisches Datenblatt RosIX 705 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Rosix-705-SnPbAg-FR.pdf" type="application/pdf; length=1851648" title="TD Rosix 705 SnPb(Ag)-FR.pdf">Fiche technique RosIX 705 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Rosix-705-SnPbAg.pdf" type="application/pdf; length=1904997" title="TD Rosix 705 SnPb(Ag).pdf">Technical Data Sheet RosIX 705 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705 SnPb(Ag)" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-4 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SAC.png" width="200" height="200" alt="RosIX 705"/></div>
+                      <div class="product-name">
+                        <h3>RosIX 705</h3>
+                      </div>
+                      <div class="product-highlight">
+                        <h3>NEW</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Increased wetting ability</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Non disturbing smell</p>
+                          </li>
+                          <li>
+                            <div class="icon35"></div>
+                            <p>High repeatability</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Smooth transparent residue</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Suitable for robot soldering</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>RosIX 705</strong>
+                          is an activated rosin based, no-clean solder wire with
+                          <strong>increased wetting ability
+                          </strong>on surfaces that are difficult to solder in lead-free alloys.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® RosIX 705 is an activated rosin based, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in lead-free alloys.<br/>
+                          RosIX 705 can be used on surfaces that are difficult<br/>
+                          to solder, e.g. OSP, Ni, Zn, brass, German silver, etc.. as well<br/>
+                          as on degraded and oxidized surfaces.<br/>
+                          RO L1 to IPC and EN standards.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-RosIX-705-DE.pdf" type="application/pdf; length=1781865" title="TD RosIX 705-DE.pdf">Technisches Datenblatt RosIX 705</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Rosix-705-FR_0.pdf" type="application/pdf; length=1850021" title="TD Rosix 705-FR.pdf">Fiche Technique RosIX 705</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-RosIX-705.pdf" type="application/pdf; length=1845843" title="TD RosIX 705.pdf">Technical Data Sheet RosIX 705</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-5 views-row-odd product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Aquasol4018_11.jpg" width="200" height="200" alt="Aquasol 4018"/></div>
+                      <div class="product-name">
+                        <h3>AQUASOL 4018</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon17"></div>
+                            <p>ลวดบัดกรีที่ลายละลายน้ำได้</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>ลวดบัดกรีชนิดปราศจากสารตะกั่ว</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>ปราศจากยางไม้</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>ขอบเขตการใช้งานสูง</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Aquasol 4018 คือลวดบัดกรีที่มีขอบเขตการใช้งานสูง ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่ว โดยมีคราบตกค้างที่ละลายน้ำได้</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Aquasol 4018 คือลวดบัดกรีที่มีขอบเขตการใช้งานสูง ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่ว โดยมีคราบตกค้างที่ละลายน้ำได้<br/>
+                          มีความสามารถสูงในการทำให้ตะกั่วชุ่มบนพื้นผิวที่บัดกรีได้ยาก<br/>
+                          จำเป็นต้องทำความสะอาดคราบตกค้าง<br/>
+                          สามารถทำความสะอาดคราบตกค้างได้ด้วยน้ำบริสุทธิ์ที่ปราศจากประจุไฟฟ้า ที่อุณหภูมิ 35°C-45°C (95°F— 114°F)<br/>
+                          OR H1 ตามมาตรฐาน EN และ IPC<br/>
+                          ปริมาณฟลักซ์: 2.5%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Aquasol-4018-DE.pdf" type="application/pdf; length=612173" title="TD Aquasol 4018-DE.pdf">Technisches Datenblatt Aquasol 4018</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Aquasol-4018-FR.pdf" type="application/pdf; length=613595" title="TD Aquasol 4018-FR.pdf">Fiche Technique Aquasol 4018</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Aquasol-4018_0.pdf" type="application/pdf; length=613767" title="TD Aquasol 4018.pdf">Technical Data Sheet Aquasol 4018</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=AQUASOL 4018" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-6 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-lead-free_0.jpg" width="200" height="200" alt="Interflux IF14 series lead-free solder wire"/></div>
+                      <div class="product-name">
+                        <h3>IF 14 SERIES LEAD-FREE</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>ซีรี่ส์ IF 14 ปราศจากสารตะกั่ว</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>ลวดบัดกรีปราศจากสารตะกั่ว</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon27"></div>
+                            <p>สามารถใช้แปรงขจัดคราบตกค้างออกได้</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>ปราศจากสารเฮไลด์</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>ปราศจากยางไม้โดยสิ้นเชิง</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>มีคราบตกค้างน้อย</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 14 ซีรี่ส์คือลวดบัดกรีแบบไม่ต้องทำความสะอาดที่ปราศจากยางไม้ ปราศจากสารเฮไลด์ ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่วและชนิดที่มีสาร SnPb(Ag) ซึ่งสามารถกำจัดคราบตกค้างได้อย่างง่ายดาย</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 14 ซีรี่ส์คือลวดบัดกรีแบบไม่ต้องทำความสะอาดที่ปราศจากยางไม้ ปราศจากสารเฮไลด์ ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่วและชนิดที่มีสาร SnPb(Ag) ซึ่งสามารถกำจัดคราบตกค้างได้อย่างง่ายดาย<br/>
+                          สามารถแปรงขจัดคราบตกค้างออกได้ด้วยมือ<br/>
+                          RE L0 ตามมาตรฐาน EN และ IPC<br/>
+                          ปราศจากสารตะกั่ว: IF 14-16 และ IF 14-22 (ปริมาณฟลักซ์ 1.6% และ 2.2%)<br/>
+                          SnPb(Ag) : ปริมาณฟลักซ์ 0.6%, 0.9%,1.0% และ 1.4%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-14-16-DE_0.pdf" type="application/pdf; length=1726634" title="TD IF 14-16-DE.pdf">Technisches Datenblatt IF 14-16</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-14-22-DE_0.pdf" type="application/pdf; length=1799161" title="TD IF 14-22-DE.pdf">Technisches Datenblatt IF 14-22</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-14-16-FR.pdf" type="application/pdf; length=1797018" title="TD IF 14-16-FR.pdf">Fiche technique IF 14-16</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-14-22-FR.pdf" type="application/pdf; length=1847498" title="TD IF 14-22-FR.pdf">Fiche technique IF 14-22</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-14-16_0.pdf" type="application/pdf; length=1740737" title="TD IF 14-16.pdf">Technical Data Sheet IF 14-16</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-14-22_0.pdf" type="application/pdf; length=1804579" title="TD IF 14-22.pdf">Technical Data Sheet IF 14-22</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF 14 SERIES LEAD-FREE" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-7 views-row-odd product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-leaded.jpg" width="200" height="200" alt="Interflux IF14 series leaded solder wire"/></div>
+                      <div class="product-name">
+                        <h3>IF14 SERIES SnPb(Ag)</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>IF14 ซีรี่ส์ SnPb(Ag)</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>ลวดบัดกรีชนิดมีสาร SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม
+                            </p>
+                          </li>
+                          <li>
+                            <div class="icon27"></div>
+                            <p>สามารถใช้แปรงขจัดคราบตกค้างออกได้</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>ปราศจากสารเฮไลด์</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>ปราศจากยางไม้</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>มีคราบตกค้างต่ำ</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® IF 14 ซีรี่ส์คือลวดบัดกรีแบบไม่ต้องทำความสะอาดที่ปราศจากยางไม้ ปราศจากสารเฮไลด์ ซึ่งสามารถกำจัดคราบตกค้างได้อย่างง่ายดาย ในรูปแบบโลหะผสมชนิดที่มีสาร SnPb(Ag) และชนิดไร้สารตะกั่ว</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® IF 14 ซีรี่ส์คือลวดบัดกรีแบบไม่ต้องทำความสะอาดที่ปราศจากยางไม้ ปราศจากสารเฮไลด์ ซึ่งสามารถกำจัดคราบตกค้างได้อย่างง่ายดาย ในรูปแบบโลหะผสมชนิดที่มีสาร SnPb(Ag) และชนิดไร้สารตะกั่ว<br/>
+                          สามารถแปรงคราบตกค้างออกได้ด้วยมือ<br/>
+                          RE L0 ตามมาตรฐาน EN และ IPC<br/>
+                          SnPb(Ag) : IF 14-06, IF 14-09, IF 14-10, IF14-14 (ปริมาณฟลักซ์ 0.6%, 0.9%,1.0% และ 1.4%)<br/>
+                          ปราศจากสารตะกั่ว : ปริมาณฟลักซ์ 1.6% และ 2.2%
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-14-06-09-14-DE_0.pdf" type="application/pdf; length=1839549" title="TD IF 14-06-09-14-DE.pdf">Technisches Datenblatt IF 14-06-09-14 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-14-06-09-14-FR.pdf" type="application/pdf; length=1812757" title="TD IF 14-06-09-14-FR.pdf">Fiche technique IF 14-06-09-14 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-14-06-09-14_0.pdf" type="application/pdf; length=1811232" title="TD IF 14-06-09-14.pdf">Technical Data Sheet IF 14-06-09-14 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IF14 SERIES SnPb(Ag)" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-8 views-row-even views-row-last product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-Flexsol-903.jpg" width="200" height="200" alt="Interflux Flexsol 903 solder wire"/></div>
+                      <div class="product-name">
+                        <h3>FLEXSOL 903</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>ลวดบัดกรีปราศจากสารตะกั่ว</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon14"></div>
+                            <p>มียางสนเป็นองค์ประกอบ</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>ปราศจากสารเฮไลด์</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>การกระเด็นต่ำ</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Flexsol 903 คือลวดบัดกรีแบบไม่ต้องทำความสะอาด ปราศจากสารเฮไลด์พร้อมคุณสมบัติลดการกระเด็น ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่ว
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Flexsol 903 คือลวดบัดกรีแบบไม่ต้องทำความสะอาด ปราศจากสารเฮไลด์พร้อมคุณสมบัติลดการกระเด็น ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่ว<br/>
+                          RO L0 ตามมาตรฐาน EN และ IPC<br/>
+                          ปริมาณฟลักซ์: 2.2% และ 3.5%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Flexsol-903-DE.pdf" type="application/pdf; length=467002" title="TD Flexsol 903-DE.pdf">Technisches Datenblatt Flexsol 903</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Flexsol-903-FR_0.pdf" type="application/pdf; length=470317" title="TD Flexsol 903-FR.pdf">Fiche technique Flexsol 903</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Flexsol-903.pdf" type="application/pdf; length=463843" title="TD Flexsol 903.pdf">Technical Data Sheet Flexsol 903</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=FLEXSOL 903" target="_blank">Contact us for more info / demo / samples</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-process-views-interflux">
-                <h2 class="pane-title">
-                  <div class="fs30">อุปกรณ์เสริมสำหรับงานปรับปรุงและซ่อมแซม</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_20 product-row-group view-dom-id-9c05172406cdcf0b1a6f09596dc65546">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="views-row views-row-1 views-row-odd views-row-first product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Tip-Tinner.jpg" width="200" height="200" alt="Tip Tinner"/></div>
-                        <div class="product-name">
-                          <h3>TIP TINNER</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>สำหรับกระบวนการที่ใช้โลหะผสมที่มีสาร SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>สำหรับกระบวนการที่ปราศจากสารตะกั่ว</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>ปราศจากสารเฮไลด์</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>ปราศจากยางไม้</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Tip Tinner จะทำความสะอาดและฉาบตะกั่วที่ปลายหัวแร้งอีกครั้ง</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Tip Tinner จะทำความสะอาดและฉาบตะกั่วที่ปลายหัวแร้งอีกครั้ง<br/>
-                            เพื่อเพิ่มอายุการใช้งานให้นานขึ้น<br/>
-                            ปราศจากสารเฮไลด์<br/>
-                            ไม่เกิดการกัดกร่อน</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Tip-Tinner-DE_0.pdf" type="application/pdf; length=381222" title="TD Tip Tinner-DE.pdf">Technisches Datenblatt Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Tip-Tinner-FR_0.pdf" type="application/pdf; length=425441" title="TD Tip Tinner-FR.pdf">Fiche technique Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Tip-Tinner_0.pdf" type="application/pdf; length=418029" title="TD Tip Tinner.pdf">Technical Data Sheet Tip Tinner</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=TIP TINNER" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-process-views-interflux">
+              <h2 class="pane-title">
+                <div class="fs30">อุปกรณ์เสริมสำหรับงานปรับปรุงและซ่อมแซม</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-process-views-interflux- view-id-process_views_interflux_ view-display-id-page_20 product-row-group view-dom-id-623e834af8ab23f1c79d21006fcf76cc">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="views-row views-row-1 views-row-odd views-row-first product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Tip-Tinner.jpg" width="200" height="200" alt="Tip Tinner"/></div>
+                      <div class="product-name">
+                        <h3>TIP TINNER</h3>
                       </div>
-                      <div class="views-row views-row-2 views-row-even product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Purgel.jpg" width="200" height="200" alt="IF Purgel"/></div>
-                        <div class="product-name">
-                          <h3>PURGEL</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon08"></div>
-                              <p>สำหรับการจ่ายแบบบีบ หรือ กดหลอด</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>ได้รับการรับรองสำหรับ MYDATA MY 500</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Purgel คือตัวทำความสะอาด / ตัวปรับสภาพสำหรับปั๊มและวาล์วของระบบหัวจ่าย</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Purgel คือตัวทำความสะอาด / ตัวปรับสภาพสำหรับปั๊มและวาล์วของระบบหัวจ่าย<br/>
-                            สำหรับการดูแลรักษา ระบบหรือ อุปกรณ์จ่ายน้ำยา ในขณะที่ไม่ได้ใช้งาน</p>
-                          <p>MYDATA MY 500 ให้การรับรอง</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Purgel-DE_0.pdf" type="application/pdf; length=371237" title="TD Purgel-DE.pdf">Technisches Datenblatt Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Purgel-FR_0.pdf" type="application/pdf; length=370051" title="TD Purgel-FR.pdf">Fiche technique Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Purgel_0.pdf" type="application/pdf; length=363113" title="TD Purgel.pdf">Technical Data Sheet Purgel</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=PURGEL" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>สำหรับกระบวนการที่ใช้โลหะผสมที่มีสาร SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>สำหรับกระบวนการที่ปราศจากสารตะกั่ว</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>ปราศจากสารเฮไลด์</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>ปราศจากยางไม้</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="views-row views-row-3 views-row-odd product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles.png" width="200" height="200" alt="Solder Grenailles"/></div>
-                        <div class="product-name">
-                          <h3>SOLDER PELLETS</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>ตะกั่ว รูปแบบ เม็ดกลม</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon01"></div>
-                              <p>สำหรับการบัดกรีแบบคลื่นน้ำตะกั่ว</p>
-                            </li>
-                            <li>
-                              <div class="icon02"></div>
-                              <p>สำหรับการบัดกรีเฉพาะส่วน</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
-                            </li>
-                            <li>
-                              <div class="icon05"></div>
-                              <p>สำหรับการฉาบดีบุกก่อนบัดกรี</p>
-                            </li>
-                            <li>
-                              <div class="icon10"></div>
-                              <p>สำหรับการจุ่มชิ้นงาน</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>ตะกั่วรูปแบบเม็ดกลม Interflux® คือชิ้นตะกั่วขนาดเล็กเพื่อสะดวก สำหรับเติมในอ่างตะกั่ว ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่วและ ชนิดที่มีสาร SnPb(Ag)</p>
-                        </div>
-                        <div class="product-details">
-                          <p>ตะกั่วรูปแบบเม็ดกลม Interflux® คือชิ้นตะกั่วขนาดเล็กเพื่อสะดวก สำหรับเติมในอ่างตะกั่ว ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่วและ ชนิดที่มีสาร SnPb(Ag)</p>
-                          <p>ขนาด: 1 ซม. x 1 ซม. โดยประมาณ</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SOLDER PELLETS" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-summary">
+                        <p>Interflux® Tip Tinner จะทำความสะอาดและฉาบตะกั่วที่ปลายหัวแร้งอีกครั้ง</p>
                       </div>
-                      <div class="views-row views-row-4 views-row-even views-row-last product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes-jar.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/></div>
-                        <div class="product-name">
-                          <h3>IPA/DI WIPES</h3>
-                        </div>
-                        <div class="product-name-extra">
-                          <h3>ผ้าเช็ด IPA/ DI</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon30"></div>
-                              <p>ปลอดภัยจาก ESD</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>ผ้าเช็ด IPA / DI แบบเปียก Interflux® ในกล่องฝาเปิดปิดด้านบนและซองเติม สำหรับการทำความสะอาดทั่วไปของพื้นผิวต่างๆ</p>
-                        </div>
-                        <div class="product-details">
-                          <p>ผ้าเช็ด IPA / DI แบบเปียก Interflux® ในกล่องฝาเปิดปิดด้านบนและซองเติม สำหรับการทำความสะอาดทั่วไปของพื้นผิวต่างๆ<br/>
-                            ผ้าใยสังเคราะห์ ไม่มีขน<br/>
-                            ขนาดต่อผืน: 15 x 21 ซม.<br/>
-                            100 ชิ้น/ม้วน
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IPA-DI-wipes-DE.pdf" type="application/pdf; length=430094" title="TD IPA-DI wipes-DE.pdf">Technisches Datenblatt IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IPA-DI-wipes-FR.pdf" type="application/pdf; length=433271" title="TD IPA-DI wipes-FR.pdf">Fiche technique IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IPA-DI-wipes_0.pdf" type="application/pdf; length=425179" title="TD IPA-DI wipes.pdf">Technical Data Sheet IPA/DI wipes</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=IPA/DI WIPES" target="_blank">Contact us for more info / demo / samples</a>
-                        </div>
+                      <div class="product-details">
+                        <p>Interflux® Tip Tinner จะทำความสะอาดและฉาบตะกั่วที่ปลายหัวแร้งอีกครั้ง<br/>
+                          เพื่อเพิ่มอายุการใช้งานให้นานขึ้น<br/>
+                          ปราศจากสารเฮไลด์<br/>
+                          ไม่เกิดการกัดกร่อน</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Tip-Tinner-DE_0.pdf" type="application/pdf; length=381222" title="TD Tip Tinner-DE.pdf">Technisches Datenblatt Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Tip-Tinner-FR_0.pdf" type="application/pdf; length=425441" title="TD Tip Tinner-FR.pdf">Fiche technique Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Tip-Tinner_0.pdf" type="application/pdf; length=418029" title="TD Tip Tinner.pdf">Technical Data Sheet Tip Tinner</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=TIP TINNER" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-2 views-row-even product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_Purgel.jpg" width="200" height="200" alt="IF Purgel"/></div>
+                      <div class="product-name">
+                        <h3>PURGEL</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon08"></div>
+                            <p>สำหรับการจ่ายแบบบีบ หรือ กดหลอด</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>ได้รับการรับรองสำหรับ MYDATA MY 500</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Purgel คือตัวทำความสะอาด / ตัวปรับสภาพสำหรับปั๊มและวาล์วของระบบหัวจ่าย</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Purgel คือตัวทำความสะอาด / ตัวปรับสภาพสำหรับปั๊มและวาล์วของระบบหัวจ่าย<br/>
+                          สำหรับการดูแลรักษา ระบบหรือ อุปกรณ์จ่ายน้ำยา ในขณะที่ไม่ได้ใช้งาน</p>
+                        <p>MYDATA MY 500 ให้การรับรอง</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Purgel-DE_0.pdf" type="application/pdf; length=371237" title="TD Purgel-DE.pdf">Technisches Datenblatt Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Purgel-FR_0.pdf" type="application/pdf; length=370051" title="TD Purgel-FR.pdf">Fiche technique Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Purgel_0.pdf" type="application/pdf; length=363113" title="TD Purgel.pdf">Technical Data Sheet Purgel</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=PURGEL" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-3 views-row-odd product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/grenailles.png" width="200" height="200" alt="Solder Grenailles"/></div>
+                      <div class="product-name">
+                        <h3>SOLDER PELLETS</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>ตะกั่ว รูปแบบ เม็ดกลม</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon01"></div>
+                            <p>สำหรับการบัดกรีแบบคลื่นน้ำตะกั่ว</p>
+                          </li>
+                          <li>
+                            <div class="icon02"></div>
+                            <p>สำหรับการบัดกรีเฉพาะส่วน</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>สำหรับงานปรับปรุงและซ่อมแซม</p>
+                          </li>
+                          <li>
+                            <div class="icon05"></div>
+                            <p>สำหรับการฉาบดีบุกก่อนบัดกรี</p>
+                          </li>
+                          <li>
+                            <div class="icon10"></div>
+                            <p>สำหรับการจุ่มชิ้นงาน</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>ตะกั่วรูปแบบเม็ดกลม Interflux® คือชิ้นตะกั่วขนาดเล็กเพื่อสะดวก สำหรับเติมในอ่างตะกั่ว ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่วและ ชนิดที่มีสาร SnPb(Ag)</p>
+                      </div>
+                      <div class="product-details">
+                        <p>ตะกั่วรูปแบบเม็ดกลม Interflux® คือชิ้นตะกั่วขนาดเล็กเพื่อสะดวก สำหรับเติมในอ่างตะกั่ว ในรูปแบบโลหะผสม ชนิดไร้สารตะกั่วและ ชนิดที่มีสาร SnPb(Ag)</p>
+                        <p>ขนาด: 1 ซม. x 1 ซม. โดยประมาณ</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Lead-free-alloys-DE.pdf" type="application/pdf; length=1102143" title="TD Lead-free alloys-DE.pdf">Technisches Datenblatt Bleifreie Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-SnPbAg-alloys-DE.pdf" type="application/pdf; length=386682" title="TD SnPb(Ag)-alloys-DE.pdf">Technisches Datenblatt SnPb(Ag) Legierungen</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Lead-free-alloys-FR.pdf" type="application/pdf; length=1108289" title="TD Lead-free alloys-FR.pdf">Fiche Technique Alliages sans plomb</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-SnPbAg-alloys-FR.pdf" type="application/pdf; length=391174" title="TD SnPb(Ag)-alloys-FR.pdf">Fiche technique alliages SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Lead-free-alloys.pdf" type="application/pdf; length=1175053" title="TD Lead-free alloys.pdf">Technical Data Sheet Lead-free solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-SnPbAg-alloys_0.pdf" type="application/pdf; length=423778" title="TD SnPb(Ag)-alloys.pdf">Technical Data Sheet SnPb(Ag) solder alloys</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/General-info---lead-free-alloys.pdf" type="application/pdf; length=154170" title="General info - lead free alloys.pdf">Short properties overview</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SOLDER PELLETS" target="_blank">Contact us for more info / demo / samples</a>
+                      </div>
+                    </div>
+                    <div class="views-row views-row-4 views-row-even views-row-last product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes-jar.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/><img typeof="foaf:Image" src="/assets/images/Interflux-IPA-wipes.jpg" width="200" height="200" alt="Interflux IPA-DI wipes"/></div>
+                      <div class="product-name">
+                        <h3>IPA/DI WIPES</h3>
+                      </div>
+                      <div class="product-name-extra">
+                        <h3>ผ้าเช็ด IPA/ DI</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon30"></div>
+                            <p>ปลอดภัยจาก ESD</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>ผ้าเช็ด IPA / DI แบบเปียก Interflux® ในกล่องฝาเปิดปิดด้านบนและซองเติม สำหรับการทำความสะอาดทั่วไปของพื้นผิวต่างๆ</p>
+                      </div>
+                      <div class="product-details">
+                        <p>ผ้าเช็ด IPA / DI แบบเปียก Interflux® ในกล่องฝาเปิดปิดด้านบนและซองเติม สำหรับการทำความสะอาดทั่วไปของพื้นผิวต่างๆ<br/>
+                          ผ้าใยสังเคราะห์ ไม่มีขน<br/>
+                          ขนาดต่อผืน: 15 x 21 ซม.<br/>
+                          100 ชิ้น/ม้วน
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IPA-DI-wipes-DE.pdf" type="application/pdf; length=430094" title="TD IPA-DI wipes-DE.pdf">Technisches Datenblatt IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IPA-DI-wipes-FR.pdf" type="application/pdf; length=433271" title="TD IPA-DI wipes-FR.pdf">Fiche technique IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IPA-DI-wipes_0.pdf" type="application/pdf; length=425179" title="TD IPA-DI wipes.pdf">Technical Data Sheet IPA/DI wipes</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=IPA/DI WIPES" target="_blank">Contact us for more info / demo / samples</a>
                       </div>
                     </div>
                   </div>
@@ -1182,16 +1372,64 @@
             </div>
           </div>
         </div>
-        <div id="block-block-17" class="block block-block library-reference last even">
-          <div class="inner-block">
-            <p>หาผลิตภัณฑ์ไม่พบใช่หรือไม่ หากต้องการดูรายชื่อผลิตภัณฑ์ทั้งหมด โปรดดูคลังข้อมูลของเรา -
-              <a href="/th/documents">เอกสาร</a>
-            </p>
-          </div>
-        </div>
-        <div class="clear"></div>
       </div>
+      <div id="block-block-17" class="block block-block library-reference last even">
+        <div class="inner-block">
+          <p>หาผลิตภัณฑ์ไม่พบใช่หรือไม่ หากต้องการดูรายชื่อผลิตภัณฑ์ทั้งหมด โปรดดูคลังข้อมูลของเรา -
+            <a href="/th/documents">เอกสาร</a>
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
-  {% include "partials/footer.njk" %}
+  <div class="region region-footer2">
+    <div class="inner-region">
+      <div id="block-block-18" class="block block-block first last odd">
+        <div class="inner-block">
+          <div class="block grid-12" id="F1">
+            <div class="inner-block">
+              <div class="inner-content">
+                <a href="/en/contact" target="_self" title="Go to the contact page for more information"><img src="/assets/images/Interflux-Electronics-headquarters-belgium.jpg" width="171" height="271" alt="Interflux Electronics Belgium office building"/></a>
+                <div class="contact-title">
+                  <span>ติดต่อสำนักงานใหญ่อินเตอร์ฟลักซ์</span>
+                </div>
+                <div class="contact-adress">
+                  <p>
+                    Interflux Electronics NV<br/>
+                    Gent zeehaven 3170A<br/>
+                    Eddastraat 51<br/>
+                    9042 Gent<br/>
+                    BELGIUM</p>
+                  <p>Tel.: +32 9251 4959<br/>
+                    Fax: +32 9251 4970<br/>
+                    <a href="mailto:info@interflux.com" target="_blank">info@interflux.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-12" id="F2">
+            <div class="inner-block">
+              <div class="inner-content">
+                <div class="contact-title">
+                  <span>ติดต่ออินเตอร์ฟลักซ์ทั่วโลก</span>
+                </div>
+                <p>
+                  <a href="/en/contact" target="_self" title="Go to the contact page for more information"><img src="/assets/images/interflux-worldwide-map.jpg" width="446" height="196" alt="Geographical map of the Interflux group"/></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-24" id="F3">
+            <div class="copyright">©2012 สงวนลิขสิทธิ์โดยอินเตอร์ฟลักซ์</div>
+            <div class="louder-than-words">จัดทำเว็บไซต์โดยแอลทีดับบลิว
+              <a href="http://nabu.io" target="_new" title="NABU websites">NABU websites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
 {% endblock %}

@@ -8,566 +8,756 @@
 {% block bodyClass %}html not-front not-logged-in no-sidebars page-solder-wires page-products i18n-pt-pt section-solder-wires page-panels
 {% endblock %}
 {% block page %}
-  {% include "partials/highlight.njk" %}
+  <div class="region region-language">
+    <div class="inner-region">
+      <div id="block-locale-language" class="block block-locale language-menu block grid-24 first last odd" role="complementary">
+        <div class="inner-block">
+          <ul class="language-switcher-locale-url">
+            <li class="en first">
+              <a href="/en/solder-wires" class="language-link" lang="en" title="Solder wires">
+                <div class="flag en"></div>English</a>
+            </li>
+            <li class="zh-hans">
+              <a href="/zh-hans/solder-wires" class="language-link" lang="zh-hans" title="锡线">
+                <div class="flag zh-hans"></div>简体中文</a>
+            </li>
+            <li class="cs">
+              <a href="/cs/solder-wires" class="language-link" lang="cs" title="Pájecí dráty">
+                <div class="flag cs"></div>Čeština</a>
+            </li>
+            <li class="de">
+              <a href="/de/solder-wires" class="language-link" lang="de" title="Lötdraht">
+                <div class="flag de"></div>Deutsch</a>
+            </li>
+            <li class="fr">
+              <a href="/fr/solder-wires" class="language-link" lang="fr" title="Fils à braser">
+                <div class="flag fr"></div>Français</a>
+            </li>
+            <li class="it">
+              <a href="/it/solder-wires" class="language-link" lang="it" title="Fili per saldatura">
+                <div class="flag it"></div>Italiano</a>
+            </li>
+            <li class="id">
+              <a href="/id/solder-wires" class="language-link" lang="id" title="Timah solder">
+                <div class="flag id"></div>Bahasa Indonesia</a>
+            </li>
+            <li class="pt-pt active">
+              <a href="/pt-pt/solder-wires" class="language-link active" lang="pt-pt" title="Fios da solda">
+                <div class="flag pt-pt"></div>Português</a>
+            </li>
+            <li class="ro">
+              <a href="/ro/solder-wires" class="language-link" lang="ro" title="Sarma de lipit">
+                <div class="flag ro"></div>Română</a>
+            </li>
+            <li class="ru">
+              <a href="/ru/solder-wires" class="language-link" lang="ru" title="Проволочный припой">
+                <div class="flag ru"></div>Русский</a>
+            </li>
+            <li class="th">
+              <a href="/th/solder-wires" class="language-link" lang="th" title="ลวดบัดกรี">
+                <div class="flag th"></div>ภาษาไทย</a>
+            </li>
+            <li class="tr">
+              <a href="/tr/solder-wires" class="language-link" lang="tr">
+                <div class="flag tr"></div>Türkçe</a>
+            </li>
+            <li class="pl">
+              <a href="/pl/solder-wires" class="language-link" lang="pl" title="Druty lutownicze">
+                <div class="flag pl"></div>Polski</a>
+            </li>
+            <li class="es">
+              <a href="/es/solder-wires" class="language-link" lang="es" title="Hilo de soldadura">
+                <div class="flag es"></div>Español</a>
+            </li>
+            <li class="sv last">
+              <a href="/sv/solder-wires" class="language-link" lang="sv" title="Lödtråd">
+                <div class="flag sv"></div>Svenska</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-header">
+    <div class="inner-region">
+      <div id="block-block-11" class="block block-block grid-9 first odd">
+        <div class="inner-block">
+          <p>
+            <a href="/pt-pt/" title="Interflux Electronics" target="_self"><img src="/assets/images/interflux-electronics-logo.png" width="343" height="87" alt="Logotipo da Interflux Electronics"/></a>
+          </p>
+        </div>
+      </div>
+      <div id="block-menu-menu-interflux-menu" class="block block-menu grid-15 header-nav last even" role="navigation">
+        <div class="inner-block">
+          <ul class="menu">
+            <li class="first expanded active-trail">
+              <a href="/pt-pt" title="Buscar produtos por tipo" class="active-trail">Produtos</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/pt-pt/soldering-fluxes" title="">Fluxos de soldadura</a>
+                </li>
+                <li class="leaf">
+                  <a href="/pt-pt/solder-pastes" title="">Pastas de solda</a>
+                </li>
+                <li class="leaf active-trail">
+                  <a href="/pt-pt/solder-wires" title="" class="active-trail active">Fios da solda</a>
+                </li>
+                <li class="leaf">
+                  <a href="/pt-pt/spray-fluxers" title="">Spray fluxers</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/pt-pt/auxiliaries" title="">Acessórios</a>
+                </li>
+              </ul>
+            </li>
+            <li class="expanded">
+              <a href="/pt-pt" title="Buscar produtos pelo processo">Processos</a>
+              <ul class="menu">
+                <li class="first leaf">
+                  <a href="/pt-pt/wave-soldering" title="">Soldagem por onda</a>
+                </li>
+                <li class="leaf">
+                  <a href="/pt-pt/selective-soldering" title="">Soldagem selectiva</a>
+                </li>
+                <li class="leaf">
+                  <a href="/pt-pt/reflow-soldering" title="">Soldadura refusão</a>
+                </li>
+                <li class="leaf">
+                  <a href="/pt-pt/rework-and-repair" title="">Retrabalho e Reparação</a>
+                </li>
+                <li class="last leaf">
+                  <a href="/pt-pt/pre-tinning" title="">Pré-estanhagem</a>
+                </li>
+              </ul>
+            </li>
+            <li class="leaf">
+              <a href="/pt-pt/company" title="Saiba mais sobre Interflux">Empresa</a>
+            </li>
+            <li class="leaf">
+              <a href="/pt-pt/documents" title="Encontrar dados técnicos">Documentos</a>
+            </li>
+            <li class="last leaf">
+              <a href="/pt-pt/contact" title="Entre em contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="region region-highlight">
+    <div class="inner-region">
+      <div id="banners">
+        <div class="preload"></div>
+        <div class="stage">
+          <article id="ipc-apex-2017">
+            <a href="http://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
+              <picture>
+                <source srcset="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg 2x, http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018.jpg 1x"></source>
+                <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/banner-ipc-apex-2018@2x.jpg" alt="Visit use at IPC APEX 2018 in San Diego"/>
+              </picture>
+            </a>
+          </article>
+          <article id="productronica-2017">
+            <a href="http://www.productronica.com/" target="_blank" title="Visit us at Productronica 2017">
+              <img src="http://www.interflux.com/sites/all/themes/zen_interflux/images/productronica-banner-2017.jpg"/>
+            </a>
+          </article>
+          <article id="lmpa">
+            <a href="https://lmpa.interflux.com" target="_blank">
+              <h1>Solder
+                <strong>5 times</strong>
+                faster whilst maintaining
+                <strong>zero defects</strong>
+              </h1>
+              <h1>Discover
+                <mark>LMPA<span>™</span>
+                </mark>
+              </h1>
+              <div id="video">
+                <video id="movie" width="276" height="220" autoplay loop>
+                  <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
+                  Your browser doesn't support HTML5 video tag.
+                </video>
+                <script></script>
+                <p>Speed: 30 mm/s</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <nav>
+          <div id="prev">
+            <div></div>
+          </div>
+          <div id="next">
+            <div></div>
+          </div>
+          <div id="timer">
+            <div></div>
+          </div>
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
   <div class="region region-corpus">
     <div class="inner-region">
-      <div class="inner-region">
-        <div class="panel-display panel-1col clearfix">
-          <div class="panel-panel panel-col">
-            <div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs18">Fios da solda</div>
-                  <div class="fs30">lead-free</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_1 product-row-group view-dom-id-3b5e551a936cd124ec96970c7f982637">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_QF70-Pb-free.jpg" width="200" height="200" alt="QF 70 Pb-free"/></div>
-                        <div class="product-name">
-                          <h3>QF 70</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NEW</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon32"></div>
-                              <p>Increased wetting speed</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Transparent residue</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolutely halide-free</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>QF 70</strong>
-                            is an absolutely halide-free, rosin based no-clean solder wire with
-                            <strong>fast wetting for fast soldering</strong>
-                            operations in lead-free alloys.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® QF 70 is an absolutely halide-free, rosin based no-clean solder wire with fast wetting for fast soldering operations in lead-free alloys.<br/>
-                            QF 70 can be used in both hand soldering and auto-mated soldering processes<br/>
-                            RO L0 to IPC and EN standards.<br/>
-                            Halide content 0,00%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-QF-70-DE.pdf" type="application/pdf; length=577835" title="TD QF 70-DE.pdf">Technisches Datenblatt QF70</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-QF-70.pdf" type="application/pdf; length=567824" title="TD QF 70.pdf">Technical Data Sheet QF 70</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=QF 70" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/pt-pt/1407" title="QF 70" class="nid">1407</a>
+      <div class="panel-display panel-1col clearfix">
+        <div class="panel-panel panel-col">
+          <div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs18">Fios da solda</div>
+                <div class="fs30">lead-free</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_1 product-row-group view-dom-id-5b185e64c3517b720f296d1d34dfefaf">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/CLP_QF70-Pb-free.jpg" width="200" height="200" alt="QF 70 Pb-free"/></div>
+                      <div class="product-name">
+                        <h3>QF 70</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/NH1-SAC387.png" width="200" height="200" alt="NH1 lead-free solder wire"/></div>
-                        <div class="product-name">
-                          <h3>NH 1</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NEW</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Increased wetting ability, increased wetting speed</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Low spattering</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Colophony free</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Low transparent residue</p>
-                            </li>
-                            <li>
-                              <div class="icon35"></div>
-                              <p>High repeatability</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Perfect for laser soldering</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>NH 1</strong>
-                            is a no-clean
-                            <strong>colophony free activated solder wire</strong>
-                            that gives fast and repeatable soldering results on a wide range of surfaces including brass, in lead-free alloys.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® NH 1 is a no-clean colophony free activated solder wire that gives fast and repeatable soldering results on a wide range of surfaces including brass, in lead-free alloys.<br/>
-                            NH 1 can be used in both hand soldering and auto-mated soldering processes<br/>
-                            RE L1 to IPC and EN standards.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-NH-1-DE.pdf" type="application/pdf; length=553998" title="TD NH 1-DE.pdf">Technical Data Sheet NH1</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-NH-1.pdf" type="application/pdf; length=562600" title="TD NH 1.pdf">Technical Data Sheet NH 1</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=NH 1" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/pt-pt/1395" title="NH 1" class="nid">1395</a>
+                      <div class="product-highlight">
+                        <h3>NEW</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SAC.png" width="200" height="200" alt="RosIX 705"/></div>
-                        <div class="product-name">
-                          <h3>RosIX 705</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NEW</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Increased wetting ability</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Non disturbing smell</p>
-                            </li>
-                            <li>
-                              <div class="icon35"></div>
-                              <p>High repeatability</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Smooth transparent residue</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Perfect for laser soldering</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>RosIX 705</strong>
-                            is an activated rosin based, no-clean solder wire with
-                            <strong>increased wetting ability
-                            </strong>on surfaces that are difficult to solder in lead-free alloys.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® RosIX 705 is an activated rosin based, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in lead-free alloys.<br/>
-                            RosIX 705 can be used on surfaces that are difficult<br/>
-                            to solder, e.g. OSP, Ni, Zn, brass, German silver, etc.. as well<br/>
-                            as on degraded and oxidized surfaces.<br/>
-                            RO L1 to IPC and EN standards.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-RosIX-705-DE.pdf" type="application/pdf; length=1781865" title="TD RosIX 705-DE.pdf">Technisches Datenblatt RosIX 705</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Rosix-705-FR_0.pdf" type="application/pdf; length=1850021" title="TD Rosix 705-FR.pdf">Fiche Technique RosIX 705</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-RosIX-705.pdf" type="application/pdf; length=1845843" title="TD RosIX 705.pdf">Technical Data Sheet RosIX 705</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/pt-pt/1431" title="RosIX 705" class="nid">1431</a>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon32"></div>
+                            <p>Increased wetting speed</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Transparent residue</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolutely halide-free</p>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Aquasol4018_7.jpg" width="200" height="200" alt="Aquasol 4018"/></div>
-                        <div class="product-name">
-                          <h3>AQUASOL 4018</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon17"></div>
-                              <p>Fio da solda hidrossolúvel</p>
-                            </li>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Fio da solda Lead-free</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Para retrabalho e reparação</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Absolutamente isento de halogênio</p>
-                            </li>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Actividade alta</p>
-                            </li>
-                            <p></p>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux® Aquasol 4018 é um fio de solda de alta atividade com
-                            <strong>
-                              resíduos solúveis em água  strong> em ligas sem chumbo.</strong>
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® Aquasol 4018 é um fio de solda de alta atividade com
-                            <strong>
-                              resíduos solúveis em água
-                            </strong>
-                            em ligas sem chumbo.<br/>
-                            Muito boa capacidade molhante em superfícies com baixa capacidade de solda.<br/>
-                            Resíduos devem ser limpada.<br/>
-                            Resíduos podem ser limpos com água DI a 35°C-45°C (95°F— 114°F)<br/>
-                            OR H1 as normas EN e IPC<br/>
-                            Conteúdo de fluxo: 2.5%
-                          </p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Aquasol-4018-DE.pdf" type="application/pdf; length=612173" title="TD Aquasol 4018-DE.pdf">Technisches Datenblatt Aquasol 4018</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Aquasol-4018-FR.pdf" type="application/pdf; length=613595" title="TD Aquasol 4018-FR.pdf">Fiche Technique Aquasol 4018</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Aquasol-4018_0.pdf" type="application/pdf; length=613767" title="TD Aquasol 4018.pdf">Technical Data Sheet Aquasol 4018</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=AQUASOL 4018" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/pt-pt/859" title="AQUASOL 4018" class="nid">859</a>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>QF 70</strong>
+                          is an absolutely halide-free, rosin based no-clean solder wire with
+                          <strong>fast wetting for fast soldering</strong>
+                          operations in lead-free alloys.
+                        </p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-lead-free_0.jpg" width="200" height="200" alt="Interflux IF14 series lead-free solder wire"/></div>
-                        <div class="product-name">
-                          <h3>SÉRIE IF 14 LEAD-FREE</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Fio da solda Lead-free</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Para retrabalho e reparação</p>
-                            </li>
-                            <li>
-                              <div class="icon27"></div>
-                              <p>Resíduos escovados à mão</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolutamente isento de halogênio</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Absolutamente isento de colofônia</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Baixo resíduo</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>série IF 14
-                            </strong>
-                            são fios da solda no-clean, livre de colofônia e absolutamente livre de halogênio, com resíduo fácil de remover em ligas Lead-free e SnPb(Ag).</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® série IF 14 são fios da solda no-clean, livre de colofônia e absolutamente livre de halogênio, com resíduo fácil de remover em ligas Lead-free e SnPb(Ag).<br/>
-                            Resíduos escovados à mão<br/>
-                            RE L0 as normas EN e IPC<br/>
-                            Lead-free : IF 14-16 e IF 14-22 (1,6% e 2,2% de conteúdo de fluxo)<br/>
-                            SnPb(Ag) : 0,6%, 0,9%,1,0% e 1,4% de conteúdo de fluxo</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-14-16-DE_0.pdf" type="application/pdf; length=1726634" title="TD IF 14-16-DE.pdf">Technisches Datenblatt IF 14-16</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-14-22-DE_0.pdf" type="application/pdf; length=1799161" title="TD IF 14-22-DE.pdf">Technisches Datenblatt IF 14-22</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-14-16-FR.pdf" type="application/pdf; length=1797018" title="TD IF 14-16-FR.pdf">Fiche technique IF 14-16</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-14-22-FR.pdf" type="application/pdf; length=1847498" title="TD IF 14-22-FR.pdf">Fiche technique IF 14-22</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-14-16_0.pdf" type="application/pdf; length=1740737" title="TD IF 14-16.pdf">Technical Data Sheet IF 14-16</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-14-22_0.pdf" type="application/pdf; length=1804579" title="TD IF 14-22.pdf">Technical Data Sheet IF 14-22</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SÉRIE IF 14 LEAD-FREE" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/pt-pt/191" title="SÉRIE IF 14 LEAD-FREE" class="nid">191</a>
+                      <div class="product-details">
+                        <p>Interflux® QF 70 is an absolutely halide-free, rosin based no-clean solder wire with fast wetting for fast soldering operations in lead-free alloys.<br/>
+                          QF 70 can be used in both hand soldering and auto-mated soldering processes<br/>
+                          RO L0 to IPC and EN standards.<br/>
+                          Halide content 0,00%</p>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-Flexsol-903.jpg" width="200" height="200" alt="Interflux Flexsol 903 solder wire"/></div>
-                        <div class="product-name">
-                          <h3>FLEXSOL 903</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon16"></div>
-                              <p>Fio da solda Lead-free</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Para retrabalho e reparação</p>
-                            </li>
-                            <li>
-                              <div class="icon14"></div>
-                              <p>Contém colofônia</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolutamente isento de halogênio</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Com respingos reduzidas</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>Flexsol 903</strong>
-                            é um fio da solda no-clean,absolutamente livre de halogênio com respingos reduzidas em ligas Lead-free.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux®
-                            <strong>Flexsol 903</strong>
-                            é um fio da solda no-clean,absolutamente livre de halogênio com respingos reduzidas em ligas Lead-free.<br/>
-                            RO L0 as normas EN e IPC<br/>
-                            Conteúdo de fluxo: 2,2% e 3,5%</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-Flexsol-903-DE.pdf" type="application/pdf; length=467002" title="TD Flexsol 903-DE.pdf">Technisches Datenblatt Flexsol 903</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Flexsol-903-FR_0.pdf" type="application/pdf; length=470317" title="TD Flexsol 903-FR.pdf">Fiche technique Flexsol 903</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Flexsol-903.pdf" type="application/pdf; length=463843" title="TD Flexsol 903.pdf">Technical Data Sheet Flexsol 903</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=FLEXSOL 903" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/pt-pt/192" title="FLEXSOL 903" class="nid">192</a>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-QF-70-DE.pdf" type="application/pdf; length=577835" title="TD QF 70-DE.pdf">Technisches Datenblatt QF70</a>
+                        </span>
                       </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-QF-70.pdf" type="application/pdf; length=567824" title="TD QF 70.pdf">Technical Data Sheet QF 70</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=QF 70" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/pt-pt/1407" title="QF 70" class="nid">1407</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/NH1-SAC387.png" width="200" height="200" alt="NH1 lead-free solder wire"/></div>
+                      <div class="product-name">
+                        <h3>NH 1</h3>
+                      </div>
+                      <div class="product-highlight">
+                        <h3>NEW</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Increased wetting ability, increased wetting speed</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Low spattering</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Colophony free</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Low transparent residue</p>
+                          </li>
+                          <li>
+                            <div class="icon35"></div>
+                            <p>High repeatability</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Perfect for laser soldering</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>NH 1</strong>
+                          is a no-clean
+                          <strong>colophony free activated solder wire</strong>
+                          that gives fast and repeatable soldering results on a wide range of surfaces including brass, in lead-free alloys.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® NH 1 is a no-clean colophony free activated solder wire that gives fast and repeatable soldering results on a wide range of surfaces including brass, in lead-free alloys.<br/>
+                          NH 1 can be used in both hand soldering and auto-mated soldering processes<br/>
+                          RE L1 to IPC and EN standards.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-NH-1-DE.pdf" type="application/pdf; length=553998" title="TD NH 1-DE.pdf">Technical Data Sheet NH1</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-NH-1.pdf" type="application/pdf; length=562600" title="TD NH 1.pdf">Technical Data Sheet NH 1</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=NH 1" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/pt-pt/1395" title="NH 1" class="nid">1395</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SAC.png" width="200" height="200" alt="RosIX 705"/></div>
+                      <div class="product-name">
+                        <h3>RosIX 705</h3>
+                      </div>
+                      <div class="product-highlight">
+                        <h3>NEW</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Increased wetting ability</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Non disturbing smell</p>
+                          </li>
+                          <li>
+                            <div class="icon35"></div>
+                            <p>High repeatability</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Smooth transparent residue</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Perfect for laser soldering</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>RosIX 705</strong>
+                          is an activated rosin based, no-clean solder wire with
+                          <strong>increased wetting ability
+                          </strong>on surfaces that are difficult to solder in lead-free alloys.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® RosIX 705 is an activated rosin based, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in lead-free alloys.<br/>
+                          RosIX 705 can be used on surfaces that are difficult<br/>
+                          to solder, e.g. OSP, Ni, Zn, brass, German silver, etc.. as well<br/>
+                          as on degraded and oxidized surfaces.<br/>
+                          RO L1 to IPC and EN standards.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-RosIX-705-DE.pdf" type="application/pdf; length=1781865" title="TD RosIX 705-DE.pdf">Technisches Datenblatt RosIX 705</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Rosix-705-FR_0.pdf" type="application/pdf; length=1850021" title="TD Rosix 705-FR.pdf">Fiche Technique RosIX 705</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-RosIX-705.pdf" type="application/pdf; length=1845843" title="TD RosIX 705.pdf">Technical Data Sheet RosIX 705</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/pt-pt/1431" title="RosIX 705" class="nid">1431</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Aquasol4018_7.jpg" width="200" height="200" alt="Aquasol 4018"/></div>
+                      <div class="product-name">
+                        <h3>AQUASOL 4018</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon17"></div>
+                            <p>Fio da solda hidrossolúvel</p>
+                          </li>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Fio da solda Lead-free</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Para retrabalho e reparação</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Absolutamente isento de halogênio</p>
+                          </li>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Actividade alta</p>
+                          </li>
+                          <p></p>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux® Aquasol 4018 é um fio de solda de alta atividade com
+                          <strong>
+                            resíduos solúveis em água  strong> em ligas sem chumbo.</strong>
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® Aquasol 4018 é um fio de solda de alta atividade com
+                          <strong>
+                            resíduos solúveis em água
+                          </strong>
+                          em ligas sem chumbo.<br/>
+                          Muito boa capacidade molhante em superfícies com baixa capacidade de solda.<br/>
+                          Resíduos devem ser limpada.<br/>
+                          Resíduos podem ser limpos com água DI a 35°C-45°C (95°F— 114°F)<br/>
+                          OR H1 as normas EN e IPC<br/>
+                          Conteúdo de fluxo: 2.5%
+                        </p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Aquasol-4018-DE.pdf" type="application/pdf; length=612173" title="TD Aquasol 4018-DE.pdf">Technisches Datenblatt Aquasol 4018</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Aquasol-4018-FR.pdf" type="application/pdf; length=613595" title="TD Aquasol 4018-FR.pdf">Fiche Technique Aquasol 4018</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Aquasol-4018_0.pdf" type="application/pdf; length=613767" title="TD Aquasol 4018.pdf">Technical Data Sheet Aquasol 4018</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=AQUASOL 4018" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/pt-pt/859" title="AQUASOL 4018" class="nid">859</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-lead-free_0.jpg" width="200" height="200" alt="Interflux IF14 series lead-free solder wire"/></div>
+                      <div class="product-name">
+                        <h3>SÉRIE IF 14 LEAD-FREE</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Fio da solda Lead-free</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Para retrabalho e reparação</p>
+                          </li>
+                          <li>
+                            <div class="icon27"></div>
+                            <p>Resíduos escovados à mão</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolutamente isento de halogênio</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Absolutamente isento de colofônia</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Baixo resíduo</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>série IF 14
+                          </strong>
+                          são fios da solda no-clean, livre de colofônia e absolutamente livre de halogênio, com resíduo fácil de remover em ligas Lead-free e SnPb(Ag).</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® série IF 14 são fios da solda no-clean, livre de colofônia e absolutamente livre de halogênio, com resíduo fácil de remover em ligas Lead-free e SnPb(Ag).<br/>
+                          Resíduos escovados à mão<br/>
+                          RE L0 as normas EN e IPC<br/>
+                          Lead-free : IF 14-16 e IF 14-22 (1,6% e 2,2% de conteúdo de fluxo)<br/>
+                          SnPb(Ag) : 0,6%, 0,9%,1,0% e 1,4% de conteúdo de fluxo</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-14-16-DE_0.pdf" type="application/pdf; length=1726634" title="TD IF 14-16-DE.pdf">Technisches Datenblatt IF 14-16</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-14-22-DE_0.pdf" type="application/pdf; length=1799161" title="TD IF 14-22-DE.pdf">Technisches Datenblatt IF 14-22</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-14-16-FR.pdf" type="application/pdf; length=1797018" title="TD IF 14-16-FR.pdf">Fiche technique IF 14-16</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-14-22-FR.pdf" type="application/pdf; length=1847498" title="TD IF 14-22-FR.pdf">Fiche technique IF 14-22</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-14-16_0.pdf" type="application/pdf; length=1740737" title="TD IF 14-16.pdf">Technical Data Sheet IF 14-16</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-14-22_0.pdf" type="application/pdf; length=1804579" title="TD IF 14-22.pdf">Technical Data Sheet IF 14-22</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SÉRIE IF 14 LEAD-FREE" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/pt-pt/191" title="SÉRIE IF 14 LEAD-FREE" class="nid">191</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-Flexsol-903.jpg" width="200" height="200" alt="Interflux Flexsol 903 solder wire"/></div>
+                      <div class="product-name">
+                        <h3>FLEXSOL 903</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon16"></div>
+                            <p>Fio da solda Lead-free</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Para retrabalho e reparação</p>
+                          </li>
+                          <li>
+                            <div class="icon14"></div>
+                            <p>Contém colofônia</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolutamente isento de halogênio</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Com respingos reduzidas</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>Flexsol 903</strong>
+                          é um fio da solda no-clean,absolutamente livre de halogênio com respingos reduzidas em ligas Lead-free.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux®
+                          <strong>Flexsol 903</strong>
+                          é um fio da solda no-clean,absolutamente livre de halogênio com respingos reduzidas em ligas Lead-free.<br/>
+                          RO L0 as normas EN e IPC<br/>
+                          Conteúdo de fluxo: 2,2% e 3,5%</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-Flexsol-903-DE.pdf" type="application/pdf; length=467002" title="TD Flexsol 903-DE.pdf">Technisches Datenblatt Flexsol 903</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Flexsol-903-FR_0.pdf" type="application/pdf; length=470317" title="TD Flexsol 903-FR.pdf">Fiche technique Flexsol 903</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Flexsol-903.pdf" type="application/pdf; length=463843" title="TD Flexsol 903.pdf">Technical Data Sheet Flexsol 903</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=FLEXSOL 903" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/pt-pt/192" title="FLEXSOL 903" class="nid">192</a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="panel-separator"></div>
-              <div class="panel-pane pane-views pane-selective-soldering">
-                <h2 class="pane-title">
-                  <div class="fs18">Fios da solda</div>
-                  <div class="fs30 nc">SnPb</div>
-                </h2>
-                <div class="pane-content">
-                  <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_2 product-row-group view-dom-id-a1643b876c3c35b6f6fb4b17d966fbf3">
-                    <div class="bg-left"></div>
-                    <div class="bg-top"></div>
-                    <div class="bg-bottom"></div>
-                    <div class="view-content">
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SnPbAg.png" width="200" height="200" alt="RosIX 705 SnPb(Ag)"/></div>
-                        <div class="product-name">
-                          <h3>RosIX 705 SnPb(Ag)</h3>
-                        </div>
-                        <div class="product-highlight">
-                          <h3>NEW</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon21"></div>
-                              <p>Increased wetting ability</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Non disturbing smell</p>
-                            </li>
-                            <li>
-                              <div class="icon35"></div>
-                              <p>High repeatability</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Smooth transparent residue</p>
-                            </li>
-                            <li>
-                              <div class="icon00"></div>
-                              <p>Suitable for robot soldering</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>RosIX 705 SnPb(Ag)</strong>
-                            is an
-                            <strong>activated rosin based</strong>, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in SnPb(Ag) alloys.
-                          </p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux® RosIX 705 SnPb(Ag) is an activated rosin based, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in SnPb(Ag) alloys.<br/>
-                            RosIX 705 SnPb(Ag) can be used on surfaces that are difficult to solder, e.g. OSP, Ni, Zn, brass, German silver,... as well as on degraded and oxidized surfaces.<br/>
-                            RO L1 to IPC and EN standards.</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-RosIX-705-SnPbAg-DE.pdf" type="application/pdf; length=1786789" title="TD RosIX 705 SnPb(Ag)-DE.pdf">Technisches Datenblatt RosIX 705 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-Rosix-705-SnPbAg-FR.pdf" type="application/pdf; length=1851648" title="TD Rosix 705 SnPb(Ag)-FR.pdf">Fiche technique RosIX 705 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-Rosix-705-SnPbAg.pdf" type="application/pdf; length=1904997" title="TD Rosix 705 SnPb(Ag).pdf">Technical Data Sheet RosIX 705 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705 SnPb(Ag)" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/pt-pt/1419" title="RosIX 705 SnPb(Ag)" class="nid">1419</a>
+            </div>
+            <div class="panel-separator"></div>
+            <div class="panel-pane pane-views pane-selective-soldering">
+              <h2 class="pane-title">
+                <div class="fs18">Fios da solda</div>
+                <div class="fs30 nc">SnPb</div>
+              </h2>
+              <div class="pane-content">
+                <div class="view view-selective-soldering view-id-selective_soldering view-display-id-page_2 product-row-group view-dom-id-d323d3213b8a9a433d4be259fb87ede1">
+                  <div class="bg-left"></div>
+                  <div class="bg-top"></div>
+                  <div class="bg-bottom"></div>
+                  <div class="view-content">
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/RosIX-705-SnPbAg.png" width="200" height="200" alt="RosIX 705 SnPb(Ag)"/></div>
+                      <div class="product-name">
+                        <h3>RosIX 705 SnPb(Ag)</h3>
                       </div>
-                      <div class="product-row">
-                        <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-leaded.jpg" width="200" height="200" alt="Interflux IF14 series leaded solder wire"/></div>
-                        <div class="product-name">
-                          <h3>SÉRIE IF 14 SnPb(Ag)</h3>
-                        </div>
-                        <div class="product-features">
-                          <ul>
-                            <li>
-                              <div class="icon15"></div>
-                              <p>Fio da solda SnPb(Ag)</p>
-                            </li>
-                            <li>
-                              <div class="icon04"></div>
-                              <p>Para retrabalho e reparação</p>
-                            </li>
-                            <li>
-                              <div class="icon27"></div>
-                              <p>Resíduos escovados à mão</p>
-                            </li>
-                            <li>
-                              <div class="icon18"></div>
-                              <p>Absolutamente isento de halogênio</p>
-                            </li>
-                            <li>
-                              <div class="icon26"></div>
-                              <p>Absolutamente isento de colofônia</p>
-                            </li>
-                            <li>
-                              <div class="icon20"></div>
-                              <p>Baixo resíduo</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="product-summary">
-                          <p>Interflux®
-                            <strong>série IF 14
-                            </strong>
-                            são fios da solda no-clean, livre de colofônia e absolutamente livre de halogênio, com resíduo fácil de remover em ligas SnPb(Ag) e Lead-free.</p>
-                        </div>
-                        <div class="product-details">
-                          <p>Interflux®  série IF 14 são fios da solda no-clean, livre de colofônia e absolutamente livre de halogênio, com resíduo fácil de remover em ligas SnPb(Ag) e Lead-free.<br/>
-                            Resíduos escovados à mão<br/>
-                            RE L0 as normas EN e IPC<br/>
-                            SnPb(Ag) : IF 14-06, IF 14-09, IF 14-10, IF14-14 (0,6%, 0,9%,1,0% e 1,4% de conteúdo de fluxo)<br/>
-                            Lead-free : IF 14-16 e IF 14-22 de conteúdo de fluxo</p>
-                        </div>
-                        <div class="product-document-link de">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/de/TD-IF-14-06-09-14-DE_0.pdf" type="application/pdf; length=1839549" title="TD IF 14-06-09-14-DE.pdf">Technisches Datenblatt IF 14-06-09-14 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link fr">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/fr/TD-IF-14-06-09-14-FR.pdf" type="application/pdf; length=1812757" title="TD IF 14-06-09-14-FR.pdf">Fiche technique IF 14-06-09-14 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-document-link en">
-                          <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                            <a href="/assets/documents/en/TD-IF-14-06-09-14_0.pdf" type="application/pdf; length=1811232" title="TD IF 14-06-09-14.pdf">Technical Data Sheet IF 14-06-09-14 SnPb(Ag)</a>
-                          </span>
-                        </div>
-                        <div class="product-contact-link">
-                          <a href="mailto:technischedienst@interflux.com?Subject=SÉRIE IF 14 SnPb(Ag)" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                        </div>
-                        <a href="/pt-pt/195" title="SÉRIE IF 14 SnPb(Ag)" class="nid">195</a>
+                      <div class="product-highlight">
+                        <h3>NEW</h3>
                       </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon21"></div>
+                            <p>Increased wetting ability</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Non disturbing smell</p>
+                          </li>
+                          <li>
+                            <div class="icon35"></div>
+                            <p>High repeatability</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Smooth transparent residue</p>
+                          </li>
+                          <li>
+                            <div class="icon00"></div>
+                            <p>Suitable for robot soldering</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>RosIX 705 SnPb(Ag)</strong>
+                          is an
+                          <strong>activated rosin based</strong>, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in SnPb(Ag) alloys.
+                        </p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux® RosIX 705 SnPb(Ag) is an activated rosin based, no-clean solder wire with increased wetting ability on surfaces that are difficult to solder in SnPb(Ag) alloys.<br/>
+                          RosIX 705 SnPb(Ag) can be used on surfaces that are difficult to solder, e.g. OSP, Ni, Zn, brass, German silver,... as well as on degraded and oxidized surfaces.<br/>
+                          RO L1 to IPC and EN standards.</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-RosIX-705-SnPbAg-DE.pdf" type="application/pdf; length=1786789" title="TD RosIX 705 SnPb(Ag)-DE.pdf">Technisches Datenblatt RosIX 705 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-Rosix-705-SnPbAg-FR.pdf" type="application/pdf; length=1851648" title="TD Rosix 705 SnPb(Ag)-FR.pdf">Fiche technique RosIX 705 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-Rosix-705-SnPbAg.pdf" type="application/pdf; length=1904997" title="TD Rosix 705 SnPb(Ag).pdf">Technical Data Sheet RosIX 705 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=RosIX 705 SnPb(Ag)" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/pt-pt/1419" title="RosIX 705 SnPb(Ag)" class="nid">1419</a>
+                    </div>
+                    <div class="product-row">
+                      <div class="product-images"><img typeof="foaf:Image" src="/assets/images/Interflux-IF14-series-leaded.jpg" width="200" height="200" alt="Interflux IF14 series leaded solder wire"/></div>
+                      <div class="product-name">
+                        <h3>SÉRIE IF 14 SnPb(Ag)</h3>
+                      </div>
+                      <div class="product-features">
+                        <ul>
+                          <li>
+                            <div class="icon15"></div>
+                            <p>Fio da solda SnPb(Ag)</p>
+                          </li>
+                          <li>
+                            <div class="icon04"></div>
+                            <p>Para retrabalho e reparação</p>
+                          </li>
+                          <li>
+                            <div class="icon27"></div>
+                            <p>Resíduos escovados à mão</p>
+                          </li>
+                          <li>
+                            <div class="icon18"></div>
+                            <p>Absolutamente isento de halogênio</p>
+                          </li>
+                          <li>
+                            <div class="icon26"></div>
+                            <p>Absolutamente isento de colofônia</p>
+                          </li>
+                          <li>
+                            <div class="icon20"></div>
+                            <p>Baixo resíduo</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-summary">
+                        <p>Interflux®
+                          <strong>série IF 14
+                          </strong>
+                          são fios da solda no-clean, livre de colofônia e absolutamente livre de halogênio, com resíduo fácil de remover em ligas SnPb(Ag) e Lead-free.</p>
+                      </div>
+                      <div class="product-details">
+                        <p>Interflux®  série IF 14 são fios da solda no-clean, livre de colofônia e absolutamente livre de halogênio, com resíduo fácil de remover em ligas SnPb(Ag) e Lead-free.<br/>
+                          Resíduos escovados à mão<br/>
+                          RE L0 as normas EN e IPC<br/>
+                          SnPb(Ag) : IF 14-06, IF 14-09, IF 14-10, IF14-14 (0,6%, 0,9%,1,0% e 1,4% de conteúdo de fluxo)<br/>
+                          Lead-free : IF 14-16 e IF 14-22 de conteúdo de fluxo</p>
+                      </div>
+                      <div class="product-document-link de">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/de/TD-IF-14-06-09-14-DE_0.pdf" type="application/pdf; length=1839549" title="TD IF 14-06-09-14-DE.pdf">Technisches Datenblatt IF 14-06-09-14 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link fr">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/fr/TD-IF-14-06-09-14-FR.pdf" type="application/pdf; length=1812757" title="TD IF 14-06-09-14-FR.pdf">Fiche technique IF 14-06-09-14 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-document-link en">
+                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
+                          <a href="/assets/documents/en/TD-IF-14-06-09-14_0.pdf" type="application/pdf; length=1811232" title="TD IF 14-06-09-14.pdf">Technical Data Sheet IF 14-06-09-14 SnPb(Ag)</a>
+                        </span>
+                      </div>
+                      <div class="product-contact-link">
+                        <a href="mailto:technischedienst@interflux.com?Subject=SÉRIE IF 14 SnPb(Ag)" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
+                      </div>
+                      <a href="/pt-pt/195" title="SÉRIE IF 14 SnPb(Ag)" class="nid">195</a>
                     </div>
                   </div>
                 </div>
@@ -575,16 +765,62 @@
             </div>
           </div>
         </div>
-        <div id="block-block-17" class="block block-block library-reference last even">
-          <div class="inner-block">
-            <p>Não encontrou o produto? Para uma lista completa de produtos, ver nossa
-              <a href="/pt-pt/documents">biblioteca</a>
-            </p>
-          </div>
-        </div>
-        <div class="clear"></div>
       </div>
+      <div id="block-block-17" class="block block-block library-reference last even">
+        <div class="inner-block">
+          <p>Não encontrou o produto? Para uma lista completa de produtos, ver nossa
+            <a href="/pt-pt/documents">biblioteca</a>
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
     </div>
   </div>
-  {% include "partials/footer.njk" %}
+  <div class="region region-footer2">
+    <div class="inner-region">
+      <div id="block-block-18" class="block block-block first last odd">
+        <div class="inner-block">
+          <div class="block grid-12" id="F1">
+            <div class="inner-block">
+              <div class="inner-content">
+                <a href="/pt-pt/contact" target="_self" title="Ir para a página de contato para mais informação"><img src="/assets/images/Interflux-Electronics-headquarters-belgium.jpg" width="171" height="271" alt="Edifício de escritórios do Interflux Eletronics Bélgica"/></a>
+                <div class="contact-title">
+                  <span>FALE CON A</span><br/>SEDE DO<br/>INTERFLUX</div>
+                <div class="contact-adress">
+                  <p>
+                    Interflux Electronics NV<br/>
+                    Gent zeehaven 3170A<br/>
+                    Eddastraat 51<br/>
+                    9042 Gent<br/>
+                    BELGICA</p>
+                  <p>Tel.: +32 9251 4959<br/>
+                    Fax: +32 9251 4970<br/>
+                    info@interflux.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-12" id="F2">
+            <div class="inner-block">
+              <div class="inner-content">
+                <div class="contact-title">
+                  <span>CONTACTO</span><br/>INTERFLUX MUNDIAL</div>
+                <p>
+                  <a href="/pt-pt/contact" target="_self" title="Ir para a página de contato para mais informação"><img src="/assets/images/interflux-worldwide-map.jpg" width="446" height="196" alt="Mapa geográfico do grupo Interflux"/></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="block grid-24" id="F3">
+            <div class="copyright">©2012 Direitos reservados por Interflux® Electronics N.V.</div>
+            <div class="louder-than-words">Website por
+              <a href="http://nabu.io" target="_new" title="NABU websites">NABU websites</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
 {% endblock %}
