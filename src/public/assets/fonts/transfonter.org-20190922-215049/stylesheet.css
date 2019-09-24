@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'MavenPro-Bold';
+    src: url('MavenPro-Bold.woff2') format('woff2'),
+        url('MavenPro-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenPro-Regular';
+    src: url('MavenPro-Regular.woff2') format('woff2'),
+        url('MavenPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenPro-Bold';
+    src: url('MavenPro-Bold.woff2') format('woff2'),
+        url('MavenPro-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenPro-Medium';
+    src: url('MavenPro-Medium.woff2') format('woff2'),
+        url('MavenPro-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenPro-Black';
+    src: url('MavenPro-Black.woff2') format('woff2'),
+        url('MavenPro-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenPro-Regular';
+    src: url('MavenPro-Regular.woff2') format('woff2'),
+        url('MavenPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenPro-Medium';
+    src: url('MavenPro-Medium.woff2') format('woff2'),
+        url('MavenPro-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenPro-Black';
+    src: url('MavenPro-Black.woff2') format('woff2'),
+        url('MavenPro-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
