@@ -23,6 +23,12 @@ const init = async () => {
   console.log(`Pages fetched: ${success} / ${pages.length}`);
   console.log(`------`);
 
+  if (success !== pages.length) {
+    console.log(`ABORTING`);
+    console.log(`------`);
+    return;
+  }
+
   build(pages);
   prettify(pages);
   write(pages);
@@ -119,27 +125,27 @@ async function fetchRemainingPage(pages, i) {
   if (remainingPage) {
     await fetchPage(remainingPage, i);
     return fetchRemainingPage(pages, i);
-  } else {
-    // console.log(`Runner ${i} - DONE`);
   }
 }
 
 async function fetchPage(page, i) {
   page.fetching = true;
   console.log(`Runner ${i} - Fetching ${page.url}`);
-  // await setTimeout(() => {}, 2000);
   const success = html => {
-    // console.log(`Runner ${i} - FETCHED`);
     page.fetched = true;
     page.fetching = false;
     page.dom = HTMLParser.parse(html);
     page.id = page.uri.replace(/^\//g, "").replace("/", "-");
     page.class = page.dom.querySelector("body").classNames.join(" ");
     page.title = page.dom.querySelector("head title").rawText;
-    page.corpus = page.dom
-      .querySelector(".region.region-corpus")
+    page.html = page.dom
+      .querySelector("#page")
       .innerHTML.replace(
         /src="http:\/\/www.interflux.com\/sites\/default\/files\//g,
+        'src="/assets/images/'
+      )
+      .replace(
+        /src="\/sites\/all\/themes\/zen_interflux\/images\//g,
         'src="/assets/images/'
       )
       .replace(
@@ -153,12 +159,6 @@ async function fetchPage(page, i) {
       .replace(/%40/g, "@")
       .replace(/%28/g, "")
       .replace(/%29/g, "");
-    page.hasHighlight = page.dom.querySelector(".region.region-highlight")
-      ? true
-      : false;
-    page.hasFooter = page.dom.querySelector(".region.region-footer2")
-      ? true
-      : false;
   };
 
   const fail = () => {
@@ -187,15 +187,7 @@ const build = arr => {
     {% block bodyClass %}${page.class}{% endblock %}
 
     {% block page %}
-      ${page.hasHighlight ? '{% include "partials/highlight.njk" %}' : ""}
-
-      <div class="region region-corpus">
-        <div class="inner-region">
-          ${page.corpus}
-        </div>
-      </div>
-
-      ${page.hasFooter ? '{% include "partials/footer.njk" %}' : ""}
+      ${page.html}
     {% endblock %}`;
   });
 };
@@ -240,7 +232,7 @@ const listImages = pages => {
   const arr = [];
 
   pages.forEach(page => {
-    const images = page.dom.querySelectorAll(".region.region-corpus img");
+    const images = page.dom.querySelectorAll("img");
     Array.from(images).forEach(img => {
       const src = img.attributes.src;
       const url = src.replace(/^\//, "http://www.interflux.com/");

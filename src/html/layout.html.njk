@@ -14,20 +14,13 @@
 
     <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css">
 
-    {# <script src="/assets/js/vendor.min.js"></script> #}
-    {# <script src="/assets/js/app.min.js"></script> #}
-
     {% include "partials/legacy-scripts.njk"%}
-
     {% include "partials/favicons.njk" %}
   </head>
 
   <body id="{% block bodyId %}{% endblock %}" class="{% block bodyClass %}{% endblock %}">
     <div id="page">
-      {% include "partials/languages.njk" %}
-      {% include "partials/header.njk" %}
       {% block page %}{% endblock %}
-      {% include "partials/outdated-browsers.njk" %}
     </div>
   </body>
 </html>
