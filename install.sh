@@ -3,6 +3,8 @@
 set -e
 set -o pipefail
 
+bash
+
 # This hack makes the nvm binary available to this script.
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -18,7 +20,7 @@ echo "Path: $PWD"
 echo "Branch: $BRANCH"
 echo "Revision: $REVISION"
 echo "----------"
-echo "cd /var/www/interflux.com"
+echo "cd /var/www/www.interflux.com"
 cd /var/www/interflux.com
 echo "----------"
 echo "git checkout $BRANCH -f"
