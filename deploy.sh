@@ -11,8 +11,8 @@ echo "Deploying:"
 echo $branch
 echo $revision
 echo "----------"
-echo "scp install.sh jw@server.interflux.com:/var/www/interflux.com"
-scp install.sh jw@server.interflux.com:/var/www/interflux.com
+echo "scp install.sh deploy@server.interflux.com:/var/www/interflux.com"
+scp install.sh deploy@server.interflux.com:/var/www/interflux.com
 echo "----------"
-echo 'ssh jw@server.interflux.com "/var/www/interflux.com/install.sh $branch $revision"'
-ssh jw@server.interflux.com "/var/www/interflux.com/install.sh $branch $revision"
+echo 'ssh deploy@server.interflux.com "/var/www/interflux.com/install.sh $branch $revision"'
+ssh deploy@server.interflux.com "/var/www/interflux.com/install.sh $branch $revision"
