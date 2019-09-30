@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/bash
 
 set -e
 set -o pipefail
@@ -11,8 +11,8 @@ echo "Deploying:"
 echo $branch
 echo $revision
 echo "----------"
-echo "scp install.sh deploy@server.interflux.com:/var/www/interflux.com"
-scp install.sh deploy@server.interflux.com:/var/www/interflux.com
+echo "scp install.sh deploy@server.interflux.com:/var/www/www.interflux.com"
+scp install.sh deploy@server.interflux.com:/var/www/www.interflux.com
 echo "----------"
-echo 'ssh deploy@server.interflux.com "/var/www/interflux.com/install.sh $branch $revision"'
-ssh deploy@server.interflux.com "/var/www/interflux.com/install.sh $branch $revision"
+echo 'ssh deploy@server.interflux.com "/var/www/www.interflux.com/install.sh $branch $revision"'
+ssh deploy@server.interflux.com "/var/www/www.interflux.com/install.sh $branch $revision"

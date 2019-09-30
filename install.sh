@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/bash
 
 set -e
 set -o pipefail
@@ -19,7 +19,7 @@ echo "Branch: $BRANCH"
 echo "Revision: $REVISION"
 echo "----------"
 echo "cd /var/www/www.interflux.com"
-cd /var/www/interflux.com
+cd /var/www/www.interflux.com
 echo "----------"
 echo "git checkout $BRANCH -f"
 git checkout $BRANCH -f
