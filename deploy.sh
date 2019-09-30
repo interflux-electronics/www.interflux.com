@@ -1,18 +1,25 @@
-#!/bin/sh
+#!/usr/local/bin/fish
 
-set -e
-set -o pipefail
+set branch (git rev-parse --abbrev-ref HEAD)
+set revision (git rev-parse --short HEAD)
+set remote "jw@server.interflux.com"
+set path "/var/www/www.interflux.com"
 
-branch=$(git rev-parse --abbrev-ref HEAD)
-revision=$(git rev-parse --short HEAD)
+echo ----------
+echo Deploying:
+echo Branch: $branch
+echo Revision: $revision
+echo Remote: $remote
+echo ----------
 
-echo "----------"
-echo "Deploying:"
-echo $branch
-echo $revision
-echo "----------"
-echo "scp install.sh deploy@server.interflux.com:/var/www/www.interflux.com"
-scp install.sh deploy@server.interflux.com:/var/www/www.interflux.com
-echo "----------"
-echo 'ssh deploy@server.interflux.com "/var/www/www.interflux.com/install.sh $branch $revision"'
-ssh deploy@server.interflux.com "/var/www/www.interflux.com/install.sh $branch $revision"
+switch $branch
+case production
+  echo scp install.sh $remote:$path
+  scp install.sh $remote:$path
+  and echo ----------
+  and echo ssh $remote "$path/install.sh $branch $revision"
+  and ssh $remote "$path/install.sh $branch $revision"
+case '*'
+    echo Aborting - Only the branch production is deployable.
+    echo ----------
+end
