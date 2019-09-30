@@ -1,6 +1,6 @@
 {
   "name": "interflux.com",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "homepage": "https://interflux.com/",
   "description": "Website of a team of programmers / engineers in Melbourne, Australia",
   "repository": "git@github.com:janwerkhoven/interflux.com.git",
@@ -40,8 +40,11 @@
     "yarn": ">= 1.0.0"
   },
   "scripts": {
-    "serve": "./node_modules/.bin/gulp serve",
+    "start": "./node_modules/.bin/gulp serve",
     "build": "./node_modules/.bin/gulp build",
-    "deploy": "./deploy.sh"
+    "deploy": "./deploy.sh",
+    "bump-patch": "npm version patch; git push origin --tags; git push",
+    "bump-minor": "npm version minor; git push origin --tags; git push",
+    "bump-major": "npm version major; git push origin --tags; git push"
   }
 }
