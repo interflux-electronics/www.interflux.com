@@ -36,16 +36,12 @@
     "request-promise": "^4.2.4",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {
-    "@bower_components/outdated-browser": "burocratik/outdated-browser#^1.1.3"
-  },
   "engines": {
     "yarn": ">= 1.0.0"
   },
   "scripts": {
     "serve": "./node_modules/.bin/gulp serve",
     "build": "./node_modules/.bin/gulp build",
-    "deploy": "./deploy.sh",
-    "postinstall": "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\""
+    "deploy": "./deploy.sh"
   }
 }
