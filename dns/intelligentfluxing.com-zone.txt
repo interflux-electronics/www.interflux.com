@@ -1,0 +1,8 @@
+$ORIGIN intelligentfluxing.com.
+$TTL 1800
+intelligentfluxing.com. IN SOA ns1.digitalocean.com. hostmaster.intelligentfluxing.com. 1552938262 10800 3600 604800 1800
+intelligentfluxing.com. 1800 IN NS ns1.digitalocean.com.
+intelligentfluxing.com. 1800 IN NS ns2.digitalocean.com.
+intelligentfluxing.com. 1800 IN NS ns3.digitalocean.com.
+intelligentfluxing.com. 3600 IN A 167.99.72.21
+www.intelligentfluxing.com. 3600 IN A 167.99.72.21

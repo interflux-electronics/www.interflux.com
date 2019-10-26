@@ -1,0 +1,8 @@
+$ORIGIN lmpa-q.com.
+$TTL 1800
+lmpa-q.com. IN SOA ns1.digitalocean.com. hostmaster.lmpa-q.com. 1550998412 10800 3600 604800 1800
+lmpa-q.com. 1800 IN NS ns1.digitalocean.com.
+lmpa-q.com. 1800 IN NS ns2.digitalocean.com.
+lmpa-q.com. 1800 IN NS ns3.digitalocean.com.
+lmpa-q.com. 3600 IN A 167.99.72.21
+www.lmpa-q.com. 3600 IN A 167.99.72.21

@@ -1,0 +1,8 @@
+$ORIGIN interflux.ru.
+$TTL 1800
+interflux.ru. IN SOA ns1.digitalocean.com. hostmaster.interflux.ru. 1551005062 10800 3600 604800 1800
+interflux.ru. 1800 IN NS ns1.digitalocean.com.
+interflux.ru. 1800 IN NS ns2.digitalocean.com.
+interflux.ru. 1800 IN NS ns3.digitalocean.com.
+interflux.ru. 3600 IN A 167.99.72.21
+www.interflux.ru. 3600 IN A 167.99.72.21

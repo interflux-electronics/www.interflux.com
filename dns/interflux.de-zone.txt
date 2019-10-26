@@ -1,0 +1,8 @@
+$ORIGIN interflux.de.
+$TTL 1800
+interflux.de. IN SOA ns1.digitalocean.com. hostmaster.interflux.de. 1547349818 10800 3600 604800 1800
+interflux.de. 1800 IN NS ns1.digitalocean.com.
+interflux.de. 1800 IN NS ns2.digitalocean.com.
+interflux.de. 1800 IN NS ns3.digitalocean.com.
+interflux.de. 3600 IN A 167.99.72.21
+www.interflux.de. 3600 IN A 167.99.72.21

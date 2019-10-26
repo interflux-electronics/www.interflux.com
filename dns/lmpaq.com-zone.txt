@@ -1,0 +1,8 @@
+$ORIGIN lmpaq.com.
+$TTL 1800
+lmpaq.com. IN SOA ns1.digitalocean.com. hostmaster.lmpaq.com. 1550998445 10800 3600 604800 1800
+lmpaq.com. 1800 IN NS ns1.digitalocean.com.
+lmpaq.com. 1800 IN NS ns2.digitalocean.com.
+lmpaq.com. 1800 IN NS ns3.digitalocean.com.
+lmpaq.com. 3600 IN A 167.99.72.21
+www.lmpaq.com. 3600 IN A 167.99.72.21

@@ -1,0 +1,32 @@
+$ORIGIN interflux.com.
+$TTL 1800
+interflux.com. IN SOA ns1.digitalocean.com. hostmaster.interflux.com. 1569358222 10800 3600 604800 1800
+interflux.com. 1800 IN NS ns1.digitalocean.com.
+interflux.com. 1800 IN NS ns2.digitalocean.com.
+interflux.com. 1800 IN NS ns3.digitalocean.com.
+
+interflux.com. 1800 IN A 185.182.56.85
+www.interflux.com. 1800 IN A 185.182.56.85
+admin.interflux.com. 1800 IN A 167.99.72.21
+api.interflux.com. 1800 IN A 167.99.72.21
+mail.interflux.com. 1800 IN A 80.201.239.228
+lmpa.interflux.com. 3600 IN A 167.99.72.21
+cdn.interflux.com. 3600 IN A 167.99.72.21
+server.interflux.com. 3600 IN A 157.230.77.249
+server-singapore.interflux.com. 3600 IN A 167.99.72.21
+lmpaq.interflux.com. 3600 IN A 209.97.162.174
+
+interflux.com. 14400 IN MX 10 mx1.mtaroutes.com.
+interflux.com. 14400 IN MX 20 mx2.mtaroutes.com.
+interflux.com. 14400 IN MX 30 mx3.mtaroutes.com.
+interflux.com. 14400 IN MX 40 mx4.mtaroutes.com.
+
+interflux.com. 1800 IN MX 90 interflux-electronics.com.bak-mx.eu0101.smtpbak.com.
+interflux.com. 1800 IN MX 80 interflux-electronics.com.pri-mx.eu0101.smtproutes.com.
+
+gmail.interflux.com. 3600 IN CNAME ghs.googlehosted.com.
+calendar.interflux.com. 3600 IN CNAME ghs.googlehosted.com.
+drive.interflux.com. 3600 IN CNAME ghs.googlehosted.com.
+
+interflux.com. 300 IN TXT v=spf1 a mx ip4:194.78.138.193/32 ip4:188.93.80.0/21 include:spf.mtaroutes.com ~all
+interflux.com. 3600 IN TXT google-site-verification=mzo6HSqE_SX91typ9g8rdhTgGkrnPdRw-H2apOtkLfo

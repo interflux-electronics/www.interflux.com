@@ -1,0 +1,18 @@
+$ORIGIN interflux-electronics.com.
+$TTL 1800
+interflux-electronics.com. IN SOA ns1.digitalocean.com. hostmaster.interflux-electronics.com. 1565333457 10800 3600 604800 1800
+interflux-electronics.com. 1800 IN NS ns1.digitalocean.com.
+interflux-electronics.com. 1800 IN NS ns2.digitalocean.com.
+interflux-electronics.com. 1800 IN NS ns3.digitalocean.com.
+
+interflux-electronics.com. 3600 IN A 167.99.72.21
+www.interflux-electronics.com. 3600 IN A 167.99.72.21
+ftp.interflux-electronics.com. 3600 IN A 91.183.77.82
+mail.interflux-electronics.com. 3600 IN A 194.78.138.193
+
+interflux-electronics.com. 14400 IN MX 10 mx1.mtaroutes.com.
+interflux-electronics.com. 14400 IN MX 20 mx2.mtaroutes.com.
+interflux-electronics.com. 14400 IN MX 30 mx3.mtaroutes.com.
+interflux-electronics.com. 14400 IN MX 40 mx4.mtaroutes.com.
+
+interflux-electronics.com. 600 IN TXT v=spf1 a mx ip4:194.78.138.193/32 include:_spf.itaf.eu include:spf.mtaroutes.com -all

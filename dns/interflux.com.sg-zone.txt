@@ -1,0 +1,27 @@
+$ORIGIN interflux.com.sg.
+$TTL 1800
+interflux.com.sg. IN SOA ns1.digitalocean.com. hostmaster.interflux.com.sg. 1551002683 10800 3600 604800 1800
+interflux.com.sg. 1800 IN NS ns1.digitalocean.com.
+interflux.com.sg. 1800 IN NS ns2.digitalocean.com.
+interflux.com.sg. 1800 IN NS ns3.digitalocean.com.
+
+interflux.com.sg. 3600 IN MX 20 aspmx.l.google.com.
+interflux.com.sg. 3600 IN MX 30 alt1.aspmx.l.google.com.
+interflux.com.sg. 3600 IN MX 30 alt2.aspmx.l.google.com.
+interflux.com.sg. 3600 IN MX 40 alt3.aspmx.l.google.com.
+interflux.com.sg. 3600 IN MX 40 alt4.aspmx.l.google.com.
+
+interflux.com.sg. 3600 IN A 167.99.72.21
+www.interflux.com.sg. 3600 IN A 167.99.72.21
+
+zendesk1._domainkey.interflux.com.sg.interflux.com.sg. 3600 IN CNAME zendesk1._domainkey.zendesk.com.
+zendesk2._domainkey.interflux.com.sg.interflux.com.sg. 3600 IN CNAME zendesk2._domainkey.zendesk.com.
+
+zendesk1.interflux.com.sg. 3600 IN CNAME mail1.zendesk.com.
+zendesk2.interflux.com.sg. 3600 IN CNAME mail2.zendesk.com.
+zendesk3.interflux.com.sg. 3600 IN CNAME mail3.zendesk.com.
+zendesk4.interflux.com.sg. 3600 IN CNAME mail4.zendesk.com.
+
+interflux.com.sg. 3600 IN TXT google-site-verification=4AohZyApfL0fNIE8v31dZy_2YgYP_DsNGfA__J_Z4gg
+interflux.com.sg. 3600 IN TXT v=spf1 include:mail.zendesk.com ?all
+zendesk_verification.interflux.com.sg. 3600 IN TXT c417c00b523701dd

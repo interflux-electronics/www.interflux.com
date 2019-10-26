@@ -1,0 +1,8 @@
+$ORIGIN interfluxelectronics.com.
+$TTL 1800
+interfluxelectronics.com. IN SOA ns1.digitalocean.com. hostmaster.interfluxelectronics.com. 1551002917 10800 3600 604800 1800
+interfluxelectronics.com. 1800 IN NS ns1.digitalocean.com.
+interfluxelectronics.com. 1800 IN NS ns2.digitalocean.com.
+interfluxelectronics.com. 1800 IN NS ns3.digitalocean.com.
+interfluxelectronics.com. 3600 IN A 167.99.72.21
+www.interfluxelectronics.com. 3600 IN A 167.99.72.21

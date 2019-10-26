@@ -1,0 +1,8 @@
+$ORIGIN interflux.me.uk.
+$TTL 1800
+interflux.me.uk. IN SOA ns1.digitalocean.com. hostmaster.interflux.me.uk. 1551095752 10800 3600 604800 1800
+interflux.me.uk. 1800 IN NS ns1.digitalocean.com.
+interflux.me.uk. 1800 IN NS ns2.digitalocean.com.
+interflux.me.uk. 1800 IN NS ns3.digitalocean.com.
+interflux.me.uk. 3600 IN A 167.99.72.21
+www.interflux.me.uk. 3600 IN A 167.99.72.21
