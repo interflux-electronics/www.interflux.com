@@ -1,9 +1,10 @@
 #!/usr/local/bin/fish
 
-set branch (git rev-parse --abbrev-ref HEAD)
-set revision (git rev-parse --short HEAD)
 set remote "jw@server.interflux.com"
 set path "/var/www/www.interflux.com"
+
+set branch (git rev-parse --abbrev-ref HEAD)
+set revision (git rev-parse --short HEAD)
 
 echo ----------
 echo Deploying:
@@ -14,8 +15,8 @@ echo ----------
 
 switch $branch
 case production
-  echo scp install.sh $remote:$path
-  scp install.sh $remote:$path
+  echo scp remote/install.sh $remote:$path
+  scp remote/install.sh $remote:$path
   and echo ----------
   and echo ssh $remote "$path/install.sh $branch $revision"
   and ssh $remote "$path/install.sh $branch $revision"
