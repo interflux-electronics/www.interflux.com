@@ -31,5 +31,4 @@ and echo ----------
 and echo yarn build
 and yarn build
 and echo ----------
-and echo Deploy successful!
-and echo ----------
+and echo Remote: install succeeded
