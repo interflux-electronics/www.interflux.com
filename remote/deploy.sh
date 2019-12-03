@@ -36,7 +36,7 @@ case master
   and echo git checkout master
   and git checkout master
   and echo ----------
-  and echo Deploy complete!
+  and echo Local: deploy complete!
   and echo ----------
   or echo Aborting - Something went wrong...
 case '*'
