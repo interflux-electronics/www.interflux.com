@@ -14,13 +14,32 @@ echo Remote: $remote
 echo ----------
 
 switch $branch
-case production
-  echo scp remote/install.sh $remote:$path
-  scp remote/install.sh $remote:$path
+case master
+  echo git push
+  git push
+  and echo ----------
+  and echo git checkout production -f
+  and git checkout production -f
+  and echo ----------
+  and echo git pull origin master
+  and git pull origin master
+  and echo ----------
+  and echo git push
+  and git push
+  and echo ----------
+  and echo scp remote/install.sh $remote:$path
+  and scp remote/install.sh $remote:$path
   and echo ----------
   and echo ssh $remote "$path/install.sh $branch $revision"
   and ssh $remote "$path/install.sh $branch $revision"
+  and echo ----------
+  and echo git checkout master
+  and git checkout master
+  and echo ----------
+  and echo Deploy complete!
+  and echo ----------
+  or echo Aborting - Something went wrong...
 case '*'
-    echo Aborting - Only the branch production is deployable.
+    echo Aborting - Only the branch master is deployable.
     echo ----------
 end
