@@ -15,8 +15,11 @@ echo ----------
 
 switch $branch
 case master
-  echo git checkout production -f
-  git checkout production -f
+  echo git push
+  git push
+  and echo ----------
+  and echo git checkout production -f
+  and git checkout production -f
   and echo ----------
   and echo git pull origin master
   and git pull origin master
