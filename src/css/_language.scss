@@ -2,7 +2,7 @@
   &.fr {
     display: block !important;
   }
-  &.en,
+  &.es,
   &.de {
     display: none !important;
   }
@@ -12,7 +12,17 @@
   &.de {
     display: block !important;
   }
-  &.en,
+  &.es,
+  &.fr {
+    display: none !important;
+  }
+}
+
+.i18n-es .product-row.expanded .product-document-link {
+  &.es {
+    display: block !important;
+  }
+  &.de,
   &.fr {
     display: none !important;
   }
