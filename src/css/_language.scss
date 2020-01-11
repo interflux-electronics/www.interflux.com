@@ -1,0 +1,19 @@
+.i18n-fr .product-row.expanded .product-document-link {
+  &.fr {
+    display: block !important;
+  }
+  &.en,
+  &.de {
+    display: none !important;
+  }
+}
+
+.i18n-de .product-row.expanded .product-document-link {
+  &.de {
+    display: block !important;
+  }
+  &.en,
+  &.fr {
+    display: none !important;
+  }
+}
