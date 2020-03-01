@@ -1,3 +1,10 @@
+const { NODE_ENV } = process.env;
+const isProduction = NODE_ENV === "production";
+const isDevelopment = NODE_ENV === "development";
+const cdnHost = isDevelopment
+  ? "http://localhost:9000"
+  : "https://cdn.interflux.com";
+
 // Extract methods from Gulp
 // https://gulpjs.com/docs/en/api/src
 const { src, dest, series, parallel, watch } = require("gulp");
@@ -34,11 +41,9 @@ function html() {
       nunjucksRender({
         path: ["src/html"],
         data: {
-          name: "Floatplane",
-          url: "https://interflux.com/",
-          language: "en",
-          themeColour: "#ffff00",
-          googleSiteVerification: "XXX"
+          cdnHost,
+          isProduction,
+          isDevelopment
         }
       })
     )
@@ -120,7 +125,7 @@ function report() {
 function localhost() {
   connect.server({
     root: "dist",
-    port: 9000
+    port: 9100
   });
 }
 
