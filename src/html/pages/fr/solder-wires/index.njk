@@ -1,3 +1,4 @@
+{% from "macros/product.njk" import product %}
 {% extends "layout.html.njk" %}
 {% block meta %}
   <title>Fils à braser | Interflux Electronics</title>
@@ -154,7 +155,7 @@
           <article id="ipc-apex-2017">
             <a href="https://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
               <picture>
-                
+
                 <img src="" alt="Visit use at IPC APEX 2018 in San Diego"/>
               </picture>
             </a>
@@ -176,7 +177,7 @@
                 </mark>
               </h1>
               <div id="video">
-                <video id="movie" width="276" height="220" autoplay loop>
+                <video id="movie" width="276" height="220" autoplay="autoplay" loop="loop">
                   <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
                   Your browser doesn't support HTML5 video tag.
                 </video>
@@ -217,58 +218,54 @@
                   <div class="bg-top"></div>
                   <div class="bg-bottom"></div>
                   <div class="view-content">
-                    <div class="product-row">
-                      <div class="product-images"><img src="/assets/images/CLP_QF70-Pb-free.jpg" width="200" height="200" alt="QF 70 Pb-free"/></div>
-                      <div class="product-name">
-                        <h3>QF 70</h3>
-                      </div>
-                      <div class="product-highlight">
-                        <h3>Nouveau</h3>
-                      </div>
-                      <div class="product-features">
-                        <ul>
-                          <li>
-                            <div class="icon32"></div>
-                            <p>Vitesse de mouillage augmentée</p>
-                          </li>
-                          <li>
-                            <div class="icon20"></div>
-                            <p>Résidu transparant</p>
-                          </li>
-                          <li>
-                            <div class="icon18"></div>
-                            <p>Absolument sans halogènes</p>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="product-summary">
-                        <p>Interflux®
-                          <strong>QF 70</strong>
-                          pour les alliages sans plomb est un fil à braser à base de colophane, absolument sans halogènes et sans nettoyage pour un mouillage rapide et pour des
-                          <strong>applications de brasage rapides</strong>.
-                        </p>
-                      </div>
-                      <div class="product-details">
-                        <p>Interflux® QF 70 pour les alliages sans plomb est un fil à braser à base de colophane, absolument sans halogènes et sans nettoyage pour un mouillage rapide et pour des applications de brasage rapides.<br/>
-                          QF 70 convient pour le brasage manuel et le brasage par robot.<br/>
-                          Classé RO L0 suivant les normes IPC et EN<br/>
-                          Contenu d'halogènes : 0,00%</p>
-                      </div>
-                      <div class="product-document-link de">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/de/TD-QF-70-DE.pdf">Technisches Datenblatt QF70</a>
-                        </span>
-                      </div>
-                      <div class="product-document-link en">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/en/TD-QF-70.pdf">Technical Data Sheet QF 70</a>
-                        </span>
-                      </div>
-                      <div class="product-contact-link">
-                        <a href="mailto:technischedienst@interflux.com?Subject=QF 70" target="_blank">More information / demo / samples</a>
-                      </div>
-                      <a href="/fr/1404" title="QF 70" class="nid">1404</a>
-                    </div>
+
+                    {{
+                      product(
+                        name='IR 3',
+                        highlight='NEW',
+                        features=[
+                          ['icon19', 'Très approprié pour le brasage par robot'],
+                          ['icon04', 'Peu de projections de flux'],
+                          ['icon35', 'Mouillage rapide'],
+                          ['icon18', 'Absolument sans halogènes'],
+                          ['icon20', 'Faible contamination de la panne'],
+                          ['icon00', 'Peu de résidu']
+                        ],
+                        summary='Interflux®  IR 3 pour les alliages sans plomb est un fil à braser sans nettoyage et absolument sans halogènes, qui a été développé pour le brasage par robot.',
+                        details='Interflux®  IR 3 pour les alliages sans plomb est un fil à braser sans nettoyage et absolument sans halogènes, qui a été développé pour le brasage par robot. Le fil fait preuve de peu de projections de flux, un mouillage rapide, une faible contamination de la panne et peu de résidu. <br>IR 3 peut également être utilisé pour le brasage manuel avec les mêmes avantages. <br>Classé ROL0 suivant les normes EN et IPC',
+                        images=[
+                          [cdnHost + '/images/products/IR-3/IR-3-SnQ-500g@400x400.jpg', 'IR 3 fil à braser SnQ 500g'],
+                          [cdnHost + '/images/products/IR-3/IR-3-SnAgCu-500g@400x400.jpg', 'IR 3 fil à braser SnAgCu 500g']
+                        ],
+                        documents=[
+                          ['en', cdnHost + '/documents/products/IR-3/TD-IR-3-EN.pdf', 'Technical Data Sheet IR 3'],
+                          ['de', cdnHost + '/documents/products/IR-3/TD-IR-3-DE.pdf', 'Technisches Datenblatt IR 3'],
+                          ['fr', cdnHost + '/documents/products/IR-3/TD-IR-3-FR.pdf', 'Fiche technique IR 3']
+                        ]
+                      )
+                    }}
+
+                    {{
+                      product(
+                        name='QF 70',
+                        highlight='Nouveau',
+                        features=[
+                          ['icon32', 'Vitesse de mouillage augmentée'],
+                          ['icon20', 'Résidu transparant'],
+                          ['icon18', 'Absolument sans halogènes']
+                        ],
+                        summary='Interflux® <strong>QF 70</strong> pour les alliages sans plomb est un fil à braser à base de colophane, absolument sans halogènes et sans nettoyage pour un mouillage rapide et pour des <strong>applications de brasage rapides</strong>.',
+                        details='Interflux® QF 70 pour les alliages sans plomb est un fil à braser à base de colophane, absolument sans halogènes et sans nettoyage pour un mouillage rapide et pour des applications de brasage rapides. <br/> QF 70 convient pour le brasage manuel et le brasage par robot. <br/>Classé RO L0 suivant les normes IPC et EN <br/>Contenu d\'halogènes : 0,00%',
+                        images=[
+                          ['/assets/images/CLP_QF70-Pb-free.jpg', 'QF 70 Pb-free']
+                        ],
+                        documents=[
+                          ['en', '/assets/documents/en/TD-QF-70.pdf', 'Technical Data Sheet QF 70'],
+                          ['de', '/assets/documents/de/TD-QF-70-DE.pdf', 'Technisches Datenblatt QF70']
+                        ]
+                      )
+                    }}
+
                     <div class="product-row">
                       <div class="product-images"><img src="/assets/images/NH1-SAC387.png" width="200" height="200" alt="NH1 lead-free solder wire"/></div>
                       <div class="product-name">

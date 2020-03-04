@@ -1,3 +1,4 @@
+{% from "macros/product.njk" import product %}
 {% extends "layout.html.njk" %}
 {% block meta %}
   <title>Solder wires | Interflux Electronics</title>
@@ -204,59 +205,54 @@
                   <div class="bg-top"></div>
                   <div class="bg-bottom"></div>
                   <div class="view-content">
-                    <div class="product-row">
-                      <div class="product-images"><img src="/assets/images/CLP_QF70-Pb-free.jpg" width="200" height="200" alt="QF 70 Pb-free"/></div>
-                      <div class="product-name">
-                        <h3>QF 70</h3>
-                      </div>
-                      <div class="product-highlight">
-                        <h3>NEW</h3>
-                      </div>
-                      <div class="product-features">
-                        <ul>
-                          <li>
-                            <div class="icon32"></div>
-                            <p>Increased wetting speed</p>
-                          </li>
-                          <li>
-                            <div class="icon20"></div>
-                            <p>Transparent residue</p>
-                          </li>
-                          <li>
-                            <div class="icon18"></div>
-                            <p>Absolutely halide-free</p>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="product-summary">
-                        <p>Interflux®
-                          <strong>QF 70</strong>
-                          is an absolutely halide-free, rosin based no-clean solder wire with
-                          <strong>fast wetting for fast soldering</strong>
-                          operations in lead-free alloys.
-                        </p>
-                      </div>
-                      <div class="product-details">
-                        <p>Interflux® QF 70 is an absolutely halide-free, rosin based no-clean solder wire with fast wetting for fast soldering operations in lead-free alloys.<br/>
-                          QF 70 can be used in both hand soldering and auto-mated soldering processes<br/>
-                          RO L0 to IPC and EN standards.<br/>
-                          Halide content 0,00%</p>
-                      </div>
-                      <div class="product-document-link de">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/de/TD-QF-70-DE.pdf">Technisches Datenblatt QF70</a>
-                        </span>
-                      </div>
-                      <div class="product-document-link en">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/en/TD-QF-70.pdf">Technical Data Sheet QF 70</a>
-                        </span>
-                      </div>
-                      <div class="product-contact-link">
-                        <a href="mailto:technischedienst@interflux.com?Subject=QF 70" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                      </div>
-                      <a href="/en/1346" title="QF 70" class="nid">1346</a>
-                    </div>
+
+                    {{
+                      product(
+                        name='IR 3',
+                        highlight='NEW',
+                        features=[
+                          ['icon19', 'Perfect for robot soldering'],
+                          ['icon04', 'Low spattering'],
+                          ['icon35', 'Fast wetting'],
+                          ['icon18', 'Absolutely halogen free'],
+                          ['icon20', 'Low soldering tip contamination'],
+                          ['icon00', 'Low residue']
+                        ],
+                        summary='Interflux® <strong>IR 3</strong> is an absolutely halide-free, lead-free, no-clean solder wire that has been developed for <strong>robot soldering</strong>. It provides low spattering, fast wetting, low soldering tip contamination and low residue.',
+                        details='Interflux® <strong>IR 3</strong> is an absolutely halide-free, lead-free, no-clean solder wire that has been developed for <strong>robot soldering</strong>. It provides low spattering, fast wetting, low soldering tip contamination and low residue. <br>IR 3 can also be used for hand soldering with the same advantages. <br>ROL0 to EN and IPC standards',
+                        images=[
+                          [cdnHost + '/images/products/IR-3/IR-3-SnQ-500g@400x400.jpg', 'IR 3 solder wire SnQ 500g'],
+                          [cdnHost + '/images/products/IR-3/IR-3-SnAgCu-500g@400x400.jpg', 'IR 3 solder wire SnAgCu 500g']
+                        ],
+                        documents=[
+                          ['en', cdnHost + '/documents/products/IR-3/TD-IR-3-EN.pdf', 'Technical Data Sheet IR 3'],
+                          ['de', cdnHost + '/documents/products/IR-3/TD-IR-3-DE.pdf', 'Technisches Datenblatt IR 3'],
+                          ['fr', cdnHost + '/documents/products/IR-3/TD-IR-3-FR.pdf', 'Fiche technique IR 3']
+                        ]
+                      )
+                    }}
+
+                    {{
+                      product(
+                        name='QF 70',
+                        highlight='NEW',
+                        features=[
+                          ['icon32', 'Increased wetting speed'],
+                          ['icon20', 'Transparent residue'],
+                          ['icon18', 'Absolutely halide-free']
+                        ],
+                        summary='Interflux® <strong>QF 70</strong> is an absolutely halide-free, rosin based no-clean solder wire with <strong>fast wetting for fast soldering</strong> operations in lead-free alloys.',
+                        details='Interflux® QF 70 is an absolutely halide-free, rosin based no-clean solder wire with fast wetting for fast soldering operations in lead-free alloys.<br/>QF 70 can be used in both hand soldering and auto-mated soldering processes<br/>RO L0 to IPC and EN standards.<br/>Halide content 0,00%',
+                        images=[
+                          ['/assets/images/CLP_QF70-Pb-free.jpg', 'QF 70 Pb-free']
+                        ],
+                        documents=[
+                          ['en', '/assets/documents/en/TD-QF-70.pdf', 'Technical Data Sheet QF 70'],
+                          ['de', '/assets/documents/de/TD-QF-70-DE.pdf', 'Technisches Datenblatt QF70']
+                        ]
+                      )
+                    }}
+
                     <div class="product-row">
                       <div class="product-images"><img src="/assets/images/NH1-SAC387.png" width="200" height="200" alt="NH1 lead-free solder wire"/></div>
                       <div class="product-name">

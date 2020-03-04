@@ -1,3 +1,4 @@
+{% from "macros/product.njk" import product %}
 {% extends "layout.html.njk" %}
 {% block meta %}
   <title>Lötdraht | Interflux Electronics</title>
@@ -154,7 +155,7 @@
           <article id="ipc-apex-2017">
             <a href="https://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
               <picture>
-                
+
                 <img src="" alt="Visit use at IPC APEX 2018 in San Diego"/>
               </picture>
             </a>
@@ -176,7 +177,7 @@
                 </mark>
               </h1>
               <div id="video">
-                <video id="movie" width="276" height="220" autoplay loop>
+                <video id="movie" width="276" height="220" autoplay="autoplay" loop="loop">
                   <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
                   Your browser doesn't support HTML5 video tag.
                 </video>
@@ -217,59 +218,54 @@
                   <div class="bg-top"></div>
                   <div class="bg-bottom"></div>
                   <div class="view-content">
-                    <div class="product-row">
-                      <div class="product-images"><img src="/assets/images/CLP_QF70-Pb-free.jpg" width="200" height="200" alt="QF 70 Pb-free"/></div>
-                      <div class="product-name">
-                        <h3>QF 70</h3>
-                      </div>
-                      <div class="product-highlight">
-                        <h3>NEU</h3>
-                      </div>
-                      <div class="product-features">
-                        <ul>
-                          <li>
-                            <div class="icon32"></div>
-                            <p>Erhöhte Benetzungsgeschwindigkeit</p>
-                          </li>
-                          <li>
-                            <div class="icon20"></div>
-                            <p>Transparenter Rückstand</p>
-                          </li>
-                          <li>
-                            <div class="icon18"></div>
-                            <p>Absolut halogenfrei</p>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="product-summary">
-                        <p>Interflux®
-                          <strong>QF 70</strong>
-                          Lötdraht ist ein absolut halogenfreier, kolophoniumhaltiger no-clean Lötdraht mit
-                          <strong>schneller Benetzung für schnelle Lötprozesse</strong>
-                          in bleifreien Legierungen.
-                        </p>
-                      </div>
-                      <div class="product-details">
-                        <p>Interflux® QF 70 Lötdraht ist ein absolut halogenfreier, kolophoniumhaltiger no-clean Lötdraht mit schneller Benetzung für schnelle Lötprozesse in bleifreien Legierungen.<br/>
-                          QF 70 ist sowohl für das Handlöten als auch für das Roboterlöten geeignet.<br/>
-                          RO L0 gemäß IPC und EN Standards<br/>
-                          Halogengehalt 0,00%</p>
-                      </div>
-                      <div class="product-document-link de">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/de/TD-QF-70-DE.pdf">Technisches Datenblatt QF70</a>
-                        </span>
-                      </div>
-                      <div class="product-document-link en">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/en/TD-QF-70.pdf">Technical Data Sheet QF 70</a>
-                        </span>
-                      </div>
-                      <div class="product-contact-link">
-                        <a href="mailto:technischedienst@interflux.com?Subject=QF 70" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                      </div>
-                      <a href="/de/1362" title="QF 70" class="nid">1362</a>
-                    </div>
+
+                    {{
+                      product(
+                        name='IR 3',
+                        highlight='NEU',
+                        features=[
+                          ['icon19', 'Perfekt für das Roboterlöten'],
+                          ['icon04', 'Niedriges Spritzverhalten'],
+                          ['icon35', 'Schnelles Benetzen'],
+                          ['icon18', 'Absolut halogenfrei'],
+                          ['icon20', 'Niedrige Lötspitzenkontamination'],
+                          ['icon00', 'Niedrige Rückstände']
+                        ],
+                        summary='Interflux® <strong>IR 3</strong> ist ein absolut halogenfreier, bleifreier no-clean Lötdraht der entwickelt worden ist für das <strong>Roboterlöten</strong>. Der Draht weist ein niedriges Spritzverhalten, eine schnelle Benetzung, niedrige Lötspitzenkontamination und einen niedrigen Rückstand auf.',
+                        details='Interflux® <strong>IR 3</strong> ist ein absolut halogenfreier, bleifreier no-clean Lötdraht der entwickelt worden ist für das <strong>Roboterlöten</strong>. Der Draht weist ein niedriges Spritzverhalten, eine schnelle Benetzung, niedrige Lötspitzenkontamination und einen niedrigen Rückstand auf. <br>IR 3 kann auch für das Handlöten eingesetzt werden mit den gleichen Vorteilen. <br>ROL0 gemäß EN und IPC Standards',
+                        images=[
+                          [cdnHost + '/images/products/IR-3/IR-3-SnQ-500g@400x400.jpg', 'IR 3 Lötdraht SnQ 500g'],
+                          [cdnHost + '/images/products/IR-3/IR-3-SnAgCu-500g@400x400.jpg', 'IR 3 Lötdraht SnAgCu 500g']
+                        ],
+                        documents=[
+                          ['en', cdnHost + '/documents/products/IR-3/TD-IR-3-EN.pdf', 'Technical Data Sheet IR 3'],
+                          ['de', cdnHost + '/documents/products/IR-3/TD-IR-3-DE.pdf', 'Technisches Datenblatt IR 3'],
+                          ['fr', cdnHost + '/documents/products/IR-3/TD-IR-3-FR.pdf', 'Fiche technique IR 3']
+                        ]
+                      )
+                    }}
+
+                    {{
+                      product(
+                        name='QF 70',
+                        highlight='NEU',
+                        features=[
+                          ['icon32', 'Erhöhte Benetzungsgeschwindigkeit'],
+                          ['icon20', 'Transparenter Rückstand'],
+                          ['icon18', 'Absolut halogenfrei']
+                        ],
+                        summary='Interflux® <strong>QF 70</strong> Lötdraht ist ein absolut halogenfreier, kolophoniumhaltiger no-clean Lötdraht mit <strong>schneller Benetzung für schnelle Lötprozesse</strong> in bleifreien Legierungen.',
+                        details='Interflux® QF 70 Lötdraht ist ein absolut halogenfreier, kolophoniumhaltiger no-clean Lötdraht mit schneller Benetzung für schnelle Lötprozesse in bleifreien Legierungen. <br/>QF 70 ist sowohl für das Handlöten als auch für das Roboterlöten geeignet. <br/>RO L0 gemäß IPC und EN Standards <br/>Halogengehalt 0,00%',
+                        images=[
+                          ['/assets/images/CLP_QF70-Pb-free.jpg', 'QF 70 Pb-free']
+                        ],
+                        documents=[
+                          ['en', '/assets/documents/en/TD-QF-70.pdf', 'Technical Data Sheet QF 70'],
+                          ['de', '/assets/documents/de/TD-QF-70-DE.pdf', 'Technisches Datenblatt QF70']
+                        ]
+                      )
+                    }}
+
                     <div class="product-row">
                       <div class="product-images"><img src="/assets/images/NH1-SAC387.png" width="200" height="200" alt="NH1 lead-free solder wire"/></div>
                       <div class="product-name">
@@ -503,7 +499,7 @@
                       <div class="product-details">
                         <p>Interflux® IF 14-Serie sind kolophoniumfreie, absolut halogenfreie no-clean Lötdrähte mit einfach zu entfernen Rückständen in bleifreien und SnPb(Ag)-Legierungen.<br/>
                           Die Rückstände lassen sich bürsten<br/>
-                          RE L0  gemäß EN und IPC-Standards<br/>
+                          RE L0 gemäß EN und IPC-Standards<br/>
                           Lead-free : IF 14-16 und IF 14-22 (1,6% and 2,2% Flussmittelgehalt)<br/>
                           SnPb(Ag) : 0,6%, 0,9%,1,0% und 1,4% Flussmittelgehalt</p>
                       </div>
@@ -578,7 +574,7 @@
                       </div>
                       <div class="product-details">
                         <p>Interflux® Flexsol 903 ist ein absolut halogenfreier no-clean Lötdraht mit reduzierten Spritzeigenschaften in bleifreien Legierungen.<br/>
-                          RO L0  gemäß EN und IPC-Standards<br/>
+                          RO L0 gemäß EN und IPC-Standards<br/>
                           Flussmittelgehalt: 2,2% and 3,5%</p>
                       </div>
                       <div class="product-document-link de">
@@ -722,7 +718,7 @@
                       <div class="product-details">
                         <p>Interflux® IF 14-Serie sind kolophoniumfreie, absolut halogenfreie no-clean Lötdrähte mit einfach zu entfernen Rückständen in SnPb(Ag) und in bleifreien Legierungen.<br/>
                           Die Rückstände lassen sich bürsten<br/>
-                          RE L0  gemäß EN und IPC-Standards<br/>
+                          RE L0 gemäß EN und IPC-Standards<br/>
                           SnPb(Ag) : IF 14-06, IF 14-09, IF 14-10, IF14-14 (0,6%, 0,9%,1,0% und 1,4% Flussmittelgehalt)<br/>
                           Bleifrei: 1,6% und 2,2% Flussmittelgehalt</p>
                       </div>
