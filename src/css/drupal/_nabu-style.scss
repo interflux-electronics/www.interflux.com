@@ -1846,6 +1846,7 @@ em {
   margin-bottom: 45px;
 }
 #contact-search {
+  display: none;
   z-index: 2;
   margin: 70px 0;
 }
@@ -1978,7 +1979,7 @@ em {
   position: relative;
   width: 958px;
   height: 498px;
-  margin-bottom: 70px;
+  margin: 60px 0;
   background: url("/assets/images/contact-map.jpg") no-repeat;
   border: 1px solid #a6a6a6;
   border-radius: 3px;
