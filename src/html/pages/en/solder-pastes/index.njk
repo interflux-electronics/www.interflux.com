@@ -1,3 +1,4 @@
+{% from "macros/product.njk" import product %}
 {% extends "layout.html.njk" %}
 {% block meta %}
   <title>Solder pastes | Interflux Electronics</title>
@@ -345,87 +346,35 @@
                       </div>
                       <a href="/en/44" title="DP 5600" class="nid">44</a>
                     </div>
-                    <div class="product-row">
-                      <div class="product-images"><img src="/assets/images/CLP_LP-5720-Pb-free.jpg" width="200" height="200" alt="LP 5720 Pb-free"/><img src="/assets/images/CLP_LP-5720-SnPb.jpg" width="200" height="200" alt="LP 5720 SnPb(Ag)"/></div>
-                      <div class="product-name">
-                        <h3>LP 5720</h3>
-                      </div>
-                      <div class="product-highlight">
-                        <h3>NEW</h3>
-                      </div>
-                      <div class="product-features">
-                        <ul>
-                          <li>
-                            <div class="icon09"></div>
-                            <p>High stability on the stencil</p>
-                          </li>
-                          <li>
-                            <div class="icon18"></div>
-                            <p>Absolutely halide-free</p>
-                          </li>
-                          <li>
-                            <div class="icon15"></div>
-                            <p>For SnPb(Ag) alloys</p>
-                          </li>
-                          <li>
-                            <div class="icon16"></div>
-                            <p>For Lead-free alloys</p>
-                          </li>
-                          <li>
-                            <div class="icon20"></div>
-                            <p>Transparent post reflow residue</p>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="product-summary">
-                        <p>Interflux®
-                          <strong>LP 5720</strong>
-                          is a no-clean solder paste with
-                          <strong>optimized printing stability</strong>
-                          and transparent residue after reflow, in lead-free and SnPb(Ag) alloys.
-                        </p>
-                      </div>
-                      <div class="product-details">
-                        <p>Interflux® LP 5720 is a no-clean solder paste with optimized printing stability and transparent residue after reflow, in lead-free and SnPb(Ag) alloys.<br/>
-                          LP 5720 is the successor of DP 5505.<br/>
-                          RO L0 to IPC and EN standards.<br/>
-                          Halide content 0,00%</p>
-                      </div>
-                      <div class="product-document-link de">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/de/TD-LP-5720-DE.pdf">Technisches Datenblatt LP 5720-DE</a>
-                        </span>
-                      </div>
-                      <div class="product-document-link de">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/de/TD-LP-5720-SnPbAg-DE.pdf">Technisches Datenblatt LP 5720 SnPb(Ag)</a>
-                        </span>
-                      </div>
-                      <div class="product-document-link fr">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/fr/TD-LP-5720-FR.pdf">Fiche Technique LP 5720</a>
-                        </span>
-                      </div>
-                      <div class="product-document-link fr">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/fr/TD-LP-5720-SnPbAg-FR.pdf">Fiche technique LP 5720 SnPb(Ag)</a>
-                        </span>
-                      </div>
-                      <div class="product-document-link en">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/en/TD-LP-5720.pdf">Technical Data Sheet TD LP 5720 Pb-free</a>
-                        </span>
-                      </div>
-                      <div class="product-document-link en">
-                        <span class="file"><img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png"/>
-                          <a href="/assets/documents/en/TD-LP-5720-SnPbAg.pdf">Technical Data Sheet LP 5720 SnPb(Ag)</a>
-                        </span>
-                      </div>
-                      <div class="product-contact-link">
-                        <a href="mailto:technischedienst@interflux.com?Subject=LP 5720" target="_blank" rel="nofollow">Contact us for more info / demo / samples</a>
-                      </div>
-                      <a href="/en/1343" title="LP 5720" class="nid">1343</a>
-                    </div>
+
+                    {{
+                      product(
+                        name='IF 9057',
+                        highlight='NEW',
+                        features=[
+                          ['icon09', 'High stability on the stencil'],
+                          ['icon18', 'Absolutely halide-free'],
+                          ['icon15', 'For SnPb(Ag) alloys'],
+                          ['icon16', 'For Lead-free alloys'],
+                          ['icon20', 'Transparent post reflow residue']
+                        ],
+                        summary='Interflux® <strong>IF 9057</strong> is a no-clean solder paste with <strong>optimized printing stability</strong> and transparent residue after reflow, in lead-free and SnPb(Ag) alloys.',
+                        details='Interflux® <strong>IF 9057</strong> is a no-clean solder paste with <strong>optimized printing stability</strong> and transparent residue after reflow, in lead-free and SnPb(Ag) alloys. <br/>LP 5720 is the successor of DP 5505. <br/>RO L0 to IPC and EN standards. <br/>Halide content 0,00%',
+                        images=[
+                          [cdnHost + '/images/products/IF-9057/IF-9057-1@400x400.jpg', 'IF-9057 solder wire SnAgCu 500g'],
+                          [cdnHost + '/images/products/IF-9057/IF-9057-SnPbAg-1@400x400.jpg', 'IF-9057 solder wire SnPbAg 500g']
+                        ],
+                        documents=[
+                          ['en', cdnHost + '/documents/products/IF-9057/TD-IF-9057-EN.pdf', 'Technical Data Sheet IF 9057'],
+                          ['en', cdnHost + '/documents/products/IF-9057/TD-IF-9057-SnPbAg-EN.pdf', 'Technical Data Sheet IF 9057 SnPbAg'],
+                          ['de', cdnHost + '/documents/products/IF-9057/TD-IF-9057-DE.pdf', 'Technisches Datenblatt IF 9057'],
+                          ['de', cdnHost + '/documents/products/IF-9057/TD-IF-9057-SnPbAg-DE.pdf', 'Technisches Datenblatt IF 9057 SnPbAg'],
+                          ['fr', cdnHost + '/documents/products/IF-9057/TD-IF-9057-FR.pdf', 'Fiche technique IF 9057'],
+                          ['fr', cdnHost + '/documents/products/IF-9057/TD-IF-9057-SnPbAg-FR.pdf', 'Fiche technique IF 9057 SnPbAg']
+                        ]
+                      )
+                    }}
+
                     <div class="product-row">
                       <div class="product-images"><img src="/assets/images/CLP_DP-5505-Pb-free.jpg" width="200" height="200" alt="DP 5505 Pb-free"/><img src="/assets/images/CLP_DP-5505-SnPb.jpg" width="200" height="200" alt="DP 5505 SnPb"/></div>
                       <div class="product-name">
