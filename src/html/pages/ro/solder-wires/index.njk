@@ -1,3 +1,4 @@
+{% from "macros/product.njk" import product %}
 {% extends "layout.html.njk" %}
 {% block meta %}
   <title>Sarma de lipit | Interflux Electronics</title>
@@ -154,7 +155,7 @@
           <article id="ipc-apex-2017">
             <a href="https://www.ipcapexexpo.org/" target="_blank" title="Visit us at IPC APEX 2018 in San Diego">
               <picture>
-                
+
                 <img src="" alt="Visit use at IPC APEX 2018 in San Diego"/>
               </picture>
             </a>
@@ -176,7 +177,7 @@
                 </mark>
               </h1>
               <div id="video">
-                <video id="movie" width="276" height="220" autoplay loop>
+                <video id="movie" width="276" height="220" autoplay="autoplay" loop="loop">
                   <source src="https://cdn.interflux.com/videos/LMPA-Q-30mms.mp4" type="video/mp4"></source>
                   Your browser doesn't support HTML5 video tag.
                 </video>
@@ -217,6 +218,33 @@
                   <div class="bg-top"></div>
                   <div class="bg-bottom"></div>
                   <div class="view-content">
+
+                    {{
+                      product(
+                        name='IR 3',
+                        highlight='NEW',
+                        features=[
+                          ['icon00', 'Perfect for robot soldering'],
+                          ['icon04', 'Low spattering'],
+                          ['icon35', 'Fast wetting'],
+                          ['icon20', 'Low soldering tip contamination'],
+                          ['icon20', 'Low residue'],
+                          ['icon18', 'Absolutely halogen free']
+                        ],
+                        summary='Interflux® <strong>IR 3</strong> is an absolutely halide-free, lead-free, no-clean solder wire that has been developed for <strong>robot soldering</strong>. It provides low spattering, fast wetting, low soldering tip contamination and low residue.',
+                        details='Interflux® <strong>IR 3</strong> is an absolutely halide-free, lead-free, no-clean solder wire that has been developed for <strong>robot soldering</strong>. It provides low spattering, fast wetting, low soldering tip contamination and low residue. <br>IR 3 can also be used for hand soldering with the same advantages. <br>ROL0 to EN and IPC standards',
+                        images=[
+                          [cdnHost + '/images/products/IR-3/IR-3-SnQ-500g@400x400.jpg', 'IR 3 solder wire SnQ 500g'],
+                          [cdnHost + '/images/products/IR-3/IR-3-SnAgCu-500g@400x400.jpg', 'IR 3 solder wire SnAgCu 500g']
+                        ],
+                        documents=[
+                          ['en', cdnHost + '/documents/products/IR-3/TD-IR-3-EN.pdf', 'Technical Data Sheet IR 3'],
+                          ['de', cdnHost + '/documents/products/IR-3/TD-IR-3-DE.pdf', 'Technisches Datenblatt IR 3'],
+                          ['fr', cdnHost + '/documents/products/IR-3/TD-IR-3-FR.pdf', 'Fiche technique IR 3']
+                        ]
+                      )
+                    }}
+
                     <div class="product-row">
                       <div class="product-images"><img src="/assets/images/CLP_QF70-Pb-free.jpg" width="200" height="200" alt="QF 70 Pb-free"/></div>
                       <div class="product-name">
@@ -499,7 +527,7 @@
                         </ul>
                       </div>
                       <div class="product-summary">
-                        <p>Interflux®  IF 14 serie sunt sarme de lipire fara colofoniu, fara halogenuri cu
+                        <p>Interflux® IF 14 serie sunt sarme de lipire fara colofoniu, fara halogenuri cu
                           <strong>reziduuri usor de idepartat
                           </strong>in aliaje SnPb(Ag) si fara Pb.</p>
                       </div>
@@ -717,10 +745,10 @@
                         </ul>
                       </div>
                       <div class="product-summary">
-                        <p>Interflux®  IF 14 serie sunt sirme de lipire fara colofoniu, fara halogenuri cu reziduuri usor de indepartat in aliaje SnPb(Ag) si fara Pb.</p>
+                        <p>Interflux® IF 14 serie sunt sirme de lipire fara colofoniu, fara halogenuri cu reziduuri usor de indepartat in aliaje SnPb(Ag) si fara Pb.</p>
                       </div>
                       <div class="product-details">
-                        <p>Interflux®  IF 14 serie sunt sirme de lipire fara colofoniu, fara halogenuri cu reziduuri usor de indepartat in aliaje SnPb(Ag) si fara Pb.<br/>
+                        <p>Interflux® IF 14 serie sunt sirme de lipire fara colofoniu, fara halogenuri cu reziduuri usor de indepartat in aliaje SnPb(Ag) si fara Pb.<br/>
                           Reziduuri indepartabile manual<br/>
                           Standarde RE LO conform EN si IPC<br/>
                           SnPb(Ag) : IF 14-06, IF 14-09, IF 14-10, IF14-14 (continut de flux 0,6%, 0,9%,1,0% si 1,4%)<br/>
