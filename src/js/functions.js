@@ -27,14 +27,21 @@ export async function documents() {
   products.forEach(product => {
     const name = product.querySelector(".product-name h3").innerText;
     const matches = TDs.filter(TD => {
-      return TD.attributes.name.startsWith(`TD ${name}`);
+      return TD.attributes.name.toUpperCase() === `TD ${name.toUpperCase()}`;
     });
     console.log("documents()", name, matches);
     const details = product.querySelector(".product-details");
     const documents = product.querySelectorAll(".product-document-link");
     if (matches.length) {
       documents.forEach(doc => {
-        doc.parentNode.removeChild(doc);
+        const str = doc.innerText.trim();
+        const isTD =
+          str.startsWith("Technical Data Sheet") ||
+          str.startsWith("Technisches Datenblatt") ||
+          str.startsWith("Fiche technique");
+        if (isTD) {
+          doc.parentNode.removeChild(doc);
+        }
       });
     }
     matches.forEach(TD => {
