@@ -6,22 +6,33 @@ export async function documents() {
   }
 
   console.log("documents() fetching...");
-  const response = await fetch(
-    "https://api.interflux.com/v1/public/documents",
-    {
-      headers: {
-        "Content-Type": "application/vnd.api+json"
-      }
+
+  const host =
+    location.host === "interflux.com"
+      ? "https://api.interflux.com"
+      : "http://localhost:3000";
+
+  const response = await fetch(`${host}/v1/public/documents`, {
+    headers: {
+      "Content-Type": "application/vnd.api+json"
     }
-  );
+  });
   const json = await response.json();
   const data = json.data;
   const TDs = data.filter(TD => {
     return TD.relationships["document-category"].data.id === "TD";
   });
 
-  console.log("documents() data", data);
-  console.log("documents() TDs", TDs);
+  // console.log("documents() data", data);
+  // console.log("documents() TDs", TDs);
+
+  const names = TDs.map(TD => {
+    return TD.attributes.name;
+  });
+  const uniques = [...new Set(names)];
+  const sorted = uniques.sort();
+
+  console.log(sorted);
 
   const products = document.querySelectorAll(".product-row");
   products.forEach(product => {
