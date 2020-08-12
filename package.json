@@ -40,8 +40,8 @@
     "yarn": ">= 1.0.0"
   },
   "scripts": {
-    "serve": "NODE_ENV=development ./node_modules/.bin/gulp serve",
-    "build": "NODE_ENV=production ./node_modules/.bin/gulp build",
+    "serve": "NODE_ENV=development gulp serve",
+    "build": "NODE_ENV=production gulp build",
     "deploy": "./remote/deploy.sh",
     "setup": "./remote/setup.sh"
   }
