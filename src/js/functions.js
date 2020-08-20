@@ -38,7 +38,10 @@ export async function documents() {
   products.forEach(product => {
     const name = product.querySelector(".product-name h3").innerText;
     const matches = TDs.filter(TD => {
-      return TD.attributes.name.toUpperCase() === `TD ${name.toUpperCase()}`;
+      return (
+        TD.attributes.name.replace(" SnPb(Ag)", "").toUpperCase() ===
+        `TD ${name.toUpperCase()}`
+      );
     });
     console.log("documents()", name, matches);
     const details = product.querySelector(".product-details");
