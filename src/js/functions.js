@@ -23,9 +23,6 @@ export async function documents() {
     return TD.relationships["document-category"].data.id === "TD";
   });
 
-  // console.log("documents() data", data);
-  // console.log("documents() TDs", TDs);
-
   const names = TDs.map(TD => {
     return TD.attributes.name;
   });
@@ -37,11 +34,9 @@ export async function documents() {
   const products = document.querySelectorAll(".product-row");
   products.forEach(product => {
     const name = product.querySelector(".product-name h3").innerText;
+    const kebabName = name.replace(/\s/g, "-").replace("µ", "micro");
     const matches = TDs.filter(TD => {
-      return (
-        TD.attributes.name.replace(" SnPb(Ag)", "").toUpperCase() ===
-        `TD ${name.toUpperCase()}`
-      );
+      return TD.id.startsWith(`documents/products/${kebabName}/`);
     });
     console.log("documents()", name, matches);
     const details = product.querySelector(".product-details");
