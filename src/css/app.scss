@@ -1,6 +1,8 @@
 // SASS
 @import "variables";
 @import "mixins";
+@import "easings";
+@import "responsive";
 
 // Normalise browsers
 @import "normalize";
@@ -53,7 +55,7 @@
       transform: scale(1.05);
     }
     p {
-      background: #ff8f33;
+      background-color: $orange-1;
       color: white;
       font-size: 30px;
       line-height: 150%;
@@ -62,3 +64,5 @@
     }
   }
 }
+
+@import "modal";
