@@ -29,3 +29,36 @@
 @import "drupal/nabu-normalise";
 @import "drupal/nabu-style";
 // @import "drupal/fonts";
+
+.region-highlight.hidden {
+  display: none;
+}
+.region-highlight {
+  .banners {
+    height: 242px;
+    box-shadow: 0 4px 10px RGBA(0, 0, 0, 0.2);
+  }
+  a#smta {
+    background-image: url(https://cdn.interflux.com/images/legacy/banner-SMTA.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: left center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    transition: all 200ms ease-out;
+    box-shadow: 0 10px 20px RGBA(0, 0, 0, 0.2);
+    &:hover {
+      transform: scale(1.05);
+    }
+    p {
+      background: #ff8f33;
+      color: white;
+      font-size: 30px;
+      line-height: 150%;
+      padding: 0 15px;
+      transform: translateX(-10px);
+    }
+  }
+}
