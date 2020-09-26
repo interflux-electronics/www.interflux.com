@@ -1,20 +1,20 @@
 import { documents } from "./functions.js";
 
-function hideHighlight() {
-  const el = document.querySelector(".region-highlight.hidden");
-  el.parentNode.removeChild(el);
-}
-
-function prepareBookModal() {
-  const banner = document.querySelector("a#smta");
+function modals() {
+  const button = document.querySelector("#webinars button");
   const overlay = document.querySelector("#modal .overlay");
 
-  banner.onclick = event => {
-    event.preventDefault();
+  if (!button) {
+    return;
+  }
+
+  button.onclick = () => {
+    console.log("button");
     openModal();
   };
 
   overlay.onclick = () => {
+    console.log("overlay");
     closeModal();
   };
 }
@@ -29,10 +29,36 @@ function closeModal() {
   document.querySelector("#page").removeAttribute("style");
 }
 
+function banners() {
+  const classList = document.body.classList;
+  const isFluxPage = classList.contains("page-soldering-fluxes");
+  const isWavePage = classList.contains("page-wave-soldering");
+  const isPastePage = classList.contains("page-solder-pastes");
+  const isReflowPage = classList.contains("page-reflow-soldering");
+
+  const smta = document.querySelector(".region-highlight #smta");
+  const lmpa = document.querySelector(".region-highlight #lmpa");
+  const webinars = document.querySelector(".region-highlight #webinars");
+
+  if (isFluxPage || isWavePage) {
+    // Show webinars banner on flux and wave pages
+    smta.parentNode.removeChild(smta);
+    lmpa.parentNode.removeChild(lmpa);
+  } else if (isPastePage || isReflowPage) {
+    // Show SMTA banner on paste and reflow pages
+    webinars.parentNode.removeChild(webinars);
+    lmpa.parentNode.removeChild(lmpa);
+  } else {
+    // In all other cases, show the LMPA banner
+    webinars.parentNode.removeChild(webinars);
+    smta.parentNode.removeChild(smta);
+  }
+}
+
 function init() {
   documents();
-  hideHighlight();
-  prepareBookModal();
+  banners();
+  modals();
 }
 
 document.addEventListener("DOMContentLoaded", function() {
