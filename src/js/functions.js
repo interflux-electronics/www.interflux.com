@@ -54,7 +54,9 @@ export async function documents() {
       });
     }
     matches.forEach(TD => {
-      const locale = TD.relationships.language.data.id;
+      // const locale = TD.relationships.language.data.id;
+      // TODO: fix API to serve paths with languages in path
+      const locale = "en"; // temporary
       const language = {
         en: "English",
         fr: "Français",

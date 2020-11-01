@@ -1,4 +1,4 @@
-import { documents } from "./functions.js";
+// import { documents } from "./functions.js";
 
 function modals() {
   const webinars = document.querySelector("#webinars");
@@ -59,7 +59,7 @@ function banners() {
 }
 
 function init() {
-  documents();
+  // documents();
   banners();
   modals();
 }
