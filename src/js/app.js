@@ -1,20 +1,23 @@
 import { documents } from "./functions.js";
 
 function modals() {
-  const button = document.querySelector("#webinars button");
+  const webinars = document.querySelector("#webinars");
+  const links = document.querySelectorAll("#webinars a");
   const overlay = document.querySelector("#modal .overlay");
 
-  if (!button) {
+  if (!webinars) {
     return;
   }
 
-  button.onclick = () => {
-    console.log("button");
-    openModal();
-  };
+  links.forEach(link => {
+    console.log(link);
+    link.onclick = event => {
+      event.preventDefault();
+      openModal();
+    };
+  });
 
   overlay.onclick = () => {
-    console.log("overlay");
     closeModal();
   };
 }
