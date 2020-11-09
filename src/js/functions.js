@@ -12,17 +12,20 @@ export async function documents() {
       ? "https://api.interflux.com"
       : "http://localhost:3000";
 
-  const response = await fetch(`${host}/v1/public/documents`, {
+  const url = `${host}/v1/public/documents/?include=cdn_files`;
+  const options = {
     headers: {
       "Content-Type": "application/vnd.api+json"
     }
-  });
+  };
+
+  const response = await fetch(url, options);
   const json = await response.json();
-  const data = json.data;
+  const { data, included } = json;
+
   const TDs = data.filter(TD => {
     return TD.relationships["document-category"].data.id === "TD";
   });
-
   const names = TDs.map(TD => {
     return TD.attributes.name;
   });
@@ -31,16 +34,19 @@ export async function documents() {
 
   console.log(sorted);
 
-  const products = document.querySelectorAll(".product-row");
-  products.forEach(product => {
-    const name = product.querySelector(".product-name h3").innerText;
+  const productRows = document.querySelectorAll(".product-row");
+
+  productRows.forEach(productRow => {
+    const name = productRow.querySelector(".product-name h3").innerText;
     const kebabName = name.replace(/\s/g, "-").replace("µ", "micro");
     const matches = TDs.filter(TD => {
       return TD.id.startsWith(`documents/products/${kebabName}/`);
     });
     console.log("documents()", name, matches);
-    const details = product.querySelector(".product-details");
-    const documents = product.querySelectorAll(".product-document-link");
+    const details = productRow.querySelector(".product-details");
+    const documents = productRow.querySelectorAll(".product-document-link");
+
+    // If the payload contains docs for the productrow, then remove all existing TD links.
     if (matches.length) {
       documents.forEach(doc => {
         const str = doc.innerText.trim();
@@ -54,26 +60,35 @@ export async function documents() {
       });
     }
     matches.forEach(TD => {
-      // const locale = TD.relationships.language.data.id;
-      // TODO: fix API to serve paths with languages in path
-      const locale = "en"; // temporary
-      const language = {
-        en: "English",
-        fr: "Français",
-        de: "Deutsch"
-      }[locale];
-      const html = `
-        <div class="product-document-link ${locale}">
-          <span class="file">
-            <img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png">
-            <a
-              href="https://cdn.interflux.com/${TD.attributes.path}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >${TD.attributes.name} (${language})</a>
-          </span>
-        </div>
-      `;
+      let html = "";
+
+      const files = included
+        .filter(x => x.attributes.path.startsWith(TD.id))
+        .map(x => x.attributes.path);
+
+      files.forEach(file => {
+        const locale = file.slice(-6, -4).toLowerCase();
+
+        const language = {
+          en: "English",
+          fr: "Français",
+          de: "Deutsch"
+        }[locale];
+
+        html += `
+           <div class="product-document-link ${locale}">
+             <span class="file">
+               <img class="file-icon" alt="" title="application/pdf" src="/assets/images/application-pdf.png">
+               <a
+                 href="https://cdn.interflux.com/${file}"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >${TD.attributes.name} (${language})</a>
+             </span>
+           </div>
+         `;
+      });
+
       details.insertAdjacentHTML("afterend", html);
     });
   });

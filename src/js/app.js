@@ -1,4 +1,4 @@
-// import { documents } from "./functions.js";
+import { documents } from "./functions.js";
 
 function modals() {
   const webinars = document.querySelector("#webinars");
@@ -10,7 +10,6 @@ function modals() {
   }
 
   links.forEach(link => {
-    console.log(link);
     link.onclick = event => {
       event.preventDefault();
       openModal();
@@ -59,7 +58,7 @@ function banners() {
 }
 
 function init() {
-  // documents();
+  documents();
   banners();
   modals();
 }
