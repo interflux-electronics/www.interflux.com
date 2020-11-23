@@ -32,29 +32,32 @@ function closeModal() {
 }
 
 function banners() {
-  const classList = document.body.classList;
-  const isFluxPage = classList.contains("page-soldering-fluxes");
-  const isWavePage = classList.contains("page-wave-soldering");
-  const isPastePage = classList.contains("page-solder-pastes");
-  const isReflowPage = classList.contains("page-reflow-soldering");
+  // const classList = document.body.classList;
+  // const isFluxPage = classList.contains("page-soldering-fluxes");
+  // const isWavePage = classList.contains("page-wave-soldering");
+  // const isPastePage = classList.contains("page-solder-pastes");
+  // const isReflowPage = classList.contains("page-reflow-soldering");
 
   const smta = document.querySelector(".region-highlight #smta");
-  const lmpa = document.querySelector(".region-highlight #lmpa");
+  // const lmpa = document.querySelector(".region-highlight #lmpa");
   const webinars = document.querySelector(".region-highlight #webinars");
 
-  if (isFluxPage || isWavePage) {
-    // Show webinars banner on flux and wave pages
-    smta.parentNode.removeChild(smta);
-    lmpa.parentNode.removeChild(lmpa);
-  } else if (isPastePage || isReflowPage) {
-    // Show SMTA banner on paste and reflow pages
-    webinars.parentNode.removeChild(webinars);
-    lmpa.parentNode.removeChild(lmpa);
-  } else {
-    // In all other cases, show the LMPA banner
-    webinars.parentNode.removeChild(webinars);
-    smta.parentNode.removeChild(smta);
-  }
+  // if (isFluxPage || isWavePage) {
+  //   // Show webinars banner on flux and wave pages
+  //   smta.parentNode.removeChild(smta);
+  //   lmpa.parentNode.removeChild(lmpa);
+  // } else if (isPastePage || isReflowPage) {
+  //   // Show SMTA banner on paste and reflow pages
+  //   webinars.parentNode.removeChild(webinars);
+  //   lmpa.parentNode.removeChild(lmpa);
+  // } else {
+  //   // In all other cases, show the LMPA banner
+  //   webinars.parentNode.removeChild(webinars);
+  //   smta.parentNode.removeChild(smta);
+  // }
+
+  webinars.parentNode.removeChild(webinars);
+  smta.parentNode.removeChild(smta);
 }
 
 function init() {

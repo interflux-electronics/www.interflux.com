@@ -207,28 +207,28 @@
   }
 }
 
-.page-soldering-fluxes,
-.page-wave-soldering {
-  #banners {
-    #webinars {
-      display: flex;
-    }
-    #lmpa,
-    #smta {
-      display: none !important;
-    }
-  }
-}
-
-.page-solder-pastes,
-.page-reflow-soldering {
-  #banners {
-    #smta {
-      display: flex;
-    }
-    #lmpa,
-    #webinars {
-      display: none !important;
-    }
-  }
-}
+// .page-soldering-fluxes,
+// .page-wave-soldering {
+//   #banners {
+//     #webinars {
+//       display: flex;
+//     }
+//     #lmpa,
+//     #smta {
+//       display: none !important;
+//     }
+//   }
+// }
+//
+// .page-solder-pastes,
+// .page-reflow-soldering {
+//   #banners {
+//     #smta {
+//       display: flex;
+//     }
+//     #lmpa,
+//     #webinars {
+//       display: none !important;
+//     }
+//   }
+// }
