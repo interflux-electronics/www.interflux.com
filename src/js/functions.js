@@ -11,10 +11,6 @@ const renderBanners = async () => {
     return document.querySelector(".region-highlight").classList.add("hidden");
   }
 
-  const loadBanner = document.querySelector(".region-highlight #loading");
-  const lmpaBanner = document.querySelector(".region-highlight #lmpa");
-  const webinarBanner = document.querySelector(".region-highlight #webinars");
-
   console.debug("renderBanners()");
   const cache = sessionStorage.getItem("webinars");
   console.debug({ cache });
@@ -22,11 +18,14 @@ const renderBanners = async () => {
     ? JSON.parse(cache)
     : await fetchWebinars().catch(() => {
         console.warn("could not fetch webinars");
-        lmpaBanner.classList.remove("hidden");
-        loadBanner.classList.add("hidden");
+        return [];
       });
 
   console.debug({ webinars });
+
+  const loadBanner = document.querySelector(".region-highlight #loading");
+  const lmpaBanner = document.querySelector(".region-highlight #lmpa");
+  const webinarBanner = document.querySelector(".region-highlight #webinars");
 
   if (webinars.length < 1) {
     lmpaBanner.classList.remove("hidden");
