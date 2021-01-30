@@ -10,21 +10,23 @@ const renderBanners = async () => {
   if (isContactPage) {
     return document.querySelector(".region-highlight").classList.add("hidden");
   }
-  // const isFluxPage = classList.contains("page-soldering-fluxes");
-  // const isWavePage = classList.contains("page-wave-soldering");
-  // const isPastePage = classList.contains("page-solder-pastes");
-  // const isReflowPage = classList.contains("page-reflow-soldering");
-
-  console.debug("renderBanners()");
-  const cache = sessionStorage.getItem("webinars");
-  console.debug({ cache });
-  const webinars = cache ? JSON.parse(cache) : await fetchWebinars();
-
-  console.debug({ webinars });
 
   const loadBanner = document.querySelector(".region-highlight #loading");
   const lmpaBanner = document.querySelector(".region-highlight #lmpa");
   const webinarBanner = document.querySelector(".region-highlight #webinars");
+
+  console.debug("renderBanners()");
+  const cache = sessionStorage.getItem("webinars");
+  console.debug({ cache });
+  const webinars = cache
+    ? JSON.parse(cache)
+    : await fetchWebinars().catch(() => {
+        console.warn("could not fetch webinars");
+        lmpaBanner.classList.remove("hidden");
+        loadBanner.classList.add("hidden");
+      });
+
+  console.debug({ webinars });
 
   if (webinars.length < 1) {
     lmpaBanner.classList.remove("hidden");
