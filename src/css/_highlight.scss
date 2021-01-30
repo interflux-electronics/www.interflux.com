@@ -1,13 +1,50 @@
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
 .region-highlight {
   &.hidden {
     display: none;
   }
+
   #banners {
     background: #f8f8f8;
-    box-shadow: 0 4px 10px RGBA(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(black, 0.2);
     padding: 0;
+    img {
+      display: block;
+    }
   }
-  #lmpa {
+
+  li.hidden {
+    display: none !important;
+  }
+
+  li#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    animation: shimmer 3s infinite;
+    background: linear-gradient(
+      to right,
+      $grey-0 4%,
+      darken($grey-0, 2%) 25%,
+      $grey-0 36%
+    );
+    background-size: 1000px 1000px;
+    p {
+      color: $grey-4;
+      font-size: 14px;
+    }
+  }
+
+  li#lmpa {
     display: flex;
     justify-content: space-between;
     height: 220px;
@@ -103,56 +140,18 @@
     }
   }
 
-  #smta {
-    display: none;
+  li#webinars {
     position: relative;
-    h2 {
-      background-color: $orange-1;
-      color: white;
-      font-size: 30px;
-      line-height: 150%;
-      padding: 0 15px;
-      margin: 0;
-      position: absolute;
-      left: -10px;
-      top: 100px;
-    }
-    p {
-      width: 390px;
-      position: absolute;
-      bottom: -22px;
-      right: 10px;
-      z-index: 1;
-      background: $blue-4;
-      color: #fff;
-      padding: 14px 66px 14px 26px;
-      margin: 0;
-      font-size: 14px;
-      line-height: 170%;
-      box-shadow: 0 4px 10px RGBA(0, 0, 0, 0.2);
-      span {
-        display: block;
-      }
-      a {
-        color: white;
-        text-decoration: none;
-        background: $orange-1;
-        color: #fff;
-        display: inline-block;
-        padding: 0 4px;
-        border-radius: 2px;
-        outline: 0;
-        &:hover,
-        &focus {
-          box-shadow: $blue-4 0px 0px 0px 2px, white 0px 0px 0px 4px;
-        }
+    display: flex;
+    overflow: hidden;
+    &:hover {
+      cursor: pointer;
+      outline: 2px solid $green-2;
+      outline-offset: 3px;
+      img {
+        transform: scale(1.05);
       }
     }
-  }
-
-  #webinars {
-    position: relative;
-    display: none;
     .content {
       position: absolute;
       left: 0;
@@ -165,6 +164,9 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+    }
+    img {
+      transition: transform 200ms ease-out;
     }
     h2,
     p,
@@ -191,44 +193,65 @@
       &.orange {
         background: #ff7300;
       }
-      a {
-        color: white;
-        &:hover {
-          text-decoration: none;
-        }
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        background: $green-1;
       }
     }
     .row {
       display: flex;
-      a {
+      a + p {
         margin-left: 7px;
       }
     }
   }
-}
 
-// .page-soldering-fluxes,
-// .page-wave-soldering {
-//   #banners {
-//     #webinars {
-//       display: flex;
-//     }
-//     #lmpa,
-//     #smta {
-//       display: none !important;
-//     }
-//   }
-// }
-//
-// .page-solder-pastes,
-// .page-reflow-soldering {
-//   #banners {
-//     #smta {
-//       display: flex;
-//     }
-//     #lmpa,
-//     #webinars {
-//       display: none !important;
-//     }
-//   }
-// }
+  // li#smta {
+  //   display: none;
+  //   position: relative;
+  //   h2 {
+  //     background-color: $orange-1;
+  //     color: white;
+  //     font-size: 30px;
+  //     line-height: 150%;
+  //     padding: 0 15px;
+  //     margin: 0;
+  //     position: absolute;
+  //     left: -10px;
+  //     top: 100px;
+  //   }
+  //   p {
+  //     width: 390px;
+  //     position: absolute;
+  //     bottom: -22px;
+  //     right: 10px;
+  //     z-index: 1;
+  //     background: $blue-4;
+  //     color: #fff;
+  //     padding: 14px 66px 14px 26px;
+  //     margin: 0;
+  //     font-size: 14px;
+  //     line-height: 170%;
+  //     box-shadow: 0 4px 10px RGBA(0, 0, 0, 0.2);
+  //     span {
+  //       display: block;
+  //     }
+  //     a {
+  //       color: white;
+  //       text-decoration: none;
+  //       background: $orange-1;
+  //       color: #fff;
+  //       display: inline-block;
+  //       padding: 0 4px;
+  //       border-radius: 2px;
+  //       outline: 0;
+  //       &:hover,
+  //       &focus {
+  //         box-shadow: $blue-4 0px 0px 0px 2px, white 0px 0px 0px 4px;
+  //       }
+  //     }
+  //   }
+  // }
+}
